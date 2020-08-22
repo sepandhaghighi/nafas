@@ -47,12 +47,19 @@ ANTI_APPETITE_MEDIUM = {"ratio":[6,0,5,5],"unit":1,"pre":3,"cycle":38}
 
 ANTI_APPETITE_ADVANCED = {"ratio":[7,0,5,5],"unit":1,"pre":3,"cycle":36}
 
+CIGARETTE_REPLACE_BEGINNER = {"ratio":[2,1.1,2.2,0.8],"unit":2,"pre":3,"cycle":23}
+
+CIGARETTE_REPLACE_MEDIUM = {"ratio":[3,1.1,2.2,0.8],"unit":2,"pre":3,"cycle":21}
+
+CIGARETTE_REPLACE_ADVANCED = {"ratio":[4,1.1,2.2,0.8],"unit":2,"pre":3,"cycle":19}
+
 
 PROGRAMS = {"Clear Mind":{"Beginner":CLEAR_MIND_BEGINNER,"Medium":CLEAR_MIND_MEDIUM,"Advanced":CLEAR_MIND_ADVANCED},
             "Relax": {"Beginner":RELAX_BEGINNER,"Medium":RELAX_MEDIUM,"Advanced":RELAX_ADVANCED},
             "Calming" : {"Beginner":CALMING_BEGINNER,"Medium":CALMING_MEDIUM,"Advanced":CALMING_ADVANCED},
             "Power" : {"Beginner":HARMONY_BEGINNER,"Medium":HARMONY_MEDIUM,"Advanced":HARMONY_ADVANCED},
             "Anti-Stress" : {"Beginner":ANTI_STRESS_BEGINNER,"Medium":ANTI_STRESS_MEDIUM,"Advanced":ANTI_STRESS_ADVANCED},
-            "Anti-Appetite" : {"Beginner":ANTI_APPETITE_BEGINNER,"Medium":ANTI_APPETITE_MEDIUM,"Advanced":ANTI_APPETITE_ADVANCED}
+            "Anti-Appetite" : {"Beginner":ANTI_APPETITE_BEGINNER,"Medium":ANTI_APPETITE_MEDIUM,"Advanced":ANTI_APPETITE_ADVANCED},
+            "Cigarette Replace" : {"Beginner":CIGARETTE_REPLACE_BEGINNER,"Medium":CIGARETTE_REPLACE_MEDIUM,"Advanced":CIGARETTE_REPLACE_ADVANCED}
 
             }
