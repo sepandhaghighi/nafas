@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """nafas parameters."""
 
+NAFAS_VERSION = "0.1"
+
 STANDARD_MENU = {"program":{1:"Clear Mind",2:"Relax",3:"Calming",4:"Power",5:"Harmony",6:"Anti-Stress",7:"Anti-Appetite",8:"Cigarette Replace"},"level":{1:"Beginner",2:"Medium",3:"Advanced"}}
 
 STEP_MAP = {0:"Inhale",1:"Retain",2:"Exhale",3:"Sustain"}
