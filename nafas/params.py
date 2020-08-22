@@ -11,4 +11,20 @@ CLEAR_MIND_MEDIUM = {"ratio":[1,0,4,0],"unit":3,"pre":3,"cycle":28}
 
 CLEAR_MIND_ADVANCED = {"ratio":[1,0,5,0],"unit":3,"pre":3,"cycle":24}
 
-PROGRAMS = {"Clear Mind":{"Beginner":CLEAR_MIND_BEGINNER,"Medium":CLEAR_MIND_MEDIUM,"Advanced":CLEAR_MIND_ADVANCED}
+RELAX_BEGINNER = {"ratio":[1,0,2,2],"unit":3,"pre":3,"cycle":28}
+
+RELAX_MEDIUM = {"ratio":[1,0,2,3],"unit":3,"pre":3,"cycle":24}
+
+RELAX_ADVANCED = {"ratio":[1,0,2,4],"unit":3,"pre":3,"cycle":22}
+
+CALMING_BEGINNER = {"ratio":[1,2,1,2],"unit":3,"pre":3,"cycle":24}
+
+CALMING_MEDIUM = {"ratio":[1,3,1,3],"unit":3,"pre":3,"cycle":22}
+
+CALMING_ADVANCED = {"ratio":[1,4,1,4],"unit":3,"pre":3,"cycle":20}
+
+PROGRAMS = {"Clear Mind":{"Beginner":CLEAR_MIND_BEGINNER,"Medium":CLEAR_MIND_MEDIUM,"Advanced":CLEAR_MIND_ADVANCED},
+            "Relax": {"Beginner":RELAX_BEGINNER,"Medium":RELAX_MEDIUM,"Advanced":RELAX_ADVANCED},
+            "Calming" : {"Beginner":CALMING_BEGINNER,"Medium":CALMING_MEDIUM,"Advanced":CALMING_ADVANCED},
+
+            }
