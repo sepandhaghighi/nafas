@@ -65,11 +65,13 @@ def run(program_dict):
     ratio = program_dict["ratio"]
     unit = program_dict["unit"]
     pre = program_dict["pre"]
-    print("Be ready")
+    print("Preparing . . .")
     for i in range(pre):
-        print(i)
+        print(i+1)
         time.sleep(unit)
+    print("Start")
     for i in range(cycle):
+        print("Cycle : "+str(i+1))
         for index, item in enumerate(ratio):
             if item != 0 :
                 print(STEP_MAP[index])
