@@ -5,6 +5,13 @@ import time
 from .param import *
 
 def input_filter(input_dict):
+    """
+    Filter input data.
+
+    :param input_dict: input data
+    :type input_dict: dict
+    :return: filtered data as dict
+    """
     filtered_dict = input_dict.copy()
     if filtered_dict["program"] not in STANDARD_MENU["program"].keys():
         filtered_dict["program"] = 1
@@ -13,6 +20,11 @@ def input_filter(input_dict):
     return filtered_dict
 
 def get_input_standard():
+    """
+    Get inputs from user.
+
+    :return: input data as dict
+    """
     input_dict = {"program":1,"level":1}
     for item in sorted(STANDARD_MENU.keys()):
         exit_flag = False
@@ -29,12 +41,26 @@ def get_input_standard():
     return input_dict
 
 def get_program_dict(input_dict):
+    """
+    Get program dictionary.
+
+    :param input_dict: input data
+    :type input_dict: dict
+    :return: program data as dict
+    """
     program_name = STANDARD_MENU["program"][input_dict["program"]]
     level = STANDARD_MENU["level"][input_dict["level"]]
     return PROGRAMS[program_name][level]
 
 
 def run(program_dict):
+    """
+    Run program.
+
+    :param program_dict: program data
+    :type program_dict: dict
+    :return: None
+    """
     cycle = program_dict["cycle"]
     ratio = program_dict["ratio"]
     unit = program_dict["unit"]
