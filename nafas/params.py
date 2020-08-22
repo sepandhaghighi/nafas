@@ -29,10 +29,15 @@ POWER_MEDIUM = {"ratio":[1,3,2,0],"unit":3,"pre":3,"cycle":24}
 
 POWER_ADVANCED = {"ratio":[1,4,2,0],"unit":3,"pre":3,"cycle":20}
 
+HARMONY_BEGINNER = {"ratio":[1,3,2,1],"unit":3,"pre":3,"cycle":20}
+
+HARMONY_MEDIUM = {"ratio":[1,4,2,1],"unit":3,"pre":3,"cycle":18}
+
+HARMONY_ADVANCED = {"ratio":[1,5,2,1],"unit":3,"pre":3,"cycle":16}
 
 PROGRAMS = {"Clear Mind":{"Beginner":CLEAR_MIND_BEGINNER,"Medium":CLEAR_MIND_MEDIUM,"Advanced":CLEAR_MIND_ADVANCED},
             "Relax": {"Beginner":RELAX_BEGINNER,"Medium":RELAX_MEDIUM,"Advanced":RELAX_ADVANCED},
             "Calming" : {"Beginner":CALMING_BEGINNER,"Medium":CALMING_MEDIUM,"Advanced":CALMING_ADVANCED},
-            "Power" : {"Beginner":POWER_BEGINNER,"Medium":POWER_MEDIUM,"Advanced":POWER_ADVANCED}
+            "Power" : {"Beginner":HARMONY_BEGINNER,"Medium":HARMONY_MEDIUM,"Advanced":HARMONY_ADVANCED}
 
             }
