@@ -2,7 +2,7 @@
 """nafas functions."""
 
 import time
-from .param import *
+from .params import *
 
 def input_filter(input_dict):
     """
