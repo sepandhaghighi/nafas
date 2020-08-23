@@ -4,6 +4,18 @@
 import time
 from .params import *
 
+def line(num=70,char="#"):
+    """
+    Print line.
+
+    :param num: number of characters
+    :type num: int
+    :param char: character
+    :type char: str
+    :return: None
+    """
+    print(num*char)
+
 def input_filter(input_dict):
     """
     Filter input data.
@@ -69,13 +81,16 @@ def run(program_dict):
     for i in range(pre):
         print(i+1)
         time.sleep(unit)
+    line()
     print("Start")
+    line()
     for i in range(cycle):
         print("Cycle : "+str(i+1))
         for index, item in enumerate(ratio):
             if item != 0 :
-                print(STEP_MAP[index])
+                print(STEP_MAP[index]+ " for {0} sec".format(unit * item))
                 time.sleep(unit * item)
+        line()
     print("End!")
 
 
