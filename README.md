@@ -107,7 +107,7 @@ asciinema demo
 ## Issues & Bug Reports			
 
 Just fill an issue and describe it. I'll check it ASAP!							
-or send an email to [info@pyrgg.ir](mailto:info@pyrgg.ir "info@pyrgg.ir"). 
+or send an email to [sepand@pyrgg.ir](mailto:sepand@pyrgg.ir "sepand@pyrgg.ir"). 
 
 
 ## Dependencies

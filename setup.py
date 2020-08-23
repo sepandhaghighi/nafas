@@ -34,7 +34,7 @@ setup(
     long_description=read_description(),
     long_description_content_type='text/markdown',
     author='Sepand Haghighi',
-    author_email='info@pycm.ir',
+    author_email='sepand@pyrgg.ir',
     url='https://github.com/sepandhaghighi/nafas',
     download_url='https://github.com/sepandhaghighi/nafas/tarball/v0.1',
     keywords="python3 python breath breathing meditation",
