@@ -88,7 +88,7 @@ def run(program_dict):
         print("Cycle : "+str(i+1))
         for index, item in enumerate(ratio):
             if item != 0 :
-                print(STEP_MAP[index]+ " for {0} sec".format(unit * item))
+                print("- " + STEP_MAP[index]+ " for {0} sec".format(unit * item))
                 time.sleep(unit * item)
         line()
     print("End!")
