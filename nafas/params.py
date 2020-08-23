@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 """nafas parameters."""
 
+DESCRIPTION = """
+Breathing gymnastics is a system of breathing exercises that focuses on the treatment of various diseases and general health promotion.
+Breathing gymnastics is an excellent means of coping with stress, insomnia, fatigue, loss of strength, and even obesity.
+"""
+
 NAFAS_VERSION = "0.1"
 
 STANDARD_MENU = {"program":{1:"Clear Mind",2:"Relax",3:"Calming",4:"Power",5:"Harmony",6:"Anti-Stress",7:"Anti-Appetite",8:"Cigarette Replace"},"level":{1:"Beginner",2:"Medium",3:"Advanced"}}
