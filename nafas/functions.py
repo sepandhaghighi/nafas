@@ -91,10 +91,12 @@ def input_filter(input_dict):
         filtered_dict["program"] = 1
     return filtered_dict
 
-def get_input_standard():
+def get_input_standard(input_func=input):
     """
     Get inputs from user.
 
+    :param input_func : input function
+    :type input_func : function object
     :return: input data as dict
     """
     input_dict = {"program":1,"level":1}
@@ -106,7 +108,7 @@ def get_input_standard():
             print(str(i)+"- "+STANDARD_MENU[item][i])
         while not exit_flag:
             try:
-                input_dict[item] = int(input(""))
+                input_dict[item] = int(input_func(""))
                 exit_flag = True
             except Exception:
                 print("[Error] Bad Input!")
