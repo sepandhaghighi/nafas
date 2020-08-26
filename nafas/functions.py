@@ -3,7 +3,6 @@
 
 import time
 from .params import *
-from art import tprint
 
 def line(num=70,char="#"):
     """
@@ -70,8 +69,6 @@ def description_print():
 
     :return: None
     """
-    tprint("Nafas")
-    tprint("v" + str(NAFAS_VERSION))
     print("\n".join(justify(DESCRIPTION.split(),70)))
     print("\n")
 
@@ -88,13 +85,15 @@ def input_filter(input_dict):
     if filtered_dict["program"] not in STANDARD_MENU["program"].keys():
         filtered_dict["program"] = 1
     if filtered_dict["level"] not in STANDARD_MENU["level"].keys():
-        filtered_dict["program"] = 1
+        filtered_dict["level"] = 1
     return filtered_dict
 
-def get_input_standard():
+def get_input_standard(input_func=input):
     """
     Get inputs from user.
 
+    :param input_func : input function
+    :type input_func : function object
     :return: input data as dict
     """
     input_dict = {"program":1,"level":1}
@@ -106,7 +105,7 @@ def get_input_standard():
             print(str(i)+"- "+STANDARD_MENU[item][i])
         while not exit_flag:
             try:
-                input_dict[item] = int(input(""))
+                input_dict[item] = int(input_func(""))
                 exit_flag = True
             except Exception:
                 print("[Error] Bad Input!")
