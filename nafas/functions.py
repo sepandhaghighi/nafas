@@ -88,7 +88,7 @@ def input_filter(input_dict):
     if filtered_dict["program"] not in STANDARD_MENU["program"].keys():
         filtered_dict["program"] = 1
     if filtered_dict["level"] not in STANDARD_MENU["level"].keys():
-        filtered_dict["program"] = 1
+        filtered_dict["level"] = 1
     return filtered_dict
 
 def get_input_standard(input_func=input):
