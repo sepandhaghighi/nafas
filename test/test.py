@@ -36,4 +36,42 @@ True
 True
 >>> input_data["level"] == 1
 True
+>>> get_input_standard(lambda x: "1")
+- Please choose a level :
+1- Beginner
+2- Medium
+3- Advanced
+- Please choose a program :
+1- Clear Mind
+2- Relax
+3- Calming
+4- Power
+5- Harmony
+6- Anti-Stress
+7- Anti-Appetite
+8- Cigarette Replace
+{'program': 1, 'level': 1}
+>>> program_data = get_program_dict({"program":1,"level":1})
+>>> program_data["pre"] == 3
+True
+>>> program_data["unit"] == 3
+True
+>>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3, 0]})
+Preparing . . .
+1
+2
+3
+######################################################################
+Start
+######################################################################
+Cycle : 1
+- Inhale for 1 sec
+- Exhale for 3 sec
+######################################################################
+Cycle : 2
+- Inhale for 1 sec
+- Exhale for 3 sec
+######################################################################
+End!
+
 """
