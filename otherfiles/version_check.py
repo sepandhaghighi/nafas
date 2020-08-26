@@ -74,7 +74,7 @@ if __name__ == "__main__":
     try:
         file_content = codecs.open(
             os.path.join(
-                "otherfile",
+                "otherfiles",
                 "Version.rc"),
             "r",
             "utf-8",
