@@ -22,7 +22,7 @@ True
 True
 >>> input_data["level"] == 1
 True
->>> get_input_standard(lambda x: "1")
+>>> input_data = get_input_standard(lambda x: "1")
 - Please choose a level :
 1- Beginner
 2- Medium
@@ -36,7 +36,10 @@ True
 6- Anti-Stress
 7- Anti-Appetite
 8- Cigarette Replace
-{'program': 1, 'level': 1}
+>>> input_data["program"] == 1
+True
+>>> input_data["level"] == 1
+True
 >>> program_data = get_program_dict({"program":1,"level":1})
 >>> program_data["pre"] == 3
 True
