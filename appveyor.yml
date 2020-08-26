@@ -41,4 +41,4 @@ test_script:
   - "%PYTHON%/python.exe -m nafas test"
   - "%PYTHON%/Scripts/pip.exe install -r dev-requirements.txt"
   - "%PYTHON%/python.exe -m pytest test --cov=nafas --cov-report=term"
-  - "%PYTHON%/python.exe version_check.py"
+  - "%PYTHON%/python.exe otherfiles/version_check.py"

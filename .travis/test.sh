@@ -9,7 +9,7 @@
 	PYTHON_COMMAND=python3
   fi
   $PYTHON_COMMAND -m pytest test --cov=nafas --cov-report=term
-  $PYTHON_COMMAND version_check.py
+  $PYTHON_COMMAND otherfiles/version_check.py
   
   if [ "$CI" = 'true' ] && [ "$TRAVIS" = 'true' ]
   then
