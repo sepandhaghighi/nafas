@@ -3,7 +3,6 @@
 
 import time
 from .params import *
-from art import tprint
 
 def line(num=70,char="#"):
     """
@@ -70,8 +69,6 @@ def description_print():
 
     :return: None
     """
-    tprint("Nafas")
-    tprint("v" + str(NAFAS_VERSION))
     print("\n".join(justify(DESCRIPTION.split(),70)))
     print("\n")
 
