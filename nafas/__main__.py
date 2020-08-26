@@ -11,9 +11,8 @@ if __name__ == "__main__":
     tprint("Nafas")
     tprint("v" + str(NAFAS_VERSION))
     description_print()
-    input_data = {"program":1,"level":1}
     if len(args) < 1:
         input_data = get_input_standard()
-    filtered_data = input_filter(input_data)
-    program_data = get_program_dict(filtered_data)
-    run(program_data)
+        filtered_data = input_filter(input_data)
+        program_data = get_program_dict(filtered_data)
+        run(program_data)
