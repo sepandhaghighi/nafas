@@ -10,8 +10,6 @@ Breathing  gymnastics  is  an  excellent  means of coping with stress,
 insomnia, fatigue, loss of strength, and even obesity.
 <BLANKLINE>
 <BLANKLINE>
->>> input_filter({"program":1,"level":1})
-{'program': 1, 'level': 1}
 >>> input_data = input_filter({"program":1,"level":1})
 >>> input_data["program"] == 1
 True
