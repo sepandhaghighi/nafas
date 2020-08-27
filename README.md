@@ -62,8 +62,8 @@
 	</tr>
 	<tr>
 		<td align="center">AppVeyor</td>
-		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/nafas"><img src=""></a></td>
-		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/nafas"><img src=""></a></td>
+		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/nafas"><img src="https://ci.appveyor.com/api/projects/status/3au823bgsaupgsup/branch/master?svg=true"></a></td>
+		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/nafas"><img src="https://ci.appveyor.com/api/projects/status/3au823bgsaupgsup/branch/dev?svg=true"></a></td>
 	</tr>
 </table>
 
@@ -71,8 +71,8 @@
 <table>
 	<tr> 
 		<td align="center">Code Quality</td>
-		<td align="center"></td>	
-		<td align="center"></td>		
+		<td align="center"><a href="https://www.codacy.com/manual/sepand-haghighi/nafas?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sepandhaghighi/nafas&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/b2be5ce052bc43a89713ac4aec6f8d11"/></a></td>	
+		<td align="center"><a href="https://www.codefactor.io/repository/github/sepandhaghighi/nafas"><img src="https://www.codefactor.io/repository/github/sepandhaghighi/nafas/badge" alt="CodeFactor" /></a></td>		
 	</tr>
 </table>
 
