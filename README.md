@@ -24,7 +24,7 @@
    * [Contribution](https://github.com/sepandhaghighi/nafas/blob/master/.github/CONTRIBUTING.md)
    * [References](https://github.com/sepandhaghighi/nafas#references)
    * [Authors](https://github.com/sepandhaghighi/nafas/blob/master/AUTHORS.md)
-   * [License](https://github.com/sepandhaghighi/nafas#license)
+   * [License](https://github.com/sepandhaghighi/nafas/blob/master/LICENSE)
    * [Donate](https://github.com/sepandhaghighi/nafas#donate-to-our-project)
    * [Changelog](https://github.com/sepandhaghighi/nafas/blob/master/CHANGELOG.md)
    * [Code of Conduct](https://github.com/sepandhaghighi/nafas/blob/master/.github/CODE_OF_CONDUCT.md)			
@@ -123,10 +123,6 @@ or send an email to [sepand@pyrgg.ir](mailto:sepand@pyrgg.ir "sepand@pyrgg.ir").
 	</tr>
 </table>
  			
-
-## License
-
-
 
 ## References
 					
