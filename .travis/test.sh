@@ -20,6 +20,6 @@
   then
       $PYTHON_COMMAND -m vulture nafas/ setup.py --min-confidence 65 --exclude=__init__.py --sort-by-size
       $PYTHON_COMMAND -m bandit -r nafas -s B311
-      $PYTHON_COMMAND -m pydocstyle --match-dir=nafas
+      $PYTHON_COMMAND -m pydocstyle --match-dir=nafas -v
   fi
 
