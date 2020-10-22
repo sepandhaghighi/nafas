@@ -3,7 +3,9 @@
 
 DESCRIPTION = """
 Breathing gymnastics is a system of breathing exercises that focuses on the treatment of various diseases and general health promotion.
-Breathing gymnastics is an excellent means of coping with stress, insomnia, fatigue, loss of strength, and even obesity.
+Nafas is a collection of breathing gymnastics designed to reduce the exhaustion of long working hours.
+With multiple breathing patterns, Nafas helps you find your way to a detoxified energetic workday and also improves your concentration by increasing the oxygen level.
+No need to walk away to take a break, just sit comfortably, run Nafas and let the journey begin.
 """
 
 NAFAS_VERSION = "0.1"
