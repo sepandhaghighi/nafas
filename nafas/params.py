@@ -66,9 +66,9 @@ CIGARETTE_REPLACE_ADVANCED = {"ratio":[4,1.1,2.2,0.8],"unit":2,"pre":3,"cycle":1
 PROGRAMS = {"Clear Mind":{"Beginner":CLEAR_MIND_BEGINNER,"Medium":CLEAR_MIND_MEDIUM,"Advanced":CLEAR_MIND_ADVANCED},
             "Relax": {"Beginner":RELAX_BEGINNER,"Medium":RELAX_MEDIUM,"Advanced":RELAX_ADVANCED},
             "Calming" : {"Beginner":CALMING_BEGINNER,"Medium":CALMING_MEDIUM,"Advanced":CALMING_ADVANCED},
-            "Power" : {"Beginner":HARMONY_BEGINNER,"Medium":HARMONY_MEDIUM,"Advanced":HARMONY_ADVANCED},
+            "Power" : {"Beginner":POWER_BEGINNER,"Medium":POWER_MEDIUM,"Advanced":POWER_ADVANCED},
             "Anti-Stress" : {"Beginner":ANTI_STRESS_BEGINNER,"Medium":ANTI_STRESS_MEDIUM,"Advanced":ANTI_STRESS_ADVANCED},
             "Anti-Appetite" : {"Beginner":ANTI_APPETITE_BEGINNER,"Medium":ANTI_APPETITE_MEDIUM,"Advanced":ANTI_APPETITE_ADVANCED},
-            "Cigarette Replace" : {"Beginner":CIGARETTE_REPLACE_BEGINNER,"Medium":CIGARETTE_REPLACE_MEDIUM,"Advanced":CIGARETTE_REPLACE_ADVANCED}
-
+            "Cigarette Replace" : {"Beginner":CIGARETTE_REPLACE_BEGINNER,"Medium":CIGARETTE_REPLACE_MEDIUM,"Advanced":CIGARETTE_REPLACE_ADVANCED},
+            "Harmony" :{"Beginner":HARMONY_BEGINNER,"Medium":HARMONY_MEDIUM,"Advanced":HARMONY_ADVANCED}
             }
