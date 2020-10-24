@@ -99,7 +99,8 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 
 <div align="center">
 
-asciinema demo
+<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/help.gif">
+<p>Screen Record</p>
 
 </div>
 
