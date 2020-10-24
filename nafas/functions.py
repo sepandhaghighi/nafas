@@ -2,9 +2,10 @@
 """nafas functions."""
 
 import time
-from .params import *
+from .params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS
 
-def line(num=70,char="#"):
+
+def line(num=70, char="#"):
     """
     Print line.
 
@@ -14,7 +15,8 @@ def line(num=70,char="#"):
     :type char: str
     :return: None
     """
-    print(num*char)
+    print(num * char)
+
 
 def left_justify(words, width):
     """
@@ -69,7 +71,7 @@ def description_print():
 
     :return: None
     """
-    print("\n".join(justify(DESCRIPTION.split(),70)))
+    print("\n".join(justify(DESCRIPTION.split(), 100)))
     print("\n")
 
 
@@ -88,6 +90,7 @@ def input_filter(input_dict):
         filtered_dict["level"] = 1
     return filtered_dict
 
+
 def get_input_standard(input_func=input):
     """
     Get inputs from user.
@@ -96,13 +99,13 @@ def get_input_standard(input_func=input):
     :type input_func : function object
     :return: input data as dict
     """
-    input_dict = {"program":1,"level":1}
+    input_dict = {"program": 1, "level": 1}
     for item in sorted(STANDARD_MENU.keys()):
         exit_flag = False
         sorted_list = sorted(list(STANDARD_MENU[item].keys()))
         print("- Please choose a {0} : ".format(item))
         for i in sorted_list:
-            print(str(i)+"- "+STANDARD_MENU[item][i])
+            print(str(i) + "- " + STANDARD_MENU[item][i])
         while not exit_flag:
             try:
                 input_dict[item] = int(input_func(""))
@@ -110,6 +113,7 @@ def get_input_standard(input_func=input):
             except Exception:
                 print("[Error] Bad Input!")
     return input_dict
+
 
 def get_program_dict(input_dict):
     """
@@ -138,20 +142,21 @@ def run(program_dict):
     pre = program_dict["pre"]
     print("Preparing . . .")
     for i in range(pre):
-        print(i+1)
+        print(i + 1)
         time.sleep(unit)
     line()
     print("Start")
     line()
     for i in range(cycle):
-        print("Cycle : "+str(i+1))
+        print("Cycle : " + str(i + 1))
         for index, item in enumerate(ratio):
-            if item != 0 :
-                print("- " + STEP_MAP[index]+ " for {0} sec".format(unit * item))
+            if item != 0:
+                print(
+                    "- " +
+                    STEP_MAP[index] +
+                    " for {0} sec".format(
+                        unit *
+                        item))
                 time.sleep(unit * item)
         line()
     print("End!")
-
-
-
-

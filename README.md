@@ -25,8 +25,11 @@
    * [Changelog](https://github.com/sepandhaghighi/nafas/blob/master/CHANGELOG.md)
    * [Code of Conduct](https://github.com/sepandhaghighi/nafas/blob/master/.github/CODE_OF_CONDUCT.md)			
 				
-## Overview			
---
+## Overview						
+Breathing gymnastics is a system of breathing exercises that focuses on the treatment of various diseases and general health promotion.
+Nafas is a collection of breathing gymnastics designed to reduce the exhaustion of long working hours.
+With multiple breathing patterns, Nafas helps you find your way to a detoxified energetic workday and also improves your concentration by increasing the oxygen level.
+No need to walk away to take a break, just sit comfortably, run Nafas and let the journey begin.
 
 <table>
 	<tr> 
@@ -68,6 +71,7 @@
 	<tr> 
 		<td align="center">Code Quality</td>
 		<td align="center"><a href="https://www.codacy.com/manual/sepand-haghighi/nafas?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sepandhaghighi/nafas&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/b2be5ce052bc43a89713ac4aec6f8d11"/></a></td>	
+		<td align="center"><a href="https://codebeat.co/projects/github-com-sepandhaghighi-nafas-dev"><img alt="codebeat badge" src="https://codebeat.co/badges/8b698b49-aa54-4419-a2ba-1367e8c6c08c" /></a></td>	
 		<td align="center"><a href="https://www.codefactor.io/repository/github/sepandhaghighi/nafas"><img src="https://www.codefactor.io/repository/github/sepandhaghighi/nafas/badge" alt="CodeFactor" /></a></td>		
 	</tr>
 </table>
@@ -95,7 +99,8 @@
 
 <div align="center">
 
-asciinema demo
+<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/help.gif">
+<p>Screen Record</p>
 
 </div>
 
