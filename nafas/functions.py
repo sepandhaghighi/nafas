@@ -2,7 +2,7 @@
 """nafas functions."""
 
 import time
-from .params import *
+from .params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS
 
 def line(num=70,char="#"):
     """

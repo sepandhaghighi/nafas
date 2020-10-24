@@ -2,7 +2,7 @@
 """nafas main."""
 
 import sys
-from .functions import *
+from .functions import description_print, get_input_standard, input_filter, get_program_dict, run
 from art import tprint
 from .params import NAFAS_VERSION
 
