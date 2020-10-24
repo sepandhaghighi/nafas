@@ -151,7 +151,3 @@ def run(program_dict):
                 time.sleep(unit * item)
         line()
     print("End!")
-
-
-
-

@@ -16,4 +16,3 @@ if __name__ == "__main__":
         filtered_data = input_filter(input_data)
         program_data = get_program_dict(filtered_data)
         run(program_data)
-
