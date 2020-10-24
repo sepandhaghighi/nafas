@@ -69,7 +69,7 @@ def description_print():
 
     :return: None
     """
-    print("\n".join(justify(DESCRIPTION.split(),70)))
+    print("\n".join(justify(DESCRIPTION.split(),100)))
     print("\n")
 
 
