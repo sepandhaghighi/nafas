@@ -145,8 +145,11 @@ def run(program_dict):
         print(i + 1)
         time.sleep(unit)
     line()
+    time.sleep(0.5)
     print("Start")
+    time.sleep(0.5)
     line()
+    time.sleep(0.5)
     for i in range(cycle):
         print("Cycle : " + str(i + 1))
         for index, item in enumerate(ratio):
@@ -165,5 +168,6 @@ def run(program_dict):
                 if remain_time != 0:
                     print('.', end=' ', flush=True)
                 print()
+        time.sleep(1)
         line()
     print("End!")
