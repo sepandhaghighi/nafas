@@ -157,6 +157,13 @@ def run(program_dict):
                     " for {0} sec".format(
                         unit *
                         item))
-                time.sleep(unit * item)
+                for _ in range(int(item * unit)):
+                    time.sleep(1)
+                    print('.', end=' ', flush=True)
+                remain_time = unit * item - int(item * unit)
+                time.sleep(remain_time)
+                if remain_time != 0:
+                    print('.', end=' ', flush=True)
+                print()
         line()
     print("End!")
