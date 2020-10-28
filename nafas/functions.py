@@ -168,6 +168,7 @@ def run(program_dict):
     time.sleep(0.5)
     for i in range(cycle):
         print("Cycle : " + str(i + 1))
+        time.sleep(0.5)
         for index, item in enumerate(ratio):
             if item != 0:
                 print(
