@@ -159,9 +159,7 @@ def run(program_dict):
     unit = program_dict["unit"]
     pre = program_dict["pre"]
     print("Preparing . . .")
-    for i in range(pre):
-        print(i + 1)
-        time.sleep(unit)
+    graphic_counter(pre * unit)
     line()
     time.sleep(0.5)
     print("Start")
