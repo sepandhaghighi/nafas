@@ -128,6 +128,24 @@ def get_program_dict(input_dict):
     return PROGRAMS[program_name][level]
 
 
+def graphic_counter(delay_time):
+    """
+    Print dots during cycles.
+
+    :param delay_time: delay time
+    :type delay_time: float
+    :return: None
+    """
+    for _ in range(int(delay_time)):
+        time.sleep(1)
+        print('.', end=' ', flush=True)
+    remain_time = delay_time - int(delay_time)
+    time.sleep(remain_time)
+    if remain_time != 0:
+        print('.', end=' ', flush=True)
+    print()
+
+
 def run(program_dict):
     """
     Run program.
@@ -145,8 +163,11 @@ def run(program_dict):
         print(i + 1)
         time.sleep(unit)
     line()
+    time.sleep(0.5)
     print("Start")
+    time.sleep(0.5)
     line()
+    time.sleep(0.5)
     for i in range(cycle):
         print("Cycle : " + str(i + 1))
         for index, item in enumerate(ratio):
@@ -157,6 +178,7 @@ def run(program_dict):
                     " for {0} sec".format(
                         unit *
                         item))
-                time.sleep(unit * item)
+                graphic_counter(item * unit)
+        time.sleep(1)
         line()
     print("End!")
