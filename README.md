@@ -126,7 +126,20 @@ or send an email to [sepand@pyrgg.ir](mailto:sepand@pyrgg.ir "sepand@pyrgg.ir").
  			
 
 ## References
-					
+
+<blockquote>1- <a href="https://pranabreath.info">Prana Breath</a> </blockquote>
+
+<blockquote>2- Rickard, Kathleen Benjamin, Dorothy J. Dunn, and Virginia M. Brouch. "Breathing techniques associated with improved health outcomes." (2015). </blockquote>
+
+<blockquote>3- Zaccaro, Andrea, Andrea Piarulli, Marco Laurino, Erika Garbella, Danilo Menicucci, Bruno Neri, and Angelo Gemignani. "How breath-control can change your life: a systematic review on psycho-physiological correlates of slow breathing." Frontiers in human neuroscience 12 (2018): 353. </blockquote>
+
+<blockquote>4- Brook, Robert D., Lawrence J. Appel, Melvyn Rubenfire, Gbenga Ogedegbe, John D. Bisognano, William J. Elliott, Flavio D. Fuchs et al. "Beyond medications and diet: alternative approaches to lowering blood pressure: a scientific statement from the American Heart Association." Hypertension 61, no. 6 (2013): 1360-1383. </blockquote>	
+
+<blockquote>5- Russo, Marc A., Danielle M. Santarelli, and Dean O’Rourke. "The physiological effects of slow breathing in the healthy human." Breathe 13, no. 4 (2017): 298-309. </blockquote>	
+
+<blockquote>6- Bujatti, M., and P. Biederer. "Serotonin, noradrenaline, dopamine metabolites in transcendental meditation-technique." Journal of Neural Transmission 39, no. 3 (1976): 257-267. </blockquote>
+
+<blockquote>7- Martarelli, Daniele, Mario Cocchioni, Stefania Scuri, and Pierluigi Pompei. "Diaphragmatic breathing reduces exercise-induced oxidative stress." Evidence-Based Complementary and Alternative Medicine 2011 (2011). </blockquote>				
   						
  
 ## Donate to our project		
