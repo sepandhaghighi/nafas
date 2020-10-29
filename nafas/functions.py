@@ -158,18 +158,17 @@ def run(program_dict):
     ratio = program_dict["ratio"]
     unit = program_dict["unit"]
     pre = program_dict["pre"]
-    print("Preparing . . .")
-    for i in range(pre):
-        print(i + 1)
-        time.sleep(unit)
+    print("Preparing ", end="")
+    graphic_counter(pre * unit)
     line()
-    time.sleep(0.5)
+    time.sleep(unit / 2)
     print("Start")
-    time.sleep(0.5)
+    time.sleep(unit / 2)
     line()
-    time.sleep(0.5)
+    time.sleep(unit / 2)
     for i in range(cycle):
         print("Cycle : " + str(i + 1))
+        time.sleep(unit / 2)
         for index, item in enumerate(ratio):
             if item != 0:
                 print(
