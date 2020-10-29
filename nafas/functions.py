@@ -158,7 +158,7 @@ def run(program_dict):
     ratio = program_dict["ratio"]
     unit = program_dict["unit"]
     pre = program_dict["pre"]
-    print("Preparing . . .")
+    print("Preparing ", end="")
     graphic_counter(pre * unit)
     line()
     time.sleep(unit / 2)
