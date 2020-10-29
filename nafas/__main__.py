@@ -2,9 +2,9 @@
 """nafas main."""
 
 import sys
-from .functions import description_print, get_input_standard, input_filter, get_program_dict, run
+from nafas.functions import description_print, get_input_standard, input_filter, get_program_dict, run
+from nafas.params import NAFAS_VERSION
 from art import tprint
-from .params import NAFAS_VERSION
 
 if __name__ == "__main__":
     args = sys.argv
