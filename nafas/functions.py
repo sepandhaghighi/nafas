@@ -119,20 +119,20 @@ def program_description_print(program_name, level, program_data):
     print(PROGRAM_DESCRIPTION.format(program_name,level,str(cycle),time_convert(str(total_time)),sequence))
     time.sleep(1)
 
-def input_filter(input_dict):
+def input_filter(input_data):
     """
     Filter input data.
 
-    :param input_dict: input data
-    :type input_dict: dict
+    :param input_data: input data
+    :type input_data: dict
     :return: filtered data as dict
     """
-    filtered_dict = input_dict.copy()
-    if filtered_dict["program"] not in STANDARD_MENU["program"].keys():
-        filtered_dict["program"] = 1
-    if filtered_dict["level"] not in STANDARD_MENU["level"].keys():
-        filtered_dict["level"] = 1
-    return filtered_dict
+    filtered_data = input_data.copy()
+    if filtered_data["program"] not in STANDARD_MENU["program"].keys():
+        filtered_data["program"] = 1
+    if filtered_data["level"] not in STANDARD_MENU["level"].keys():
+        filtered_data["level"] = 1
+    return filtered_data
 
 
 def get_input_standard(input_func=input):
@@ -143,7 +143,7 @@ def get_input_standard(input_func=input):
     :type input_func : function object
     :return: input data as dict
     """
-    input_dict = {"program": 1, "level": 1}
+    input_data = {"program": 1, "level": 1}
     for item in sorted(STANDARD_MENU.keys()):
         exit_flag = False
         sorted_list = sorted(list(STANDARD_MENU[item].keys()))
@@ -152,23 +152,23 @@ def get_input_standard(input_func=input):
             print(str(i) + "- " + STANDARD_MENU[item][i])
         while not exit_flag:
             try:
-                input_dict[item] = int(input_func(""))
+                input_data[item] = int(input_func(""))
                 exit_flag = True
             except Exception:
                 print("[Error] Bad Input!")
-    return input_dict
+    return input_data
 
 
-def get_program_data(input_dict):
+def get_program_data(input_data):
     """
     Get program data.
 
-    :param input_dict: input data
-    :type input_dict: dict
+    :param input_data: input data
+    :type input_data: dict
     :return: program name, level and program data as tuple
     """
-    program_name = STANDARD_MENU["program"][input_dict["program"]]
-    level = STANDARD_MENU["level"][input_dict["level"]]
+    program_name = STANDARD_MENU["program"][input_data["program"]]
+    level = STANDARD_MENU["level"][input_data["level"]]
     return program_name,level,PROGRAMS[program_name][level]
 
 
@@ -190,18 +190,18 @@ def graphic_counter(delay_time):
     print()
 
 
-def run(program_dict):
+def run(program_data):
     """
     Run program.
 
-    :param program_dict: program data
-    :type program_dict: dict
+    :param program_data: program data
+    :type program_data: dict
     :return: None
     """
-    cycle = program_dict["cycle"]
-    ratio = program_dict["ratio"]
-    unit = program_dict["unit"]
-    pre = program_dict["pre"]
+    cycle = program_data["cycle"]
+    ratio = program_data["ratio"]
+    unit = program_data["unit"]
+    pre = program_data["pre"]
     print("Preparing ", end="")
     graphic_counter(pre)
     line()
