@@ -19,6 +19,7 @@ Total Time       : {2}
 
 Sequence         : {3}
 """
+
 STANDARD_MENU = {
     "program": {
         1: "Clear Mind",

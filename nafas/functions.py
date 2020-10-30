@@ -117,17 +117,17 @@ def get_input_standard(input_func=input):
     return input_dict
 
 
-def get_program_dict(input_dict):
+def get_program_data(input_dict):
     """
-    Get program dictionary.
+    Get program data.
 
     :param input_dict: input data
     :type input_dict: dict
-    :return: program data as dict
+    :return: program name, level and program data as tuple
     """
     program_name = STANDARD_MENU["program"][input_dict["program"]]
     level = STANDARD_MENU["level"][input_dict["level"]]
-    return PROGRAMS[program_name][level]
+    return program_name,level,PROGRAMS[program_name][level]
 
 
 def graphic_counter(delay_time):
