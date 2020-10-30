@@ -2,7 +2,7 @@
 """nafas functions."""
 
 import time
-from nafas.params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS
+from nafas.params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION
 
 
 def line(num=70, char="#"):
@@ -17,6 +17,24 @@ def line(num=70, char="#"):
     """
     print(num * char)
 
+
+def time_convert(input_string):
+    """
+    Convert input_string from sec to DD,HH,MM,SS format.
+    :param input_string: input time string in sec
+    :type input_string: str
+    :return: converted time as str
+    """
+    sec = float(input_string)
+    days, sec = divmod(sec, 24 * 3600)
+    hours, sec = divmod(sec, 3600)
+    minutes, sec = divmod(sec, 60)
+    return ", ".join([
+        "{:02.0f} days".format(days),
+        "{:02.0f} hour".format(hours),
+        "{:02.0f} minutes".format(minutes),
+        "{:02.0f} seconds".format(sec),
+    ])
 
 def left_justify(words, width):
     """
@@ -74,8 +92,20 @@ def description_print():
     print("\n".join(justify(DESCRIPTION.split(), 100)))
     print("\n")
 
-def program_description_print():
-    pass
+def program_description_print(program_name, level, program_data):
+    cycle = program_data["cycle"]
+    ratio = program_data["ratio"]
+    unit = program_data["unit"]
+    pre = program_data["pre"]
+    unit_time = 0
+    sequence = []
+    for index,item in enumerate(ratio):
+        unit_time += item * unit
+        if item!=0:
+            sequence.append(STEP_MAP[index])
+    sequence = ",".join(sequence)
+    total_time = (unit_time * cycle) + pre
+    print(PROGRAM_DESCRIPTION.format(program_name,str(cycle),time_convert(str(total_time)),sequence))
 
 def input_filter(input_dict):
     """
