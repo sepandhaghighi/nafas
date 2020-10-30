@@ -34,6 +34,7 @@ def time_convert(input_time):
         "{:02.0f} seconds".format(sec),
     ])
 
+
 def left_justify(words, width):
     """
     Left justify words.
@@ -90,6 +91,7 @@ def description_print():
     print("\n".join(justify(DESCRIPTION.split(), 100)))
     print("\n")
 
+
 def program_description_print(program_name, level, program_data):
     """
     Print program description.
@@ -108,16 +110,23 @@ def program_description_print(program_name, level, program_data):
     pre = program_data["pre"]
     unit_time = 0
     sequence = []
-    for index,item in enumerate(ratio):
+    for index, item in enumerate(ratio):
         unit_time += item * unit
-        if item!=0:
+        if item != 0:
             sequence.append(STEP_MAP[index])
     sequence = ", ".join(sequence)
     total_time = (unit_time * cycle) + pre
     line()
-    print(PROGRAM_DESCRIPTION.format(program_name,level,str(cycle),time_convert(total_time),sequence))
+    print(
+        PROGRAM_DESCRIPTION.format(
+            program_name,
+            level,
+            str(cycle),
+            time_convert(total_time),
+            sequence))
     line()
     time.sleep(1)
+
 
 def input_filter(input_data):
     """
@@ -169,7 +178,7 @@ def get_program_data(input_data):
     """
     program_name = STANDARD_MENU["program"][input_data["program"]]
     level = STANDARD_MENU["level"][input_data["level"]]
-    return program_name,level,PROGRAMS[program_name][level]
+    return program_name, level, PROGRAMS[program_name][level]
 
 
 def graphic_counter(delay_time):
