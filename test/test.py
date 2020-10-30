@@ -42,7 +42,7 @@ True
 True
 >>> input_data["level"] == 1
 True
->>> program_data = get_program_dict({"program":1,"level":1})
+>>> program_data = get_program_data({"program":1,"level":1})
 >>> program_data["pre"] == 3
 True
 >>> program_data["unit"] == 3
