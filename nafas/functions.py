@@ -105,7 +105,7 @@ def program_description_print(program_name, level, program_data):
             sequence.append(STEP_MAP[index])
     sequence = ",".join(sequence)
     total_time = (unit_time * cycle) + pre
-    print(PROGRAM_DESCRIPTION.format(program_name,str(cycle),time_convert(str(total_time)),sequence))
+    print(PROGRAM_DESCRIPTION.format(program_name,level,str(cycle),time_convert(str(total_time)),sequence))
 
 def input_filter(input_dict):
     """

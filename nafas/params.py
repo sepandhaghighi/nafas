@@ -13,11 +13,13 @@ NAFAS_VERSION = "0.1"
 PROGRAM_DESCRIPTION = """
 Program Name     : {0}
 
-Number of Cycles : {1}
+Level            : {1}
 
-Total Time       : {2}
+Number of Cycles : {2}
 
-Sequence         : {3}
+Total Time       : {3}
+
+Sequence         : {4}
 """
 
 STANDARD_MENU = {
