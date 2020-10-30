@@ -112,9 +112,11 @@ def program_description_print(program_name, level, program_data):
         unit_time += item * unit
         if item!=0:
             sequence.append(STEP_MAP[index])
-    sequence = ",".join(sequence)
+    sequence = ", ".join(sequence)
     total_time = (unit_time * cycle) + pre
+    line()
     print(PROGRAM_DESCRIPTION.format(program_name,level,str(cycle),time_convert(total_time),sequence))
+    line()
     time.sleep(1)
 
 def input_filter(input_data):

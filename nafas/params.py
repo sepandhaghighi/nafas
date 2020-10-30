@@ -10,8 +10,9 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 
 NAFAS_VERSION = "0.1"
 
-PROGRAM_DESCRIPTION = """
-Program Name     : {0}
+PROGRAM_DESCRIPTION = """Program Details :
+
+Name             : {0}
 
 Level            : {1}
 
