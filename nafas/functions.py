@@ -18,14 +18,14 @@ def line(num=70, char="#"):
     print(num * char)
 
 
-def time_convert(input_string):
+def time_convert(input_time):
     """
-    Convert input_string from sec to DD,HH,MM,SS format.
-    :param input_string: input time string in sec
-    :type input_string: str
+    Convert input time from sec to DD,HH,MM,SS format.
+    :param input_time: input time in sec
+    :type input_time: float
     :return: converted time as str
     """
-    sec = float(input_string)
+    sec = float(input_time)
     _days, sec = divmod(sec, 24 * 3600)
     _hours, sec = divmod(sec, 3600)
     minutes, sec = divmod(sec, 60)
@@ -114,7 +114,7 @@ def program_description_print(program_name, level, program_data):
             sequence.append(STEP_MAP[index])
     sequence = ",".join(sequence)
     total_time = (unit_time * cycle) + pre
-    print(PROGRAM_DESCRIPTION.format(program_name,level,str(cycle),time_convert(str(total_time)),sequence))
+    print(PROGRAM_DESCRIPTION.format(program_name,level,str(cycle),time_convert(total_time),sequence))
     time.sleep(1)
 
 def input_filter(input_data):
