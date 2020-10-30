@@ -10,6 +10,15 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 
 NAFAS_VERSION = "0.1"
 
+PROGRAM_DESCRIPTION = """
+Program Name     : {0}
+
+Number of Cycles : {1}
+
+Total Time       : {2}
+
+Sequence         : {3}
+"""
 STANDARD_MENU = {
     "program": {
         1: "Clear Mind",

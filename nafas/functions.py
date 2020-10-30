@@ -74,6 +74,8 @@ def description_print():
     print("\n".join(justify(DESCRIPTION.split(), 100)))
     print("\n")
 
+def program_description_print():
+    pass
 
 def input_filter(input_dict):
     """
