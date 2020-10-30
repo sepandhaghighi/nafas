@@ -1,9 +1,5 @@
-
-							
-
-
 <div align="center">
-<img src="" height=240px width=320px>
+<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/logo.png" height=320px width=320px>
 <hr/>
 <h1>Nafas</h1>
 
@@ -24,13 +20,16 @@
    * [Contribution](https://github.com/sepandhaghighi/nafas/blob/master/.github/CONTRIBUTING.md)
    * [References](https://github.com/sepandhaghighi/nafas#references)
    * [Authors](https://github.com/sepandhaghighi/nafas/blob/master/AUTHORS.md)
-   * [License](https://github.com/sepandhaghighi/nafas#license)
+   * [License](https://github.com/sepandhaghighi/nafas/blob/master/LICENSE)
    * [Donate](https://github.com/sepandhaghighi/nafas#donate-to-our-project)
    * [Changelog](https://github.com/sepandhaghighi/nafas/blob/master/CHANGELOG.md)
    * [Code of Conduct](https://github.com/sepandhaghighi/nafas/blob/master/.github/CODE_OF_CONDUCT.md)			
 				
-## Overview			
---
+## Overview						
+Breathing gymnastics is a system of breathing exercises that focuses on the treatment of various diseases and general health promotion.
+Nafas is a collection of breathing gymnastics designed to reduce the exhaustion of long working hours.
+With multiple breathing patterns, Nafas helps you find your way to a detoxified energetic workday and also improves your concentration by increasing the oxygen level.
+No need to walk away to take a break, just sit comfortably, run Nafas and let the journey begin.
 
 <table>
 	<tr> 
@@ -62,8 +61,8 @@
 	</tr>
 	<tr>
 		<td align="center">AppVeyor</td>
-		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/nafas"><img src=""></a></td>
-		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/nafas"><img src=""></a></td>
+		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/nafas"><img src="https://ci.appveyor.com/api/projects/status/3au823bgsaupgsup/branch/master?svg=true"></a></td>
+		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/nafas"><img src="https://ci.appveyor.com/api/projects/status/3au823bgsaupgsup/branch/dev?svg=true"></a></td>
 	</tr>
 </table>
 
@@ -71,8 +70,9 @@
 <table>
 	<tr> 
 		<td align="center">Code Quality</td>
-		<td align="center"></td>	
-		<td align="center"></td>		
+		<td align="center"><a href="https://www.codacy.com/manual/sepand-haghighi/nafas?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sepandhaghighi/nafas&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/b2be5ce052bc43a89713ac4aec6f8d11"/></a></td>	
+		<td align="center"><a href="https://codebeat.co/projects/github-com-sepandhaghighi-nafas-dev"><img alt="codebeat badge" src="https://codebeat.co/badges/8b698b49-aa54-4419-a2ba-1367e8c6c08c" /></a></td>	
+		<td align="center"><a href="https://www.codefactor.io/repository/github/sepandhaghighi/nafas"><img src="https://www.codefactor.io/repository/github/sepandhaghighi/nafas/badge" alt="CodeFactor" /></a></td>		
 	</tr>
 </table>
 
@@ -99,7 +99,8 @@
 
 <div align="center">
 
-asciinema demo
+<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/help.gif">
+<p>Screen Record</p>
 
 </div>
 
@@ -107,7 +108,7 @@ asciinema demo
 ## Issues & Bug Reports			
 
 Just fill an issue and describe it. I'll check it ASAP!							
-or send an email to [info@pyrgg.ir](mailto:info@pyrgg.ir "info@pyrgg.ir"). 
+or send an email to [sepand@pyrgg.ir](mailto:sepand@pyrgg.ir "sepand@pyrgg.ir"). 
 
 
 ## Dependencies
@@ -124,12 +125,21 @@ or send an email to [info@pyrgg.ir](mailto:info@pyrgg.ir "info@pyrgg.ir").
 </table>
  			
 
-## License
-
-
-
 ## References
-					
+
+<blockquote>1- <a href="https://pranabreath.info">Prana Breath</a> </blockquote>
+
+<blockquote>2- Rickard, Kathleen Benjamin, Dorothy J. Dunn, and Virginia M. Brouch. "Breathing techniques associated with improved health outcomes." (2015). </blockquote>
+
+<blockquote>3- Zaccaro, Andrea, Andrea Piarulli, Marco Laurino, Erika Garbella, Danilo Menicucci, Bruno Neri, and Angelo Gemignani. "How breath-control can change your life: a systematic review on psycho-physiological correlates of slow breathing." Frontiers in human neuroscience 12 (2018): 353. </blockquote>
+
+<blockquote>4- Brook, Robert D., Lawrence J. Appel, Melvyn Rubenfire, Gbenga Ogedegbe, John D. Bisognano, William J. Elliott, Flavio D. Fuchs et al. "Beyond medications and diet: alternative approaches to lowering blood pressure: a scientific statement from the American Heart Association." Hypertension 61, no. 6 (2013): 1360-1383. </blockquote>	
+
+<blockquote>5- Russo, Marc A., Danielle M. Santarelli, and Dean O’Rourke. "The physiological effects of slow breathing in the healthy human." Breathe 13, no. 4 (2017): 298-309. </blockquote>	
+
+<blockquote>6- Bujatti, M., and P. Biederer. "Serotonin, noradrenaline, dopamine metabolites in transcendental meditation-technique." Journal of Neural Transmission 39, no. 3 (1976): 257-267. </blockquote>
+
+<blockquote>7- Martarelli, Daniele, Mario Cocchioni, Stefania Scuri, and Pierluigi Pompei. "Diaphragmatic breathing reduces exercise-induced oxidative stress." Evidence-Based Complementary and Alternative Medicine 2011 (2011). </blockquote>				
   						
  
 ## Donate to our project		
