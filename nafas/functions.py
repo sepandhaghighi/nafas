@@ -26,12 +26,10 @@ def time_convert(input_string):
     :return: converted time as str
     """
     sec = float(input_string)
-    days, sec = divmod(sec, 24 * 3600)
-    hours, sec = divmod(sec, 3600)
+    _days, sec = divmod(sec, 24 * 3600)
+    _hours, sec = divmod(sec, 3600)
     minutes, sec = divmod(sec, 60)
     return ", ".join([
-        "{:02.0f} days".format(days),
-        "{:02.0f} hour".format(hours),
         "{:02.0f} minutes".format(minutes),
         "{:02.0f} seconds".format(sec),
     ])
