@@ -93,6 +93,17 @@ def description_print():
     print("\n")
 
 def program_description_print(program_name, level, program_data):
+    """
+    Print program description.
+
+    :param program_name: program name
+    :type program_name: str
+    :param level: program level
+     :type level: str
+    :param program_data: program data
+    :type program_data: dict
+    :return: None
+    """
     cycle = program_data["cycle"]
     ratio = program_data["ratio"]
     unit = program_data["unit"]
@@ -106,6 +117,7 @@ def program_description_print(program_name, level, program_data):
     sequence = ",".join(sequence)
     total_time = (unit_time * cycle) + pre
     print(PROGRAM_DESCRIPTION.format(program_name,level,str(cycle),time_convert(str(total_time)),sequence))
+    time.sleep(1)
 
 def input_filter(input_dict):
     """
