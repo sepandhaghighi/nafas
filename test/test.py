@@ -47,6 +47,21 @@ True
 True
 >>> program_data["unit"] == 3
 True
+>>> program_description_print("Clear Mind","Beginner",{"ratio": [1, 0, 3, 0], "unit": 3, "pre": 3, "cycle": 35})
+######################################################################
+Program Details :
+<BLANKLINE>
+Name             : Clear Mind
+<BLANKLINE>
+Level            : Beginner
+<BLANKLINE>
+Number of Cycles : 35
+<BLANKLINE>
+Total Time       : 07 minutes, 03 seconds
+<BLANKLINE>
+Sequence         : Inhale, Exhale
+<BLANKLINE>
+######################################################################
 >>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3, 0]})
 Preparing . . . 
 ######################################################################
