@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `get_program_dict` function renamed to `get_program_data`
 - `program_dict` parameter renamed to `program_data`
 - `input_dict` parameter renamed to `input_data`
+- `README.md` updated
 ## [0.1] - 2020-10-30
 ### Added
 - Clear Mind program
