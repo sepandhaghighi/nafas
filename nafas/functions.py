@@ -20,7 +20,7 @@ def line(num=70, char="#"):
 
 def time_convert(input_time):
     """
-    Convert input time from sec to DD,HH,MM,SS format.
+    Convert input time from sec to MM,SS format.
     
     :param input_time: input time in sec
     :type input_time: float
