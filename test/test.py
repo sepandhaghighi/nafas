@@ -42,27 +42,42 @@ True
 True
 >>> input_data["level"] == 1
 True
->>> program_data = get_program_dict({"program":1,"level":1})
+>>> program_name,level,program_data = get_program_data({"program":1,"level":1})
 >>> program_data["pre"] == 3
 True
 >>> program_data["unit"] == 3
 True
+>>> program_description_print("Clear Mind","Beginner",{"ratio": [1, 0, 3, 0], "unit": 3, "pre": 3, "cycle": 35})
+######################################################################
+Program Details :
+<BLANKLINE>
+Name             : Clear Mind
+<BLANKLINE>
+Level            : Beginner
+<BLANKLINE>
+Number of Cycles : 35
+<BLANKLINE>
+Total Time       : 07 minutes, 03 seconds
+<BLANKLINE>
+Sequence         : Inhale, Exhale
+<BLANKLINE>
+######################################################################
 >>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3, 0]})
-Preparing . . . 
+Preparing . . .
 ######################################################################
 Start
 ######################################################################
 Cycle : 1
 - Inhale for 1 sec
-. 
+.
 - Exhale for 3 sec
-. . . 
+. . .
 ######################################################################
 Cycle : 2
 - Inhale for 1 sec
-. 
+.
 - Exhale for 3 sec
-. . . 
+. . .
 ######################################################################
 End!
 >>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]})
@@ -72,15 +87,15 @@ Start
 ######################################################################
 Cycle : 1
 - Inhale for 1 sec
-. 
+.
 - Exhale for 3.3 sec
-. . . . 
+. . . .
 ######################################################################
 Cycle : 2
 - Inhale for 1 sec
-. 
+.
 - Exhale for 3.3 sec
-. . . . 
+. . . .
 ######################################################################
 End!
 

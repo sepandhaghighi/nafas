@@ -5,6 +5,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- `program_description_print` function
+- `time_convert` function
+### Changed
+- Menu optimized
+- `get_program_dict` function renamed to `get_program_data`
+- `program_dict` parameter renamed to `program_data`
+- `input_dict` parameter renamed to `input_data`
+- `README.md` updated
 ## [0.1] - 2020-10-30
 ### Added
 - Clear Mind program

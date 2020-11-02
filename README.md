@@ -30,6 +30,7 @@ Breathing gymnastics is a system of breathing exercises that focuses on the trea
 Nafas is a collection of breathing gymnastics designed to reduce the exhaustion of long working hours.
 With multiple breathing patterns, Nafas helps you find your way to a detoxified energetic workday and also improves your concentration by increasing the oxygen level.
 No need to walk away to take a break, just sit comfortably, run Nafas and let the journey begin.
+**Nafas** means breath in Persian.
 
 <table>
 	<tr> 
