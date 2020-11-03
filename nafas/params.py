@@ -185,3 +185,11 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Harmony": {"Beginner": HARMONY_BEGINNER,
                         "Medium": HARMONY_MEDIUM,
                         "Advanced": HARMONY_ADVANCED}}
+
+
+SOUND_MAP = {
+    "Inhale": "inhale.wav",
+    "Exhale": "exhale.wav",
+    "Retain": "retain.wav",
+    "Sustain": "sustain.wav"
+}
