@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- item sound effects
+- `SOUND_MAP` parameter
+- `inhale.wav`
+- `exhale.wav`
+- `sustain.wav`
+- `retain.wav`
+- `get_sound_path` function
 - `program_description_print` function
 - `time_convert` function
 ### Changed
