@@ -2,8 +2,9 @@
 """nafas functions."""
 
 import time
-from nafas.params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION
-
+from nafas.params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP
+from playsound import playsound
+import os
 
 def line(num=70, char="#"):
     """
@@ -182,6 +183,18 @@ def get_program_data(input_data):
     return program_name, level, PROGRAMS[program_name][level]
 
 
+def get_sound_path(sound_name):
+    """
+    Return sound path.
+
+    :param sound_name: .wav sound name
+    :type sound_name: string
+    :return: direct path to sound
+    """
+    cd, _ = os.path.split(__file__)
+    return os.path.join(cd, "sounds", sound_name)
+
+
 def graphic_counter(delay_time):
     """
     Print dots during cycles.
@@ -225,9 +238,11 @@ def run(program_data):
         time.sleep(unit / 2)
         for index, item in enumerate(ratio):
             if item != 0:
+                item_name = STEP_MAP[index]
+                playsound(get_sound_path(SOUND_MAP[item_name]))
                 print(
                     "- " +
-                    STEP_MAP[index] +
+                    item_name +
                     " for {0} sec".format(
                         unit *
                         item))
