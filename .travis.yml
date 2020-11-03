@@ -35,6 +35,7 @@ matrix:
           python: nightly
           dist: xenial
 install:
+  - export AUDIODEV=null
   - chmod +x .travis/install.sh
   - .travis/install.sh
 before_script:
