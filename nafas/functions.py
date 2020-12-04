@@ -3,8 +3,10 @@
 
 import time
 from nafas.params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP
-from playsound import playsound
+import playsound
+import threading
 import os
+
 
 def line(num=70, char="#"):
     """
@@ -213,6 +215,19 @@ def graphic_counter(delay_time):
     print()
 
 
+def play_sound(sound_path):
+    """
+    Play inputted sound file async
+
+    :param sound_path: sound to path
+    :type sound_path: str
+    :return: None
+    """
+    threading.Thread(
+        target=playsound.playsound, args=(
+            sound_path,), daemon=True).start()
+
+
 def run(program_data):
     """
     Run program.
@@ -239,7 +254,7 @@ def run(program_data):
         for index, item in enumerate(ratio):
             if item != 0:
                 item_name = STEP_MAP[index]
-                playsound(get_sound_path(SOUND_MAP[item_name]))
+                play_sound(get_sound_path(SOUND_MAP[item_name]))
                 print(
                     "- " +
                     item_name +
