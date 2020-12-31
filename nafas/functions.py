@@ -217,7 +217,7 @@ def graphic_counter(delay_time):
 
 def play_sound(sound_path):
     """
-    Play inputted sound file async
+    Play inputted sound file async.
 
     :param sound_path: sound to path
     :type sound_path: str
