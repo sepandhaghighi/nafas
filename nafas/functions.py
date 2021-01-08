@@ -2,7 +2,7 @@
 """nafas functions."""
 
 import time
-from nafas.params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP
+from nafas.params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE
 import playsound
 import threading
 import os
@@ -254,7 +254,10 @@ def run(program_data):
         for index, item in enumerate(ratio):
             if item != 0:
                 item_name = STEP_MAP[index]
-                play_sound(get_sound_path(SOUND_MAP[item_name]))
+                try:
+                    play_sound(get_sound_path(SOUND_MAP[item_name]))
+                except:
+                    print(SOUND_ERROR_MESSAGE)
                 print(
                     "- " +
                     item_name +
