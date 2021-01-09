@@ -256,8 +256,8 @@ def run(program_data):
                 item_name = STEP_MAP[index]
                 try:
                     play_sound(get_sound_path(SOUND_MAP[item_name]))
-                except:
-                    print(SOUND_ERROR_MESSAGE)
+                except Exception:
+                    pass
                 print(
                     "- " +
                     item_name +
