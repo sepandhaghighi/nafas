@@ -215,17 +215,23 @@ def graphic_counter(delay_time):
     print()
 
 
-def play_sound(sound_path):
+def play_sound(sound_path, debug=False):
     """
     Play inputted sound file async.
 
     :param sound_path: sound to path
     :type sound_path: str
+    :param debug: debug mode flag
+    :type debug: bool
     :return: None
     """
-    threading.Thread(
-        target=playsound.playsound, args=(
-            sound_path,), daemon=True).start()
+    try:
+        threading.Thread(
+            target=playsound.playsound, args=(
+                sound_path,), daemon=True).start()
+    except Exception as e:
+        if debug:
+            print(str(e))
 
 
 def run(program_data):
@@ -253,11 +259,7 @@ def run(program_data):
         time.sleep(unit / 2)
         for index, item in enumerate(ratio):
             if item != 0:
-                item_name = STEP_MAP[index]
-                try:
-                    play_sound(get_sound_path(SOUND_MAP[item_name]))
-                except Exception:
-                    pass
+                play_sound(get_sound_path(SOUND_MAP[item_name]))
                 print(
                     "- " +
                     item_name +
