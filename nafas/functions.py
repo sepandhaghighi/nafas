@@ -259,6 +259,7 @@ def run(program_data):
         time.sleep(unit / 2)
         for index, item in enumerate(ratio):
             if item != 0:
+                item_name = STEP_MAP[index]
                 play_sound(get_sound_path(SOUND_MAP[item_name]))
                 print(
                     "- " +
