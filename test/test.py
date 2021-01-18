@@ -100,6 +100,6 @@ Cycle : 2
 End!
 >>> play_sound(1, debug=False).join()
 >>> play_sound(1, debug=True).join()
-'int' object has no attribute 'startswith'
+ERROR : Unable to play sound.
 
 """
