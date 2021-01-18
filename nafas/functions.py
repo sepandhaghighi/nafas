@@ -2,7 +2,7 @@
 """nafas functions."""
 
 import time
-from nafas.params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP
+from nafas.params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE
 import playsound
 import threading
 import os
@@ -229,7 +229,7 @@ def _playsound_async(sound_path, debug):
         playsound.playsound(sound_path)
     except Exception as e:
         if debug:
-            print(str(e))
+            print(SOUND_ERROR_MESSAGE)
 
 
 def play_sound(sound_path, debug=False):

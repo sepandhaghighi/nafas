@@ -10,6 +10,7 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 
 NAFAS_VERSION = "0.1"
 
+SOUND_ERROR_MESSAGE = "ERROR : Unable to play sound."
 
 PROGRAM_DESCRIPTION = """Program Details :
 
