@@ -98,8 +98,8 @@ Cycle : 2
 . . . .
 ######################################################################
 End!
->>> play_sound('1', debug=False)
->>> play_sound('1', debug=True)
->>> playbin.set_state returned <enum GST_STATE_CHANGE_FAILURE of type Gst.StateChangeReturn>
+>>> play_sound(1, debug=False).join()
+>>> play_sound(1, debug=True).join()
+'int' object has no attribute 'startswith'
 
 """
