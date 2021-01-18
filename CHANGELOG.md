@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- `_playsound_async` function
+- `play_sound` function
 - item sound effects
 - `SOUND_MAP` parameter
 - `inhale.wav`
