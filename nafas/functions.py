@@ -246,6 +246,7 @@ def play_sound(sound_path, debug=False):
         target=_playsound_async, args=(
             sound_path, debug,), daemon=True)
     new_thread.start()
+    return new_thread
 
 
 def run(program_data):
@@ -274,7 +275,7 @@ def run(program_data):
         for index, item in enumerate(ratio):
             if item != 0:
                 item_name = STEP_MAP[index]
-                play_sound(get_sound_path(SOUND_MAP[item_name]))
+                sound_thread = play_sound(get_sound_path(SOUND_MAP[item_name]))
                 print(
                     "- " +
                     item_name +
@@ -282,6 +283,7 @@ def run(program_data):
                         unit *
                         item))
                 graphic_counter(item * unit)
+                sound_thread.join()
         time.sleep(1)
         line()
     print("End!")
