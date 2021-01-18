@@ -227,7 +227,7 @@ def _playsound_async(sound_path, debug):
     """
     try:
         playsound.playsound(sound_path)
-    except Exception as e:
+    except Exception:
         if debug:
             print(SOUND_ERROR_MESSAGE)
 
