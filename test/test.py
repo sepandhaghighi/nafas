@@ -98,5 +98,8 @@ Cycle : 2
 . . . .
 ######################################################################
 End!
+>>> play_sound(1, debug=False).join()
+>>> play_sound(1, debug=True).join()
+ERROR : Unable to play sound.
 
 """

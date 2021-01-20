@@ -10,6 +10,8 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 
 NAFAS_VERSION = "0.1"
 
+SOUND_ERROR_MESSAGE = "ERROR : Unable to play sound."
+
 PROGRAM_DESCRIPTION = """Program Details :
 
 Name             : {0}
@@ -185,3 +187,11 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Harmony": {"Beginner": HARMONY_BEGINNER,
                         "Medium": HARMONY_MEDIUM,
                         "Advanced": HARMONY_ADVANCED}}
+
+
+SOUND_MAP = {
+    "Inhale": "inhale.wav",
+    "Exhale": "exhale.wav",
+    "Retain": "retain.wav",
+    "Sustain": "sustain.wav"
+}

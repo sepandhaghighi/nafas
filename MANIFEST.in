@@ -4,3 +4,4 @@ include *.spec
 include *.txt
 include *.yml
 include *.ini
+include nafas/sounds/*.wav

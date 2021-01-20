@@ -2,7 +2,10 @@
 """nafas functions."""
 
 import time
-from nafas.params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION
+from nafas.params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE
+import playsound
+import threading
+import os
 
 
 def line(num=70, char="#"):
@@ -182,6 +185,18 @@ def get_program_data(input_data):
     return program_name, level, PROGRAMS[program_name][level]
 
 
+def get_sound_path(sound_name):
+    """
+    Return sound path.
+
+    :param sound_name: .wav sound name
+    :type sound_name: string
+    :return: direct path to sound
+    """
+    cd, _ = os.path.split(__file__)
+    return os.path.join(cd, "sounds", sound_name)
+
+
 def graphic_counter(delay_time):
     """
     Print dots during cycles.
@@ -198,6 +213,40 @@ def graphic_counter(delay_time):
     if remain_time != 0:
         print('.', end=' ', flush=True)
     print()
+
+
+def _playsound_async(sound_path, debug):
+    """
+    Play sound asynchronous in a thread.
+
+    :param sound_path: sound to path
+    :type sound_path: str
+    :param debug: debug mode flag
+    :type debug: bool
+    :return: None
+    """
+    try:
+        playsound.playsound(sound_path)
+    except Exception:
+        if debug:
+            print(SOUND_ERROR_MESSAGE)
+
+
+def play_sound(sound_path, debug=False):
+    """
+    Play inputted sound file async.
+
+    :param sound_path: sound to path
+    :type sound_path: str
+    :param debug: debug mode flag
+    :type debug: bool
+    :return: None
+    """
+    new_thread = threading.Thread(
+        target=_playsound_async, args=(
+            sound_path, debug,), daemon=True)
+    new_thread.start()
+    return new_thread
 
 
 def run(program_data):
@@ -225,13 +274,16 @@ def run(program_data):
         time.sleep(unit / 2)
         for index, item in enumerate(ratio):
             if item != 0:
+                item_name = STEP_MAP[index]
+                sound_thread = play_sound(get_sound_path(SOUND_MAP[item_name]))
                 print(
                     "- " +
-                    STEP_MAP[index] +
+                    item_name +
                     " for {0} sec".format(
                         unit *
                         item))
                 graphic_counter(item * unit)
+                sound_thread.join()
         time.sleep(1)
         line()
     print("End!")
