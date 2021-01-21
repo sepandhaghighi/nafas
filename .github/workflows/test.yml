@@ -41,3 +41,6 @@ jobs:
         python -m vulture nafas/ setup.py --min-confidence 65 --exclude=__init__.py --sort-by-size
         python -m bandit -r nafas -s B311
         python -m pydocstyle --match-dir=nafas -v
+    - name: Codecov
+      run: |
+        codecov
