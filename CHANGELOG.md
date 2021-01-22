@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `time_convert` function
 ### Changed
 - Menu optimized
+- Test system modified
 - `get_program_dict` function renamed to `get_program_data`
 - `program_dict` parameter renamed to `program_data`
 - `input_dict` parameter renamed to `input_data`

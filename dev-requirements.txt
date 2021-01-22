@@ -1,4 +1,5 @@
 art==4.9
+playsound==1.2.2
 codecov>=2.0.15
 pytest>=4.3.1
 pytest-cov>=2.6.1
