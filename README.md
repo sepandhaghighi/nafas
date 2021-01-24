@@ -56,14 +56,9 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 		<td align="center">dev</td>	
 	</tr>
 	<tr>
-		<td align="center">Travis</td>
-		<td align="center"><a href="https://travis-ci.org/sepandhaghighi/nafas"><img src="https://travis-ci.org/sepandhaghighi/nafas.svg?branch=master"></a></td>
-		<td align="center"><a href="https://travis-ci.org/sepandhaghighi/nafas"><img src="https://travis-ci.org/sepandhaghighi/nafas.svg?branch=dev"></a></a></td>
-	</tr>
-	<tr>
-		<td align="center">AppVeyor</td>
-		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/nafas"><img src="https://ci.appveyor.com/api/projects/status/3au823bgsaupgsup/branch/master?svg=true"></a></td>
-		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/nafas"><img src="https://ci.appveyor.com/api/projects/status/3au823bgsaupgsup/branch/dev?svg=true"></a></td>
+		<td align="center">CI</td>
+		<td align="center"><img src="https://github.com/sepandhaghighi/nafas/workflows/CI/badge.svg?branch=master"></td>
+		<td align="center"><img src="https://github.com/sepandhaghighi/nafas/workflows/CI/badge.svg?branch=dev"></td>
 	</tr>
 </table>
 

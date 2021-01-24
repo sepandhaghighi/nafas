@@ -190,7 +190,7 @@ def get_sound_path(sound_name):
     Return sound path.
 
     :param sound_name: .wav sound name
-    :type sound_name: string
+    :type sound_name: str
     :return: direct path to sound
     """
     cd, _ = os.path.split(__file__)
@@ -219,7 +219,7 @@ def _playsound_async(sound_path, debug):
     """
     Play sound asynchronous in a thread.
 
-    :param sound_path: sound to path
+    :param sound_path: sound path
     :type sound_path: str
     :param debug: debug mode flag
     :type debug: bool
@@ -234,13 +234,13 @@ def _playsound_async(sound_path, debug):
 
 def play_sound(sound_path, debug=False):
     """
-    Play inputted sound file async.
+    Play inputted sound file.
 
-    :param sound_path: sound to path
+    :param sound_path: sound path
     :type sound_path: str
     :param debug: debug mode flag
     :type debug: bool
-    :return: None
+    :return: new thread as threading.Thread object
     """
     new_thread = threading.Thread(
         target=_playsound_async, args=(
