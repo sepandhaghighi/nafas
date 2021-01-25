@@ -8,7 +8,7 @@ With multiple breathing patterns, Nafas helps you find your way to a detoxified 
 No need to walk away to take a break, just sit comfortably, run Nafas and let the journey begin.
 """
 
-NAFAS_VERSION = "0.1"
+NAFAS_VERSION = "0.2"
 
 SOUND_ERROR_MESSAGE = "ERROR : Unable to play sound."
 
