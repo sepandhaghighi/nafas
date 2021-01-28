@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [0.2] - 2021-01-28
+## [0.2] - 2021-01-29
 ### Added
 - `_playsound_async` function
 - `play_sound` function
