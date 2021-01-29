@@ -33,6 +33,7 @@ setup(
     description='Breathing gymnastics application',
     long_description=read_description(),
     long_description_content_type='text/markdown',
+    include_package_data=True,
     author='Sepand Haghighi',
     author_email='sepand@pyrgg.ir',
     url='https://github.com/sepandhaghighi/nafas',
