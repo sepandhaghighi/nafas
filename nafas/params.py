@@ -8,7 +8,22 @@ With multiple breathing patterns, Nafas helps you find your way to a detoxified 
 No need to walk away to take a break, just sit comfortably, run Nafas and let the journey begin.
 """
 
-NAFAS_VERSION = "0.1"
+NAFAS_VERSION = "0.2"
+
+SOUND_ERROR_MESSAGE = "ERROR : Unable to play sound."
+
+PROGRAM_DESCRIPTION = """Program Details :
+
+Name             : {0}
+
+Level            : {1}
+
+Number of Cycles : {2}
+
+Total Time       : {3}
+
+Sequence         : {4}
+"""
 
 STANDARD_MENU = {
     "program": {
@@ -172,3 +187,11 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Harmony": {"Beginner": HARMONY_BEGINNER,
                         "Medium": HARMONY_MEDIUM,
                         "Advanced": HARMONY_ADVANCED}}
+
+
+SOUND_MAP = {
+    "Inhale": "inhale.wav",
+    "Exhale": "exhale.wav",
+    "Retain": "retain.wav",
+    "Sustain": "sustain.wav"
+}

@@ -30,6 +30,7 @@ Breathing gymnastics is a system of breathing exercises that focuses on the trea
 Nafas is a collection of breathing gymnastics designed to reduce the exhaustion of long working hours.
 With multiple breathing patterns, Nafas helps you find your way to a detoxified energetic workday and also improves your concentration by increasing the oxygen level.
 No need to walk away to take a break, just sit comfortably, run Nafas and let the journey begin.
+**Nafas** means breath in Persian.
 
 <table>
 	<tr> 
@@ -55,14 +56,9 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 		<td align="center">dev</td>	
 	</tr>
 	<tr>
-		<td align="center">Travis</td>
-		<td align="center"><a href="https://travis-ci.org/sepandhaghighi/nafas"><img src="https://travis-ci.org/sepandhaghighi/nafas.svg?branch=master"></a></td>
-		<td align="center"><a href="https://travis-ci.org/sepandhaghighi/nafas"><img src="https://travis-ci.org/sepandhaghighi/nafas.svg?branch=dev"></a></a></td>
-	</tr>
-	<tr>
-		<td align="center">AppVeyor</td>
-		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/nafas"><img src="https://ci.appveyor.com/api/projects/status/3au823bgsaupgsup/branch/master?svg=true"></a></td>
-		<td align="center"><a href="https://ci.appveyor.com/project/sepandhaghighi/nafas"><img src="https://ci.appveyor.com/api/projects/status/3au823bgsaupgsup/branch/dev?svg=true"></a></td>
+		<td align="center">CI</td>
+		<td align="center"><img src="https://github.com/sepandhaghighi/nafas/workflows/CI/badge.svg?branch=master"></td>
+		<td align="center"><img src="https://github.com/sepandhaghighi/nafas/workflows/CI/badge.svg?branch=dev"></td>
 	</tr>
 </table>
 
@@ -80,19 +76,19 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 ## Installation		
 
 ### Source Code
-- Download [Version 0.1](https://github.com/sepandhaghighi/nafas/archive/v0.1.zip) or [Latest Source ](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
+- Download [Version 0.2](https://github.com/sepandhaghighi/nafas/archive/v0.2.zip) or [Latest Source ](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
 - `pip install -r requirements.txt` or `pip3 install -r requirements.txt` (Need root access)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install nafas==0.1` or `pip3 install nafas==0.1` (Need root access)							
+- `pip install nafas==0.2` or `pip3 install nafas==0.2` (Need root access)							
 	
 
 ### Exe Version (Only Windows)
-- Download [Exe-Version 0.1](https://github.com/sepandhaghighi/nafas/releases/download/v0.1/NAFAS-0.1.exe)
-- Run `NAFAS-0.1.exe`
+- Download [Exe-Version 0.2](https://github.com/sepandhaghighi/nafas/releases/download/v0.2/NAFAS-0.2.exe)
+- Run `NAFAS-0.2.exe`
 
 
 ## Usage			
@@ -141,7 +137,9 @@ or send an email to [sepand@pyrgg.ir](mailto:sepand@pyrgg.ir "sepand@pyrgg.ir").
 
 <blockquote>7- Martarelli, Daniele, Mario Cocchioni, Stefania Scuri, and Pierluigi Pompei. "Diaphragmatic breathing reduces exercise-induced oxidative stress." Evidence-Based Complementary and Alternative Medicine 2011 (2011). </blockquote>				
   						
- 
+<blockquote>8- <a href="https://ttsmp3.com/">Free Text-To-Speech and Text-to-MP3 for US English</a> </blockquote>
+
+
 ## Donate to our project		
 							
 
