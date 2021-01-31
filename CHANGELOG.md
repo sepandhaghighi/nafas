@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Sounds bug in pypi fixed
 - Icon modified
+- Menu optimized
 ## [0.2] - 2021-01-29
 ### Added
 - `_playsound_async` function
