@@ -29,14 +29,15 @@ def read_description():
 setup(
     name='nafas',
     packages=['nafas'],
-    version='0.2',
+    version='0.3',
     description='Breathing gymnastics application',
     long_description=read_description(),
     long_description_content_type='text/markdown',
+    include_package_data=True,
     author='Sepand Haghighi',
     author_email='sepand@pyrgg.ir',
     url='https://github.com/sepandhaghighi/nafas',
-    download_url='https://github.com/sepandhaghighi/nafas/tarball/v0.2',
+    download_url='https://github.com/sepandhaghighi/nafas/tarball/v0.3',
     keywords="python3 python breath breathing meditation",
     project_urls={
         'Source': 'https://github.com/sepandhaghighi/nafas',

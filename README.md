@@ -76,19 +76,19 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 ## Installation		
 
 ### Source Code
-- Download [Version 0.2](https://github.com/sepandhaghighi/nafas/archive/v0.2.zip) or [Latest Source ](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
+- Download [Version 0.3](https://github.com/sepandhaghighi/nafas/archive/v0.3.zip) or [Latest Source ](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
 - `pip install -r requirements.txt` or `pip3 install -r requirements.txt` (Need root access)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install nafas==0.2` or `pip3 install nafas==0.2` (Need root access)							
+- `pip install nafas==0.3` or `pip3 install nafas==0.3` (Need root access)							
 	
 
 ### Exe Version (Only Windows)
-- Download [Exe-Version 0.2](https://github.com/sepandhaghighi/nafas/releases/download/v0.2/NAFAS-0.2.exe)
-- Run `NAFAS-0.2.exe`
+- Download [Exe-Version 0.3](https://github.com/sepandhaghighi/nafas/releases/download/v0.3/NAFAS-0.3.exe)
+- Run `NAFAS-0.3.exe`
 
 
 ## Usage			
