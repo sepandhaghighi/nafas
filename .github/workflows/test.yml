@@ -29,7 +29,8 @@ jobs:
         python -m nafas test
     - name: Install dev-requirements
       run: |
-        pip install --upgrade --upgrade-strategy=only-if-needed -r dev-requirements.txt
+        python otherfiles/requirements-splitter.py
+        pip install --upgrade --upgrade-strategy=only-if-needed -r test-requirements.txt
     - name: Version check
       run: |
         python otherfiles/version_check.py
