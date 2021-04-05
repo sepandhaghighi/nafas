@@ -34,7 +34,7 @@ STANDARD_MENU = {
         5: "Harmony",
         6: "Anti-Stress",
         7: "Anti-Appetite",
-        8: "Cigarette Replace"
+        8: "Cigarette Replace",
         9: "4-7-8(Relaxing)"},
     "level": {
         1: "Beginner",
