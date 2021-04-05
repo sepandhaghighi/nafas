@@ -104,11 +104,35 @@ FOUR_SEVEN_EIGHT_ADVANCED = {
     "pre": 3,
     "cycle": 12}
 
-SEVEN_ELEVEN_BEGINNER = {"ratio": [7, 0, 11, 0], "unit": 1, "pre": 3, "cycle": 15}
+SEVEN_ELEVEN_BEGINNER = {
+    "ratio": [
+        7,
+        0,
+        11,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 15}
 
-SEVEN_ELEVEN_MEDIUM = {"ratio": [7, 0, 11, 0], "unit": 1, "pre": 3, "cycle": 20}
+SEVEN_ELEVEN_MEDIUM = {
+    "ratio": [
+        7,
+        0,
+        11,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 20}
 
-SEVEN_ELEVEN_ADVANCED = {"ratio": [7, 0, 11, 0], "unit": 1, "pre": 3, "cycle": 24}
+SEVEN_ELEVEN_ADVANCED = {
+    "ratio": [
+        7,
+        0,
+        11,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 24}
 
 ANTI_STRESS_BEGINNER = {
     "ratio": [
@@ -226,11 +250,11 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                         "Medium": HARMONY_MEDIUM,
                         "Advanced": HARMONY_ADVANCED},
             "4-7-8(Relaxing Breath)": {"Beginner": FOUR_SEVEN_EIGHT_BEGINNER,
-                                "Medium": FOUR_SEVEN_EIGHT_MEDIUM,
-                                "Advanced": FOUR_SEVEN_EIGHT_ADVANCED},
+                                       "Medium": FOUR_SEVEN_EIGHT_MEDIUM,
+                                       "Advanced": FOUR_SEVEN_EIGHT_ADVANCED},
             "7-11(Relaxing Breath)": {"Beginner": SEVEN_ELEVEN_BEGINNER,
-                        "Medium": SEVEN_ELEVEN_MEDIUM,
-                        "Advanced": SEVEN_ELEVEN_ADVANCED}
+                                      "Medium": SEVEN_ELEVEN_MEDIUM,
+                                      "Advanced": SEVEN_ELEVEN_ADVANCED}
             }
 
 
