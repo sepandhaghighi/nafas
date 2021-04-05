@@ -35,7 +35,7 @@ STANDARD_MENU = {
         6: "Anti-Stress",
         7: "Anti-Appetite",
         8: "Cigarette Replace",
-        9: "4-7-8(Relaxing)"},
+        9: "4-7-8(Relaxing Breath)"},
     "level": {
         1: "Beginner",
         2: "Medium",
@@ -218,7 +218,7 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Harmony": {"Beginner": HARMONY_BEGINNER,
                         "Medium": HARMONY_MEDIUM,
                         "Advanced": HARMONY_ADVANCED},
-            "4-7-8(Relaxing)": {"Beginner": FOUR_SEVEN_EIGHT_BEGINNER,
+            "4-7-8(Relaxing Breath)": {"Beginner": FOUR_SEVEN_EIGHT_BEGINNER,
                                 "Medium": FOUR_SEVEN_EIGHT_MEDIUM,
                                 "Advanced": FOUR_SEVEN_EIGHT_ADVANCED}}
 
