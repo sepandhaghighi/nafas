@@ -34,7 +34,8 @@ STANDARD_MENU = {
         5: "Harmony",
         6: "Anti-Stress",
         7: "Anti-Appetite",
-        8: "Cigarette Replace"},
+        8: "Cigarette Replace",
+        9: "4-7-8(Relaxing Breath)"},
     "level": {
         1: "Beginner",
         2: "Medium",
@@ -71,6 +72,36 @@ HARMONY_BEGINNER = {"ratio": [1, 3, 2, 1], "unit": 3, "pre": 3, "cycle": 20}
 HARMONY_MEDIUM = {"ratio": [1, 4, 2, 1], "unit": 3, "pre": 3, "cycle": 18}
 
 HARMONY_ADVANCED = {"ratio": [1, 5, 2, 1], "unit": 3, "pre": 3, "cycle": 16}
+
+FOUR_SEVEN_EIGHT_BEGINNER = {
+    "ratio": [
+        4,
+        7,
+        8,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 4}
+
+FOUR_SEVEN_EIGHT_MEDIUM = {
+    "ratio": [
+        4,
+        7,
+        8,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 8}
+
+FOUR_SEVEN_EIGHT_ADVANCED = {
+    "ratio": [
+        4,
+        7,
+        8,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 12}
 
 ANTI_STRESS_BEGINNER = {
     "ratio": [
@@ -186,7 +217,10 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                                   "Advanced": CIGARETTE_REPLACE_ADVANCED},
             "Harmony": {"Beginner": HARMONY_BEGINNER,
                         "Medium": HARMONY_MEDIUM,
-                        "Advanced": HARMONY_ADVANCED}}
+                        "Advanced": HARMONY_ADVANCED},
+            "4-7-8(Relaxing Breath)": {"Beginner": FOUR_SEVEN_EIGHT_BEGINNER,
+                                "Medium": FOUR_SEVEN_EIGHT_MEDIUM,
+                                "Advanced": FOUR_SEVEN_EIGHT_ADVANCED}}
 
 
 SOUND_MAP = {
