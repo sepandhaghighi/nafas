@@ -19,7 +19,7 @@ let the journey begin.
 True
 >>> input_data["level"] == 1
 True
->>> input_data = input_filter({"program":10,"level":5})
+>>> input_data = input_filter({"program":11,"level":5})
 >>> input_data["program"] == 1
 True
 >>> input_data["level"] == 1
