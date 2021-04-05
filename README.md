@@ -135,9 +135,11 @@ or send an email to [sepand@pyrgg.ir](mailto:sepand@pyrgg.ir "sepand@pyrgg.ir").
 
 <blockquote>6- Bujatti, M., and P. Biederer. "Serotonin, noradrenaline, dopamine metabolites in transcendental meditation-technique." Journal of Neural Transmission 39, no. 3 (1976): 257-267. </blockquote>
 
-<blockquote>7- Martarelli, Daniele, Mario Cocchioni, Stefania Scuri, and Pierluigi Pompei. "Diaphragmatic breathing reduces exercise-induced oxidative stress." Evidence-Based Complementary and Alternative Medicine 2011 (2011). </blockquote>				
-  						
-<blockquote>8- <a href="https://ttsmp3.com/">Free Text-To-Speech and Text-to-MP3 for US English</a> </blockquote>
+<blockquote>7- Martarelli, Daniele, Mario Cocchioni, Stefania Scuri, and Pierluigi Pompei. "Diaphragmatic breathing reduces exercise-induced oxidative stress." Evidence-Based Complementary and Alternative Medicine 2011 (2011). </blockquote>		
+
+<blockquote>8- <a href="https://www.drweil.com/health-wellness/body-mind-spirit/stress-anxiety/breathing-three-exercises/">DrWeil, Integrative Medicine & Healthy Living</a> </blockquote>
+					
+<blockquote>9- <a href="https://ttsmp3.com/">Free Text-To-Speech and Text-to-MP3 for US English</a> </blockquote>
 
 
 ## Donate to our project		
