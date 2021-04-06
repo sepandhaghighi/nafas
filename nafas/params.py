@@ -8,7 +8,8 @@ With multiple breathing patterns, Nafas helps you find your way to a detoxified 
 No need to walk away to take a break, just sit comfortably, run Nafas and let the journey begin.
 """
 
-NAFAS_NOTICE = """Please consider the following :
+NAFAS_NOTICE = """
+Please consider the following :
 
 1. Inhaling is only done through the nose
 2. Exhaling, you can use both nose and mouth
