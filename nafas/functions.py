@@ -264,14 +264,14 @@ def run(program_data):
     print("Preparing ", end="")
     graphic_counter(pre)
     line()
-    time.sleep(unit / 2)
+    time.sleep(1)
     print("Start")
-    time.sleep(unit / 2)
+    time.sleep(1)
     line()
-    time.sleep(unit / 2)
+    time.sleep(1)
     for i in range(cycle):
         print("Cycle : " + str(i + 1))
-        time.sleep(unit / 2)
+        time.sleep(1)
         for index, item in enumerate(ratio):
             if item != 0:
                 item_name = STEP_MAP[index]
