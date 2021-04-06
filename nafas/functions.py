@@ -93,9 +93,7 @@ def description_print():
     :return: None
     """
     print("\n".join(justify(NAFAS_DESCRIPTION.split(), 100)))
-    print("\n")
     print(NAFAS_NOTICE)
-    print("\n")
 
 
 def program_description_print(program_name, level, program_data):

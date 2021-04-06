@@ -4,15 +4,18 @@
 >>> line(10,"*")
 **********
 >>> description_print()
-Breathing  gymnastics  is a system of breathing exercises that focuses
-on  the  treatment  of  various diseases and general health promotion.
-Nafas  is  a collection of breathing gymnastics designed to reduce the
-exhaustion  of  long  working hours. With multiple breathing patterns,
-Nafas  helps  you  find your way to a detoxified energetic workday and
-also  improves  your  concentration by increasing the oxygen level. No
-need to walk away to take a break, just sit comfortably, run Nafas and
-let the journey begin.
+Breathing  gymnastics  is  a  system of breathing exercises that focuses on the treatment of various
+diseases  and  general  health  promotion. Nafas is a collection of breathing gymnastics designed to
+reduce  the exhaustion of long working hours. With multiple breathing patterns, Nafas helps you find
+your  way  to  a detoxified energetic workday and also improves your concentration by increasing the
+oxygen  level.  No  need  to  walk away to take a break, just sit comfortably, run Nafas and let the
+journey begin.
 <BLANKLINE>
+Please consider the following :
+<BLANKLINE>
+1. Inhaling is only done through the nose
+2. Exhaling, you can use both nose and mouth
+3. When exhaling through your mouth, it is recommended to fold the lips
 <BLANKLINE>
 >>> input_data = input_filter({"program":1,"level":1})
 >>> input_data["program"] == 1
