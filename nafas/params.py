@@ -1,11 +1,17 @@
 # -*- coding: utf-8 -*-
 """nafas parameters."""
 
-DESCRIPTION = """
+NAFAS_DESCRIPTION = """
 Breathing gymnastics is a system of breathing exercises that focuses on the treatment of various diseases and general health promotion.
 Nafas is a collection of breathing gymnastics designed to reduce the exhaustion of long working hours.
 With multiple breathing patterns, Nafas helps you find your way to a detoxified energetic workday and also improves your concentration by increasing the oxygen level.
 No need to walk away to take a break, just sit comfortably, run Nafas and let the journey begin.
+"""
+
+NAFAS_NOTICE = """
+1. Inhaling is only done through the nose
+2. Exhaling, you can use both nose and mouth
+3. When exhaling through your mouth, it is recommended to fold the lips
 """
 
 NAFAS_VERSION = "0.3"

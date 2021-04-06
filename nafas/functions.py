@@ -2,7 +2,7 @@
 """nafas functions."""
 
 import time
-from nafas.params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE
+from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE
 import playsound
 import threading
 import os
@@ -92,7 +92,9 @@ def description_print():
 
     :return: None
     """
-    print("\n".join(justify(DESCRIPTION.split(), 100)))
+    print("\n".join(justify(NAFAS_DESCRIPTION.split(), 100)))
+    print("\n")
+    print(NAFAS_NOTICE)
     print("\n")
 
 
