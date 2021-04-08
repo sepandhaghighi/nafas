@@ -2,7 +2,7 @@
 """nafas functions."""
 
 import time
-from nafas.params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE
+from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE
 import playsound
 import threading
 import os
@@ -92,8 +92,8 @@ def description_print():
 
     :return: None
     """
-    print("\n".join(justify(DESCRIPTION.split(), 100)))
-    print("\n")
+    print("\n".join(justify(NAFAS_DESCRIPTION.split(), 100)))
+    print(NAFAS_NOTICE)
 
 
 def program_description_print(program_name, level, program_data):
@@ -264,14 +264,14 @@ def run(program_data):
     print("Preparing ", end="")
     graphic_counter(pre)
     line()
-    time.sleep(unit / 2)
+    time.sleep(1)
     print("Start")
-    time.sleep(unit / 2)
+    time.sleep(1)
     line()
-    time.sleep(unit / 2)
+    time.sleep(1)
     for i in range(cycle):
         print("Cycle : " + str(i + 1))
-        time.sleep(unit / 2)
+        time.sleep(1)
         for index, item in enumerate(ratio):
             if item != 0:
                 item_name = STEP_MAP[index]

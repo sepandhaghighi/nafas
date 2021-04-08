@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 7-11 program
 ### Changed
 - Test system modified
+- Menu optimized
 ## [0.3] - 2021-02-09
 ### Changed
 - Sounds bug in pypi fixed
