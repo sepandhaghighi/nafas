@@ -262,9 +262,11 @@ def run(program_data):
     unit = program_data["unit"]
     pre = program_data["pre"]
     print("Preparing ", end="")
+    sound_thread = play_sound(get_sound_path(SOUND_MAP['prepare']))
     graphic_counter(pre)
     line()
     time.sleep(1)
+    sound_thread.join()
     print("Start")
     time.sleep(1)
     line()
