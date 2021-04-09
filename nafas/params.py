@@ -267,6 +267,7 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
 
 
 SOUND_MAP = {
+    "prepare": "prepare.wav",
     "Inhale": "inhale.wav",
     "Exhale": "exhale.wav",
     "Retain": "retain.wav",
