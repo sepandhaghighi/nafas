@@ -261,7 +261,7 @@ def run(program_data):
     ratio = program_data["ratio"]
     unit = program_data["unit"]
     pre = program_data["pre"]
-    print("Preparing ", end="")
+    print("Preparing ", end="", flush=True)
     sound_thread = play_sound(get_sound_path(SOUND_MAP['prepare']))
     graphic_counter(pre)
     line()
@@ -283,7 +283,7 @@ def run(program_data):
                     item_name +
                     " for {0} sec".format(
                         unit *
-                        item))
+                        item), flush=True)
                 graphic_counter(item * unit)
                 sound_thread.join()
         time.sleep(1)
