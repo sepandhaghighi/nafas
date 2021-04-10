@@ -274,13 +274,16 @@ def run(program_data):
     line()
     time.sleep(1)
     for i in range(cycle):
-        print(CYCLE_TEMPLATE.format(str(i + 1),str(cycle-i-1)))
+        print(CYCLE_TEMPLATE.format(str(i + 1), str(cycle - i - 1)))
         time.sleep(1)
         for index, item in enumerate(ratio):
             if item != 0:
                 item_name = STEP_MAP[index]
                 sound_thread = play_sound(get_sound_path(SOUND_MAP[item_name]))
-                print(STEP_TEMPLATE.format(item_name,str(unit *item)), flush=True)
+                print(
+                    STEP_TEMPLATE.format(
+                        item_name, str(
+                            unit * item)), flush=True)
                 graphic_counter(item * unit)
                 sound_thread.join()
         time.sleep(1)
