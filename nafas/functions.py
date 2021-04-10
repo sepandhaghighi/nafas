@@ -291,5 +291,5 @@ def run(program_data):
         time.sleep(1)
         line()
     sound_thread = play_sound(get_sound_path(SOUND_MAP['End']))
-    print("End!", flush=True)
+    print("Well done!", flush=True)
     sound_thread.join()
