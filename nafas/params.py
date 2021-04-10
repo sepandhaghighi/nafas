@@ -33,6 +33,10 @@ Total Time       : {3}
 Sequence         : {4}
 """
 
+CYCLE_TEMPLATE = "Cycle : {0} (Remaining : {1})"
+
+STEP_TEMPLATE = "- {0} for {1} sec"
+
 STANDARD_MENU = {
     "program": {
         1: "Clear Mind",

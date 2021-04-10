@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - 4-7-8 program
 - 7-11 program
 ### Changed
-- Sound speaker
+- Sound speaker changed
 - Test system modified
 - Menu optimized
 ## [0.3] - 2021-02-09

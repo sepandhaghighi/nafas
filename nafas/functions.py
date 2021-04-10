@@ -2,7 +2,7 @@
 """nafas functions."""
 
 import time
-from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE
+from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE, STEP_TEMPLATE, CYCLE_TEMPLATE
 import playsound
 import threading
 import os
@@ -274,22 +274,20 @@ def run(program_data):
     line()
     time.sleep(1)
     for i in range(cycle):
-        print("Cycle : " + str(i + 1))
+        print(CYCLE_TEMPLATE.format(str(i + 1), str(cycle - i - 1)))
         time.sleep(1)
         for index, item in enumerate(ratio):
             if item != 0:
                 item_name = STEP_MAP[index]
                 sound_thread = play_sound(get_sound_path(SOUND_MAP[item_name]))
                 print(
-                    "- " +
-                    item_name +
-                    " for {0} sec".format(
-                        unit *
-                        item), flush=True)
+                    STEP_TEMPLATE.format(
+                        item_name, str(
+                            unit * item)), flush=True)
                 graphic_counter(item * unit)
                 sound_thread.join()
         time.sleep(1)
         line()
     sound_thread = play_sound(get_sound_path(SOUND_MAP['End']))
-    print("End!", flush=True)
+    print("Well done!", flush=True)
     sound_thread.join()
