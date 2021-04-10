@@ -261,12 +261,16 @@ def run(program_data):
     ratio = program_data["ratio"]
     unit = program_data["unit"]
     pre = program_data["pre"]
-    print("Preparing ", end="")
+    print("Preparing ", end="", flush=True)
+    sound_thread = play_sound(get_sound_path(SOUND_MAP['Prepare']))
     graphic_counter(pre)
     line()
     time.sleep(1)
-    print("Start")
+    sound_thread.join()
+    sound_thread = play_sound(get_sound_path(SOUND_MAP['Start']))
+    print("Start", flush=True)
     time.sleep(1)
+    sound_thread.join()
     line()
     time.sleep(1)
     for i in range(cycle):
@@ -281,9 +285,11 @@ def run(program_data):
                     item_name +
                     " for {0} sec".format(
                         unit *
-                        item))
+                        item), flush=True)
                 graphic_counter(item * unit)
                 sound_thread.join()
         time.sleep(1)
         line()
-    print("End!")
+    sound_thread = play_sound(get_sound_path(SOUND_MAP['End']))
+    print("End!", flush=True)
+    sound_thread.join()
