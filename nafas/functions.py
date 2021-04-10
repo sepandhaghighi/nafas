@@ -280,12 +280,7 @@ def run(program_data):
             if item != 0:
                 item_name = STEP_MAP[index]
                 sound_thread = play_sound(get_sound_path(SOUND_MAP[item_name]))
-                print(
-                    "- " +
-                    item_name +
-                    " for {0} sec".format(
-                        unit *
-                        item), flush=True)
+                print(STEP_TEMPLATE.format(item_name,str(unit *item)), flush=True)
                 graphic_counter(item * unit)
                 sound_thread.join()
         time.sleep(1)
