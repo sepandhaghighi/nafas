@@ -274,7 +274,7 @@ def run(program_data):
     line()
     time.sleep(1)
     for i in range(cycle):
-        print("Cycle : " + str(i + 1))
+        print(CYCLE_TEMPLATE.format(str(i + 1),str(cycle-i-1)))
         time.sleep(1)
         for index, item in enumerate(ratio):
             if item != 0:
