@@ -84,7 +84,7 @@ Cycle : 2
 - Exhale for 3 sec
 . . .
 ######################################################################
-End!
+Well done!
 >>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]})
 Preparing . . . 
 ######################################################################
@@ -102,7 +102,7 @@ Cycle : 2
 - Exhale for 3.3 sec
 . . . .
 ######################################################################
-End!
+Well done!
 >>> play_sound(1, debug=False).join()
 >>> play_sound(1, debug=True).join()
 ERROR : Unable to play sound.
