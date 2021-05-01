@@ -1,11 +1,19 @@
 # -*- coding: utf-8 -*-
 """nafas parameters."""
 
-DESCRIPTION = """
+NAFAS_DESCRIPTION = """
 Breathing gymnastics is a system of breathing exercises that focuses on the treatment of various diseases and general health promotion.
 Nafas is a collection of breathing gymnastics designed to reduce the exhaustion of long working hours.
 With multiple breathing patterns, Nafas helps you find your way to a detoxified energetic workday and also improves your concentration by increasing the oxygen level.
 No need to walk away to take a break, just sit comfortably, run Nafas and let the journey begin.
+"""
+
+NAFAS_NOTICE = """
+Please consider the following :
+
+1. Inhaling is only done through the nose
+2. Exhaling, you can use both nose and mouth
+3. When exhaling through your mouth, it is recommended to fold the lips
 """
 
 NAFAS_VERSION = "0.3"
@@ -25,6 +33,10 @@ Total Time       : {3}
 Sequence         : {4}
 """
 
+CYCLE_TEMPLATE = "Cycle : {0} (Remaining : {1})"
+
+STEP_TEMPLATE = "- {0} for {1} sec"
+
 STANDARD_MENU = {
     "program": {
         1: "Clear Mind",
@@ -34,7 +46,9 @@ STANDARD_MENU = {
         5: "Harmony",
         6: "Anti-Stress",
         7: "Anti-Appetite",
-        8: "Cigarette Replace"},
+        8: "Cigarette Replace",
+        9: "4-7-8(Relaxing Breath)",
+        10: "7-11(Relaxing Breath)"},
     "level": {
         1: "Beginner",
         2: "Medium",
@@ -71,6 +85,66 @@ HARMONY_BEGINNER = {"ratio": [1, 3, 2, 1], "unit": 3, "pre": 3, "cycle": 20}
 HARMONY_MEDIUM = {"ratio": [1, 4, 2, 1], "unit": 3, "pre": 3, "cycle": 18}
 
 HARMONY_ADVANCED = {"ratio": [1, 5, 2, 1], "unit": 3, "pre": 3, "cycle": 16}
+
+FOUR_SEVEN_EIGHT_BEGINNER = {
+    "ratio": [
+        4,
+        7,
+        8,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 4}
+
+FOUR_SEVEN_EIGHT_MEDIUM = {
+    "ratio": [
+        4,
+        7,
+        8,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 8}
+
+FOUR_SEVEN_EIGHT_ADVANCED = {
+    "ratio": [
+        4,
+        7,
+        8,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 12}
+
+SEVEN_ELEVEN_BEGINNER = {
+    "ratio": [
+        7,
+        0,
+        11,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 15}
+
+SEVEN_ELEVEN_MEDIUM = {
+    "ratio": [
+        7,
+        0,
+        11,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 20}
+
+SEVEN_ELEVEN_ADVANCED = {
+    "ratio": [
+        7,
+        0,
+        11,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 24}
 
 ANTI_STRESS_BEGINNER = {
     "ratio": [
@@ -186,12 +260,22 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                                   "Advanced": CIGARETTE_REPLACE_ADVANCED},
             "Harmony": {"Beginner": HARMONY_BEGINNER,
                         "Medium": HARMONY_MEDIUM,
-                        "Advanced": HARMONY_ADVANCED}}
+                        "Advanced": HARMONY_ADVANCED},
+            "4-7-8(Relaxing Breath)": {"Beginner": FOUR_SEVEN_EIGHT_BEGINNER,
+                                       "Medium": FOUR_SEVEN_EIGHT_MEDIUM,
+                                       "Advanced": FOUR_SEVEN_EIGHT_ADVANCED},
+            "7-11(Relaxing Breath)": {"Beginner": SEVEN_ELEVEN_BEGINNER,
+                                      "Medium": SEVEN_ELEVEN_MEDIUM,
+                                      "Advanced": SEVEN_ELEVEN_ADVANCED}
+            }
 
 
 SOUND_MAP = {
+    "Start": "start.wav",
+    "Prepare": "preparing.wav",
     "Inhale": "inhale.wav",
     "Exhale": "exhale.wav",
     "Retain": "retain.wav",
-    "Sustain": "sustain.wav"
+    "Sustain": "sustain.wav",
+    "End": "well_done.wav",
 }
