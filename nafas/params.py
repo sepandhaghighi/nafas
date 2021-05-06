@@ -16,7 +16,7 @@ Please consider the following :
 3. When exhaling through your mouth, it is recommended to fold the lips
 """
 
-NAFAS_VERSION = "0.3"
+NAFAS_VERSION = "0.4"
 
 SOUND_ERROR_MESSAGE = "ERROR : Unable to play sound."
 
