@@ -19,6 +19,7 @@ if __name__ == "__main__":
             program_name, level, program_data = get_program_data(filtered_data)
             program_description_print(program_name, level, program_data)
             run(program_data)
-            INPUTINDEX = str(input("Press [R] to restart or any other key to exit."))
+            INPUTINDEX = str(
+                input("Press [R] to restart or any other key to exit."))
             if INPUTINDEX.upper() != "R":
                 EXIT_FLAG = True

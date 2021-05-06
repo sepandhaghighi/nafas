@@ -4,22 +4,25 @@
 >>> line(10,"*")
 **********
 >>> description_print()
-Breathing  gymnastics  is a system of breathing exercises that focuses
-on  the  treatment  of  various diseases and general health promotion.
-Nafas  is  a collection of breathing gymnastics designed to reduce the
-exhaustion  of  long  working hours. With multiple breathing patterns,
-Nafas  helps  you  find your way to a detoxified energetic workday and
-also  improves  your  concentration by increasing the oxygen level. No
-need to walk away to take a break, just sit comfortably, run Nafas and
-let the journey begin.
+Breathing  gymnastics  is  a  system of breathing exercises that focuses on the treatment of various
+diseases  and  general  health  promotion. Nafas is a collection of breathing gymnastics designed to
+reduce  the exhaustion of long working hours. With multiple breathing patterns, Nafas helps you find
+your  way  to  a detoxified energetic workday and also improves your concentration by increasing the
+oxygen  level.  No  need  to  walk away to take a break, just sit comfortably, run Nafas and let the
+journey begin.
 <BLANKLINE>
+Please consider the following :
+<BLANKLINE>
+1. Inhaling is only done through the nose
+2. Exhaling, you can use both nose and mouth
+3. When exhaling through your mouth, it is recommended to fold the lips
 <BLANKLINE>
 >>> input_data = input_filter({"program":1,"level":1})
 >>> input_data["program"] == 1
 True
 >>> input_data["level"] == 1
 True
->>> input_data = input_filter({"program":10,"level":5})
+>>> input_data = input_filter({"program":11,"level":5})
 >>> input_data["program"] == 1
 True
 >>> input_data["level"] == 1
@@ -38,6 +41,8 @@ True
 6- Anti-Stress
 7- Anti-Appetite
 8- Cigarette Replace
+9- 4-7-8(Relaxing Breath)
+10- 7-11(Relaxing Breath)
 >>> input_data["program"] == 1
 True
 >>> input_data["level"] == 1
@@ -67,37 +72,37 @@ Preparing . . .
 ######################################################################
 Start
 ######################################################################
-Cycle : 1
+Cycle : 1 (Remaining : 1)
 - Inhale for 1 sec
 .
 - Exhale for 3 sec
 . . .
 ######################################################################
-Cycle : 2
+Cycle : 2 (Remaining : 0)
 - Inhale for 1 sec
 .
 - Exhale for 3 sec
 . . .
 ######################################################################
-End!
+Well done!
 >>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]})
 Preparing . . . 
 ######################################################################
 Start
 ######################################################################
-Cycle : 1
+Cycle : 1 (Remaining : 1)
 - Inhale for 1 sec
 .
 - Exhale for 3.3 sec
 . . . .
 ######################################################################
-Cycle : 2
+Cycle : 2 (Remaining : 0)
 - Inhale for 1 sec
 .
 - Exhale for 3.3 sec
 . . . .
 ######################################################################
-End!
+Well done!
 >>> play_sound(1, debug=False).join()
 >>> play_sound(1, debug=True).join()
 ERROR : Unable to play sound.
