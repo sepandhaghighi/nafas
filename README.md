@@ -21,7 +21,7 @@
    * [References](https://github.com/sepandhaghighi/nafas#references)
    * [Authors](https://github.com/sepandhaghighi/nafas/blob/master/AUTHORS.md)
    * [License](https://github.com/sepandhaghighi/nafas/blob/master/LICENSE)
-   * [Donate](https://github.com/sepandhaghighi/nafas#donate-to-our-project)
+   * [Show Your Support](https://github.com/sepandhaghighi/nafas#show-your-support)
    * [Changelog](https://github.com/sepandhaghighi/nafas/blob/master/CHANGELOG.md)
    * [Code of Conduct](https://github.com/sepandhaghighi/nafas/blob/master/.github/CODE_OF_CONDUCT.md)			
 				
@@ -76,19 +76,19 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 ## Installation		
 
 ### Source Code
-- Download [Version 0.3](https://github.com/sepandhaghighi/nafas/archive/v0.3.zip) or [Latest Source ](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
+- Download [Version 0.4](https://github.com/sepandhaghighi/nafas/archive/v0.4.zip) or [Latest Source ](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
 - `pip install -r requirements.txt` or `pip3 install -r requirements.txt` (Need root access)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install nafas==0.3` or `pip3 install nafas==0.3` (Need root access)							
+- `pip install nafas==0.4` or `pip3 install nafas==0.4` (Need root access)							
 	
 
 ### Exe Version (Only Windows)
-- Download [Exe-Version 0.3](https://github.com/sepandhaghighi/nafas/releases/download/v0.3/NAFAS-0.3.exe)
-- Run `NAFAS-0.3.exe`
+- Download [Exe-Version 0.4](https://github.com/sepandhaghighi/nafas/releases/download/v0.4/NAFAS-0.4.exe)
+- Run `NAFAS-0.4.exe`
 
 
 ## Usage			
@@ -135,20 +135,41 @@ or send an email to [sepand@pyrgg.ir](mailto:sepand@pyrgg.ir "sepand@pyrgg.ir").
 
 <blockquote>6- Bujatti, M., and P. Biederer. "Serotonin, noradrenaline, dopamine metabolites in transcendental meditation-technique." Journal of Neural Transmission 39, no. 3 (1976): 257-267. </blockquote>
 
-<blockquote>7- Martarelli, Daniele, Mario Cocchioni, Stefania Scuri, and Pierluigi Pompei. "Diaphragmatic breathing reduces exercise-induced oxidative stress." Evidence-Based Complementary and Alternative Medicine 2011 (2011). </blockquote>				
-  						
-<blockquote>8- <a href="https://ttsmp3.com/">Free Text-To-Speech and Text-to-MP3 for US English</a> </blockquote>
+<blockquote>7- Martarelli, Daniele, Mario Cocchioni, Stefania Scuri, and Pierluigi Pompei. "Diaphragmatic breathing reduces exercise-induced oxidative stress." Evidence-Based Complementary and Alternative Medicine 2011 (2011). </blockquote>		
+
+<blockquote>8- <a href="https://www.drweil.com/health-wellness/body-mind-spirit/stress-anxiety/breathing-three-exercises/">DrWeil, Integrative Medicine & Healthy Living</a> </blockquote>
+
+<blockquote>9- <a href="https://www.hgi.org.uk/resources/delve-our-extensive-library/resources-and-techniques/7-11-breathing-how-does-deep">Human Givens Institute</a> </blockquote>
+					
+<blockquote>10- <a href="https://ttsmp3.com/">Free Text-To-Speech and Text-to-MP3 for US English</a> </blockquote>
 
 
-## Donate to our project		
-							
+## Show your support
+								
+<h3>Star this repo</h3>					
 
-<h3>Bitcoin :</h3>					
+Give a ⭐️ if this project helped you!
 
-```1XGr9qbZjBpUQJJSB6WtgBQbDTgrhPLPA```			
+<h3>Donate to our project</h3>	
 
+<h4>Bitcoin</h4>
+1KtNLEEeUbTEK9PdN6Ya3ZAKXaqoKUuxCy
+<h4>Ethereum</h4>
+0xcD4Db18B6664A9662123D4307B074aE968535388
+<h4>Litecoin</h4>
+Ldnz5gMcEeV8BAdsyf8FstWDC6uyYR6pgZ
+<h4>Doge</h4>
+DDUnKpFQbBqLpFVZ9DfuVysBdr249HxVDh
+<h4>Tron</h4>
+TCZxzPZLcJHr2qR3uPUB1tXB6L3FDSSAx7
+<h4>Ripple</h4>
+rN7ZuRG7HDGHR5nof8nu5LrsbmSB61V1qq
+<h4>Binance Coin</h4>
+bnb1zglwcf0ac3d0s2f6ck5kgwvcru4tlctt4p5qef
+<h4>Tether</h4>
+0xcD4Db18B6664A9662123D4307B074aE968535388
+<h4>Dash</h4>
+Xd3Yn2qZJ7VE8nbKw2fS98aLxR5M6WUU3s
+<h4>Stellar</h4>		
 
-
-<h3>Payping (For Iranian citizens) :</h3>
-
-<a href="http://www.payping.net/sepandhaghighi" target="__blank"><img src="http://www.qpage.ir/images/payping.png" height=100px width=100px></a>	
+GALPOLPISRHIYHLQER2TLJRGUSZH52RYDK6C3HIU4PSMNAV65Q36EGNL

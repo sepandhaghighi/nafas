@@ -2,7 +2,7 @@
 """nafas functions."""
 
 import time
-from nafas.params import DESCRIPTION, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE
+from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE, STEP_TEMPLATE, CYCLE_TEMPLATE
 import playsound
 import threading
 import os
@@ -92,8 +92,8 @@ def description_print():
 
     :return: None
     """
-    print("\n".join(justify(DESCRIPTION.split(), 100)))
-    print("\n")
+    print("\n".join(justify(NAFAS_DESCRIPTION.split(), 100)))
+    print(NAFAS_NOTICE)
 
 
 def program_description_print(program_name, level, program_data):
@@ -261,29 +261,33 @@ def run(program_data):
     ratio = program_data["ratio"]
     unit = program_data["unit"]
     pre = program_data["pre"]
-    print("Preparing ", end="")
+    print("Preparing ", end="", flush=True)
+    sound_thread = play_sound(get_sound_path(SOUND_MAP['Prepare']))
     graphic_counter(pre)
     line()
-    time.sleep(unit / 2)
-    print("Start")
-    time.sleep(unit / 2)
+    time.sleep(1)
+    sound_thread.join()
+    sound_thread = play_sound(get_sound_path(SOUND_MAP['Start']))
+    print("Start", flush=True)
+    time.sleep(1)
+    sound_thread.join()
     line()
-    time.sleep(unit / 2)
+    time.sleep(1)
     for i in range(cycle):
-        print("Cycle : " + str(i + 1))
-        time.sleep(unit / 2)
+        print(CYCLE_TEMPLATE.format(str(i + 1), str(cycle - i - 1)))
+        time.sleep(1)
         for index, item in enumerate(ratio):
             if item != 0:
                 item_name = STEP_MAP[index]
                 sound_thread = play_sound(get_sound_path(SOUND_MAP[item_name]))
                 print(
-                    "- " +
-                    item_name +
-                    " for {0} sec".format(
-                        unit *
-                        item))
+                    STEP_TEMPLATE.format(
+                        item_name, str(
+                            unit * item)), flush=True)
                 graphic_counter(item * unit)
                 sound_thread.join()
         time.sleep(1)
         line()
-    print("End!")
+    sound_thread = play_sound(get_sound_path(SOUND_MAP['End']))
+    print("Well done!", flush=True)
+    sound_thread.join()
