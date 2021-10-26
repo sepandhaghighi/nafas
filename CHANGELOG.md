@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Changed
+- `AUTHORS.md` updated
+- License updated
+- `README.md` modified
 - `Python 3.10` added to `test.yml`
 ## [0.4] - 2021-05-12
 ### Added
