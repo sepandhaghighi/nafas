@@ -39,7 +39,7 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 	</tr>
 	<tr>
 		<td align="center">PyPI Counter</td>
-		<td align="center"><a href="http://pepy.tech/count/nafas"><img src="http://pepy.tech/badge/nafas"></a></td>
+		<td align="center"><a href="http://pepy.tech/project/nafas"><img src="http://pepy.tech/badge/nafas"></a></td>
 	</tr>
 	<tr>
 		<td align="center">Github Stars</td>
