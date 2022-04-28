@@ -21,6 +21,33 @@ def line(num=70, char="#"):
     print(num * char)
 
 
+def time_calc(program_data):
+    """
+    Calculate program time.
+
+    :param program_data: program data
+    :type program_data: dict
+    :return: time as float
+    """
+    result = sum(program_data["ratio"]) * program_data["unit"] * program_data["cycle"] + program_data["pre"]
+    return result
+
+
+def time_average_calc(program_data):
+    """
+    Calculate average time of program in all levels.
+
+    :param program_data: program data in all levels
+    :type program_data: dict
+    :return: average time as float
+    """
+    result = 0
+    level_number = len(program_data)
+    for program in program_data.values():
+        result += time_calc(program)
+    return result/level_number
+
+
 def time_convert(input_time):
     """
     Convert input time from sec to MM,SS format.
@@ -103,7 +130,7 @@ def program_description_print(program_name, level, program_data):
     :param program_name: program name
     :type program_name: str
     :param level: program level
-     :type level: str
+    :type level: str
     :param program_data: program data
     :type program_data: dict
     :return: None
