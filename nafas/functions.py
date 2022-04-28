@@ -191,7 +191,7 @@ def get_input_standard(input_func=input):
     for item in STANDARD_MENU_ORDER:
         exit_flag = False
         sorted_list = sorted(list(STANDARD_MENU[item].keys()))
-        print("- Please choose a {0} : ".format(item))
+        print("- Please choose a {0} : \n".format(item))
         for i in sorted_list:
             if item == "program":
                 program_name = STANDARD_MENU[item][i]
