@@ -54,6 +54,8 @@ STANDARD_MENU = {
         2: "Medium",
         3: "Advanced"}}
 
+STANDARD_MENU_ORDER = ["program", "level"]
+
 STEP_MAP = {0: "Inhale", 1: "Retain", 2: "Exhale", 3: "Sustain"}
 
 CLEAR_MIND_BEGINNER = {"ratio": [1, 0, 3, 0], "unit": 3, "pre": 3, "cycle": 35}

@@ -2,7 +2,7 @@
 """nafas functions."""
 
 import time
-from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE, STEP_TEMPLATE, CYCLE_TEMPLATE
+from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STANDARD_MENU_ORDER, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE, STEP_TEMPLATE, CYCLE_TEMPLATE
 import playsound
 import threading
 import os
@@ -48,22 +48,29 @@ def time_average_calc(program_data):
     return result/level_number
 
 
-def time_convert(input_time):
+def time_convert(input_time, average=False):
     """
     Convert input time from sec to MM,SS format.
 
     :param input_time: input time in sec
     :type input_time: float
+    :param average: average flag
+    :type average: bool
     :return: converted time as str
     """
     sec = float(input_time)
     _days, sec = divmod(sec, 24 * 3600)
     _hours, sec = divmod(sec, 3600)
     minutes, sec = divmod(sec, 60)
-    return ", ".join([
+    result = ", ".join([
         "{:02.0f} minutes".format(minutes),
         "{:02.0f} seconds".format(sec),
     ])
+    if average:
+        if sec >= 30:
+            minutes += 1
+        result = "{:02.0f} minutes".format(minutes)
+    return result
 
 
 def left_justify(words, width):
@@ -180,12 +187,17 @@ def get_input_standard(input_func=input):
     :return: input data as dict
     """
     input_data = {"program": 1, "level": 1}
-    for item in sorted(STANDARD_MENU.keys()):
+    for item in STANDARD_MENU_ORDER:
         exit_flag = False
         sorted_list = sorted(list(STANDARD_MENU[item].keys()))
         print("- Please choose a {0} : ".format(item))
         for i in sorted_list:
-            print(str(i) + "- " + STANDARD_MENU[item][i])
+            if item == "program":
+                program_name = STANDARD_MENU[item][i]
+                program_average_time = time_average_calc(PROGRAMS[program_name])
+                print(str(i) + "- " + STANDARD_MENU[item][i] + " (~ " + time_convert(program_average_time, True) + ")")
+            else:
+                print(str(i) + "- " + STANDARD_MENU[item][i])
         while not exit_flag:
             try:
                 input_data[item] = int(input_func(""))
