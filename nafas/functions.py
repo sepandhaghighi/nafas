@@ -29,7 +29,8 @@ def time_calc(program_data):
     :type program_data: dict
     :return: time as float
     """
-    result = sum(program_data["ratio"]) * program_data["unit"] * program_data["cycle"] + program_data["pre"]
+    result = sum(program_data["ratio"]) * program_data["unit"] * \
+        program_data["cycle"] + program_data["pre"]
     return result
 
 
@@ -45,7 +46,7 @@ def time_average_calc(program_data):
     level_number = len(program_data)
     for program in program_data.values():
         result += time_calc(program)
-    return result/level_number
+    return result / level_number
 
 
 def time_convert(input_time, average=False):
@@ -194,8 +195,17 @@ def get_input_standard(input_func=input):
         for i in sorted_list:
             if item == "program":
                 program_name = STANDARD_MENU[item][i]
-                program_average_time = time_average_calc(PROGRAMS[program_name])
-                print(str(i) + "- " + STANDARD_MENU[item][i] + " (~ " + time_convert(program_average_time, True) + ")")
+                program_average_time = time_average_calc(
+                    PROGRAMS[program_name])
+                print(
+                    str(i) +
+                    "- " +
+                    STANDARD_MENU[item][i] +
+                    " (~ " +
+                    time_convert(
+                        program_average_time,
+                        True) +
+                    ")")
             else:
                 print(str(i) + "- " + STANDARD_MENU[item][i])
         while not exit_flag:
