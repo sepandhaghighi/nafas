@@ -28,21 +28,21 @@ True
 >>> input_data["level"] == 1
 True
 >>> input_data = get_input_standard(lambda x: "1")
+- Please choose a program :
+1- Clear Mind (~ 07 minutes)
+2- Relax (~ 07 minutes)
+3- Calming (~ 09 minutes)
+4- Power (~ 07 minutes)
+5- Harmony (~ 07 minutes)
+6- Anti-Stress (~ 04 minutes)
+7- Anti-Appetite (~ 10 minutes)
+8- Cigarette Replace (~ 05 minutes)
+9- 4-7-8(Relaxing Breath) (~ 03 minutes)
+10- 7-11(Relaxing Breath) (~ 06 minutes)
 - Please choose a level :
 1- Beginner
 2- Medium
 3- Advanced
-- Please choose a program :
-1- Clear Mind
-2- Relax
-3- Calming
-4- Power
-5- Harmony
-6- Anti-Stress
-7- Anti-Appetite
-8- Cigarette Replace
-9- 4-7-8(Relaxing Breath)
-10- 7-11(Relaxing Breath)
 >>> input_data["program"] == 1
 True
 >>> input_data["level"] == 1
