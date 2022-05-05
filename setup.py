@@ -41,6 +41,7 @@ setup(
     keywords="python3 python breath breathing meditation",
     project_urls={
         'Source': 'https://github.com/sepandhaghighi/nafas',
+        'Discord': 'https://discord.gg/CtZUNKJHP4',
     },
     install_requires=get_requires(),
     python_requires='>=3.5',
