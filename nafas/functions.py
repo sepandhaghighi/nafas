@@ -70,7 +70,7 @@ def time_convert(input_time, average=False):
     if average:
         if sec >= 30:
             minutes += 1
-        result = "{:02.0f} minutes".format(minutes)
+        result = "{:02.0f} minutes".format(minutes).lstrip("0")
     return result
 
 
