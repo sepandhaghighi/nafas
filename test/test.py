@@ -22,7 +22,7 @@ Please consider the following :
 True
 >>> input_data["level"] == 1
 True
->>> input_data = input_filter({"program":11,"level":5})
+>>> input_data = input_filter({"program":20,"level":5})
 >>> input_data["program"] == 1
 True
 >>> input_data["level"] == 1
@@ -40,6 +40,7 @@ True
 8- Anti-Stress (~ 4 minutes)
 9- Anti-Appetite (~ 10 minutes)
 10- Cigarette Replace (~ 5 minutes)
+11- Decision-Making (~ 2 minutes)
 - Please choose a level :
 <BLANKLINE>
 1- Beginner

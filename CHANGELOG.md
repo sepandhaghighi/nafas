@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- Decision-Making program
 - `time_calc` function
 - `time_average_calc` function
 ### Changed
