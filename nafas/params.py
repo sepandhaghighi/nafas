@@ -48,7 +48,8 @@ STANDARD_MENU = {
         7: "Harmony",
         8: "Anti-Stress",
         9: "Anti-Appetite",
-        10: "Cigarette Replace"},
+        10: "Cigarette Replace",
+        11: "Decision-Making"},
     "level": {
         1: "Beginner",
         2: "Medium",
@@ -239,6 +240,37 @@ CIGARETTE_REPLACE_ADVANCED = {
     "cycle": 19}
 
 
+DECISION_MAKING_BEGINNER = {
+    "ratio": [
+        5,
+        2,
+        7,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 6}
+
+DECISION_MAKING_MEDIUM = {
+    "ratio": [
+        5,
+        2,
+        7,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 10}
+
+DECISION_MAKING_ADVANCED = {
+    "ratio": [
+        5,
+        2,
+        7,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 14}
+
+
 PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                            "Medium": CLEAR_MIND_MEDIUM,
                            "Advanced": CLEAR_MIND_ADVANCED},
@@ -268,7 +300,10 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                                        "Advanced": RELAX2_ADVANCED},
             "Relax3": {"Beginner": RELAX3_BEGINNER,
                                       "Medium": RELAX3_MEDIUM,
-                                      "Advanced": RELAX3_ADVANCED}
+                                      "Advanced": RELAX3_ADVANCED},
+            "Decision-Making": {"Beginner": DECISION_MAKING_BEGINNER,
+                                      "Medium": DECISION_MAKING_MEDIUM,
+                                      "Advanced": DECISION_MAKING_ADVANCED}
             }
 
 
