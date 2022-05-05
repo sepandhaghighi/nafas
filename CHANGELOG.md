@@ -5,11 +5,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- `time_calc` function
+- `time_average_calc` function
 ### Changed
 - `AUTHORS.md` updated
 - License updated
 - `README.md` modified
 - `Python 3.10` added to `test.yml`
+- `time_convert` function modified
+- `get_input_standard` function modified
 - Menu updated
 - Relax program renamed to Relax1
 - 4-7-8 program renamed to Relax2
