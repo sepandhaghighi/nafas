@@ -36,7 +36,7 @@ def time_calc(program_data):
 
 def time_average_calc(program_data):
     """
-    Calculate average time of program in all levels.
+    Calculate average time of a program in all levels.
 
     :param program_data: program data in all levels
     :type program_data: dict
@@ -200,7 +200,7 @@ def get_input_standard(input_func=input):
                 print(
                     str(i) +
                     "- " +
-                    STANDARD_MENU[item][i] +
+                    program_name +
                     " (~ " +
                     time_convert(
                         program_average_time,
