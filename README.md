@@ -8,7 +8,7 @@
   <img src="https://codecov.io/gh/sepandhaghighi/nafas/branch/master/graph/badge.svg" alt="Codecov" /></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
 <a href="https://discord.gg/CtZUNKJHP4">
-  <img src="https://img.shields.io/discord/901883546162065408.svg" alt="Discord Channel">
+  <img src="https://img.shields.io/discord/901570530145107978.svg" alt="Discord Channel">
 </a>
 </div>	
 
@@ -112,7 +112,7 @@ Just fill an issue and describe it. We'll check it ASAP!
 You can also join our discord server
 
 <a href="https://discord.gg/CtZUNKJHP4">
-  <img src="https://img.shields.io/discord/900055829225562162.svg?style=for-the-badge" alt="Discord Channel">
+  <img src="https://img.shields.io/discord/901570530145107978.svg?style=for-the-badge" alt="Discord Channel">
 </a>
 
 ## Dependencies
