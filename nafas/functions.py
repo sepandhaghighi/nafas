@@ -2,7 +2,8 @@
 """nafas functions."""
 
 import time
-from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STEP_MAP, PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE, STEP_TEMPLATE, CYCLE_TEMPLATE
+from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STANDARD_MENU_ORDER, STEP_MAP
+from nafas.params import PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE, STEP_TEMPLATE, CYCLE_TEMPLATE
 import playsound
 import threading
 import os
@@ -21,22 +22,57 @@ def line(num=70, char="#"):
     print(num * char)
 
 
-def time_convert(input_time):
+def time_calc(program_data):
+    """
+    Calculate program time.
+
+    :param program_data: program data
+    :type program_data: dict
+    :return: time as float
+    """
+    result = sum(program_data["ratio"]) * program_data["unit"] * \
+        program_data["cycle"] + program_data["pre"]
+    return result
+
+
+def time_average_calc(program_data):
+    """
+    Calculate average time of a program in all levels.
+
+    :param program_data: program data in all levels
+    :type program_data: dict
+    :return: average time as float
+    """
+    result = 0
+    level_number = len(program_data)
+    for program in program_data.values():
+        result += time_calc(program)
+    return result / level_number
+
+
+def time_convert(input_time, average=False):
     """
     Convert input time from sec to MM,SS format.
 
     :param input_time: input time in sec
     :type input_time: float
+    :param average: average flag
+    :type average: bool
     :return: converted time as str
     """
     sec = float(input_time)
     _days, sec = divmod(sec, 24 * 3600)
     _hours, sec = divmod(sec, 3600)
     minutes, sec = divmod(sec, 60)
-    return ", ".join([
+    result = ", ".join([
         "{:02.0f} minutes".format(minutes),
         "{:02.0f} seconds".format(sec),
     ])
+    if average:
+        if sec >= 30:
+            minutes += 1
+        result = "{:02.0f} minutes".format(minutes).lstrip("0")
+    return result
 
 
 def left_justify(words, width):
@@ -103,23 +139,19 @@ def program_description_print(program_name, level, program_data):
     :param program_name: program name
     :type program_name: str
     :param level: program level
-     :type level: str
+    :type level: str
     :param program_data: program data
     :type program_data: dict
     :return: None
     """
     cycle = program_data["cycle"]
     ratio = program_data["ratio"]
-    unit = program_data["unit"]
-    pre = program_data["pre"]
-    unit_time = 0
     sequence = []
     for index, item in enumerate(ratio):
-        unit_time += item * unit
         if item != 0:
             sequence.append(STEP_MAP[index])
     sequence = ", ".join(sequence)
-    total_time = (unit_time * cycle) + pre
+    total_time = time_calc(program_data)
     line()
     print(
         PROGRAM_DESCRIPTION.format(
@@ -157,12 +189,26 @@ def get_input_standard(input_func=input):
     :return: input data as dict
     """
     input_data = {"program": 1, "level": 1}
-    for item in sorted(STANDARD_MENU.keys()):
+    for item in STANDARD_MENU_ORDER:
         exit_flag = False
         sorted_list = sorted(list(STANDARD_MENU[item].keys()))
-        print("- Please choose a {0} : ".format(item))
+        print("- Please choose a {0} : \n".format(item))
         for i in sorted_list:
-            print(str(i) + "- " + STANDARD_MENU[item][i])
+            if item == "program":
+                program_name = STANDARD_MENU[item][i]
+                program_average_time = time_average_calc(
+                    PROGRAMS[program_name])
+                print(
+                    str(i) +
+                    "- " +
+                    program_name +
+                    " (~ " +
+                    time_convert(
+                        program_average_time,
+                        True) +
+                    ")")
+            else:
+                print(str(i) + "- " + STANDARD_MENU[item][i])
         while not exit_flag:
             try:
                 input_data[item] = int(input_func(""))

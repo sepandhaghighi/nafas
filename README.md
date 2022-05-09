@@ -7,7 +7,9 @@
 <a href="https://codecov.io/gh/sepandhaghighi/nafas">
   <img src="https://codecov.io/gh/sepandhaghighi/nafas/branch/master/graph/badge.svg" alt="Codecov" /></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-
+<a href="https://discord.gg/CtZUNKJHP4">
+  <img src="https://img.shields.io/discord/901570530145107978.svg" alt="Discord Channel">
+</a>
 </div>	
 
 ----------
@@ -39,7 +41,7 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 	</tr>
 	<tr>
 		<td align="center">PyPI Counter</td>
-		<td align="center"><a href="http://pepy.tech/count/nafas"><img src="http://pepy.tech/badge/nafas"></a></td>
+		<td align="center"><a href="http://pepy.tech/project/nafas"><img src="http://pepy.tech/badge/nafas"></a></td>
 	</tr>
 	<tr>
 		<td align="center">Github Stars</td>
@@ -76,19 +78,19 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 ## Installation		
 
 ### Source Code
-- Download [Version 0.4](https://github.com/sepandhaghighi/nafas/archive/v0.4.zip) or [Latest Source ](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
+- Download [Version 0.5](https://github.com/sepandhaghighi/nafas/archive/v0.5.zip) or [Latest Source ](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
 - `pip install -r requirements.txt` or `pip3 install -r requirements.txt` (Need root access)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install nafas==0.4` or `pip3 install nafas==0.4` (Need root access)							
+- `pip install nafas==0.5` or `pip3 install nafas==0.5` (Need root access)							
 	
 
 ### Exe Version (Only Windows)
-- Download [Exe-Version 0.4](https://github.com/sepandhaghighi/nafas/releases/download/v0.4/NAFAS-0.4.exe)
-- Run `NAFAS-0.4.exe`
+- Download [Exe-Version 0.5](https://github.com/sepandhaghighi/nafas/releases/download/v0.5/NAFAS-0.5.exe)
+- Run `NAFAS-0.5.exe`
 
 
 ## Usage			
@@ -103,9 +105,15 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 
 ## Issues & Bug Reports			
 
-Just fill an issue and describe it. I'll check it ASAP!							
-or send an email to [sepand@pyrgg.ir](mailto:sepand@pyrgg.ir "sepand@pyrgg.ir"). 
+Just fill an issue and describe it. We'll check it ASAP!
 
+- Please complete the issue template
+
+You can also join our discord server
+
+<a href="https://discord.gg/CtZUNKJHP4">
+  <img src="https://img.shields.io/discord/901570530145107978.svg?style=for-the-badge" alt="Discord Channel">
+</a>
 
 ## Dependencies
 
@@ -140,8 +148,10 @@ or send an email to [sepand@pyrgg.ir](mailto:sepand@pyrgg.ir "sepand@pyrgg.ir").
 <blockquote>8- <a href="https://www.drweil.com/health-wellness/body-mind-spirit/stress-anxiety/breathing-three-exercises/">DrWeil, Integrative Medicine & Healthy Living</a> </blockquote>
 
 <blockquote>9- <a href="https://www.hgi.org.uk/resources/delve-our-extensive-library/resources-and-techniques/7-11-breathing-how-does-deep">Human Givens Institute</a> </blockquote>
+
+<blockquote>10- <a href="https://www.inc.com/mithu-storoni/this-2-minute-breathing-exercise-can-help-you-make-better-decisions-according-to-a-new-study.html">This 2-Minute Breathing Exercise Can Help You Make Better Decisions</a> </blockquote>
 					
-<blockquote>10- <a href="https://ttsmp3.com/">Free Text-To-Speech and Text-to-MP3 for US English</a> </blockquote>
+<blockquote>11- <a href="https://ttsmp3.com/">Free Text-To-Speech and Text-to-MP3 for US English</a> </blockquote>
 
 
 ## Show your support
@@ -171,5 +181,10 @@ bnb1zglwcf0ac3d0s2f6ck5kgwvcru4tlctt4p5qef
 <h4>Dash</h4>
 Xd3Yn2qZJ7VE8nbKw2fS98aLxR5M6WUU3s
 <h4>Stellar</h4>		
-
 GALPOLPISRHIYHLQER2TLJRGUSZH52RYDK6C3HIU4PSMNAV65Q36EGNL
+<h4>Zilliqa</h4>
+zil1knmz8zj88cf0exr2ry7nav9elehxfcgqu3c5e5
+<h4>Coffeete</h4>
+<a href="http://www.coffeete.ir/opensource">
+<img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" style="width:260px;" />
+</a>

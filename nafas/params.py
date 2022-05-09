@@ -16,7 +16,7 @@ Please consider the following :
 3. When exhaling through your mouth, it is recommended to fold the lips
 """
 
-NAFAS_VERSION = "0.4"
+NAFAS_VERSION = "0.5"
 
 SOUND_ERROR_MESSAGE = "ERROR : Unable to play sound."
 
@@ -40,19 +40,22 @@ STEP_TEMPLATE = "- {0} for {1} sec"
 STANDARD_MENU = {
     "program": {
         1: "Clear Mind",
-        2: "Relax",
-        3: "Calming",
-        4: "Power",
-        5: "Harmony",
-        6: "Anti-Stress",
-        7: "Anti-Appetite",
-        8: "Cigarette Replace",
-        9: "4-7-8(Relaxing Breath)",
-        10: "7-11(Relaxing Breath)"},
+        2: "Relax1",
+        3: "Relax2",
+        4: "Relax3",
+        5: "Calming",
+        6: "Power",
+        7: "Harmony",
+        8: "Anti-Stress",
+        9: "Anti-Appetite",
+        10: "Cigarette Replace",
+        11: "Decision-Making"},
     "level": {
         1: "Beginner",
         2: "Medium",
         3: "Advanced"}}
+
+STANDARD_MENU_ORDER = ["program", "level"]
 
 STEP_MAP = {0: "Inhale", 1: "Retain", 2: "Exhale", 3: "Sustain"}
 
@@ -86,7 +89,7 @@ HARMONY_MEDIUM = {"ratio": [1, 4, 2, 1], "unit": 3, "pre": 3, "cycle": 18}
 
 HARMONY_ADVANCED = {"ratio": [1, 5, 2, 1], "unit": 3, "pre": 3, "cycle": 16}
 
-FOUR_SEVEN_EIGHT_BEGINNER = {
+RELAX2_BEGINNER = {
     "ratio": [
         4,
         7,
@@ -96,7 +99,7 @@ FOUR_SEVEN_EIGHT_BEGINNER = {
     "pre": 3,
     "cycle": 4}
 
-FOUR_SEVEN_EIGHT_MEDIUM = {
+RELAX2_MEDIUM = {
     "ratio": [
         4,
         7,
@@ -106,7 +109,7 @@ FOUR_SEVEN_EIGHT_MEDIUM = {
     "pre": 3,
     "cycle": 8}
 
-FOUR_SEVEN_EIGHT_ADVANCED = {
+RELAX2_ADVANCED = {
     "ratio": [
         4,
         7,
@@ -116,7 +119,7 @@ FOUR_SEVEN_EIGHT_ADVANCED = {
     "pre": 3,
     "cycle": 12}
 
-SEVEN_ELEVEN_BEGINNER = {
+RELAX3_BEGINNER = {
     "ratio": [
         7,
         0,
@@ -126,7 +129,7 @@ SEVEN_ELEVEN_BEGINNER = {
     "pre": 3,
     "cycle": 15}
 
-SEVEN_ELEVEN_MEDIUM = {
+RELAX3_MEDIUM = {
     "ratio": [
         7,
         0,
@@ -136,7 +139,7 @@ SEVEN_ELEVEN_MEDIUM = {
     "pre": 3,
     "cycle": 20}
 
-SEVEN_ELEVEN_ADVANCED = {
+RELAX3_ADVANCED = {
     "ratio": [
         7,
         0,
@@ -237,12 +240,43 @@ CIGARETTE_REPLACE_ADVANCED = {
     "cycle": 19}
 
 
+DECISION_MAKING_BEGINNER = {
+    "ratio": [
+        5,
+        2,
+        7,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 6}
+
+DECISION_MAKING_MEDIUM = {
+    "ratio": [
+        5,
+        2,
+        7,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 10}
+
+DECISION_MAKING_ADVANCED = {
+    "ratio": [
+        5,
+        2,
+        7,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 14}
+
+
 PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                            "Medium": CLEAR_MIND_MEDIUM,
                            "Advanced": CLEAR_MIND_ADVANCED},
-            "Relax": {"Beginner": RELAX_BEGINNER,
-                      "Medium": RELAX_MEDIUM,
-                      "Advanced": RELAX_ADVANCED},
+            "Relax1": {"Beginner": RELAX_BEGINNER,
+                       "Medium": RELAX_MEDIUM,
+                       "Advanced": RELAX_ADVANCED},
             "Calming": {"Beginner": CALMING_BEGINNER,
                         "Medium": CALMING_MEDIUM,
                         "Advanced": CALMING_ADVANCED},
@@ -261,12 +295,15 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Harmony": {"Beginner": HARMONY_BEGINNER,
                         "Medium": HARMONY_MEDIUM,
                         "Advanced": HARMONY_ADVANCED},
-            "4-7-8(Relaxing Breath)": {"Beginner": FOUR_SEVEN_EIGHT_BEGINNER,
-                                       "Medium": FOUR_SEVEN_EIGHT_MEDIUM,
-                                       "Advanced": FOUR_SEVEN_EIGHT_ADVANCED},
-            "7-11(Relaxing Breath)": {"Beginner": SEVEN_ELEVEN_BEGINNER,
-                                      "Medium": SEVEN_ELEVEN_MEDIUM,
-                                      "Advanced": SEVEN_ELEVEN_ADVANCED}
+            "Relax2": {"Beginner": RELAX2_BEGINNER,
+                       "Medium": RELAX2_MEDIUM,
+                       "Advanced": RELAX2_ADVANCED},
+            "Relax3": {"Beginner": RELAX3_BEGINNER,
+                       "Medium": RELAX3_MEDIUM,
+                       "Advanced": RELAX3_ADVANCED},
+            "Decision-Making": {"Beginner": DECISION_MAKING_BEGINNER,
+                                "Medium": DECISION_MAKING_MEDIUM,
+                                "Advanced": DECISION_MAKING_ADVANCED}
             }
 
 
