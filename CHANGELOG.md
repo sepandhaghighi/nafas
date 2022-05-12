@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Calming2 program
+### Changed
+- Calming program renamed to Calming1
+- `README.md` modified
 ## [0.5] - 2022-05-09
 ### Added
 - Decision-Making program
