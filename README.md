@@ -150,8 +150,10 @@ You can also join our discord server
 <blockquote>9- <a href="https://www.hgi.org.uk/resources/delve-our-extensive-library/resources-and-techniques/7-11-breathing-how-does-deep">Human Givens Institute</a> </blockquote>
 
 <blockquote>10- <a href="https://www.inc.com/mithu-storoni/this-2-minute-breathing-exercise-can-help-you-make-better-decisions-according-to-a-new-study.html">This 2-Minute Breathing Exercise Can Help You Make Better Decisions</a> </blockquote>
+
+<blockquote>11- <a href="https://k12.thoughtfullearning.com/minilesson/using-5-5-5-breathing-calm-down">Using 5-5-5 Breathing to Calm Down</a> </blockquote>
 					
-<blockquote>11- <a href="https://ttsmp3.com/">Free Text-To-Speech and Text-to-MP3 for US English</a> </blockquote>
+<blockquote>12- <a href="https://ttsmp3.com/">Free Text-To-Speech and Text-to-MP3 for US English</a> </blockquote>
 
 
 ## Show your support
