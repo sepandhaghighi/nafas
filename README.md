@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/logo.png" height=320px width=320px>
+<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/logo.png" width=320px>
 <hr/>
 <h1>Nafas</h1>
 
@@ -155,6 +155,7 @@ You can also join our discord server
 					
 <blockquote>12- <a href="https://ttsmp3.com/">Free Text-To-Speech and Text-to-MP3 for US English</a> </blockquote>
 
+* Logo designed by [Sara Amiri Fard](https://github.com/sarahfard)
 
 ## Show your support
 								
