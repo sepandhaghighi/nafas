@@ -155,6 +155,7 @@ You can also join our discord server
 					
 <blockquote>12- <a href="https://ttsmp3.com/">Free Text-To-Speech and Text-to-MP3 for US English</a> </blockquote>
 
+* Logo designed by [Sara Amiri Fard](https://github.com/sarahfard)
 
 ## Show your support
 								
