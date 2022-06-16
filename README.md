@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/sepandhaghighi/nafas/raw/logo/otherfiles/logo.png" width=320px>
+<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/logo.png" width=320px>
 <hr/>
 <h1>Nafas</h1>
 
