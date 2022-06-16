@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Calming2 program
 ### Changed
 - Calming program renamed to Calming1
+- Logo updated
 - `README.md` modified
 ## [0.5] - 2022-05-09
 ### Added
