@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/logo.png" height=320px width=320px>
+<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/logo.png" width=320px>
 <hr/>
 <h1>Nafas</h1>
 
@@ -78,19 +78,19 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 ## Installation		
 
 ### Source Code
-- Download [Version 0.5](https://github.com/sepandhaghighi/nafas/archive/v0.5.zip) or [Latest Source ](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
+- Download [Version 0.6](https://github.com/sepandhaghighi/nafas/archive/v0.6.zip) or [Latest Source ](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
 - `pip install -r requirements.txt` or `pip3 install -r requirements.txt` (Need root access)
 - `python3 setup.py install` or `python setup.py install` (Need root access)				
 
 ### PyPI
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install nafas==0.5` or `pip3 install nafas==0.5` (Need root access)							
+- `pip install nafas==0.6` or `pip3 install nafas==0.6` (Need root access)							
 	
 
 ### Exe Version (Only Windows)
-- Download [Exe-Version 0.5](https://github.com/sepandhaghighi/nafas/releases/download/v0.5/NAFAS-0.5.exe)
-- Run `NAFAS-0.5.exe`
+- Download [Exe-Version 0.6](https://github.com/sepandhaghighi/nafas/releases/download/v0.6/NAFAS-0.6.exe)
+- Run `NAFAS-0.6.exe`
 
 
 ## Usage			
@@ -150,9 +150,12 @@ You can also join our discord server
 <blockquote>9- <a href="https://www.hgi.org.uk/resources/delve-our-extensive-library/resources-and-techniques/7-11-breathing-how-does-deep">Human Givens Institute</a> </blockquote>
 
 <blockquote>10- <a href="https://www.inc.com/mithu-storoni/this-2-minute-breathing-exercise-can-help-you-make-better-decisions-according-to-a-new-study.html">This 2-Minute Breathing Exercise Can Help You Make Better Decisions</a> </blockquote>
-					
-<blockquote>11- <a href="https://ttsmp3.com/">Free Text-To-Speech and Text-to-MP3 for US English</a> </blockquote>
 
+<blockquote>11- <a href="https://k12.thoughtfullearning.com/minilesson/using-5-5-5-breathing-calm-down">Using 5-5-5 Breathing to Calm Down</a> </blockquote>
+					
+<blockquote>12- <a href="https://ttsmp3.com/">Free Text-To-Speech and Text-to-MP3 for US English</a> </blockquote>
+
+* Logo designed by [Sara Amiri Fard](https://github.com/sarahfard)
 
 ## Show your support
 								
