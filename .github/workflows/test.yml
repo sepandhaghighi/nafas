@@ -34,7 +34,7 @@ jobs:
     - name: Version check
       run: |
         python otherfiles/version_check.py
-      if: matrix.python-version == 3.7
+      if: matrix.python-version == 3.8
     - name: Test with pytest
       run: |
         python -m pytest test --cov=nafas --cov-report=term
@@ -43,8 +43,8 @@ jobs:
         python -m vulture nafas/ setup.py --min-confidence 65 --exclude=__init__.py --sort-by-size
         python -m bandit -r nafas -s B311
         python -m pydocstyle --match-dir=nafas -v
-      if: matrix.python-version == 3.7
+      if: matrix.python-version == 3.8
     - name: Codecov
       run: |
         codecov
-      if: matrix.python-version == 3.7 && matrix.os == 'ubuntu-latest'
+      if: matrix.python-version == 3.8 && matrix.os == 'ubuntu-latest'
