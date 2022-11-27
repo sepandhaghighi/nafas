@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 """
+>>> import os
+>>> from pytest import warns
+>>> import shutil
 >>> from nafas.functions import *
 >>> line(10,"*")
 **********
@@ -110,5 +113,10 @@ Well done!
 >>> play_sound(1, debug=False).join()
 >>> play_sound(1, debug=True).join()
 ERROR : Unable to play sound.
-
+>>> temp = shutil.copyfile("nafas/sounds/silence.wav", "nafas/sounds/temp.wav")
+>>> os.remove("nafas/sounds/silence.wav")
+>>> with warns(RuntimeWarning, match="Your device is not compatible with our underlaying sound playing library. You can refer to https://github.com/sepandhaghighi/nafas/issues/49 if you wanted to solve it."):
+...     sound_check()
+>>> _ = shutil.copyfile(temp, "nafas/sounds/silence.wav")
+>>> os.remove(temp)
 """
