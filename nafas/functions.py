@@ -318,6 +318,7 @@ def run(program_data):
     :type program_data: dict
     :return: None
     """
+    sound_check()
     cycle = program_data["cycle"]
     ratio = program_data["ratio"]
     unit = program_data["unit"]

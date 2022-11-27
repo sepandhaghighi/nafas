@@ -2,8 +2,8 @@
 """nafas main."""
 
 import sys
-from nafas.functions import description_print, sound_check, get_input_standard
-from nafas.functions import input_filter, get_program_data, program_description_print, run
+from nafas.functions import description_print, get_input_standard, input_filter
+from nafas.functions import get_program_data, program_description_print, run
 from nafas.params import NAFAS_VERSION
 from art import tprint
 
