@@ -19,6 +19,10 @@ Please consider the following :
 NAFAS_VERSION = "0.6"
 
 SOUND_ERROR_MESSAGE = "ERROR : Unable to play sound."
+SOUND_WARNING_MESSAGE = """
+Your device is not compatible with our underlaying sound playing library.
+You can refer to https://github.com/sepandhaghighi/nafas/issues/49 if you wanted to solve it.
+"""
 
 PROGRAM_DESCRIPTION = """Program Details :
 
@@ -318,6 +322,7 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
 
 
 SOUND_MAP = {
+    "Silence": "silence.wav",
     "Start": "start.wav",
     "Prepare": "preparing.wav",
     "Inhale": "inhale.wav",

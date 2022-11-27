@@ -2,7 +2,8 @@
 """nafas main."""
 
 import sys
-from nafas.functions import description_print, get_input_standard, input_filter, get_program_data, program_description_print, run
+from nafas.functions import description_print, sound_check, get_input_standard
+from nafas.functions import input_filter, get_program_data, program_description_print, run
 from nafas.params import NAFAS_VERSION
 from art import tprint
 
@@ -11,6 +12,7 @@ if __name__ == "__main__":
     tprint("Nafas")
     tprint("v" + str(NAFAS_VERSION))
     description_print()
+    sound_check()
     if len(args) < 2:
         EXIT_FLAG = False
         while not EXIT_FLAG:
