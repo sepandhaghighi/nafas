@@ -4,9 +4,11 @@
 import time
 from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STANDARD_MENU_ORDER, STEP_MAP
 from nafas.params import PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE, STEP_TEMPLATE, CYCLE_TEMPLATE
+from nafas.params import SOUND_WARNING_MESSAGE
 import playsound
 import threading
 import os
+from warnings import warn
 
 
 def line(num=70, char="#"):
@@ -120,6 +122,19 @@ def justify(words, width):
         col += len(word) + 1
     if line:
         yield left_justify(line, width)
+
+
+def sound_check():
+    """
+    Check sound playing device.
+
+    :return: None
+    """
+    sound_path = get_sound_path(SOUND_MAP['Silence'])
+    try:
+        playsound.playsound(sound_path)
+    except Exception:
+        warn(SOUND_WARNING_MESSAGE, RuntimeWarning)
 
 
 def description_print():
@@ -303,6 +318,7 @@ def run(program_data):
     :type program_data: dict
     :return: None
     """
+    sound_check()
     cycle = program_data["cycle"]
     ratio = program_data["ratio"]
     unit = program_data["unit"]
