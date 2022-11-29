@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `sound_check` function
 ### Changed
 - Test system modified
+- `Python 3.11` added to `test.yml`
 ## [0.6] - 2022-06-22
 ### Added
 - Calming2 program
