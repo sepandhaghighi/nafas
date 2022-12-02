@@ -18,7 +18,6 @@
    * [Installation](https://github.com/sepandhaghighi/nafas#installation)
    * [Usage](https://github.com/sepandhaghighi/nafas#usage)
    * [Issues & Bug Reports](https://github.com/sepandhaghighi/nafas#issues--bug-reports)
-   * [Dependencies](https://github.com/sepandhaghighi/nafas#dependencies)
    * [Contribution](https://github.com/sepandhaghighi/nafas/blob/master/.github/CONTRIBUTING.md)
    * [References](https://github.com/sepandhaghighi/nafas#references)
    * [Authors](https://github.com/sepandhaghighi/nafas/blob/master/AUTHORS.md)
@@ -114,19 +113,6 @@ You can also join our discord server
 <a href="https://discord.gg/CtZUNKJHP4">
   <img src="https://img.shields.io/discord/901570530145107978.svg?style=for-the-badge" alt="Discord Channel">
 </a>
-
-## Dependencies
-
-<table>
-	<tr> 
-		<td align="center">master</td>	
-		<td align="center">dev</td>	
-	</tr>
-	<tr>
-		<td align="center"><a href="https://requires.io/github/sepandhaghighi/nafas/requirements/?branch=master"><img src="https://requires.io/github/sepandhaghighi/nafas/requirements.svg?branch=master" alt="Requirements Status" /></a></td>
-		<td align="center"><a href="https://requires.io/github/sepandhaghighi/nafas/requirements/?branch=dev"><img src="https://requires.io/github/sepandhaghighi/nafas/requirements.svg?branch=dev" alt="Requirements Status" /></a></td>
-	</tr>
-</table>
  			
 
 ## References
