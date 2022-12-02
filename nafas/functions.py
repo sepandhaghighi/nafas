@@ -3,7 +3,7 @@
 
 import time
 from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STANDARD_MENU_ORDER, STEP_MAP
-from nafas.params import PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, SOUND_ERROR_MESSAGE, STEP_TEMPLATE, CYCLE_TEMPLATE
+from nafas.params import PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, STEP_TEMPLATE, CYCLE_TEMPLATE
 from nafas.params import SOUND_WARNING_MESSAGE
 import playsound
 import threading
@@ -288,9 +288,9 @@ def _playsound_async(sound_path, debug):
     """
     try:
         playsound.playsound(sound_path)
-    except Exception:
+    except Exception as e:
         if debug:
-            print(SOUND_ERROR_MESSAGE)
+            print(str(e))
 
 
 def play_sound(sound_path, debug=False):
