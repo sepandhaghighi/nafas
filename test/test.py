@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 >>> import os
+>>> import doctest
+>>> doctest.ELLIPSIS_MARKER = "ignore_this_message"
 >>> from pytest import warns
 >>> import shutil
 >>> from nafas.functions import *
@@ -112,7 +114,7 @@ Cycle : 2 (Remaining : 0)
 Well done!
 >>> play_sound(1, debug=False).join()
 >>> play_sound(1, debug=True).join()
-ERROR : Unable to play sound.
+ignore_this_message
 >>> temp = shutil.copyfile("nafas/sounds/silence.wav", "nafas/sounds/temp.wav")
 >>> os.remove("nafas/sounds/silence.wav")
 >>> with warns(RuntimeWarning, match="Your device is not compatible with our underlying sound-playing library. You can refer to https://github.com/sepandhaghighi/nafas/issues/49."):
