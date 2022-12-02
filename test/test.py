@@ -115,10 +115,12 @@ Well done!
 >>> play_sound(1, debug=False).join()
 >>> play_sound(1, debug=True).join()
 ignore_this_message
->>> temp = shutil.copyfile("nafas/sounds/silence.wav", "nafas/sounds/temp.wav")
->>> os.remove("nafas/sounds/silence.wav")
+>>> wave_path = os.path.join("nafas", "sounds", "silence.wav")
+>>> temp_path = os.path.join("nafas", "sounds", "temp.wav")
+>>> _ = shutil.copyfile(wave_path, temp_path)
+>>> os.remove(wave_path)
 >>> with warns(RuntimeWarning, match="Your device is not compatible with our underlying sound-playing library. You can refer to https://github.com/sepandhaghighi/nafas/issues/49."):
 ...     sound_check()
->>> _ = shutil.copyfile(temp, "nafas/sounds/silence.wav")
->>> os.remove(temp)
+>>> _ = shutil.copyfile(temp_path, wave_path)
+>>> os.remove(temp_path)
 """
