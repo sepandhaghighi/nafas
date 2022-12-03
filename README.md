@@ -92,7 +92,11 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 - Run `NAFAS-0.6.exe`
 
 
-## Usage			
+## Usage	
+
+- Open `CMD` (Windows) or `Terminal` (UNIX)
+- Run `nafas` or `python -m nafas` (or run `NAFAS.exe`)
+- Enter data			
 
 <div align="center">
 

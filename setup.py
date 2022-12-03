@@ -66,4 +66,8 @@ setup(
         'Topic :: Utilities',
     ],
     license='MIT',
+    entry_points={
+        'console_scripts': [
+            'nafas = nafas.__main__:main',
+        ]}
 )
