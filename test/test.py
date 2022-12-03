@@ -22,6 +22,22 @@ Please consider the following :
 2. Exhaling, you can use both nose and mouth
 3. When exhaling through your mouth, it is recommended to fold the lips
 <BLANKLINE>
+>>> print("\\n".join(justify(["123"], 2)))
+123
+>>> print("\\n".join(justify(["123"], 1)))
+123
+>>> print("\\n".join(justify(["123"], 0)))
+123
+>>> print("\\n".join(justify("", 2)))
+<BLANKLINE>
+>>> print("\\n".join(justify([" 1", "2", "3"], 2)))
+1
+2
+3
+>>> print("\\n".join(justify([" 1", "2", "3"], 3)))
+1
+2
+3
 >>> input_data = input_filter({"program":1,"level":1})
 >>> input_data["program"] == 1
 True
