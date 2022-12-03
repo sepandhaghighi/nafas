@@ -26,7 +26,7 @@ jobs:
     - name: First test
       run: |
         python setup.py install
-        python -m nafas test
+        python -m nafas --version
     - name: Install dev-requirements
       run: |
         python otherfiles/requirements-splitter.py
