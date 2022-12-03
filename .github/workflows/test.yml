@@ -47,4 +47,4 @@ jobs:
     - name: Codecov
       run: |
         codecov
-      if: matrix.python-version == 3.8 && matrix.os == 'ubuntu-latest'
+      if: matrix.python-version == 3.8 && matrix.os == 'ubuntu-20.04'
