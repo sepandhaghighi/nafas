@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 >>> import os
+>>> import doctest
+>>> doctest.ELLIPSIS_MARKER = "ignore_this_message"
 >>> from pytest import warns
 >>> import shutil
 >>> from nafas.functions import *
@@ -20,6 +22,22 @@ Please consider the following :
 2. Exhaling, you can use both nose and mouth
 3. When exhaling through your mouth, it is recommended to fold the lips
 <BLANKLINE>
+>>> print("\\n".join(justify(["123"], 2)))
+123
+>>> print("\\n".join(justify(["123"], 1)))
+123
+>>> print("\\n".join(justify(["123"], 0)))
+123
+>>> print("\\n".join(justify("", 2)))
+<BLANKLINE>
+>>> print("\\n".join(justify([" 1", "2", "3"], 2)))
+1
+2
+3
+>>> print("\\n".join(justify([" 1", "2", "3"], 3)))
+1
+2
+3
 >>> input_data = input_filter({"program":1,"level":1})
 >>> input_data["program"] == 1
 True
@@ -112,11 +130,14 @@ Cycle : 2 (Remaining : 0)
 Well done!
 >>> play_sound(1, debug=False).join()
 >>> play_sound(1, debug=True).join()
-ERROR : Unable to play sound.
->>> temp = shutil.copyfile("nafas/sounds/silence.wav", "nafas/sounds/temp.wav")
->>> os.remove("nafas/sounds/silence.wav")
->>> with warns(RuntimeWarning, match="Your device is not compatible with our underlying sound-playing library. You can refer to https://github.com/sepandhaghighi/nafas/issues/49."):
-...     sound_check()
->>> _ = shutil.copyfile(temp, "nafas/sounds/silence.wav")
->>> os.remove(temp)
+ignore_this_message
+>>> try:
+...     wave_path = os.path.join("nafas", "sounds", "silence.wav")
+...     temp_path = os.path.join("nafas", "sounds", "temp.wav")
+...     _ = shutil.move(wave_path, temp_path)
+...     with warns(RuntimeWarning, match="Your device is not compatible with our underlying sound-playing library. You can refer to https://github.com/sepandhaghighi/nafas/issues/49."):
+...         sound_check()
+...     _ = shutil.move(temp_path, wave_path)
+... except Exception:
+...     pass
 """

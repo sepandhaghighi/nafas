@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Test system modified
 - `Python 3.11` added to `test.yml`
+- `README.md` modified
 ## [0.6] - 2022-06-22
 ### Added
 - Calming2 program
