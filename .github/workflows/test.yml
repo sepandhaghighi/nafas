@@ -44,7 +44,8 @@ jobs:
         python -m bandit -r nafas -s B311
         python -m pydocstyle --match-dir=nafas -v
       if: matrix.python-version == 3.8
-    - name: Codecov
-      run: |
-        codecov
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+          fail_ci_if_error: true
       if: matrix.python-version == 3.8 && matrix.os == 'ubuntu-20.04'
