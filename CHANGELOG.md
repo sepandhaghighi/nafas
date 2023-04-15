@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `sound_check` function
 ### Changed
 - Test system modified
+- `codecov` removed from `dev-requirements.txt`
 - `Python 3.11` added to `test.yml`
 - CLI mode updated
 - `README.md` modified
