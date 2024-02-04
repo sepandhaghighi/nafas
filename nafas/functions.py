@@ -5,7 +5,7 @@ import time
 from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STANDARD_MENU_ORDER, STEP_MAP
 from nafas.params import PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, STEP_TEMPLATE, CYCLE_TEMPLATE
 from nafas.params import SOUND_WARNING_MESSAGE
-import playsound
+import nava
 import threading
 import os
 from warnings import warn
@@ -132,7 +132,7 @@ def sound_check():
     """
     sound_path = get_sound_path(SOUND_MAP['Silence'])
     try:
-        playsound.playsound(sound_path)
+        nava.play(sound_path)
     except Exception:
         warn(SOUND_WARNING_MESSAGE, RuntimeWarning)
 
@@ -276,24 +276,7 @@ def graphic_counter(delay_time):
     print()
 
 
-def _playsound_async(sound_path, debug):
-    """
-    Play sound asynchronous in a thread.
-
-    :param sound_path: sound path
-    :type sound_path: str
-    :param debug: debug mode flag
-    :type debug: bool
-    :return: None
-    """
-    try:
-        playsound.playsound(sound_path)
-    except Exception as e:
-        if debug:
-            print(str(e))
-
-
-def play_sound(sound_path, debug=False):
+def play_sound(sound_path):
     """
     Play inputted sound file.
 
@@ -303,11 +286,7 @@ def play_sound(sound_path, debug=False):
     :type debug: bool
     :return: new thread as threading.Thread object
     """
-    new_thread = threading.Thread(
-        target=_playsound_async, args=(
-            sound_path, debug,), daemon=True)
-    new_thread.start()
-    return new_thread
+    return nava.play(sound_path, async_mode=True)
 
 
 def run(program_data):
@@ -324,15 +303,15 @@ def run(program_data):
     unit = program_data["unit"]
     pre = program_data["pre"]
     print("Preparing ", end="", flush=True)
-    sound_thread = play_sound(get_sound_path(SOUND_MAP['Prepare']))
+    sid = play_sound(get_sound_path(SOUND_MAP['Prepare']))
     graphic_counter(pre)
     line()
     time.sleep(1)
-    sound_thread.join()
-    sound_thread = play_sound(get_sound_path(SOUND_MAP['Start']))
+    nava.stop(sid)
+    sid = play_sound(get_sound_path(SOUND_MAP['Start']))
     print("Start", flush=True)
     time.sleep(1)
-    sound_thread.join()
+    nava.stop(sid)
     line()
     time.sleep(1)
     for i in range(cycle):
@@ -341,15 +320,16 @@ def run(program_data):
         for index, item in enumerate(ratio):
             if item != 0:
                 item_name = STEP_MAP[index]
-                sound_thread = play_sound(get_sound_path(SOUND_MAP[item_name]))
+                sid = play_sound(get_sound_path(SOUND_MAP[item_name]))
                 print(
                     STEP_TEMPLATE.format(
                         item_name, str(
                             unit * item)), flush=True)
                 graphic_counter(item * unit)
-                sound_thread.join()
+                nava.stop(sid)
         time.sleep(1)
         line()
-    sound_thread = play_sound(get_sound_path(SOUND_MAP['End']))
+    sid = play_sound(get_sound_path(SOUND_MAP['End']))
     print("Well done!", flush=True)
-    sound_thread.join()
+    time.sleep(1)
+    nava.stop(sid)
