@@ -128,9 +128,10 @@ Cycle : 2 (Remaining : 0)
 . . . .
 ######################################################################
 Well done!
->>> play_sound(1, debug=False).join()
->>> play_sound(1, debug=True).join()
-ignore_this_message
+>>> sid = play_sound(1)
+Traceback (most recent call last):
+        ...
+nava.errors.NavaBaseError: Sound file's path should be a string.
 >>> try:
 ...     wave_path = os.path.join("nafas", "sounds", "silence.wav")
 ...     temp_path = os.path.join("nafas", "sounds", "temp.wav")
