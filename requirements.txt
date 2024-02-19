@@ -1,3 +1,2 @@
 art>=1.8
-playsound>=1.0.0
-
+nava>=0.4
