@@ -282,9 +282,7 @@ def play_sound(sound_path):
 
     :param sound_path: sound path
     :type sound_path: str
-    :param debug: debug mode flag
-    :type debug: bool
-    :return: new thread as threading.Thread object
+    :return: sound id as int
     """
     return nava.play(sound_path, async_mode=True)
 
