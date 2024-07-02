@@ -8,7 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - `sound_check` function
 ### Changed
-- `playsound` changed to `nava`
+- `playsound` replaced with `nava`
+- `nava` added to `requirements.txt`
 - Test system modified
 - `Python 3.11` added to `test.yml`
 - CLI mode updated
