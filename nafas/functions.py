@@ -6,7 +6,6 @@ from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STANDAR
 from nafas.params import PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, STEP_TEMPLATE, CYCLE_TEMPLATE
 from nafas.params import SOUND_WARNING_MESSAGE
 import nava
-import threading
 import os
 from warnings import warn
 
