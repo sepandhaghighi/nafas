@@ -1,4 +1,4 @@
-art==5.9
+art==6.2
 nava==0.3
 codecov>=2.0.15
 pytest>=4.3.1
