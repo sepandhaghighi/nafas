@@ -331,5 +331,5 @@ def run(program_data):
         line()
     sid = play_sound(get_sound_path(SOUND_MAP['End']))
     print("Well done!", flush=True)
-    time.sleep(1)
+    time.sleep(2)
     nava.stop(sid)
