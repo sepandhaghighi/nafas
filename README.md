@@ -1,30 +1,13 @@
 <div align="center">
 <img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/logo.png" width=320px>
-<hr/>
-<h1>Nafas</h1>
-
+<h1>Nafas: A Breathing Gymnastics Application</h1>
+<hr>
 <a href="https://badge.fury.io/py/nafas"><img src="https://badge.fury.io/py/nafas.svg" alt="PyPI version" height="18"></a>
-<a href="https://codecov.io/gh/sepandhaghighi/nafas">
-  <img src="https://codecov.io/gh/sepandhaghighi/nafas/branch/master/graph/badge.svg" alt="Codecov" /></a>
-<a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
-<a href="https://discord.gg/CtZUNKJHP4">
-  <img src="https://img.shields.io/discord/901570530145107978.svg" alt="Discord Channel">
-</a>
+<a href="https://codecov.io/gh/sepandhaghighi/nafas"><img src="https://codecov.io/gh/sepandhaghighi/nafas/branch/master/graph/badge.svg" alt="Codecov"></a>
+<a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3"></a>
+<a href="https://discord.gg/CtZUNKJHP4"><img src="https://img.shields.io/discord/901570530145107978.svg" alt="Discord Channel"></a>
 </div>	
-
-----------
-## Table of contents					
-   * [Overview](https://github.com/sepandhaghighi/nafas#overview)
-   * [Installation](https://github.com/sepandhaghighi/nafas#installation)
-   * [Usage](https://github.com/sepandhaghighi/nafas#usage)
-   * [Issues & Bug Reports](https://github.com/sepandhaghighi/nafas#issues--bug-reports)
-   * [Contribution](https://github.com/sepandhaghighi/nafas/blob/master/.github/CONTRIBUTING.md)
-   * [References](https://github.com/sepandhaghighi/nafas#references)
-   * [Authors](https://github.com/sepandhaghighi/nafas/blob/master/AUTHORS.md)
-   * [License](https://github.com/sepandhaghighi/nafas/blob/master/LICENSE)
-   * [Show Your Support](https://github.com/sepandhaghighi/nafas#show-your-support)
-   * [Changelog](https://github.com/sepandhaghighi/nafas/blob/master/CHANGELOG.md)
-   * [Code of Conduct](https://github.com/sepandhaghighi/nafas/blob/master/.github/CODE_OF_CONDUCT.md)			
+	
 				
 ## Overview						
 Breathing gymnastics is a system of breathing exercises that focuses on the treatment of various diseases and general health promotion.
@@ -58,8 +41,8 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 	</tr>
 	<tr>
 		<td align="center">CI</td>
-		<td align="center"><img src="https://github.com/sepandhaghighi/nafas/workflows/CI/badge.svg?branch=master"></td>
-		<td align="center"><img src="https://github.com/sepandhaghighi/nafas/workflows/CI/badge.svg?branch=dev"></td>
+		<td align="center"><img src="https://github.com/sepandhaghighi/nafas/actions/workflows/test.yml/badge.svg?branch=master"></td>
+		<td align="center"><img src="https://github.com/sepandhaghighi/nafas/actions/workflows/test.yml/badge.svg?branch=dev"></td>
 	</tr>
 </table>
 
