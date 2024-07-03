@@ -43,8 +43,8 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 	</tr>
 	<tr>
 		<td align="center">CI</td>
-		<td align="center"><img src="https://github.com/sepandhaghighi/nafas/workflows/CI/badge.svg?branch=master"></td>
-		<td align="center"><img src="https://github.com/sepandhaghighi/nafas/workflows/CI/badge.svg?branch=dev"></td>
+		<td align="center"><img src="https://github.com/sepandhaghighi/nafas/actions/workflows/test.yml/badge.svg?branch=master"></td>
+		<td align="center"><img src="https://github.com/sepandhaghighi/nafas/actions/workflows/test.yml/badge.svg?branch=dev"></td>
 	</tr>
 </table>
 
