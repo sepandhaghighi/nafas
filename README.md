@@ -12,19 +12,7 @@
 </a>
 </div>	
 
-----------
-## Table of contents					
-   * [Overview](https://github.com/sepandhaghighi/nafas#overview)
-   * [Installation](https://github.com/sepandhaghighi/nafas#installation)
-   * [Usage](https://github.com/sepandhaghighi/nafas#usage)
-   * [Issues & Bug Reports](https://github.com/sepandhaghighi/nafas#issues--bug-reports)
-   * [Contribution](https://github.com/sepandhaghighi/nafas/blob/master/.github/CONTRIBUTING.md)
-   * [References](https://github.com/sepandhaghighi/nafas#references)
-   * [Authors](https://github.com/sepandhaghighi/nafas/blob/master/AUTHORS.md)
-   * [License](https://github.com/sepandhaghighi/nafas/blob/master/LICENSE)
-   * [Show Your Support](https://github.com/sepandhaghighi/nafas#show-your-support)
-   * [Changelog](https://github.com/sepandhaghighi/nafas/blob/master/CHANGELOG.md)
-   * [Code of Conduct](https://github.com/sepandhaghighi/nafas/blob/master/.github/CODE_OF_CONDUCT.md)			
+----------		
 				
 ## Overview						
 Breathing gymnastics is a system of breathing exercises that focuses on the treatment of various diseases and general health promotion.
