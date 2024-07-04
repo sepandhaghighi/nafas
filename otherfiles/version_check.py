@@ -31,10 +31,12 @@ RC_ITEMS = [
     "(u'FileVersion', u'{0}.{1}.{2}.{3}'),",
     "(u'ProductVersion', u'{0}, {1}, {2}, {3}')"]
 PARAMS_ITEMS = ['NAFAS_VERSION = "{0}"']
+SECURITY_ITEMS = ["| {0}           | :white_check_mark: |", "| < {0}         | :x:                |"]
 FILES = {
     "setup.py": SETUP_ITEMS,
     "README.md": README_ITEMS,
     "CHANGELOG.md": CHANGELOG_ITEMS,
+    "SECURITY.md": SECURITY_ITEMS,
     os.path.join(
         "nafas",
         "params.py"): PARAMS_ITEMS}
