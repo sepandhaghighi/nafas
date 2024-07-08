@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `playsound` replaced with `nava`
 - `nava` added to `requirements.txt`
 - Test system modified
+- Build system modified
 - `Python 3.11` added to `test.yml`
 - CLI mode updated
 - `README.md` modified
