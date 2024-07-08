@@ -2,6 +2,7 @@
 
 block_cipher = None
 
+nafas_version = "0.6"
 
 a = Analysis(['nafas/__main__.py'],
              pathex=['nafas'],
@@ -21,7 +22,7 @@ exe = EXE(pyz,
           a.binaries,
           a.zipfiles,
           a.datas,
-          name='NAFAS',
+          name='NAFAS-'+nafas_version,
           debug=False,
           strip=False,
           upx=True,
