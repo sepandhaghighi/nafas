@@ -25,7 +25,6 @@ jobs:
         pip install .
     - name: First test
       run: |
-        python setup.py install
         nafas --version
     - name: Install dev-requirements
       run: |
