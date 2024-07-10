@@ -61,13 +61,12 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 
 ### Source Code
 - Download [Version 0.6](https://github.com/sepandhaghighi/nafas/archive/v0.6.zip) or [Latest Source ](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
-- `pip install -r requirements.txt` or `pip3 install -r requirements.txt` (Need root access)
-- `python3 setup.py install` or `python setup.py install` (Need root access)				
+- `pip install .`				
 
 ### PyPI
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install nafas==0.6` or `pip3 install nafas==0.6` (Need root access)							
+- `pip install nafas==0.6`						
 	
 
 ### Exe Version (Only Windows)
@@ -77,7 +76,7 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 
 ## Usage	
 
-- Open `CMD` (Windows) or `Terminal` (UNIX)
+- Open `CMD`/`PowerShell` (Windows) or `Terminal` (Linux)
 - Run `nafas` or `python -m nafas` (or run `NAFAS.exe`)
 - Enter data			
 
@@ -130,13 +129,13 @@ You can also join our discord server
 
 * Logo designed by [Sara Amiri Fard](https://github.com/sarahfard)
 
-## Show your support
+## Show Your Support
 								
-<h3>Star this repo</h3>					
+<h3>Star This Repo</h3>					
 
 Give a ⭐️ if this project helped you!
 
-<h3>Donate to our project</h3>	
+<h3>Donate to Our Project</h3>	
 
 <h4>Bitcoin</h4>
 1KtNLEEeUbTEK9PdN6Ya3ZAKXaqoKUuxCy
