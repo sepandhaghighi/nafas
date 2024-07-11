@@ -19,8 +19,7 @@ README_ITEMS = [
     "[Version {0}](https://github.com/sepandhaghighi/nafas/archive/v{0}.zip)",
     "[Exe-Version {0}](https://github.com/sepandhaghighi/nafas/releases/download/v{0}/NAFAS-{0}.exe)",
     "Run `NAFAS-{0}.exe`",
-    "pip install nafas=={0}",
-    "pip3 install nafas=={0}"]
+    "pip install nafas=={0}"]
 CHANGELOG_ITEMS = [
     "## [{0}]",
     "https://github.com/sepandhaghighi/nafas/compare/v{0}...dev",
