@@ -137,8 +137,10 @@ nava.errors.NavaBaseError: Sound file's path should be a string.
 ...     temp_path = os.path.join("nafas", "sounds", "temp.wav")
 ...     _ = shutil.move(wave_path, temp_path)
 ...     with warns(RuntimeWarning, match="Your device is not compatible with our underlying sound-playing library. You can refer to https://github.com/openscilab/nava."):
-...         sound_check()
+...         sound_check_flag = sound_check()
 ...     _ = shutil.move(temp_path, wave_path)
 ... except Exception:
 ...     pass
+>>> sound_check_flag
+False
 """
