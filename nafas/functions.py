@@ -275,15 +275,18 @@ def graphic_counter(delay_time):
     print()
 
 
-def play_sound(sound_path):
+def play_sound(sound_path, enable=True):
     """
     Play inputted sound file.
 
     :param sound_path: sound path
     :type sound_path: str
-    :return: sound id as int
+    :param enable: enable flag
+    :type enable: bool
+    :return: None
     """
-    return nava.play(sound_path, async_mode=True)
+    if enable:
+        _ = nava.play(sound_path, async_mode=True)
 
 
 def run(program_data):
