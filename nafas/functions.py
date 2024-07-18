@@ -127,13 +127,15 @@ def sound_check():
     """
     Check sound playing device.
 
-    :return: None
+    :return: result as bool
     """
     sound_path = get_sound_path(SOUND_MAP['Silence'])
     try:
         nava.play(sound_path)
+        return True
     except Exception:
         warn(SOUND_WARNING_MESSAGE, RuntimeWarning)
+        return False
 
 
 def description_print():
@@ -275,15 +277,18 @@ def graphic_counter(delay_time):
     print()
 
 
-def play_sound(sound_path):
+def play_sound(sound_path, enable=True):
     """
     Play inputted sound file.
 
     :param sound_path: sound path
     :type sound_path: str
-    :return: sound id as int
+    :param enable: enable flag
+    :type enable: bool
+    :return: None
     """
-    return nava.play(sound_path, async_mode=True)
+    if enable:
+        _ = nava.play(sound_path, async_mode=True)
 
 
 def run(program_data):
@@ -294,21 +299,19 @@ def run(program_data):
     :type program_data: dict
     :return: None
     """
-    sound_check()
+    sound_check_flag = sound_check()
     cycle = program_data["cycle"]
     ratio = program_data["ratio"]
     unit = program_data["unit"]
     pre = program_data["pre"]
     print("Preparing ", end="", flush=True)
-    sid = play_sound(get_sound_path(SOUND_MAP['Prepare']))
+    play_sound(get_sound_path(SOUND_MAP['Prepare']), enable=sound_check_flag)
     graphic_counter(pre)
     line()
     time.sleep(1)
-    nava.stop(sid)
-    sid = play_sound(get_sound_path(SOUND_MAP['Start']))
+    play_sound(get_sound_path(SOUND_MAP['Start']), enable=sound_check_flag)
     print("Start", flush=True)
     time.sleep(1)
-    nava.stop(sid)
     line()
     time.sleep(1)
     for i in range(cycle):
@@ -317,16 +320,14 @@ def run(program_data):
         for index, item in enumerate(ratio):
             if item != 0:
                 item_name = STEP_MAP[index]
-                sid = play_sound(get_sound_path(SOUND_MAP[item_name]))
+                play_sound(get_sound_path(SOUND_MAP[item_name]), enable=sound_check_flag)
                 print(
                     STEP_TEMPLATE.format(
                         item_name, str(
                             unit * item)), flush=True)
                 graphic_counter(item * unit)
-                nava.stop(sid)
         time.sleep(1)
         line()
-    sid = play_sound(get_sound_path(SOUND_MAP['End']))
+    play_sound(get_sound_path(SOUND_MAP['End']), enable=sound_check_flag)
     print("Well done!", flush=True)
     time.sleep(2)
-    nava.stop(sid)
