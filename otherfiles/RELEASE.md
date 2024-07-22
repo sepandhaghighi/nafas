@@ -1,6 +1,6 @@
 # Nafas Release Instructions
 
-**Last Update: 2024-07-08**
+**Last Update: 2024-07-22**
 
 1. Create the `release` branch under `dev`
 2. Update all version tags
