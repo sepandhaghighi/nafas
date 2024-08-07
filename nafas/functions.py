@@ -189,9 +189,9 @@ def input_filter(input_data):
     :return: filtered data as dict
     """
     filtered_data = input_data.copy()
-    if filtered_data["program"] not in STANDARD_MENU["program"].keys():
+    if filtered_data["program"] not in STANDARD_MENU["program"]:
         filtered_data["program"] = 1
-    if filtered_data["level"] not in STANDARD_MENU["level"].keys():
+    if filtered_data["level"] not in STANDARD_MENU["level"]:
         filtered_data["level"] = 1
     return filtered_data
 
@@ -207,24 +207,15 @@ def get_input_standard(input_func=input):
     input_data = {"program": 1, "level": 1}
     for item in STANDARD_MENU_ORDER:
         exit_flag = False
-        sorted_list = sorted(list(STANDARD_MENU[item].keys()))
+        sorted_list = sorted(STANDARD_MENU[item])
         print("- Please choose a {0} : \n".format(item))
         for i in sorted_list:
             if item == "program":
                 program_name = STANDARD_MENU[item][i]
-                program_average_time = time_average_calc(
-                    PROGRAMS[program_name])
-                print(
-                    str(i) +
-                    "- " +
-                    program_name +
-                    " (~ " +
-                    time_convert(
-                        program_average_time,
-                        True) +
-                    ")")
+                program_average_time = time_average_calc(PROGRAMS[program_name])
+                print("{0}- {1} (~ {2})".format(i, program_name, time_convert(program_average_time, True)))
             else:
-                print(str(i) + "- " + STANDARD_MENU[item][i])
+                print("{0}- {1}".format(i, STANDARD_MENU[item][i]))
         while not exit_flag:
             try:
                 input_data[item] = int(input_func(""))
@@ -274,7 +265,7 @@ def graphic_counter(delay_time):
     time.sleep(remain_time)
     if remain_time != 0:
         print('.', end=' ', flush=True)
-    print()
+    print("")
 
 
 def play_sound(sound_path, enable=True):

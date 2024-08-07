@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `nava` added to `requirements.txt`
 - Test system modified
 - Build system modified
+- `get_input_standard` function modified
 - `Python 3.11` added to `test.yml`
 - `Python 3.12` added to `test.yml`
 - `Python 3.5` support dropped
