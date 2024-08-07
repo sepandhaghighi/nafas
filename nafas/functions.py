@@ -212,19 +212,10 @@ def get_input_standard(input_func=input):
         for i in sorted_list:
             if item == "program":
                 program_name = STANDARD_MENU[item][i]
-                program_average_time = time_average_calc(
-                    PROGRAMS[program_name])
-                print(
-                    str(i) +
-                    "- " +
-                    program_name +
-                    " (~ " +
-                    time_convert(
-                        program_average_time,
-                        True) +
-                    ")")
+                program_average_time = time_average_calc(PROGRAMS[program_name])
+                print("{0}- {1} (~ {2})".format(i, program_name, time_convert(program_average_time, True)))
             else:
-                print(str(i) + "- " + STANDARD_MENU[item][i])
+                print("{0}- {1}".format(i, STANDARD_MENU[item][i]))
         while not exit_flag:
             try:
                 input_data[item] = int(input_func(""))
