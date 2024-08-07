@@ -265,7 +265,7 @@ def graphic_counter(delay_time):
     time.sleep(remain_time)
     if remain_time != 0:
         print('.', end=' ', flush=True)
-    print()
+    print("")
 
 
 def play_sound(sound_path, enable=True):
