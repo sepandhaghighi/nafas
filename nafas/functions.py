@@ -189,9 +189,9 @@ def input_filter(input_data):
     :return: filtered data as dict
     """
     filtered_data = input_data.copy()
-    if filtered_data["program"] not in STANDARD_MENU["program"].keys():
+    if filtered_data["program"] not in STANDARD_MENU["program"]:
         filtered_data["program"] = 1
-    if filtered_data["level"] not in STANDARD_MENU["level"].keys():
+    if filtered_data["level"] not in STANDARD_MENU["level"]:
         filtered_data["level"] = 1
     return filtered_data
 
@@ -207,7 +207,7 @@ def get_input_standard(input_func=input):
     input_data = {"program": 1, "level": 1}
     for item in STANDARD_MENU_ORDER:
         exit_flag = False
-        sorted_list = sorted(list(STANDARD_MENU[item].keys()))
+        sorted_list = sorted(STANDARD_MENU[item])
         print("- Please choose a {0} : \n".format(item))
         for i in sorted_list:
             if item == "program":
