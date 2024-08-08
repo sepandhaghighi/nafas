@@ -20,6 +20,8 @@ NAFAS_VERSION = "0.6"
 
 SOUND_WARNING_MESSAGE = "Your device is not compatible with our underlying sound-playing library. You can refer to https://github.com/openscilab/nava."
 
+EXIT_MESSAGE = "See you. Bye!"
+
 PROGRAM_DESCRIPTION = """Program Details :
 
 Name             : {0}
