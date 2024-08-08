@@ -41,4 +41,4 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print(EXIT_MESSAGE)
+        print("\n" + EXIT_MESSAGE)
