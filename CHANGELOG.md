@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `sound_check` function
 - `SECURITY.md`
 ### Changed
+- Silence added to the start of sounds
 - Bug report template modified
 - `playsound` replaced with `nava`
 - `nava` added to `requirements.txt`
