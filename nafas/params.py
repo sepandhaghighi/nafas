@@ -16,7 +16,7 @@ Please consider the following :
 3. When exhaling through your mouth, it is recommended to fold the lips
 """
 
-NAFAS_VERSION = "0.6"
+NAFAS_VERSION = "0.7"
 
 SOUND_WARNING_MESSAGE = "Your device is not compatible with our underlying sound-playing library. You can refer to https://github.com/openscilab/nava."
 
