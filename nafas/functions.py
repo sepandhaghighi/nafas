@@ -8,6 +8,7 @@ from nafas.params import SOUND_WARNING_MESSAGE
 import nava
 import os
 from warnings import warn
+import sys
 
 
 def line(num=70, char="#"):
@@ -322,3 +323,15 @@ def run(program_data):
     play_sound(get_sound_path(SOUND_MAP['End']), enable=sound_check_flag)
     print("Well done!", flush=True)
     time.sleep(2)
+
+
+def clear_screen():
+    """
+    Clear screen.
+
+    :return: None
+    """
+    if sys.platform == "win32":
+        os.system('cls')
+    else:
+        os.system('clear')

@@ -6,6 +6,8 @@
 >>> from pytest import warns
 >>> import shutil
 >>> from nafas.functions import *
+>>> clear_screen()
+
 >>> line(10,"*")
 **********
 >>> description_print()

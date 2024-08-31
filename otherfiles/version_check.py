@@ -46,7 +46,7 @@ FILES = {
         ".github",
         "ISSUE_TEMPLATE",
         "bug_report.yml"): ISSUE_TEMPLATE_ITEMS,
-    }
+}
 
 TEST_NUMBER = len(FILES.keys()) + 1
 

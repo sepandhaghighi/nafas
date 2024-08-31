@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- `clear_screen` function
+### Changed
+- Restart mode updated
 ## [0.7] - 2024-08-27
 ### Added
 - `feature_request.yml` template
