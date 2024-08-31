@@ -6,9 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- `clear_screen` function for clearing the console screen.
+- `clear_screen` function
 ### Changed
-- `__main__.py` clear screen in reset mode
+- Reset mode updated
 ## [0.7] - 2024-08-27
 ### Added
 - `feature_request.yml` template
