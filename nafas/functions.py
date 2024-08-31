@@ -324,9 +324,10 @@ def run(program_data):
     print("Well done!", flush=True)
     time.sleep(2)
 
+
 def clear_screen():
     """
-    Clear screen function.
+    Clear screen.
 
     :return: None
     """
