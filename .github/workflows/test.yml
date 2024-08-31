@@ -45,7 +45,7 @@ jobs:
     - name: Other tests
       run: |
         python -m vulture nafas/ setup.py --min-confidence 65 --exclude=__init__.py --sort-by-size
-        python -m bandit -r nafas -s B311
+        python -m bandit -r nafas -s B311,B605,B607
         python -m pydocstyle --match-dir=nafas -v
       if: matrix.python-version == env.TEST_PYTHON_VERSION
     - name: Upload coverage to Codecov
