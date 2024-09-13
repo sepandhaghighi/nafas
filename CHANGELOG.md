@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- `--silent` argument
 - `clear_screen` function
 ### Changed
 - Restart mode updated
