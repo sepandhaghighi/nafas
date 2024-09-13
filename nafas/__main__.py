@@ -16,6 +16,7 @@ def main():
     """
     parser = argparse.ArgumentParser()
     parser.add_argument('--version', help='version', nargs="?", const=1)
+    parser.add_argument('--silent', help='silent mode', nargs="?", const=1)
     args = parser.parse_args()
     if args.version:
         print(NAFAS_VERSION)
@@ -24,12 +25,13 @@ def main():
         tprint("v" + str(NAFAS_VERSION))
         description_print()
         EXIT_FLAG = False
+        silent_flag = args.silent
         while not EXIT_FLAG:
             input_data = get_input_standard()
             filtered_data = input_filter(input_data)
             program_name, level, program_data = get_program_data(filtered_data)
             program_description_print(program_name, level, program_data)
-            run(program_data)
+            run(program_data, silent=silent_flag)
             INPUTINDEX = str(
                 input("Press [R] to restart or any other key to exit."))
             if INPUTINDEX.upper() != "R":
