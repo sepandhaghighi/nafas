@@ -76,9 +76,25 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 
 ## Usage	
 
-- Open `CMD`/`PowerShell` (Windows) or `Terminal` (Linux)
-- Run `nafas` or `python -m nafas` (or run `NAFAS.exe`)
-- Enter data			
+⚠️ You can use `nafas`, `python -m nafas` or `NAFAS.exe` to run this program
+
+### Version
+
+```console
+nafas --version
+```
+
+### Basic
+
+```console
+nafas
+```
+
+### Silent Mode
+
+```console
+nafas --silent
+```	
 
 <div align="center">
 
