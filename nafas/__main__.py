@@ -18,14 +18,16 @@ def main():
     parser.add_argument('--version', help='version', nargs="?", const=1)
     parser.add_argument('--silent', help='silent mode', nargs="?", const=1)
     args = parser.parse_args()
+    silent_flag = args.silent
     if args.version:
         print(NAFAS_VERSION)
     else:
         tprint("Nafas")
         tprint("v" + str(NAFAS_VERSION))
+        if silent_flag:
+            tprint("Silent Mode")
         description_print()
         EXIT_FLAG = False
-        silent_flag = args.silent
         while not EXIT_FLAG:
             input_data = get_input_standard()
             filtered_data = input_filter(input_data)
