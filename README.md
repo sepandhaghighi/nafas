@@ -69,16 +69,37 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 - `pip install nafas==0.7`						
 	
 
-### Exe Version (Only Windows)
+### Exe Version
+
+⚠️ Only Windows
+
 - Download [Exe-Version 0.7](https://github.com/sepandhaghighi/nafas/releases/download/v0.7/NAFAS-0.7.exe)
 - Run `NAFAS-0.7.exe`
 
 
 ## Usage	
 
-- Open `CMD`/`PowerShell` (Windows) or `Terminal` (Linux)
-- Run `nafas` or `python -m nafas` (or run `NAFAS.exe`)
-- Enter data			
+ℹ️ You can use `nafas`, `python -m nafas` or `NAFAS.exe` to run this program
+
+### Version
+
+```console
+nafas --version
+```
+
+### Basic
+
+```console
+nafas
+```
+
+### Silent Mode
+
+ℹ️ This mode will disable the sound playing system
+
+```console
+nafas --silent
+```	
 
 <div align="center">
 

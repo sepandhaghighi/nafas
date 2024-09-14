@@ -283,15 +283,19 @@ def play_sound(sound_path, enable=True):
         _ = nava.play(sound_path, async_mode=True)
 
 
-def run(program_data):
+def run(program_data, silent=False):
     """
     Run program.
 
     :param program_data: program data
     :type program_data: dict
+    :param silent: silent mode flag
+    :type silent: bool
     :return: None
     """
-    sound_check_flag = sound_check()
+    sound_check_flag = False
+    if not silent:
+        sound_check_flag = sound_check()
     cycle = program_data["cycle"]
     ratio = program_data["ratio"]
     unit = program_data["unit"]
