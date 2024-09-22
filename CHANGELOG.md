@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `clear_screen` function
 ### Changed
 - Restart mode updated
+- Exit bug fixed
 ## [0.7] - 2024-08-27
 ### Added
 - `feature_request.yml` template
