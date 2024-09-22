@@ -221,6 +221,8 @@ def get_input_standard(input_func=input):
             try:
                 input_data[item] = int(input_func(""))
                 exit_flag = True
+            except KeyboardInterrupt:
+                sys.exit()
             except Exception:
                 print("[Error] Bad Input!")
     return input_data
