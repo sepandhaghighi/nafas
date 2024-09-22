@@ -46,5 +46,5 @@ def main():
 if __name__ == "__main__":
     try:
         main()
-    except KeyboardInterrupt:
+    except (KeyboardInterrupt, EOFError):
         print("\n" + EXIT_MESSAGE)
