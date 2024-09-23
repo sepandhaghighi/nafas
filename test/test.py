@@ -50,6 +50,8 @@ True
 True
 >>> input_data["level"] == 1
 True
+>>> def test_keyboard_interrupt(i):
+...     raise KeyboardInterrupt
 >>> input_data = get_input_standard(lambda x: "1")
 - Please choose a program :
 <BLANKLINE>
@@ -70,6 +72,23 @@ True
 1- Beginner
 2- Medium
 3- Advanced
+>>> get_input_standard(test_keyboard_interrupt)
+- Please choose a program :
+<BLANKLINE>
+1- Clear Mind (~ 7 minutes)
+2- Relax1 (~ 7 minutes)
+3- Relax2 (~ 3 minutes)
+4- Relax3 (~ 6 minutes)
+5- Calming1 (~ 9 minutes)
+6- Calming2 (~ 2 minutes)
+7- Power (~ 7 minutes)
+8- Harmony (~ 7 minutes)
+9- Anti-Stress (~ 4 minutes)
+10- Anti-Appetite (~ 10 minutes)
+11- Cigarette Replace (~ 5 minutes)
+12- Decision-Making (~ 2 minutes)
+<BLANKLINE>
+See you. Bye!
 >>> input_data["program"] == 1
 True
 >>> input_data["level"] == 1
