@@ -4,7 +4,7 @@
 import time
 from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STANDARD_MENU_ORDER, STEP_MAP
 from nafas.params import PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, STEP_TEMPLATE, CYCLE_TEMPLATE
-from nafas.params import SOUND_WARNING_MESSAGE
+from nafas.params import SOUND_WARNING_MESSAGE, EXIT_MESSAGE
 import nava
 import os
 from warnings import warn
@@ -221,6 +221,9 @@ def get_input_standard(input_func=input):
             try:
                 input_data[item] = int(input_func(""))
                 exit_flag = True
+            except KeyboardInterrupt:
+                print("\n" + EXIT_MESSAGE)
+                sys.exit()
             except Exception:
                 print("[Error] Bad Input!")
     return input_data

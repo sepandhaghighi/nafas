@@ -50,6 +50,8 @@ True
 True
 >>> input_data["level"] == 1
 True
+>>> def test_keyboard_interrupt(i):
+...     raise KeyboardInterrupt
 >>> input_data = get_input_standard(lambda x: "1")
 - Please choose a program :
 <BLANKLINE>
@@ -70,6 +72,10 @@ True
 1- Beginner
 2- Medium
 3- Advanced
+>>> get_input_standard(test_keyboard_interrupt)
+Traceback (most recent call last):
+...
+SystemExit
 >>> input_data["program"] == 1
 True
 >>> input_data["level"] == 1
