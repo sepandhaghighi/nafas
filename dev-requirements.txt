@@ -1,4 +1,4 @@
-art==6.2
+art==6.3
 nava==0.6
 pytest>=4.3.1
 pytest-cov>=2.6.1
