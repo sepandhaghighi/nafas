@@ -348,8 +348,8 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                                 "Medium": DECISION_MAKING_MEDIUM,
                                 "Advanced": DECISION_MAKING_ADVANCED},
             "Balancing": {"Beginner": BALANCING_BEGINNER,
-                                "Medium": BALANCING_MEDIUM,
-                                "Advanced": BALANCING_ADVANCED}
+                          "Medium": BALANCING_MEDIUM,
+                          "Advanced": BALANCING_ADVANCED}
             }
 
 
