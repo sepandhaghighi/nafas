@@ -22,6 +22,10 @@ SOUND_WARNING_MESSAGE = "Your device is not compatible with our underlying sound
 
 EXIT_MESSAGE = "See you. Bye!"
 
+BAD_INPUT_MESSAGE = "[Error] Bad input!"
+
+PROGRAM_END_MESSAGE = "Well done!"
+
 PROGRAM_DESCRIPTION = """Program Details :
 
 Name             : {0}
@@ -38,6 +42,12 @@ Sequence         : {4}
 MINUTES_TEMPLATE = "{:02.0f} minutes"
 
 SECONDS_TEMPLATE = "{:02.0f} seconds"
+
+PROGRAM_TIME_TEMPLATE = "{0}- {1} (~ {2})"
+
+MENU_TEMPLATE_1 = "- Please choose a {0} : \n"
+
+MENU_TEMPLATE_2 = "{0}- {1}"
 
 CYCLE_TEMPLATE = "Cycle : {0} (Remaining : {1})"
 

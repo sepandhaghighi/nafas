@@ -4,8 +4,8 @@
 import time
 from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STANDARD_MENU_ORDER, STEP_MAP
 from nafas.params import PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, STEP_TEMPLATE, CYCLE_TEMPLATE
-from nafas.params import SOUND_WARNING_MESSAGE, EXIT_MESSAGE
-from nafas.params import MINUTES_TEMPLATE, SECONDS_TEMPLATE
+from nafas.params import SOUND_WARNING_MESSAGE, EXIT_MESSAGE, BAD_INPUT_MESSAGE, PROGRAM_END_MESSAGE
+from nafas.params import MINUTES_TEMPLATE, SECONDS_TEMPLATE, PROGRAM_TIME_TEMPLATE, MENU_TEMPLATE_1, MENU_TEMPLATE_2
 import nava
 import os
 from warnings import warn
@@ -210,14 +210,14 @@ def get_input_standard(input_func=input):
     for item in STANDARD_MENU_ORDER:
         exit_flag = False
         sorted_list = sorted(STANDARD_MENU[item])
-        print("- Please choose a {0} : \n".format(item))
+        print(MENU_TEMPLATE_1.format(item))
         for i in sorted_list:
             if item == "program":
                 program_name = STANDARD_MENU[item][i]
                 program_average_time = time_average_calc(PROGRAMS[program_name])
-                print("{0}- {1} (~ {2})".format(i, program_name, time_convert(program_average_time, True)))
+                print(PROGRAM_TIME_TEMPLATE.format(i, program_name, time_convert(program_average_time, True)))
             else:
-                print("{0}- {1}".format(i, STANDARD_MENU[item][i]))
+                print(MENU_TEMPLATE_2.format(i, STANDARD_MENU[item][i]))
         while not exit_flag:
             try:
                 input_data[item] = int(input_func(""))
@@ -226,7 +226,7 @@ def get_input_standard(input_func=input):
                 print("\n" + EXIT_MESSAGE)
                 sys.exit()
             except Exception:
-                print("[Error] Bad Input!")
+                print(BAD_INPUT_MESSAGE)
     return input_data
 
 
@@ -329,7 +329,7 @@ def run(program_data, silent=False):
         time.sleep(1)
         line()
     play_sound(get_sound_path(SOUND_MAP['End']), enable=sound_check_flag)
-    print("Well done!", flush=True)
+    print(PROGRAM_END_MESSAGE, flush=True)
     time.sleep(2)
 
 
