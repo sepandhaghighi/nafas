@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Restart mode updated
 - Exit bug fixed
+- Messages and templates moved to `params.py`
 ## [0.7] - 2024-08-27
 ### Added
 - `feature_request.yml` template

@@ -6,5 +6,9 @@
 
 # Other Contributors
 ----------
+- [@sarahfard](https://github.com/sarahfard) **
 - [@oscarArismendi](https://github.com/oscarArismendi)
+
+
+** Graphic designer
 
