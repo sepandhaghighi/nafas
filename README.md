@@ -150,7 +150,6 @@ You can also join our discord server
 
 <blockquote>13- <a href="https://www.yogabasics.com/practice/pranayama/">Pranayama Breathing Techniques and Tips</a> </blockquote>
 
-* Logo designed by [Sara Amiri Fard](https://github.com/sarahfard)
 
 ## Show Your Support
 								
