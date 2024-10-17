@@ -5,6 +5,7 @@ import time
 from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STANDARD_MENU_ORDER, STEP_MAP
 from nafas.params import PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, STEP_TEMPLATE, CYCLE_TEMPLATE
 from nafas.params import SOUND_WARNING_MESSAGE, EXIT_MESSAGE
+from nafas.params import MINUTES_TEMPLATE, SECONDS_TEMPLATE
 import nava
 import os
 from warnings import warn
@@ -67,13 +68,13 @@ def time_convert(input_time, average=False):
     _hours, sec = divmod(sec, 3600)
     minutes, sec = divmod(sec, 60)
     result = ", ".join([
-        "{:02.0f} minutes".format(minutes),
-        "{:02.0f} seconds".format(sec),
+        MINUTES_TEMPLATE.format(minutes),
+        SECONDS_TEMPLATE.format(sec),
     ])
     if average:
         if sec >= 30:
             minutes += 1
-        result = "{:02.0f} minutes".format(minutes).lstrip("0")
+        result = MINUTES_TEMPLATE.format(minutes).lstrip("0")
     return result
 
 

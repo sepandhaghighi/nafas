@@ -35,6 +35,10 @@ Total Time       : {3}
 Sequence         : {4}
 """
 
+MINUTES_TEMPLATE = "{:02.0f} minutes"
+
+SECONDS_TEMPLATE = "{:02.0f} seconds"
+
 CYCLE_TEMPLATE = "Cycle : {0} (Remaining : {1})"
 
 STEP_TEMPLATE = "- {0} for {1} sec"
