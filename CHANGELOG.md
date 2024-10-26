@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `--silent` argument
 - `clear_screen` function
 ### Changed
+- GitHub actions are limited to the `dev` and `master` branches
 - Restart mode updated
 - Exit bug fixed
 - Messages and templates moved to `params.py`
