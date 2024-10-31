@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - GitHub actions are limited to the `dev` and `master` branches
 - Restart mode updated
 - Exit bug fixed
+- `Python 3.13` added to `test.yml`
 - Messages and templates moved to `params.py`
 ## [0.7] - 2024-08-27
 ### Added
