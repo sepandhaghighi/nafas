@@ -60,7 +60,7 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 ## Installation		
 
 ### Source Code
-- Download [Version 0.8](https://github.com/sepandhaghighi/nafas/archive/v0.8.zip) or [Latest Source ](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
+- Download [Version 0.8](https://github.com/sepandhaghighi/nafas/archive/v0.8.zip) or [Latest Source](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
 - `pip install .`				
 
 ### PyPI
