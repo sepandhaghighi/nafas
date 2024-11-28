@@ -1,6 +1,8 @@
-# Overview of Nafas Breathing Programs
+# Nafas Breathing Programs
 
-| **Program**         | **Description**                                                                                                                 | **Level**         | **Ratios**<br>**(I:R:E:S)**            | **Unit**<br>**(Minutes)** | **Cycles**      |
+**Last Update: 2024-11-28**
+
+| **Program**         | **Description**                                                                                                                 | **Level**         | **Ratios**<br>**(I:R:E:S)**            | **Unit**<br>**(Seconds)** | **Cycles**      |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------|-----------------------|--------------------------|----------------|
 | Clear Mind           | Short program to reduce mental fog and improve focus. Useful for developers during coding breaks. Beneficial for those needing quick mental refreshment. | B<br>M<br>A       | 1:0:3:0<br>1:0:4:0<br>1:0:5:0 | 3<br>3<br>3                | 35<br>28<br>24 |
 | Relax1               | Relaxation-focused program to calm nerves. Ideal for use after intense coding sessions. Useful for programmers managing stress.       | B<br>M<br>A       | 1:0:2:2<br>1:0:2:3<br>1:0:2:4 | 3<br>3<br>3                | 28<br>24<br>22 |
