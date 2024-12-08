@@ -79,7 +79,8 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 
 ## Usage	
 
-ℹ️ You can use `nafas`, `python -m nafas` or `NAFAS.exe` to run this 
+ℹ️ You can use `nafas`, `python -m nafas` or `NAFAS.exe` to run this program
+
 ℹ️ Checkout the available programs in [PROGRAMS.md](https://github.com/sepandhaghighi/nafas/blob/master/PROGRAMS.md)
 
 ### Version
