@@ -68,6 +68,7 @@ True
 11- Cigarette Replace (~ 5 minutes)
 12- Decision-Making (~ 2 minutes)
 13- Balancing (~ 2 minutes)
+14- Energizing (~ 2 minutes)
 - Please choose a level :
 <BLANKLINE>
 1- Beginner
