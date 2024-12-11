@@ -67,7 +67,8 @@ STANDARD_MENU = {
         10: "Anti-Appetite",
         11: "Cigarette Replace",
         12: "Decision-Making",
-        13: "Balancing"},
+        13: "Balancing",
+        14: "Energizing"},
     "level": {
         1: "Beginner",
         2: "Medium",
@@ -324,6 +325,36 @@ BALANCING_ADVANCED = {
     "pre": 3,
     "cycle": 10}
 
+ENERGIZING_BEGINNER = {
+    "ratio": [
+        6,
+        0,
+        4,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 6}
+
+ENERGIZING_MEDIUM = {
+    "ratio": [
+        6,
+        4,
+        6,
+        1],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 8}
+
+ENERGIZING_ADVANCED = {
+    "ratio": [
+        6,
+        6,
+        6,
+        1],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 10}
+
 
 PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                            "Medium": CLEAR_MIND_MEDIUM,
@@ -363,7 +394,10 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                                 "Advanced": DECISION_MAKING_ADVANCED},
             "Balancing": {"Beginner": BALANCING_BEGINNER,
                           "Medium": BALANCING_MEDIUM,
-                          "Advanced": BALANCING_ADVANCED}
+                          "Advanced": BALANCING_ADVANCED},
+            "Energizing": {"Beginner": ENERGIZING_BEGINNER,
+                          "Medium": ENERGIZING_MEDIUM,
+                          "Advanced": ENERGIZING_ADVANCED}
             }
 
 
