@@ -396,8 +396,8 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                           "Medium": BALANCING_MEDIUM,
                           "Advanced": BALANCING_ADVANCED},
             "Energizing": {"Beginner": ENERGIZING_BEGINNER,
-                          "Medium": ENERGIZING_MEDIUM,
-                          "Advanced": ENERGIZING_ADVANCED}
+                           "Medium": ENERGIZING_MEDIUM,
+                           "Advanced": ENERGIZING_ADVANCED}
             }
 
 
