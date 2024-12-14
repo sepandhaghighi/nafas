@@ -38,7 +38,7 @@ setup(
     author_email='me@sepand.tech',
     url='https://github.com/sepandhaghighi/nafas',
     download_url='https://github.com/sepandhaghighi/nafas/tarball/v0.8',
-    keywords="python3 python breath breathing meditation",
+    keywords="breath breathing meditation yoga pranayama",
     project_urls={
         'Source': 'https://github.com/sepandhaghighi/nafas',
         'Discord': 'https://discord.gg/CtZUNKJHP4',
