@@ -141,7 +141,7 @@ You can also join our discord server
 
 <blockquote>7- Martarelli, Daniele, Mario Cocchioni, Stefania Scuri, and Pierluigi Pompei. "Diaphragmatic breathing reduces exercise-induced oxidative stress." Evidence-Based Complementary and Alternative Medicine 2011 (2011). </blockquote>		
 
-<blockquote>8- <a href="https://www.drweil.com/health-wellness/body-mind-spirit/stress-anxiety/breathing-three-exercises/">DrWeil, Integrative Medicine & Healthy Living</a> </blockquote>
+<blockquote>8- <a href=". https://www.drweil.com/videos-features/videos/breathing-exercises-4-7-8-breath/">DrWeil, Integrative Medicine & Healthy Living</a> </blockquote>
 
 <blockquote>9- <a href="https://www.hgi.org.uk/resources/delve-our-extensive-library/resources-and-techniques/7-11-breathing-how-does-deep">Human Givens Institute</a> </blockquote>
 
