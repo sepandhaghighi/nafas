@@ -34,11 +34,11 @@ setup(
     long_description=read_description(),
     long_description_content_type='text/markdown',
     include_package_data=True,
-    author='Sepand Haghighi',
+    author='Nafas Development Team',
     author_email='me@sepand.tech',
     url='https://github.com/sepandhaghighi/nafas',
     download_url='https://github.com/sepandhaghighi/nafas/tarball/v0.8',
-    keywords="python3 python breath breathing meditation",
+    keywords="breath breathing meditation yoga pranayama",
     project_urls={
         'Source': 'https://github.com/sepandhaghighi/nafas',
         'Discord': 'https://discord.gg/CtZUNKJHP4',
