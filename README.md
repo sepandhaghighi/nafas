@@ -2,7 +2,7 @@
 <img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/logo.png" width=320px>
 <h1>Nafas: A Breathing Gymnastics Application</h1>
 <hr>
-<a href="https://badge.fury.io/py/nafas"><img src="https://badge.fury.io/py/nafas.svg" alt="PyPI version" height="18"></a>
+<a href="https://badge.fury.io/py/nafas"><img src="https://badge.fury.io/py/nafas.svg" alt="PyPI version"></a>
 <a href="https://codecov.io/gh/sepandhaghighi/nafas"><img src="https://codecov.io/gh/sepandhaghighi/nafas/branch/master/graph/badge.svg" alt="Codecov"></a>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3"></a>
 <a href="https://discord.gg/CtZUNKJHP4"><img src="https://img.shields.io/discord/901570530145107978.svg" alt="Discord Channel"></a>
