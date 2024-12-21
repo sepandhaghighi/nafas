@@ -223,7 +223,7 @@ def get_input_standard(input_func=input):
             try:
                 input_data[item] = int(input_func(""))
                 exit_flag = True
-            except KeyboardInterrupt:
+            except (KeyboardInterrupt, EOFError):
                 print("\n" + EXIT_MESSAGE)
                 sys.exit()
             except Exception:
