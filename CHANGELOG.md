@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `README.md` modified
 - `AUTHORS.md` updated
 - Exit bug fixed
+- Program details updated
 ## [0.8] - 2024-11-04
 ### Added
 - Balancing program

@@ -34,9 +34,11 @@ Level            : {1}
 
 Number of Cycles : {2}
 
-Total Time       : {3}
+Unit             : {3} seconds
 
-Sequence         : {4}
+Total Time       : {4}
+
+Sequence         : {5}
 """
 
 MINUTES_TEMPLATE = "{:02.0f} minutes"
