@@ -165,10 +165,10 @@ def program_description_print(program_name, level, program_data):
     """
     cycle = program_data["cycle"]
     ratio = program_data["ratio"]
+    unit = program_data["unit"]
     sequence = []
     for index, item in enumerate(ratio):
-        if item != 0:
-            sequence.append(STEP_MAP[index])
+        sequence.append("{0}({1})".format(STEP_MAP[index], item))
     sequence = ", ".join(sequence)
     total_time = time_calc(program_data)
     line()
