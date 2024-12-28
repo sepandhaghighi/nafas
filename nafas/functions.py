@@ -177,6 +177,7 @@ def program_description_print(program_name, level, program_data):
             program_name,
             level,
             str(cycle),
+            str(unit),
             time_convert(total_time),
             sequence))
     line()
