@@ -24,6 +24,13 @@ Please consider the following :
 2. Exhaling, you can use both nose and mouth
 3. When exhaling through your mouth, it is recommended to fold the lips
 <BLANKLINE>
+<BLANKLINE>
+Cautions:
+<BLANKLINE>
+1. If you have any breathing or respiratory issues, consult your doctor before using Nafas
+2. If you have asthma or high blood pressure should not hold the breath
+3. If you feel dizzy, nauseous, or lightheaded stop practicing and rest
+<BLANKLINE>
 >>> print("\\n".join(justify(["123"], 2)))
 123
 >>> print("\\n".join(justify(["123"], 1)))
