@@ -2,7 +2,7 @@
 """nafas functions."""
 
 import time
-from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, STANDARD_MENU, STANDARD_MENU_ORDER, STEP_MAP
+from nafas.params import NAFAS_DESCRIPTION, NAFAS_NOTICE, NAFAS_CAUTIONS, STANDARD_MENU, STANDARD_MENU_ORDER, STEP_MAP
 from nafas.params import PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, STEP_TEMPLATE, CYCLE_TEMPLATE
 from nafas.params import SOUND_WARNING_MESSAGE, EXIT_MESSAGE, BAD_INPUT_MESSAGE, PROGRAM_END_MESSAGE
 from nafas.params import MINUTES_TEMPLATE, SECONDS_TEMPLATE, PROGRAM_TIME_TEMPLATE
@@ -149,6 +149,7 @@ def description_print():
     """
     print("\n".join(justify(NAFAS_DESCRIPTION.split(), 100)))
     print(NAFAS_NOTICE)
+    print(NAFAS_CAUTIONS)
 
 
 def program_description_print(program_name, level, program_data):

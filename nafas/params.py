@@ -16,6 +16,14 @@ Please consider the following :
 3. When exhaling through your mouth, it is recommended to fold the lips
 """
 
+NAFAS_CAUTIONS = """
+Cautions:
+
+1. If you have any breathing or respiratory issues, consult your doctor before using Nafas
+2. If you have asthma or high blood pressure should not hold the breath
+3. If you feel dizzy, nauseous, or lightheaded stop practicing and rest
+"""
+
 NAFAS_VERSION = "0.8"
 
 SOUND_WARNING_MESSAGE = "Your device is not compatible with our underlying sound-playing library. You can refer to https://github.com/openscilab/nava."
