@@ -117,16 +117,16 @@ Preparing . . .
 ######################################################################
 Start
 ######################################################################
-Cycle : 1 (Remaining : 1)
-- Inhale for 1 sec
+Cycle: 1 (Remaining: 1)
+- Inhale for 1 seconds
 .
-- Exhale for 3 sec
+- Exhale for 3 seconds
 . . .
 ######################################################################
-Cycle : 2 (Remaining : 0)
-- Inhale for 1 sec
+Cycle: 2 (Remaining: 0)
+- Inhale for 1 seconds
 .
-- Exhale for 3 sec
+- Exhale for 3 seconds
 . . .
 ######################################################################
 Well done!
@@ -135,16 +135,16 @@ Preparing . . .
 ######################################################################
 Start
 ######################################################################
-Cycle : 1 (Remaining : 1)
-- Inhale for 1 sec
+Cycle: 1 (Remaining: 1)
+- Inhale for 1 seconds
 .
-- Exhale for 3 sec
+- Exhale for 3 seconds
 . . .
 ######################################################################
-Cycle : 2 (Remaining : 0)
-- Inhale for 1 sec
+Cycle: 2 (Remaining: 0)
+- Inhale for 1 seconds
 .
-- Exhale for 3 sec
+- Exhale for 3 seconds
 . . .
 ######################################################################
 Well done!
@@ -153,16 +153,16 @@ Preparing . . .
 ######################################################################
 Start
 ######################################################################
-Cycle : 1 (Remaining : 1)
-- Inhale for 1 sec
+Cycle: 1 (Remaining: 1)
+- Inhale for 1 seconds
 .
-- Exhale for 3.3 sec
+- Exhale for 3.3 seconds
 . . . .
 ######################################################################
-Cycle : 2 (Remaining : 0)
-- Inhale for 1 sec
+Cycle: 2 (Remaining: 0)
+- Inhale for 1 seconds
 .
-- Exhale for 3.3 sec
+- Exhale for 3.3 seconds
 . . . .
 ######################################################################
 Well done!
