@@ -97,7 +97,7 @@ True
 True
 >>> program_description_print("Clear Mind","Beginner",{"ratio": [1, 0, 3, 0], "unit": 3, "pre": 3, "cycle": 35})
 ######################################################################
-Program Details :
+Program details:
 <BLANKLINE>
 Name             : Clear Mind
 <BLANKLINE>
