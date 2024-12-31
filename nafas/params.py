@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """nafas parameters."""
 
+NAFAS_VERSION = "0.8"
+
 NAFAS_DESCRIPTION = """
 Breathing gymnastics is a system of breathing exercises that focuses on the treatment of various diseases and general health promotion.
 Nafas is a collection of breathing gymnastics designed to reduce the exhaustion of long working hours.
@@ -23,8 +25,6 @@ Cautions:
 2. If you have asthma or high blood pressure should not hold the breath
 3. If you feel dizzy, nauseous, or lightheaded stop practicing and rest
 """
-
-NAFAS_VERSION = "0.8"
 
 SOUND_WARNING_MESSAGE = "Your device is not compatible with our underlying sound-playing library. You can refer to https://github.com/openscilab/nava."
 
