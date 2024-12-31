@@ -149,6 +149,7 @@ def description_print():
     """
     print("\n".join(justify(NAFAS_DESCRIPTION.split(), 100)))
     print(NAFAS_NOTICE)
+    line()
     print(NAFAS_CAUTIONS)
 
 
