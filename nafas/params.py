@@ -61,7 +61,7 @@ MENU_TEMPLATE_2 = "{0}- {1}"
 
 CYCLE_TEMPLATE = "Cycle: {0} (Remaining: {1})"
 
-STEP_TEMPLATE = "- {0} for {1} sec"
+STEP_TEMPLATE = "- {0} for {1} seconds"
 
 STANDARD_MENU = {
     "program": {
