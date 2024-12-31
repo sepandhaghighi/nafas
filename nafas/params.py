@@ -34,7 +34,7 @@ BAD_INPUT_MESSAGE = "[Error] Bad input!"
 
 PROGRAM_END_MESSAGE = "Well done!"
 
-PROGRAM_DESCRIPTION = """Program Details :
+PROGRAM_DESCRIPTION = """Program details:
 
 Name             : {0}
 
@@ -55,11 +55,11 @@ SECONDS_TEMPLATE = "{:02.0f} seconds"
 
 PROGRAM_TIME_TEMPLATE = "{0}- {1} (~ {2})"
 
-MENU_TEMPLATE_1 = "- Please choose a {0} : \n"
+MENU_TEMPLATE_1 = "- Choose a {0}: \n"
 
 MENU_TEMPLATE_2 = "{0}- {1}"
 
-CYCLE_TEMPLATE = "Cycle : {0} (Remaining : {1})"
+CYCLE_TEMPLATE = "Cycle: {0} (Remaining: {1})"
 
 STEP_TEMPLATE = "- {0} for {1} sec"
 
