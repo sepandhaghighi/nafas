@@ -9,7 +9,7 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 """
 
 NAFAS_NOTICE = """
-Please consider the following :
+Breathing tips:
 
 1. Inhaling is only done through the nose
 2. Exhaling, you can use both nose and mouth
