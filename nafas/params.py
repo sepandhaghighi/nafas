@@ -10,7 +10,7 @@ With multiple breathing patterns, Nafas helps you find your way to a detoxified 
 No need to walk away to take a break, just sit comfortably, run Nafas and let the journey begin.
 """
 
-NAFAS_NOTICE = """
+NAFAS_TIPS = """
 Breathing tips:
 
 1. Inhaling is only done through the nose
