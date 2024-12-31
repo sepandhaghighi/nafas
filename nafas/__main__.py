@@ -28,6 +28,8 @@ def main():
             if silent_flag:
                 tprint("Silent Mode")
             description_print()
+            _ = input("Press any key to continue.")
+            clear_screen()
             EXIT_FLAG = False
             while not EXIT_FLAG:
                 input_data = get_input_standard()
