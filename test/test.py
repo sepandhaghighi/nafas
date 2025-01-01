@@ -30,7 +30,7 @@ Breathing tips:
 1. Inhaling is only done through the nose
 2. Exhaling, you can use both nose and mouth
 3. When exhaling through your mouth, it is recommended to fold the lips
-
+<BLANKLINE>
 ######################################################################
 <BLANKLINE>
 Cautions:
