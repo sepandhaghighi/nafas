@@ -10,6 +10,12 @@ With multiple breathing patterns, Nafas helps you find your way to a detoxified 
 No need to walk away to take a break, just sit comfortably, run Nafas and let the journey begin.
 """
 
+NAFAS_LINKS = """
+Repository: https://github.com/sepandhaghighi/nafas
+Paper: https://arxiv.org/abs/2412.04667
+* If you use Nafas in your research, please cite our paper
+"""
+
 NAFAS_TIPS = """
 Breathing tips:
 

@@ -153,6 +153,23 @@ You can also join our discord server
 
 <blockquote>13- <a href="https://www.yogabasics.com/practice/pranayama/">Pranayama Breathing Techniques and Tips</a> </blockquote>
 
+## Cite
+
+If you use Nafas in your research, we would appreciate citations to the following paper:
+
+<pre>
+Sabouri, Sadra, and Sepand Haghighi. "Nafas: Breathing Gymnastics Application." arXiv preprint arXiv:2412.04667 (2024).
+</pre>
+<pre>
+
+@article{sabouri2024nafas,
+  title={Nafas: Breathing Gymnastics Application},
+  author={Sabouri, Sadra and Haghighi, Sepand},
+  journal={arXiv preprint arXiv:2412.04667},
+  year={2024}
+}
+
+</pre>
 
 ## Show Your Support
 								
