@@ -147,6 +147,8 @@ def description_print():
 
     :return: None
     """
+    print(NAFAS_LINKS)
+    line()
     print("\n".join(justify(NAFAS_DESCRIPTION.split(), 100)))
     print(NAFAS_TIPS)
     line()
