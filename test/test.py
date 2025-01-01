@@ -18,12 +18,13 @@ your  way  to  a detoxified energetic workday and also improves your concentrati
 oxygen  level.  No  need  to  walk away to take a break, just sit comfortably, run Nafas and let the
 journey begin.
 <BLANKLINE>
-Please consider the following :
+Breathing tips:
 <BLANKLINE>
 1. Inhaling is only done through the nose
 2. Exhaling, you can use both nose and mouth
 3. When exhaling through your mouth, it is recommended to fold the lips
 <BLANKLINE>
+######################################################################
 <BLANKLINE>
 Cautions:
 <BLANKLINE>
@@ -60,7 +61,7 @@ True
 >>> def test_keyboard_interrupt(i):
 ...     raise KeyboardInterrupt
 >>> input_data = get_input_standard(lambda x: "1")
-- Please choose a program :
+- Choose a program:
 <BLANKLINE>
 1- Clear Mind (~ 7 minutes)
 2- Relax1 (~ 7 minutes)
@@ -76,7 +77,7 @@ True
 12- Decision-Making (~ 2 minutes)
 13- Balancing (~ 2 minutes)
 14- Energizing (~ 2 minutes)
-- Please choose a level :
+- Choose a level:
 <BLANKLINE>
 1- Beginner
 2- Medium
@@ -96,7 +97,7 @@ True
 True
 >>> program_description_print("Clear Mind","Beginner",{"ratio": [1, 0, 3, 0], "unit": 3, "pre": 3, "cycle": 35})
 ######################################################################
-Program Details :
+Program details:
 <BLANKLINE>
 Name             : Clear Mind
 <BLANKLINE>
@@ -116,16 +117,16 @@ Preparing . . .
 ######################################################################
 Start
 ######################################################################
-Cycle : 1 (Remaining : 1)
-- Inhale for 1 sec
+Cycle: 1 (Remaining: 1)
+- Inhale for 1 seconds
 .
-- Exhale for 3 sec
+- Exhale for 3 seconds
 . . .
 ######################################################################
-Cycle : 2 (Remaining : 0)
-- Inhale for 1 sec
+Cycle: 2 (Remaining: 0)
+- Inhale for 1 seconds
 .
-- Exhale for 3 sec
+- Exhale for 3 seconds
 . . .
 ######################################################################
 Well done!
@@ -134,16 +135,16 @@ Preparing . . .
 ######################################################################
 Start
 ######################################################################
-Cycle : 1 (Remaining : 1)
-- Inhale for 1 sec
+Cycle: 1 (Remaining: 1)
+- Inhale for 1 seconds
 .
-- Exhale for 3 sec
+- Exhale for 3 seconds
 . . .
 ######################################################################
-Cycle : 2 (Remaining : 0)
-- Inhale for 1 sec
+Cycle: 2 (Remaining: 0)
+- Inhale for 1 seconds
 .
-- Exhale for 3 sec
+- Exhale for 3 seconds
 . . .
 ######################################################################
 Well done!
@@ -152,16 +153,16 @@ Preparing . . .
 ######################################################################
 Start
 ######################################################################
-Cycle : 1 (Remaining : 1)
-- Inhale for 1 sec
+Cycle: 1 (Remaining: 1)
+- Inhale for 1 seconds
 .
-- Exhale for 3.3 sec
+- Exhale for 3.3 seconds
 . . . .
 ######################################################################
-Cycle : 2 (Remaining : 0)
-- Inhale for 1 sec
+Cycle: 2 (Remaining: 0)
+- Inhale for 1 seconds
 .
-- Exhale for 3.3 sec
+- Exhale for 3.3 seconds
 . . . .
 ######################################################################
 Well done!

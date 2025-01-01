@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """nafas parameters."""
 
+NAFAS_VERSION = "0.8"
+
 NAFAS_DESCRIPTION = """
 Breathing gymnastics is a system of breathing exercises that focuses on the treatment of various diseases and general health promotion.
 Nafas is a collection of breathing gymnastics designed to reduce the exhaustion of long working hours.
@@ -8,8 +10,8 @@ With multiple breathing patterns, Nafas helps you find your way to a detoxified 
 No need to walk away to take a break, just sit comfortably, run Nafas and let the journey begin.
 """
 
-NAFAS_NOTICE = """
-Please consider the following :
+NAFAS_TIPS = """
+Breathing tips:
 
 1. Inhaling is only done through the nose
 2. Exhaling, you can use both nose and mouth
@@ -24,8 +26,6 @@ Cautions:
 3. If you feel dizzy, nauseous, or lightheaded stop practicing and rest
 """
 
-NAFAS_VERSION = "0.8"
-
 SOUND_WARNING_MESSAGE = "Your device is not compatible with our underlying sound-playing library. You can refer to https://github.com/openscilab/nava."
 
 EXIT_MESSAGE = "See you. Bye!"
@@ -34,7 +34,7 @@ BAD_INPUT_MESSAGE = "[Error] Bad input!"
 
 PROGRAM_END_MESSAGE = "Well done!"
 
-PROGRAM_DESCRIPTION = """Program Details :
+PROGRAM_DESCRIPTION = """Program details:
 
 Name             : {0}
 
@@ -55,13 +55,13 @@ SECONDS_TEMPLATE = "{:02.0f} seconds"
 
 PROGRAM_TIME_TEMPLATE = "{0}- {1} (~ {2})"
 
-MENU_TEMPLATE_1 = "- Please choose a {0} : \n"
+MENU_TEMPLATE_1 = "- Choose a {0}: \n"
 
 MENU_TEMPLATE_2 = "{0}- {1}"
 
-CYCLE_TEMPLATE = "Cycle : {0} (Remaining : {1})"
+CYCLE_TEMPLATE = "Cycle: {0} (Remaining: {1})"
 
-STEP_TEMPLATE = "- {0} for {1} sec"
+STEP_TEMPLATE = "- {0} for {1} seconds"
 
 STANDARD_MENU = {
     "program": {
