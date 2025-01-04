@@ -85,6 +85,7 @@ body:
       label: Nafas version
       description: Which version of Nafas are you using?
       options:
+        - Nafas 0.9
         - Nafas 0.8
         - Nafas 0.7
         - Nafas 0.6

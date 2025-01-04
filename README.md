@@ -61,21 +61,21 @@ No need to walk away to take a break, just sit comfortably, run Nafas and let th
 ## Installation		
 
 ### Source Code
-- Download [Version 0.8](https://github.com/sepandhaghighi/nafas/archive/v0.8.zip) or [Latest Source](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
+- Download [Version 0.9](https://github.com/sepandhaghighi/nafas/archive/v0.9.zip) or [Latest Source](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
 - `pip install .`				
 
 ### PyPI
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install nafas==0.8`						
+- `pip install nafas==0.9`						
 	
 
 ### Exe Version
 
 ⚠️ Only Windows
 
-- Download [Exe-Version 0.8](https://github.com/sepandhaghighi/nafas/releases/download/v0.8/NAFAS-0.8.exe)
-- Run `NAFAS-0.8.exe`
+- Download [Exe-Version 0.9](https://github.com/sepandhaghighi/nafas/releases/download/v0.9/NAFAS-0.9.exe)
+- Run `NAFAS-0.9.exe`
 
 
 ## Usage	
