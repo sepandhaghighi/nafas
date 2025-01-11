@@ -76,14 +76,15 @@ True
 4- Relax3 (~ 6 minutes)
 5- Calming1 (~ 9 minutes)
 6- Calming2 (~ 2 minutes)
-7- Power (~ 7 minutes)
-8- Harmony (~ 7 minutes)
-9- Anti-Stress (~ 4 minutes)
-10- Anti-Appetite (~ 10 minutes)
-11- Cigarette Replace (~ 5 minutes)
-12- Decision-Making (~ 2 minutes)
-13- Balancing (~ 2 minutes)
-14- Energizing (~ 2 minutes)
+7- Calming3 (~ 2 minutes)
+8- Power (~ 7 minutes)
+9- Harmony (~ 7 minutes)
+10- Anti-Stress (~ 4 minutes)
+11- Anti-Appetite (~ 10 minutes)
+12- Cigarette Replace (~ 5 minutes)
+13- Decision-Making (~ 2 minutes)
+14- Balancing (~ 2 minutes)
+15- Energizing (~ 2 minutes)
 - Choose a level:
 <BLANKLINE>
 1- Beginner
