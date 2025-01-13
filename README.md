@@ -104,10 +104,11 @@ nafas
 nafas --silent
 ```	
 
+## Screen Record
+
 <div align="center">
 
 <img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/help.gif">
-<p>Screen Record</p>
 
 </div>
 
