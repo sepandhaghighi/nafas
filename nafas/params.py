@@ -77,14 +77,15 @@ STANDARD_MENU = {
         4: "Relax3",
         5: "Calming1",
         6: "Calming2",
-        7: "Power",
-        8: "Harmony",
-        9: "Anti-Stress",
-        10: "Anti-Appetite",
-        11: "Cigarette Replace",
-        12: "Decision-Making",
-        13: "Balancing",
-        14: "Energizing"},
+        7: "Calming3",
+        8: "Power",
+        9: "Harmony",
+        10: "Anti-Stress",
+        11: "Anti-Appetite",
+        12: "Cigarette Replace",
+        13: "Decision-Making",
+        14: "Balancing",
+        15: "Energizing"},
     "level": {
         1: "Beginner",
         2: "Medium",
@@ -117,6 +118,12 @@ CALMING2_BEGINNER = {"ratio": [5, 0, 5, 5], "unit": 1, "pre": 3, "cycle": 4}
 CALMING2_MEDIUM = {"ratio": [5, 0, 5, 5], "unit": 1, "pre": 3, "cycle": 6}
 
 CALMING2_ADVANCED = {"ratio": [5, 0, 5, 5], "unit": 1, "pre": 3, "cycle": 8}
+
+CALMING3_BEGINNER = {"ratio": [4, 0, 6, 0], "unit": 1, "pre": 3, "cycle": 6}
+
+CALMING3_MEDIUM = {"ratio": [6, 1, 8, 4], "unit": 1, "pre": 3, "cycle": 8}
+
+CALMING3_ADVANCED = {"ratio": [4, 1, 12, 1], "unit": 1, "pre": 3, "cycle": 10}
 
 POWER_BEGINNER = {"ratio": [1, 2, 2, 0], "unit": 3, "pre": 3, "cycle": 28}
 
@@ -384,6 +391,9 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Calming2": {"Beginner": CALMING2_BEGINNER,
                          "Medium": CALMING2_MEDIUM,
                          "Advanced": CALMING2_ADVANCED},
+            "Calming3": {"Beginner": CALMING3_BEGINNER,
+                         "Medium": CALMING3_MEDIUM,
+                         "Advanced": CALMING3_ADVANCED},
             "Power": {"Beginner": POWER_BEGINNER,
                       "Medium": POWER_MEDIUM,
                       "Advanced": POWER_ADVANCED},

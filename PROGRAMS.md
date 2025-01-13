@@ -1,6 +1,6 @@
 # Nafas Breathing Programs
 
-**Last Update: 2024-12-13**
+**Last Update: 2025-01-11**
 
 | **Program**         | **Description**                                                                                                                 | **Level**         | **Ratios**<br>**(I:R:E:S)**            | **Unit**<br>**(Seconds)** | **Cycles**      |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------|-----------------------|--------------------------|----------------|
@@ -10,6 +10,7 @@
 | Relax3               | Deeper relaxation exercise for stress relief and a more meditative state. Ideal for unwinding after complex projects.        | B<br>M<br>A       | 7:0:11:0<br>7:0:11:0<br>7:0:11:0 | 1<br>1<br>1                | 15<br>20<br>24 |
 | Calming1             | Soothing breathing pattern, helpful for reducing anxiety. Beneficial for long working hours and maintaining calm.           | B<br>M<br>A       | 1:2:1:2<br>1:3:1:3<br>1:4:1:4 | 3<br>3<br>3                | 24<br>22<br>20 |
 | Calming2             | An extended version of the calming routine, providing a longer period of relaxation and anxiety reduction. Useful for balancing high-stress situations. | B<br>M<br>A       | 5:0:5:5<br>5:0:5:5<br>5:0:5:5 | 1<br>1<br>1                | 4<br>6<br>8    |
+| Calming3             | A breathing routine designed to deepen relaxation and improve focus. Suitable for transitioning from mild stress to a state of balance and tranquility. | B<br>M<br>A       | 4:0:6:0<br>6:1:8:4<br>4:1:12:1 | 1<br>1<br>1               | 6<br>8<br>10    |
 | Power                | Energizing breathing, designed for boosting energy and alertness. Suitable for users feeling fatigue.                       | B<br>M<br>A       | 1:2:2:0<br>1:3:2:0<br>1:4:2:0 | 3<br>3<br>3                | 28<br>24<br>20 |
 | Harmony              | Balancing exercise to promote relaxation and focus. Ideal for programmers looking to maintain concentration.                | B<br>M<br>A       | 1:3:2:1<br>1:4:2:1<br>1:5:2:1 | 3<br>3<br>3                | 20<br>18<br>16 |
 | Anti-Stress          | Specialized for stress relief, particularly useful during high-stress tasks or debugging sessions.                             | B<br>M<br>A       | 3:0:0.66:0<br>4:0:0.66:0<br>5:0:0.66:0 | 3<br>3<br>3                | 20<br>17<br>14 |
