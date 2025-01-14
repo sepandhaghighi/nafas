@@ -158,9 +158,9 @@ You can also join our discord server
 
 If you use Nafas in your research, we would appreciate citations to the following paper:
 
-```
-Sabouri, Sadra, and Sepand Haghighi. "Nafas: Breathing Gymnastics Application." arXiv preprint arXiv:2412.04667 (2024).
-```
+
+[Sabouri, Sadra, and Sepand Haghighi. "Nafas: Breathing Gymnastics Application." arXiv preprint arXiv:2412.04667 (2024).](https://arxiv.org/abs/2412.04667)
+
 
 ```bibtex
 @article{sabouri2024nafas,
