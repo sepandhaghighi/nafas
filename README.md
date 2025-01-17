@@ -25,6 +25,7 @@ These cycles aim to enhance both physical and mental well-being.
 
 <div align="center">
 	<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/overview.png" width=100px>
+	<p>Nafas Programs' Cycle. Each program starts with a preparation phase and goes through several inhales and exhalations with pauses as it retains and sustains.</p>
 </div>
 
 <table>
