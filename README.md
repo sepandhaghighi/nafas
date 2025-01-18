@@ -8,7 +8,7 @@
 <a href="https://github.com/sepandhaghighi/nafas"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/sepandhaghighi/nafas"></a>
 <a href="https://discord.gg/CtZUNKJHP4"><img src="https://img.shields.io/discord/901570530145107978.svg" alt="Discord Channel"></a>
 </div>	
-	
+
 				
 ## Overview						
 Breathing gymnastics is a system of breathing exercises that focuses on the treatment of various diseases and general health promotion.
@@ -16,6 +16,17 @@ Nafas is a collection of breathing gymnastics designed to reduce the exhaustion 
 With multiple breathing patterns, Nafas helps you find your way to a detoxified energetic workday and also improves your concentration by increasing the oxygen level.
 No need to walk away to take a break, just sit comfortably, run Nafas and let the journey begin.
 **Nafas** means breath in Persian.
+
+Nafas offers a selection of predefined breathing exercise programs.
+Each program consists of multiple cycles.
+The exercises begin with a gentle preparation phase to help users settle in and focus, followed by a series of timed inhales and exhales.
+Between these breaths, the programs incorporate deliberate pauses that allow users to retain and sustain their breath.
+These cycles aim to enhance both physical and mental well-being.
+
+<div align="center">
+	<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/overview.png" width=100px>
+	<p>Nafas Programs' Cycle</p>
+</div>
 
 <table>
 	<tr> 
