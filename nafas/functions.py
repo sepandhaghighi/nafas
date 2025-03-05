@@ -70,13 +70,13 @@ def time_convert(input_time, average=False):
     _hours, sec = divmod(sec, 3600)
     minutes, sec = divmod(sec, 60)
     result = ", ".join([
-        MINUTES_TEMPLATE.format(minutes),
-        SECONDS_TEMPLATE.format(sec),
+        MINUTES_TEMPLATE.format(minutes=minutes),
+        SECONDS_TEMPLATE.format(seconds=sec),
     ])
     if average:
         if sec >= 30:
             minutes += 1
-        result = MINUTES_TEMPLATE.format(minutes).lstrip("0")
+        result = MINUTES_TEMPLATE.format(minutes=minutes).lstrip("0")
     return result
 
 
@@ -174,18 +174,18 @@ def program_description_print(program_name, level, program_data):
     unit = program_data["unit"]
     sequence = []
     for index, item in enumerate(ratio):
-        sequence.append("{0}({1})".format(STEP_MAP[index], item))
+        sequence.append("{step}({ratio})".format(step=STEP_MAP[index], ratio=item))
     sequence = ", ".join(sequence)
     total_time = time_calc(program_data)
     line()
     print(
         PROGRAM_DESCRIPTION.format(
-            program_name,
-            level,
-            str(cycle),
-            str(unit),
-            time_convert(total_time),
-            sequence))
+            name=program_name,
+            level=level,
+            cycles=str(cycle),
+            unit=str(unit),
+            total_time=time_convert(total_time),
+            sequence=sequence))
     line()
     time.sleep(1)
 
@@ -218,14 +218,20 @@ def get_input_standard(input_func=input):
     for item in STANDARD_MENU_ORDER:
         exit_flag = False
         sorted_list = sorted(STANDARD_MENU[item])
-        print(MENU_TEMPLATE_1.format(item))
+        print(MENU_TEMPLATE_1.format(item=item))
         for i in sorted_list:
             if item == "program":
                 program_name = STANDARD_MENU[item][i]
                 program_average_time = time_average_calc(PROGRAMS[program_name])
-                print(PROGRAM_TIME_TEMPLATE.format(i, program_name, time_convert(program_average_time, True)))
+                print(
+                    PROGRAM_TIME_TEMPLATE.format(
+                        index=i,
+                        name=program_name,
+                        average_time=time_convert(
+                            program_average_time,
+                            True)))
             else:
-                print(MENU_TEMPLATE_2.format(i, STANDARD_MENU[item][i]))
+                print(MENU_TEMPLATE_2.format(index=i, item=STANDARD_MENU[item][i]))
         while not exit_flag:
             try:
                 input_data[item] = int(input_func(""))
@@ -323,7 +329,7 @@ def run(program_data, silent=False):
     line()
     time.sleep(1)
     for i in range(cycle):
-        print(CYCLE_TEMPLATE.format(str(i + 1), str(cycle - i - 1)))
+        print(CYCLE_TEMPLATE.format(cycle=str(i + 1), remaining=str(cycle - i - 1)))
         time.sleep(1)
         for index, item in enumerate(ratio):
             if item != 0:
@@ -331,8 +337,8 @@ def run(program_data, silent=False):
                 play_sound(get_sound_path(SOUND_MAP[item_name]), enable=sound_check_flag)
                 print(
                     STEP_TEMPLATE.format(
-                        item_name, str(
-                            unit * item)), flush=True)
+                        step=item_name,
+                        time=str(unit * item)), flush=True)
                 graphic_counter(item * unit)
         time.sleep(1)
         line()
