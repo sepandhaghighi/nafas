@@ -459,8 +459,8 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                            "Medium": ENERGIZING_MEDIUM,
                            "Advanced": ENERGIZING_ADVANCED},
             "Box": {"Beginner": BOX_BEGINNER,
-                           "Medium": BOX_MEDIUM,
-                           "Advanced": BOX_ADVANCED},
+                    "Medium": BOX_MEDIUM,
+                    "Advanced": BOX_ADVANCED},
 
             }
 
