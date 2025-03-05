@@ -55,19 +55,19 @@ Total Time       : {total_time}
 Sequence         : {sequence}
 """
 
-MINUTES_TEMPLATE = "{:02.0f} minutes"
+MINUTES_TEMPLATE = "{minutes:02.0f} minutes"
 
-SECONDS_TEMPLATE = "{:02.0f} seconds"
+SECONDS_TEMPLATE = "{seconds:02.0f} seconds"
 
 PROGRAM_TIME_TEMPLATE = "{index}- {name} (~ {average_time})"
 
-MENU_TEMPLATE_1 = "- Choose a {0}: \n"
+MENU_TEMPLATE_1 = "- Choose a {item}: \n"
 
-MENU_TEMPLATE_2 = "{0}- {1}"
+MENU_TEMPLATE_2 = "{index}- {item}"
 
-CYCLE_TEMPLATE = "Cycle: {0} (Remaining: {1})"
+CYCLE_TEMPLATE = "Cycle: {cycle} (Remaining: {remaining})"
 
-STEP_TEMPLATE = "- {0} for {1} seconds"
+STEP_TEMPLATE = "- {step} for {time} seconds"
 
 STANDARD_MENU = {
     "program": {
