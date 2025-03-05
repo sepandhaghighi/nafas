@@ -85,7 +85,8 @@ STANDARD_MENU = {
         12: "Cigarette Replace",
         13: "Decision-Making",
         14: "Balancing",
-        15: "Energizing"},
+        15: "Energizing",
+        16: "Box"},
     "level": {
         1: "Beginner",
         2: "Medium",
