@@ -174,7 +174,7 @@ def program_description_print(program_name, level, program_data):
     unit = program_data["unit"]
     sequence = []
     for index, item in enumerate(ratio):
-        sequence.append("{0}({1})".format(STEP_MAP[index], item))
+        sequence.append("{step}({ratio})".format(step=STEP_MAP[index], ratio=item))
     sequence = ", ".join(sequence)
     total_time = time_calc(program_data)
     line()
