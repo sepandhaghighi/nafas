@@ -379,6 +379,39 @@ ENERGIZING_ADVANCED = {
     "cycle": 10}
 
 
+BOX_BEGINNER = {
+    "ratio": [
+        4,
+        4,
+        4,
+        4],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 4}
+
+
+BOX_MEDIUM = {
+    "ratio": [
+        4,
+        4,
+        4,
+        4],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 8}
+
+
+BOX_ADVANCED = {
+    "ratio": [
+        4,
+        4,
+        4,
+        4],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 15}
+
+
 PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                            "Medium": CLEAR_MIND_MEDIUM,
                            "Advanced": CLEAR_MIND_ADVANCED},
@@ -423,7 +456,11 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                           "Advanced": BALANCING_ADVANCED},
             "Energizing": {"Beginner": ENERGIZING_BEGINNER,
                            "Medium": ENERGIZING_MEDIUM,
-                           "Advanced": ENERGIZING_ADVANCED}
+                           "Advanced": ENERGIZING_ADVANCED},
+            "Box": {"Beginner": BOX_BEGINNER,
+                           "Medium": BOX_MEDIUM,
+                           "Advanced": BOX_ADVANCED},
+
             }
 
 
