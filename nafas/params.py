@@ -42,17 +42,17 @@ PROGRAM_END_MESSAGE = "Well done!"
 
 PROGRAM_DESCRIPTION = """Program details:
 
-Name             : {0}
+Name             : {name}
 
-Level            : {1}
+Level            : {level}
 
-Number of Cycles : {2}
+Number of Cycles : {cycles}
 
-Unit             : {3} seconds
+Unit             : {unit} seconds
 
-Total Time       : {4}
+Total Time       : {total_time}
 
-Sequence         : {5}
+Sequence         : {sequence}
 """
 
 MINUTES_TEMPLATE = "{:02.0f} minutes"

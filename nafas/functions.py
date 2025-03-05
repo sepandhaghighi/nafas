@@ -180,12 +180,12 @@ def program_description_print(program_name, level, program_data):
     line()
     print(
         PROGRAM_DESCRIPTION.format(
-            program_name,
-            level,
-            str(cycle),
-            str(unit),
-            time_convert(total_time),
-            sequence))
+            name=program_name,
+            level=level,
+            cycles=str(cycle),
+            unit=str(unit),
+            total_time=time_convert(total_time),
+            sequence=sequence))
     line()
     time.sleep(1)
 
