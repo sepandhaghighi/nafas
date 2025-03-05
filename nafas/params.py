@@ -59,7 +59,7 @@ MINUTES_TEMPLATE = "{:02.0f} minutes"
 
 SECONDS_TEMPLATE = "{:02.0f} seconds"
 
-PROGRAM_TIME_TEMPLATE = "{0}- {1} (~ {2})"
+PROGRAM_TIME_TEMPLATE = "{index}- {name} (~ {average_time})"
 
 MENU_TEMPLATE_1 = "- Choose a {0}: \n"
 

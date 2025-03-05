@@ -223,7 +223,7 @@ def get_input_standard(input_func=input):
             if item == "program":
                 program_name = STANDARD_MENU[item][i]
                 program_average_time = time_average_calc(PROGRAMS[program_name])
-                print(PROGRAM_TIME_TEMPLATE.format(i, program_name, time_convert(program_average_time, True)))
+                print(PROGRAM_TIME_TEMPLATE.format(index=i, name=program_name, average_time=time_convert(program_average_time, True)))
             else:
                 print(MENU_TEMPLATE_2.format(i, STANDARD_MENU[item][i]))
         while not exit_flag:
