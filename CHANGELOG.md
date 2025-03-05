@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Calming3 program
 ### Changed
 - `README.md` modified
+- String templates modified
 ## [0.9] - 2025-01-06
 ### Added
 - Energizing program
