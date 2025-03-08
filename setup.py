@@ -29,7 +29,7 @@ def read_description():
 setup(
     name='nafas',
     packages=['nafas'],
-    version='0.9',
+    version='1.0',
     description='Breathing gymnastics application',
     long_description=read_description(),
     long_description_content_type='text/markdown',
@@ -37,7 +37,7 @@ setup(
     author='Nafas Development Team',
     author_email='me@sepand.tech',
     url='https://github.com/sepandhaghighi/nafas',
-    download_url='https://github.com/sepandhaghighi/nafas/tarball/v0.9',
+    download_url='https://github.com/sepandhaghighi/nafas/tarball/v1.0',
     keywords="breath breathing meditation yoga pranayama",
     project_urls={
         'Source': 'https://github.com/sepandhaghighi/nafas',
@@ -46,7 +46,7 @@ setup(
     install_requires=get_requires(),
     python_requires='>=3.6',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'License :: OSI Approved :: MIT License',
