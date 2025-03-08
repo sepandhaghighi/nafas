@@ -165,6 +165,10 @@ You can also join our discord server
 
 <blockquote>13- <a href="https://www.yogabasics.com/practice/pranayama/">Pranayama Breathing Techniques and Tips</a> </blockquote>
 
+<blockquote>14- <a href="https://health.clevelandclinic.org/box-breathing-benefits">Box Breathing Benefits and Techniques</a> </blockquote>
+
+<blockquote>15- <a href="https://www.medicalnewstoday.com/articles/321805#how-to-do-it">Box breathing: How to do it, benefits, and tips</a> </blockquote>
+
 ## Cite
 
 If you use Nafas in your research, we would appreciate citations to the following paper:

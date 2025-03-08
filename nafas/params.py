@@ -85,7 +85,8 @@ STANDARD_MENU = {
         12: "Cigarette Replace",
         13: "Decision-Making",
         14: "Balancing",
-        15: "Energizing"},
+        15: "Energizing",
+        16: "Box"},
     "level": {
         1: "Beginner",
         2: "Medium",
@@ -379,6 +380,39 @@ ENERGIZING_ADVANCED = {
     "cycle": 10}
 
 
+BOX_BEGINNER = {
+    "ratio": [
+        4,
+        4,
+        4,
+        4],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 4}
+
+
+BOX_MEDIUM = {
+    "ratio": [
+        4,
+        4,
+        4,
+        4],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 8}
+
+
+BOX_ADVANCED = {
+    "ratio": [
+        4,
+        4,
+        4,
+        4],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 15}
+
+
 PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                            "Medium": CLEAR_MIND_MEDIUM,
                            "Advanced": CLEAR_MIND_ADVANCED},
@@ -423,7 +457,11 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                           "Advanced": BALANCING_ADVANCED},
             "Energizing": {"Beginner": ENERGIZING_BEGINNER,
                            "Medium": ENERGIZING_MEDIUM,
-                           "Advanced": ENERGIZING_ADVANCED}
+                           "Advanced": ENERGIZING_ADVANCED},
+            "Box": {"Beginner": BOX_BEGINNER,
+                    "Medium": BOX_MEDIUM,
+                    "Advanced": BOX_ADVANCED},
+
             }
 
 

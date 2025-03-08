@@ -7,9 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - Calming3 program
+- Box program
 ### Changed
 - `README.md` modified
 - String templates modified
+- `PROGRAMS.md` updated
 ## [0.9] - 2025-01-06
 ### Added
 - Energizing program
