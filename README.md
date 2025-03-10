@@ -24,7 +24,7 @@ Between these breaths, the programs incorporate deliberate pauses that allow use
 These cycles aim to enhance both physical and mental well-being.
 
 <div align="center">
-	<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/overview.png" width=100px>
+	<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/overview.png" width=300px>
 	<p>Nafas Programs' Cycle</p>
 </div>
 
