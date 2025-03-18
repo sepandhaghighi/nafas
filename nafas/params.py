@@ -38,6 +38,8 @@ EXIT_MESSAGE = "See you. Bye!"
 
 BAD_INPUT_MESSAGE = "[Error] Bad input!"
 
+CONFIG_LOAD_ERROR_MESSAGE = "[Error] Failed to load configuration file!"
+
 PROGRAM_END_MESSAGE = "Well done!"
 
 PROGRAM_DESCRIPTION = """Program details:

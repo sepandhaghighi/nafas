@@ -2,6 +2,7 @@
 """nafas functions."""
 
 import time
+import json
 from nafas.params import NAFAS_LINKS, NAFAS_DESCRIPTION, NAFAS_TIPS, NAFAS_CAUTIONS
 from nafas.params import STANDARD_MENU, STANDARD_MENU_ORDER, STEP_MAP
 from nafas.params import PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, STEP_TEMPLATE, CYCLE_TEMPLATE
@@ -204,6 +205,27 @@ def input_filter(input_data):
     if filtered_data["level"] not in STANDARD_MENU["level"]:
         filtered_data["level"] = 1
     return filtered_data
+
+
+def config_load(config_path):
+    """Load configuration from a JSON file."""
+    try:
+        with open(config_path, 'r') as config_file:
+            config_data = json.load(config_file)
+        program_data = {
+            'ratio': [
+                config_data['ratio']['inhale'],
+                config_data['ratio']['retain'],
+                config_data['ratio']['exhale'],
+                config_data['ratio']['sustain']
+            ],
+            'unit': config_data['unit'],
+            'pre': config_data['pre'],
+            'cycle': config_data['cycle'],
+        }
+        return {"status": True, "data": {"program_name": config_data['name'], "program_level": "Custom", "program_data": program_data}}
+    except Exception:
+        return {"status": False, "data": dict()}
 
 
 def get_input_standard(input_func=input):
