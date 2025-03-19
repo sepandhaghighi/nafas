@@ -39,6 +39,30 @@ Cautions:
 2. If you have asthma or high blood pressure should not hold the breath
 3. If you feel dizzy, nauseous, or lightheaded stop practicing and rest
 <BLANKLINE>
+>>> validate_config({"item":2})
+False
+>>> validate_config({"name": "program1", "unit": 2, "pre": 3, "cycle": 5, "ratio":{"inhale": 1, "exhale":1, "retain":1, "sustain":1}})
+True
+>>> validate_config({"name": "program1", "unit": 2, "pre": 3, "cycle": 5.2, "ratio":{"inhale": 1, "exhale":1, "retain":1, "sustain":1}})
+False
+>>> result = load_config(os.path.join("test", "test_config1.json"))
+>>> result["status"]
+True
+>>> result["data"]["program_name"]
+'program1'
+>>> result["data"]["program_level"]
+'Custom'
+>>> result["data"]["program_data"]["cycle"]
+10
+>>> result["data"]["program_data"]["unit"]
+2
+>>> result["data"]["program_data"]["pre"]
+3
+>>> result["data"]["program_data"]["ratio"] == [2,3,2,4]
+True
+>>> result = load_config("test_config2.json")
+>>> result["status"]
+False
 >>> print("\\n".join(justify(["123"], 2)))
 123
 >>> print("\\n".join(justify(["123"], 1)))
