@@ -63,6 +63,9 @@ True
 >>> result = load_config(os.path.join("test", "test_config2.json"))
 >>> result["status"]
 False
+>>> result = load_config(os.path.join("test", "test_config3.json"))
+>>> result["status"]
+False
 >>> print("\\n".join(justify(["123"], 2)))
 123
 >>> print("\\n".join(justify(["123"], 1)))
