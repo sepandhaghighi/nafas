@@ -256,6 +256,8 @@ def validate_config(config_data):
             return False
         if isinstance(CONFIG_VALIDATION_MAP[item1], dict):
             for item2 in CONFIG_VALIDATION_MAP[item1]:
+                if item2 not in config_data[item1]:
+                    return False
                 result.append(isinstance(config_data[item1][item2], CONFIG_VALIDATION_MAP[item1][item2]))
         else:
             result.append(isinstance(config_data[item1], CONFIG_VALIDATION_MAP[item1]))
