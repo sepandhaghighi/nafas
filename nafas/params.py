@@ -479,11 +479,13 @@ SOUND_MAP = {
 }
 
 CONFIG_VALIDATION_MAP = {
-    "name": str, "ratio": {
-        "inhale": (
-            int, float), "exhale": (
-                int, float), "retain": (
-                    int, float), "sustain": (
-                        int, float)}, "unit": (
-                            int, float), "pre": (
-                                int, float), "cycle": int}
+    "name": str,
+    "ratio": {
+        "inhale": (int, float),
+        "exhale": (int, float),
+        "retain": (int, float),
+        "sustain": (int, float)},
+    "unit": (int, float),
+    "pre": (int, float),
+    "cycle": int
+}
