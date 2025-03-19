@@ -5,7 +5,7 @@ import sys
 import argparse
 from nafas.functions import description_print, get_input_standard, input_filter
 from nafas.functions import get_program_data, program_description_print, run, clear_screen
-from nafas.functions import config_load
+from nafas.functions import load_config
 from nafas.params import NAFAS_VERSION, EXIT_MESSAGE
 from nafas.params import CONFIG_LOAD_ERROR_MESSAGE
 from art import tprint
@@ -37,7 +37,7 @@ def main():
             EXIT_FLAG = False
             while not EXIT_FLAG:
                 if args.config:
-                    result = config_load(args.config)
+                    result = load_config(args.config)
                     if result["status"]:
                         program_name, level, program_data = result["data"]["program_name"], result["data"]["program_level"], result["data"]["program_data"]
                     else:

@@ -207,7 +207,7 @@ def input_filter(input_data):
     return filtered_data
 
 
-def config_load(config_path):
+def load_config(config_path):
     """Load configuration from a JSON file."""
     try:
         with open(config_path, 'r') as config_file:
