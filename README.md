@@ -132,7 +132,7 @@ Config example:
     "unit": 2,
     "pre": 3,
     "cycle": 10,
-    "ratio":{
+    "ratio": {
         "inhale": 2,
         "exhale": 2,
         "retain": 3,

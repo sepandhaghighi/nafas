@@ -38,7 +38,8 @@ def main():
                 if args.config:
                     result = load_config(args.config)
                     if result["status"]:
-                        program_name, level, program_data = result["data"]["program_name"], result["data"]["program_level"], result["data"]["program_data"]
+                        data = result["data"]
+                        program_name, level, program_data = data["program_name"], data["program_level"], data["program_data"]
                     else:
                         print(CONFIG_LOAD_ERROR_MESSAGE)
                         sys.exit()
