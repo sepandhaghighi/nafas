@@ -115,6 +115,32 @@ nafas
 nafas --silent
 ```	
 
+
+### Custom Config
+
+ℹ️ Users can load their custom configurations
+
+```console
+nafas --config="program1.json"
+```
+
+Config example:
+
+```json
+{
+    "name": "program1",
+    "unit": 2,
+    "pre": 3,
+    "cycle": 10,
+    "ratio":{
+        "inhale": 2,
+        "exhale": 2,
+        "retain": 3,
+        "sustain": 4
+    }
+}
+```
+
 ## Screen Record
 
 <div align="center">
