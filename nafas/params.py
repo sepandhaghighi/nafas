@@ -484,7 +484,8 @@ CONFIG_VALIDATION_MAP = {
         "inhale": (int, float),
         "exhale": (int, float),
         "retain": (int, float),
-        "sustain": (int, float)},
+        "sustain": (int, float),
+    },
     "unit": (int, float),
     "pre": (int, float),
     "cycle": int
