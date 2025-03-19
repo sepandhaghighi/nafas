@@ -9,6 +9,7 @@ from nafas.params import PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, STEP_TEMPLATE
 from nafas.params import SOUND_WARNING_MESSAGE, EXIT_MESSAGE, BAD_INPUT_MESSAGE, PROGRAM_END_MESSAGE
 from nafas.params import MINUTES_TEMPLATE, SECONDS_TEMPLATE, PROGRAM_TIME_TEMPLATE
 from nafas.params import MENU_TEMPLATE_1, MENU_TEMPLATE_2
+from nafas.params import CONFIG_VALIDATION_MAP
 import nava
 import os
 from warnings import warn
@@ -208,10 +209,18 @@ def input_filter(input_data):
 
 
 def load_config(config_path):
-    """Load configuration from a JSON file."""
+    """
+    Load configuration from a JSON file.
+
+    :param config_path: config path
+    :type config_path: str
+    :return: result as dict
+    """
     try:
         with open(config_path, 'r') as config_file:
             config_data = json.load(config_file)
+        if not validate_config(config_data):
+            raise Exception
         program_data = {
             'ratio': [
                 config_data['ratio']['inhale'],
@@ -226,6 +235,27 @@ def load_config(config_path):
         return {"status": True, "data": {"program_name": config_data['name'], "program_level": "Custom", "program_data": program_data}}
     except Exception:
         return {"status": False, "data": dict()}
+
+
+def validate_config(config_data):
+    """
+    Validate config data.
+
+    :param config_data: config data
+    :type config_data: dict
+    :return: result as bool
+    """
+    result = []
+    for item1 in CONFIG_VALIDATION_MAP:
+        if item1 not in config_data:
+            return False
+        if isinstance(CONFIG_VALIDATION_MAP[item1], dict):
+            for item2 in CONFIG_VALIDATION_MAP[item1]:
+                result.append(isinstance(config_data[item1][item2], CONFIG_VALIDATION_MAP[item1][item2]))
+        else:
+            result.append(isinstance(config_data[item1], CONFIG_VALIDATION_MAP[item1]))
+    return all(result)
+
 
 
 def get_input_standard(input_func=input):
