@@ -237,7 +237,9 @@ def load_config(config_path):
             "data": {
                 "program_name": config_data['name'],
                 "program_level": "Custom",
-                "program_data": program_data}}
+                "program_data": program_data
+            }
+        }
     except Exception:
         return {"status": False, "data": dict()}
 
