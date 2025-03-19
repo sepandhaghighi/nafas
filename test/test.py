@@ -60,7 +60,7 @@ True
 3
 >>> result["data"]["program_data"]["ratio"] == [2,3,2,4]
 True
->>> result = load_config("test_config2.json")
+>>> result = load_config(os.path.join("test", "test_config2.json"))
 >>> result["status"]
 False
 >>> print("\\n".join(justify(["123"], 2)))
