@@ -232,7 +232,12 @@ def load_config(config_path):
             'pre': config_data['pre'],
             'cycle': config_data['cycle'],
         }
-        return {"status": True, "data": {"program_name": config_data['name'], "program_level": "Custom", "program_data": program_data}}
+        return {
+            "status": True,
+            "data": {
+                "program_name": config_data['name'],
+                "program_level": "Custom",
+                "program_data": program_data}}
     except Exception:
         return {"status": False, "data": dict()}
 
@@ -255,7 +260,6 @@ def validate_config(config_data):
         else:
             result.append(isinstance(config_data[item1], CONFIG_VALIDATION_MAP[item1]))
     return all(result)
-
 
 
 def get_input_standard(input_func=input):

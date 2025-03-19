@@ -478,4 +478,12 @@ SOUND_MAP = {
     "End": "well_done.wav",
 }
 
-CONFIG_VALIDATION_MAP = {"name":str, "ratio":{"inhale":(int, float), "exhale":(int, float), "retain":(int, float), "sustain":(int, float)}, "unit": (int, float), "pre": (int, float), "cycle": int}
+CONFIG_VALIDATION_MAP = {
+    "name": str, "ratio": {
+        "inhale": (
+            int, float), "exhale": (
+                int, float), "retain": (
+                    int, float), "sustain": (
+                        int, float)}, "unit": (
+                            int, float), "pre": (
+                                int, float), "cycle": int}
