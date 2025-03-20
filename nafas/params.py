@@ -38,6 +38,8 @@ EXIT_MESSAGE = "See you. Bye!"
 
 BAD_INPUT_MESSAGE = "[Error] Bad input!"
 
+CONFIG_LOAD_ERROR_MESSAGE = "[Error] Failed to load the configuration file!"
+
 PROGRAM_END_MESSAGE = "Well done!"
 
 PROGRAM_DESCRIPTION = """Program details:
@@ -474,4 +476,17 @@ SOUND_MAP = {
     "Retain": "retain.wav",
     "Sustain": "sustain.wav",
     "End": "well_done.wav",
+}
+
+CONFIG_VALIDATION_MAP = {
+    "name": str,
+    "ratio": {
+        "inhale": (int, float),
+        "exhale": (int, float),
+        "retain": (int, float),
+        "sustain": (int, float),
+    },
+    "unit": (int, float),
+    "pre": (int, float),
+    "cycle": int
 }
