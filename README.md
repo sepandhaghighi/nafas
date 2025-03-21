@@ -115,6 +115,14 @@ nafas
 nafas --silent
 ```	
 
+### Skip Intro
+
+ℹ️ This mode will skip the introduction
+
+```console
+nafas --skip-intro
+```	
+
 
 ### Custom Config
 
