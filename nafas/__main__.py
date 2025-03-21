@@ -21,18 +21,20 @@ def main():
         parser = argparse.ArgumentParser()
         parser.add_argument('--version', help='version', nargs="?", const=1)
         parser.add_argument('--silent', help='silent mode', nargs="?", const=1)
+        parser.add_argument('--skip-intro', help='skip intro', type=bool, default=False)
         parser.add_argument('--config', help='path to the configuration file', type=str)
         args = parser.parse_args()
         silent_flag = args.silent
         if args.version:
             print(NAFAS_VERSION)
         else:
-            tprint("Nafas")
-            tprint("v" + str(NAFAS_VERSION))
-            if silent_flag:
-                tprint("Silent Mode")
-            description_print()
-            _ = input("Press any key to continue.\n")
+            if not args.skip_intro:
+                tprint("Nafas")
+                tprint("v" + str(NAFAS_VERSION))
+                if silent_flag:
+                    tprint("Silent Mode")
+                description_print()
+                _ = input("Press any key to continue.\n")
             EXIT_FLAG = False
             while not EXIT_FLAG:
                 if args.config:
