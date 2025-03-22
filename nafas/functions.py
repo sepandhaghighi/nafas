@@ -118,7 +118,9 @@ def justify(words: List[str], width: int) -> Generator[str, None, None]:
 
 
 def sound_check() -> bool:
-    """Check sound playing device, return True if sound device is available."""
+    """
+    Check sound playing device, return True if sound device is available.
+    """
     sound_path = get_sound_path(SOUND_MAP['Silence'])
     try:
         nava.play(sound_path)
