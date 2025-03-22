@@ -52,6 +52,7 @@ def main():
                 clear_screen()
                 program_description_print(program_name, level, program_data)
                 run(program_data, silent=silent_flag)
+                print({'name': program_name, 'level': level, 'data': program_data}) # TODO: change
                 INPUTINDEX = str(
                     input("Press [R] to restart or any other key to exit."))
                 if INPUTINDEX.upper() != "R":

@@ -42,6 +42,13 @@ CONFIG_LOAD_ERROR_MESSAGE = "[Error] Failed to load the configuration file!"
 
 PROGRAM_END_MESSAGE = "Well done!"
 
+DATA_FILED_ID = "entry.837690934"
+DATA_FIELD_VALUE = "%7B'name':+'Box',+'level':+'Beginner',+'data':+%7B'ratio':+%5B4,+4,+4,+4%5D,+'unit':+1,+'pre':+3,+'cycle':+4%7D%7D"
+SURVEY_LINK_FORMAT = "https://docs.google.com/forms/d/e/1FAIpQLSdTckweXGhaxtbO7jkSEsYhzyoc2LBebyCdKwQGiTRERt742Q/viewform?usp=pp_url&{DATA_FILED_ID}={field_value}"
+SURVEY_MESSAGE = "We are conducting a study to assess usability of Nafas, by taking following survey you would participate in a study which help us improve Nafas.\n" \
+    "Here is the link to the survey: {survey_link}.\n" \
+    "Please take a moment to fill it out. Your feedback is valuable to us.\n" \
+
 PROGRAM_DESCRIPTION = """Program details:
 
 Name             : {name}
