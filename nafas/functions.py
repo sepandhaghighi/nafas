@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """nafas functions."""
 
+from typing import Dict, List, Tuple
+from typing import Generator, Callable, Any
 import time
 import json
 from nafas.params import NAFAS_LINKS, NAFAS_DESCRIPTION, NAFAS_TIPS, NAFAS_CAUTIONS
@@ -18,39 +20,32 @@ from warnings import warn
 import sys
 
 
-def line(num=70, char="#"):
+def line(num: int = 70, char: str = "#") -> None:
     """
     Print line.
 
     :param num: number of characters
-    :type num: int
     :param char: character
-    :type char: str
-    :return: None
     """
     print(num * char)
 
 
-def time_calc(program_data):
+def time_calc(program_data: Dict[str, Any]) -> float:
     """
-    Calculate program time.
+    Calculate and return the program time.
 
     :param program_data: program data
-    :type program_data: dict
-    :return: time as float
     """
     result = sum(program_data["ratio"]) * program_data["unit"] * \
         program_data["cycle"] + program_data["pre"]
     return result
 
 
-def time_average_calc(program_data):
+def time_average_calc(program_data: Dict[str, Any]) -> float:
     """
-    Calculate average time of a program in all levels.
+    Calculate and return average time of a program in all levels.
 
     :param program_data: program data in all levels
-    :type program_data: dict
-    :return: average time as float
     """
     result = 0
     level_number = len(program_data)
@@ -59,15 +54,12 @@ def time_average_calc(program_data):
     return result / level_number
 
 
-def time_convert(input_time, average=False):
+def time_convert(input_time: float, average: bool = False) -> str:
     """
     Convert input time from sec to MM,SS format.
 
     :param input_time: input time in sec
-    :type input_time: float
     :param average: average flag
-    :type average: bool
-    :return: converted time as str
     """
     sec = float(input_time)
     _days, sec = divmod(sec, 24 * 3600)
@@ -84,51 +76,22 @@ def time_convert(input_time, average=False):
     return result
 
 
-def get_rendered_survey_link(program_name, level, program_data):
-    """
-    Get rendered survey link.
-
-    :param program_name: program name
-    :type program_name: str
-    :param level: program level
-    :type level: str
-    :param program_data: program data
-    :type program_data: dict
-    :return: rendered survey link as str
-    """
-    data = SURVEY_DATA_TEMPLATE.format(
-        program_name=program_name,
-        level=level,
-        ratio_rendered="+%5B" + ",+".join([str(item) for item in program_data['ratio']]) + "%5D",
-        program_data_unit=program_data['unit'],
-        program_data_pre=program_data['pre'],
-        program_data_cycle=program_data['cycle'],
-    )
-    return SURVEY_LINK_TEMPLATE.format(data=data, version=NAFAS_VERSION)
-
-
-def left_justify(words, width):
+def left_justify(words: List[str], width: int) -> str:
     """
     Left justify words.
 
     :param words: list of words
-    :type words : list
     :param width: width of each line
-    :type width: int
-    :return: left justified words as list
     """
     return ' '.join(words).ljust(width)
 
 
-def justify(words, width):
+def justify(words: List[str], width: int) -> Generator[str, None, None]:
     """
     Justify input words.
 
     :param words: list of words
-    :type words : list
     :param width: width of each line
-    :type width : int
-    :return: list of justified words as list
     """
     line = []
     col = 0
@@ -154,11 +117,9 @@ def justify(words, width):
         yield left_justify(line, width)
 
 
-def sound_check():
+def sound_check() -> bool:
     """
-    Check sound playing device.
-
-    :return: result as bool
+    Check sound playing device, return True if sound device is available.
     """
     sound_path = get_sound_path(SOUND_MAP['Silence'])
     try:
@@ -169,7 +130,7 @@ def sound_check():
         return False
 
 
-def description_print():
+def description_print() -> None:
     """
     Print description.
 
@@ -184,17 +145,13 @@ def description_print():
     print(NAFAS_CAUTIONS)
 
 
-def program_description_print(program_name, level, program_data):
+def program_description_print(program_name: str, level: str, program_data: Dict[str, Any]) -> None:
     """
     Print program description.
 
     :param program_name: program name
-    :type program_name: str
     :param level: program level
-    :type level: str
     :param program_data: program data
-    :type program_data: dict
-    :return: None
     """
     cycle = program_data["cycle"]
     ratio = program_data["ratio"]
@@ -217,13 +174,11 @@ def program_description_print(program_name, level, program_data):
     time.sleep(1)
 
 
-def input_filter(input_data):
+def input_filter(input_data: Dict[str, Any]) -> Dict[str, Any]:
     """
     Filter input data.
 
     :param input_data: input data
-    :type input_data: dict
-    :return: filtered data as dict
     """
     filtered_data = input_data.copy()
     if filtered_data["program"] not in STANDARD_MENU["program"]:
@@ -233,13 +188,11 @@ def input_filter(input_data):
     return filtered_data
 
 
-def load_config(config_path):
+def load_config(config_path: str) -> Dict[str, Any]:
     """
     Load configuration from a JSON file.
 
     :param config_path: config path
-    :type config_path: str
-    :return: result as dict
     """
     try:
         with open(config_path, 'r') as config_file:
@@ -269,13 +222,11 @@ def load_config(config_path):
         return {"status": False, "data": dict()}
 
 
-def validate_config(config_data):
+def validate_config(config_data: Dict[str, Any]) -> bool:
     """
-    Validate config data.
+    Validate config data. Return True if config data is valid.
 
     :param config_data: config data
-    :type config_data: dict
-    :return: result as bool
     """
     result = []
     for item1 in CONFIG_VALIDATION_MAP:
@@ -291,13 +242,11 @@ def validate_config(config_data):
     return all(result)
 
 
-def get_input_standard(input_func=input):
+def get_input_standard(input_func: Callable = input) -> Dict[str, Any]:
     """
     Get inputs from user.
 
     :param input_func : input function
-    :type input_func : function object
-    :return: input data as dict
     """
     input_data = {"program": 1, "level": 1}
     for item in STANDARD_MENU_ORDER:
@@ -329,38 +278,32 @@ def get_input_standard(input_func=input):
     return input_data
 
 
-def get_program_data(input_data):
+def get_program_data(input_data: Dict[str, Any]) -> Tuple:
     """
-    Get program data.
+    Get program data as program name, level and program data.
 
     :param input_data: input data
-    :type input_data: dict
-    :return: program name, level and program data as tuple
     """
     program_name = STANDARD_MENU["program"][input_data["program"]]
     level = STANDARD_MENU["level"][input_data["level"]]
     return program_name, level, PROGRAMS[program_name][level]
 
 
-def get_sound_path(sound_name):
+def get_sound_path(sound_name: str) -> str:
     """
-    Return sound path.
+    Return direct sound path.
 
     :param sound_name: .wav sound name
-    :type sound_name: str
-    :return: direct path to sound
     """
     cd, _ = os.path.split(__file__)
     return os.path.join(cd, "sounds", sound_name)
 
 
-def graphic_counter(delay_time):
+def graphic_counter(delay_time: float) -> None:
     """
     Print dots during cycles.
 
     :param delay_time: delay time
-    :type delay_time: float
-    :return: None
     """
     for _ in range(int(delay_time)):
         time.sleep(1)
@@ -372,29 +315,23 @@ def graphic_counter(delay_time):
     print("")
 
 
-def play_sound(sound_path, enable=True):
+def play_sound(sound_path: str, enable: bool = True) -> None:
     """
     Play inputted sound file.
 
     :param sound_path: sound path
-    :type sound_path: str
     :param enable: enable flag
-    :type enable: bool
-    :return: None
     """
     if enable:
         _ = nava.play(sound_path, async_mode=True)
 
 
-def run(program_data, silent=False):
+def run(program_data: Dict[str, Any], silent: bool = False) -> None:
     """
     Run program.
 
     :param program_data: program data
-    :type program_data: dict
     :param silent: silent mode flag
-    :type silent: bool
-    :return: None
     """
     sound_check_flag = False
     if not silent:
@@ -432,7 +369,7 @@ def run(program_data, silent=False):
     time.sleep(2)
 
 
-def clear_screen():
+def clear_screen() -> None:
     """
     Clear screen.
 
