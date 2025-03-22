@@ -11,12 +11,8 @@ from nafas.params import CONFIG_LOAD_ERROR_MESSAGE
 from art import tprint
 
 
-def main():
-    """
-    CLI main function.
-
-    :return:
-    """
+def main() -> None:
+    """CLI main function."""
     try:
         parser = argparse.ArgumentParser()
         parser.add_argument('--version', help='version', nargs="?", const=1)
