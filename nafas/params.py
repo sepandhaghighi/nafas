@@ -43,8 +43,7 @@ CONFIG_LOAD_ERROR_MESSAGE = "[Error] Failed to load the configuration file!"
 PROGRAM_END_MESSAGE = "Well done!"
 
 SURVEY_LINK_FORMAT = "https://docs.google.com/forms/d/e/1FAIpQLSdTckweXGhaxtbO7jkSEsYhzyoc2LBebyCdKwQGiTRERt742Q/viewform?usp=pp_url&entry.837690934={field_value}"
-SURVEY_MESSAGE = "We are conducting a study to evaluate the usability of Nafas. By taking the following survey, you will contribute to our research and help us improve Nafas.\n" \
-"Here is the link to the survey:\n{survey_link}"
+SURVEY_MESSAGE = "We are conducting a study to evaluate the usability of Nafas. By taking the following survey, you will contribute to our research and help us improve Nafas.\nDo you want to participate in the survey? (Y/[N])"
 
 PROGRAM_DESCRIPTION = """Program details:
 
