@@ -217,4 +217,7 @@ nava.errors.NavaBaseError: Sound file's path should be a string.
 ...     pass
 >>> sound_check_flag
 False
+>>> # testing get_rendered_survey_link for multiple cases
+>>> get_rendered_survey_link({"name": "X", "level": "Medium", "data": {"ratio": [1, 0, 4, 0], "unit": 3, "pre": 3, "cycle": 28}})
+https://docs.google.com/forms/d/e/1FAIpQLSdTckweXGhaxtbO7jkSEsYhzyoc2LBebyCdKwQGiTRERt742Q/viewform?usp=pp_url&entry.837690934=%7B"name":+"X",+"level":+"Medium",+"data":+%7B"ratio":++%5B1,+0,+4,+0%5D,+"unit":+3,+"pre":+3,+"cycle":+28%7D%7D
 """
