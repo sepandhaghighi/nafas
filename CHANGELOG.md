@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
+- Survey form added to the end of program
 - `--config` argument
 - `--skip-intro` argument
 ### Changed
