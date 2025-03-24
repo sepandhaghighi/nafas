@@ -10,7 +10,7 @@ from nafas.params import SOUND_WARNING_MESSAGE, EXIT_MESSAGE, BAD_INPUT_MESSAGE,
 from nafas.params import MINUTES_TEMPLATE, SECONDS_TEMPLATE, PROGRAM_TIME_TEMPLATE
 from nafas.params import MENU_TEMPLATE_1, MENU_TEMPLATE_2
 from nafas.params import CONFIG_VALIDATION_MAP
-from nafas.params import SURVEY_LINK_FORMAT
+from nafas.params import SURVEY_LINK_FORMAT, VALUE_TEMPLATE
 import nava
 import os
 from warnings import warn
@@ -95,8 +95,14 @@ def get_rendered_survey_link(program_name, level, program_data):
     :type program_data: dict
     :return: rendered survey link as str
     """
-    ratio_rendered = "+%5B" + ",+".join([str(item) for item in program_data['ratio']]) + "%5D"
-    value = f"%7B\"name\":+\"{program_name}\",+\"level\":+\"{level}\",+\"data\":+%7B\"ratio\":+{ratio_rendered},+\"unit\":+{program_data['unit']},+\"pre\":+{program_data['pre']},+\"cycle\":+{program_data['cycle']}%7D%7D"
+    value = VALUE_TEMPLATE.format(
+        program_name=program_name,
+        level=level,
+        ratio_rendered="+%5B" + ",+".join([str(item) for item in program_data['ratio']]) + "%5D",
+        program_data_unit=program_data['unit'],
+        program_data_pre=program_data['pre'],
+        program_data_cycle=program_data['cycle'],
+    )
     return SURVEY_LINK_FORMAT.format(field_value=value)
 
 
