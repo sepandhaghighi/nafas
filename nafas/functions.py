@@ -95,7 +95,7 @@ def get_rendered_survey_link(program_name, level, program_data):
     :type program_data: dict
     :return: rendered survey link as str
     """
-    value = SURVEY_DATA_TEMPLATE.format(
+    data = SURVEY_DATA_TEMPLATE.format(
         program_name=program_name,
         level=level,
         ratio_rendered="+%5B" + ",+".join([str(item) for item in program_data['ratio']]) + "%5D",
@@ -103,7 +103,7 @@ def get_rendered_survey_link(program_name, level, program_data):
         program_data_pre=program_data['pre'],
         program_data_cycle=program_data['cycle'],
     )
-    return SURVEY_LINK_TEMPLATE.format(field_value=value)
+    return SURVEY_LINK_TEMPLATE.format(data=data)
 
 
 def left_justify(words, width):
