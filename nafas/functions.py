@@ -10,7 +10,7 @@ from nafas.params import SOUND_WARNING_MESSAGE, EXIT_MESSAGE, BAD_INPUT_MESSAGE,
 from nafas.params import MINUTES_TEMPLATE, SECONDS_TEMPLATE, PROGRAM_TIME_TEMPLATE
 from nafas.params import MENU_TEMPLATE_1, MENU_TEMPLATE_2
 from nafas.params import CONFIG_VALIDATION_MAP
-from nafas.params import SURVEY_LINK_FORMAT, VALUE_TEMPLATE
+from nafas.params import SURVEY_LINK_TEMPLATE, VALUE_TEMPLATE
 import nava
 import os
 from warnings import warn
@@ -103,7 +103,7 @@ def get_rendered_survey_link(program_name, level, program_data):
         program_data_pre=program_data['pre'],
         program_data_cycle=program_data['cycle'],
     )
-    return SURVEY_LINK_FORMAT.format(field_value=value)
+    return SURVEY_LINK_TEMPLATE.format(field_value=value)
 
 
 def left_justify(words, width):
