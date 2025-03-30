@@ -6,7 +6,7 @@ import webbrowser
 import argparse
 from nafas.functions import description_print, get_input_standard, input_filter
 from nafas.functions import get_program_data, program_description_print, run, clear_screen
-from nafas.functions import load_config, get_rendered_survey_link
+from nafas.functions import load_config, get_rendered_survey_link, line
 from nafas.params import NAFAS_VERSION, EXIT_MESSAGE
 from nafas.params import CONFIG_LOAD_ERROR_MESSAGE, SURVEY_MESSAGE_1, SURVEY_MESSAGE_2
 from art import tprint
@@ -53,9 +53,10 @@ def main():
                 clear_screen()
                 program_description_print(program_name, level, program_data)
                 run(program_data, silent=silent_flag)
+                line()
                 survey_link = get_rendered_survey_link(program_name, level, program_data)
                 print(SURVEY_MESSAGE_1)
-                print("Survey Link: {link}".format(link=survey_link))
+                print("Survey Link: {link}\n".format(link=survey_link))
                 if input(SURVEY_MESSAGE_2).lower() == "y":
                     webbrowser.open(survey_link)
                 INPUTINDEX = str(
