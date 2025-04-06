@@ -11,6 +11,7 @@ from nafas.params import MINUTES_TEMPLATE, SECONDS_TEMPLATE, PROGRAM_TIME_TEMPLA
 from nafas.params import MENU_TEMPLATE_1, MENU_TEMPLATE_2
 from nafas.params import CONFIG_VALIDATION_MAP
 from nafas.params import SURVEY_LINK_TEMPLATE, SURVEY_DATA_TEMPLATE
+from nafas.params import NAFAS_VERSION
 import nava
 import os
 from warnings import warn
@@ -102,6 +103,7 @@ def get_rendered_survey_link(program_name, level, program_data):
         program_data_unit=program_data['unit'],
         program_data_pre=program_data['pre'],
         program_data_cycle=program_data['cycle'],
+        nafas_version=NAFAS_VERSION,
     )
     return SURVEY_LINK_TEMPLATE.format(data=data)
 
