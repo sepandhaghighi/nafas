@@ -103,9 +103,8 @@ def get_rendered_survey_link(program_name, level, program_data):
         program_data_unit=program_data['unit'],
         program_data_pre=program_data['pre'],
         program_data_cycle=program_data['cycle'],
-        version=NAFAS_VERSION,
     )
-    return SURVEY_LINK_TEMPLATE.format(data=data)
+    return SURVEY_LINK_TEMPLATE.format(data=data, version=NAFAS_VERSION)
 
 
 def left_justify(words, width):
