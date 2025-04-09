@@ -1,6 +1,6 @@
 # Nafas Release Instructions
 
-**Last Update: 2024-07-22**
+**Last Update: 2025-04-09**
 
 1. Create the `release` branch under `dev`
 2. Update all version tags
@@ -11,6 +11,7 @@
 	5. `otherfiles/version_check.py`
 	6. `nafas/params.py`
 	7. `otherfiles/Version.rc`
+	8. `test/test.py`
 3. Update `CHANGELOG.md`
 	1. Add a new header under `Unreleased` section (Example: `## [0.1] - 2022-08-17`)
 	2. Add a new compare link to the end of the file (Example: `[0.2]: https://github.com/sepandhaghighi/nafas/compare/v0.1...v0.2`)
