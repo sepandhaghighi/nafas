@@ -219,5 +219,5 @@ nava.errors.NavaBaseError: Sound file's path should be a string.
 False
 >>> # testing get_rendered_survey_link for multiple cases
 >>> get_rendered_survey_link("X", "Medium", {"ratio": [1, 0, 4, 0], "unit": 3, "pre": 3, "cycle": 28})
-'https://opsclb.li/nafas/form?data=%7B"name":+"X",+"level":+"Medium",+"data":+%7B"ratio":++%5B1,+0,+4,+0%5D,+"unit":+3,+"pre":+3,+"cycle":+28%7D%7D'
+'https://opsclb.li/nafas/form?version=1.0&data=%7B"name":+"X",+"level":+"Medium",+"data":+%7B"ratio":++%5B1,+0,+4,+0%5D,+"unit":+3,+"pre":+3,+"cycle":+28%7D%7D'
 """

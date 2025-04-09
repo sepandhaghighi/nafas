@@ -42,7 +42,7 @@ CONFIG_LOAD_ERROR_MESSAGE = "[Error] Failed to load the configuration file!"
 
 PROGRAM_END_MESSAGE = "Well done!"
 
-SURVEY_LINK_TEMPLATE = "https://opsclb.li/nafas/form?data={data}"
+SURVEY_LINK_TEMPLATE = "https://opsclb.li/nafas/form?version={version}&data={data}"
 SURVEY_DATA_TEMPLATE = "%7B\"name\":+\"{program_name}\",+\"level\":+\"{level}\",+\"data\":+%7B\"ratio\":+{ratio_rendered},+\"unit\":+{program_data_unit},+\"pre\":+{program_data_pre},+\"cycle\":+{program_data_cycle}%7D%7D"
 SURVEY_MESSAGE_1 = "We are conducting a study to evaluate the usability of Nafas. By taking the following survey, you will contribute to our research and help us improve Nafas. The survey takes less than 5 minutes to complete.\n"
 SURVEY_MESSAGE_2 = "Do you want to participate in the survey? (Y/[N])"
