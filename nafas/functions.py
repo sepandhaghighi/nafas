@@ -76,6 +76,25 @@ def time_convert(input_time: float, average: bool = False) -> str:
     return result
 
 
+def get_rendered_survey_link(program_name: str, level: str, program_data: Dict[str, Any]) -> str:
+    """
+    Get rendered survey link.
+
+    :param program_name: program name
+    :param level: program level
+    :param program_data: program data
+    """
+    data = SURVEY_DATA_TEMPLATE.format(
+        program_name=program_name,
+        level=level,
+        ratio_rendered="+%5B" + ",+".join([str(item) for item in program_data['ratio']]) + "%5D",
+        program_data_unit=program_data['unit'],
+        program_data_pre=program_data['pre'],
+        program_data_cycle=program_data['cycle'],
+    )
+    return SURVEY_LINK_TEMPLATE.format(data=data, version=NAFAS_VERSION)
+
+
 def left_justify(words: List[str], width: int) -> str:
     """
     Left justify words.
