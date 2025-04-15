@@ -148,11 +148,7 @@ def sound_check() -> bool:
 
 
 def description_print() -> None:
-    """
-    Print description.
-
-    :return: None
-    """
+    """Print description."""
     print(NAFAS_LINKS)
     line()
     print("\n".join(justify(NAFAS_DESCRIPTION.split(), 100)))
@@ -387,11 +383,7 @@ def run(program_data: Dict[str, Any], silent: bool = False) -> None:
 
 
 def clear_screen() -> None:
-    """
-    Clear screen.
-
-    :return: None
-    """
+    """Clear screen."""
     if sys.platform == "win32":
         os.system('cls')
     else:
