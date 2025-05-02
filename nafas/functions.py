@@ -147,8 +147,8 @@ def sound_check() -> bool:
         return False
 
 
-def description_print() -> None:
-    """Print description."""
+def nafas_description_print() -> None:
+    """Print Nafas description."""
     print(NAFAS_LINKS)
     line()
     print("\n".join(justify(NAFAS_DESCRIPTION.split(), 100)))

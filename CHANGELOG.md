@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Changed
+- `description_print` function renamed to `nafas_description_print`
 -  Python typing features added to all modules
 -  `Python 3.6` support dropped
 -  Test system modified
