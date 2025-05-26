@@ -503,8 +503,8 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                     "Medium": BOX_MEDIUM,
                     "Advanced": BOX_ADVANCED},
             "Coherent": {"Beginner": COHERENT_BEGINNER,
-                                  "Medium": COHERENT_MEDIUM,
-                                  "Advanced": COHERENT_ADVANCED},
+                         "Medium": COHERENT_MEDIUM,
+                         "Advanced": COHERENT_ADVANCED},
         }
 
 
