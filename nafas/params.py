@@ -504,7 +504,7 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                     "Advanced": BOX_ADVANCED},
             "Coherent Breathing": {"Beginner": COHERENT_BREATHING_BEGINNER,
                                   "Medium": COHERENT_BREATHING_MEDIUM,
-                                  "Advanced":  COHERENT_BREATHING_ADVANCED},
+                                  "Advanced": COHERENT_BREATHING_ADVANCED},
         }
 
 
