@@ -93,7 +93,8 @@ STANDARD_MENU = {
         13: "Decision-Making",
         14: "Balancing",
         15: "Energizing",
-        16: "Box"},
+        16: "Box",
+        17: "Coherent Breathing"},
     "level": {
         1: "Beginner",
         2: "Medium",
@@ -420,6 +421,39 @@ BOX_ADVANCED = {
     "cycle": 15}
 
 
+COHERENT_BREATHING_BEGINNER = {
+    "ratio": [
+        5,
+        0,
+        5,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 30}
+
+
+COHERENT_BREATHING_MEDIUM = {
+    "ratio": [
+        5,
+        0,
+        5,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 50}
+
+
+COHERENT_BREATHING_ADVANCED = {
+    "ratio": [
+        5,
+        0,
+        5,
+        0],
+    "unit": 1,
+    "pre": 3,
+    "cycle": 70}
+
+
 PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                            "Medium": CLEAR_MIND_MEDIUM,
                            "Advanced": CLEAR_MIND_ADVANCED},
@@ -468,8 +502,10 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Box": {"Beginner": BOX_BEGINNER,
                     "Medium": BOX_MEDIUM,
                     "Advanced": BOX_ADVANCED},
-
-            }
+            "Coherent Breathing": {"Beginner": COHERENT_BREATHING_BEGINNER,
+                                  "Medium": COHERENT_BREATHING_MEDIUM,
+                                  "Advanced":  COHERENT_BREATHING_ADVANCED},
+        }
 
 
 SOUND_MAP = {
