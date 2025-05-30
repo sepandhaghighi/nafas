@@ -1,6 +1,6 @@
 # Nafas Breathing Programs
 
-**Last Update: 2025-03-08**
+**Last Update: 2025-05-26**
 
 | **Program**         | **Description**                                                                                                                 | **Level**         | **Ratios**<br>**(I:R:E:S)**            | **Unit**<br>**(Seconds)** | **Cycles**      |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------|-----------------------|--------------------------|----------------|
@@ -20,6 +20,7 @@
 | Balancing            | Designed for achieving inner balance. Useful for users needing a brief grounding exercise during hectic schedules.          | B<br>M<br>A       | 6:0:6:0<br>8:1:8:1<br>6:2:6:2 | 1<br>1<br>1                | 6<br>8<br>10   |
 | Energizing           | Breathing program to recharge energy levels and improve alertness. Ideal for users or professionals needing a quick boost of focus and energy. | B<br>M<br>A | 6:0:4:0<br>6:4:6:1<br>6:6:6:1 | 1<br>1<br>1   | 6<br>8<br>10   | 
 | Box                  | A breathing technique involving equal counts of inhaling, retaining, exhaling, and sustaining to enhance focus and calm. | B<br>M<br>A | 4:4:4:4<br>4:4:4:4<br>4:4:4:4 | 1<br>1<br>1   | 4<br>8<br>15   | 
+| Coherent             | Breathing program for optimizing heart rate variability (HRV). It triggers the ideal breath rate for relaxation and emotional regulation. Useful for daily stress management or biofeedback training. | B<br>M<br>A | 5:0:5:0<br>5:0:5:0<br>5:0:5:0 | 1<br>1<br>1 | 30<br>50<br>70 |
 
 **Notes**:
 - *I: Inhale, R: Retain, E: Exhale, S: Sustain, B: Beginner, M: Medium, A: Advanced*

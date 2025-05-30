@@ -203,6 +203,10 @@ You can also join our discord server
 
 <blockquote>15- <a href="https://www.medicalnewstoday.com/articles/321805#how-to-do-it">Box breathing: How to do it, benefits, and tips</a> </blockquote>
 
+<blockquote>16- <a href="https://pubmed.ncbi.nlm.nih.gov/24380741/">Breathing at a rate of 5.5 breaths per minute with equal inhalation-to-exhalation ratio increases heart rate variability</a> </blockquote>
+
+<blockquote>17- <a href="https://www.youtube.com/watch?v=dPkpW5lqL3E">Coherent Breathing Timer - 6 Breaths Per Minute | 5 Seconds in / 5 Seconds Out | With Bells</a> </blockquote>
+
 ## Cite
 
 If you use Nafas in your research, we would appreciate citations to the following paper:
