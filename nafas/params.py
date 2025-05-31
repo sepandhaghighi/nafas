@@ -47,7 +47,7 @@ SURVEY_DATA_TEMPLATE = "%7B\"name\":+\"{program_name}\",+\"level\":+\"{level}\",
 SURVEY_MESSAGE_1 = "We are conducting a study to evaluate the usability of Nafas. By taking the following survey, you will contribute to our research and help us improve Nafas. The survey takes less than 5 minutes to complete.\n"
 SURVEY_MESSAGE_2 = "Do you want to participate in the survey? (Y/[N])"
 
-PROGRAM_DESCRIPTION = """Program details:
+PROGRAM_DESCRIPTION = """Program Details:
 
 Name                     : {name}
 
@@ -59,7 +59,7 @@ Unit                     : {unit} seconds
 
 Total Time               : {total_time}
 
-Breaths Per Minute (BPM) : {bpm}
+Breaths per Minute (BPM) : {bpm}
 
 Sequence                 : {sequence}
 """
