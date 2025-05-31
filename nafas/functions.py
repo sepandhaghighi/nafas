@@ -30,6 +30,17 @@ def line(num: int = 70, char: str = "#") -> None:
     print(num * char)
 
 
+def bpm_calc(program_data: Dict[str, Any]) -> float:
+    """
+    Calculate Breaths Per Minute (BPM).
+
+    :param program_data: program data
+    """
+    total_time_per_breath = sum(program_data["ratio"]) * program_data["unit"]
+    bpm = 60 / total_time_per_breath
+    return bpm
+
+
 def time_calc(program_data: Dict[str, Any]) -> float:
     """
     Calculate and return the program time.
@@ -174,6 +185,7 @@ def program_description_print(program_name: str, level: str, program_data: Dict[
         sequence.append("{step}({ratio})".format(step=STEP_MAP[index], ratio=item))
     sequence = ", ".join(sequence)
     total_time = time_calc(program_data)
+    bpm = bpm_calc(program_data)
     line()
     print(
         PROGRAM_DESCRIPTION.format(
@@ -182,6 +194,7 @@ def program_description_print(program_name: str, level: str, program_data: Dict[
             cycles=str(cycle),
             unit=str(unit),
             total_time=time_convert(total_time),
+            bpm=bpm,
             sequence=sequence))
     line()
     time.sleep(1)

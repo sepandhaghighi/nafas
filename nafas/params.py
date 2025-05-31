@@ -49,17 +49,19 @@ SURVEY_MESSAGE_2 = "Do you want to participate in the survey? (Y/[N])"
 
 PROGRAM_DESCRIPTION = """Program details:
 
-Name             : {name}
+Name                     : {name}
 
-Level            : {level}
+Level                    : {level}
 
-Number of Cycles : {cycles}
+Number of Cycles         : {cycles}
 
-Unit             : {unit} seconds
+Unit                     : {unit} seconds
 
-Total Time       : {total_time}
+Total Time               : {total_time}
 
-Sequence         : {sequence}
+Breaths Per Minute (BPM) : {bpm}
+
+Sequence                 : {sequence}
 """
 
 MINUTES_TEMPLATE = "{minutes:02.0f} minutes"
