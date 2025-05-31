@@ -146,7 +146,7 @@ Unit                     : 3 seconds
 <BLANKLINE>
 Total Time               : 07 minutes, 03 seconds
 <BLANKLINE>
-Breaths per Minute (BPM) : 5.0
+Breaths per Minute (BPM) : 5
 <BLANKLINE>
 Sequence                 : Inhale(1), Retain(0), Exhale(3), Sustain(0)
 <BLANKLINE>
