@@ -41,7 +41,6 @@ def is_int(number: Union[int, float]) -> bool:
     return False
 
 
-
 def bpm_calc(program_data: Dict[str, Any]) -> float:
     """
     Calculate Breaths Per Minute (BPM).

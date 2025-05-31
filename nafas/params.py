@@ -507,7 +507,7 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Coherent": {"Beginner": COHERENT_BEGINNER,
                          "Medium": COHERENT_MEDIUM,
                          "Advanced": COHERENT_ADVANCED},
-        }
+            }
 
 
 SOUND_MAP = {
