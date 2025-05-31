@@ -2,7 +2,7 @@
 """nafas functions."""
 
 from typing import Dict, List, Tuple
-from typing import Generator, Callable, Any
+from typing import Generator, Callable, Any, Union
 import time
 import json
 from nafas.params import NAFAS_LINKS, NAFAS_DESCRIPTION, NAFAS_TIPS, NAFAS_CAUTIONS
@@ -30,6 +30,18 @@ def line(num: int = 70, char: str = "#") -> None:
     print(num * char)
 
 
+def is_int(number: Union[int, float]) -> bool:
+    """
+    Check that input number is int or not.
+
+    :param number: input number
+    """
+    if int(number) == number:
+        return True
+    return False
+
+
+
 def bpm_calc(program_data: Dict[str, Any]) -> float:
     """
     Calculate Breaths Per Minute (BPM).
@@ -38,6 +50,8 @@ def bpm_calc(program_data: Dict[str, Any]) -> float:
     """
     total_time_per_breath = sum(program_data["ratio"]) * program_data["unit"]
     bpm = round(60 / total_time_per_breath, 2)
+    if is_int(bpm):
+        bpm = int(bpm)
     return bpm
 
 
