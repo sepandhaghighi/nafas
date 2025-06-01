@@ -157,7 +157,7 @@ Sequence                 : Inhale(1), Retain(0), Exhale(3), Sustain(0)
 ######################################################################
 >>> program_details_print("Custom","Beginner",{"ratio": [1, 1, 3, 2], "unit": 1, "pre": 3, "cycle": 35})
 ######################################################################
-Program details:
+Program Details:
 <BLANKLINE>
 Name                     : Custom
 <BLANKLINE>
@@ -169,7 +169,7 @@ Unit                     : 1 seconds
 <BLANKLINE>
 Total Time               : 04 minutes, 08 seconds
 <BLANKLINE>
-Breaths Per Minute (BPM) : 8.57
+Breaths per Minute (BPM) : 8.57
 <BLANKLINE>
 Sequence                 : Inhale(1), Retain(1), Exhale(3), Sustain(2)
 <BLANKLINE>
