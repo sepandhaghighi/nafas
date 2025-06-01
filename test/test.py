@@ -132,7 +132,7 @@ True
 True
 >>> program_data["unit"] == 3
 True
->>> program_description_print("Clear Mind","Beginner",{"ratio": [1, 0, 3, 0], "unit": 3, "pre": 3, "cycle": 35})
+>>> program_details_print("Clear Mind","Beginner",{"ratio": [1, 0, 3, 0], "unit": 3, "pre": 3, "cycle": 35})
 ######################################################################
 Program Details:
 <BLANKLINE>
