@@ -39,6 +39,10 @@ Cautions:
 2. If you have asthma or high blood pressure should not hold the breath
 3. If you feel dizzy, nauseous, or lightheaded stop practicing and rest
 <BLANKLINE>
+>>> is_int(2)
+True
+>>> is_int(2.1)
+False
 >>> validate_config({"item":2})
 False
 >>> validate_config({"name": "program1", "unit": 2, "pre": 3, "cycle": 5, "ratio":{"inhale": 1, "exhale":1, "retain":1, "sustain":1}})
@@ -149,6 +153,25 @@ Total Time               : 07 minutes, 03 seconds
 Breaths per Minute (BPM) : 5
 <BLANKLINE>
 Sequence                 : Inhale(1), Retain(0), Exhale(3), Sustain(0)
+<BLANKLINE>
+######################################################################
+>>> program_details_print("Custom","Beginner",{"ratio": [1, 1, 3, 2], "unit": 1, "pre": 3, "cycle": 35})
+######################################################################
+Program details:
+<BLANKLINE>
+Name                     : Custom
+<BLANKLINE>
+Level                    : Beginner
+<BLANKLINE>
+Number of Cycles         : 35
+<BLANKLINE>
+Unit                     : 1 seconds
+<BLANKLINE>
+Total Time               : 04 minutes, 08 seconds
+<BLANKLINE>
+Breaths Per Minute (BPM) : 8.57
+<BLANKLINE>
+Sequence                 : Inhale(1), Retain(1), Exhale(3), Sustain(2)
 <BLANKLINE>
 ######################################################################
 >>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3, 0]})
