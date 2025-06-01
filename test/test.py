@@ -134,19 +134,21 @@ True
 True
 >>> program_description_print("Clear Mind","Beginner",{"ratio": [1, 0, 3, 0], "unit": 3, "pre": 3, "cycle": 35})
 ######################################################################
-Program details:
+Program Details:
 <BLANKLINE>
-Name             : Clear Mind
+Name                     : Clear Mind
 <BLANKLINE>
-Level            : Beginner
+Level                    : Beginner
 <BLANKLINE>
-Number of Cycles : 35
+Number of Cycles         : 35
 <BLANKLINE>
-Unit             : 3 seconds
+Unit                     : 3 seconds
 <BLANKLINE>
-Total Time       : 07 minutes, 03 seconds
+Total Time               : 07 minutes, 03 seconds
 <BLANKLINE>
-Sequence         : Inhale(1), Retain(0), Exhale(3), Sustain(0)
+Breaths per Minute (BPM) : 5
+<BLANKLINE>
+Sequence                 : Inhale(1), Retain(0), Exhale(3), Sustain(0)
 <BLANKLINE>
 ######################################################################
 >>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3, 0]})

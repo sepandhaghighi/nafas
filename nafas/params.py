@@ -47,19 +47,21 @@ SURVEY_DATA_TEMPLATE = "%7B\"name\":+\"{program_name}\",+\"level\":+\"{level}\",
 SURVEY_MESSAGE_1 = "We are conducting a study to evaluate the usability of Nafas. By taking the following survey, you will contribute to our research and help us improve Nafas. The survey takes less than 5 minutes to complete.\n"
 SURVEY_MESSAGE_2 = "Do you want to participate in the survey? (Y/[N])"
 
-PROGRAM_DESCRIPTION = """Program details:
+PROGRAM_DESCRIPTION = """Program Details:
 
-Name             : {name}
+Name                     : {name}
 
-Level            : {level}
+Level                    : {level}
 
-Number of Cycles : {cycles}
+Number of Cycles         : {cycles}
 
-Unit             : {unit} seconds
+Unit                     : {unit} seconds
 
-Total Time       : {total_time}
+Total Time               : {total_time}
 
-Sequence         : {sequence}
+Breaths per Minute (BPM) : {bpm}
+
+Sequence                 : {sequence}
 """
 
 MINUTES_TEMPLATE = "{minutes:02.0f} minutes"
@@ -505,7 +507,7 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Coherent": {"Beginner": COHERENT_BEGINNER,
                          "Medium": COHERENT_MEDIUM,
                          "Advanced": COHERENT_ADVANCED},
-        }
+            }
 
 
 SOUND_MAP = {

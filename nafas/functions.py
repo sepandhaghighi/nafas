@@ -2,7 +2,7 @@
 """nafas functions."""
 
 from typing import Dict, List, Tuple
-from typing import Generator, Callable, Any
+from typing import Generator, Callable, Any, Union
 import time
 import json
 from nafas.params import NAFAS_LINKS, NAFAS_DESCRIPTION, NAFAS_TIPS, NAFAS_CAUTIONS
@@ -28,6 +28,30 @@ def line(num: int = 70, char: str = "#") -> None:
     :param char: character
     """
     print(num * char)
+
+
+def is_int(number: Union[int, float]) -> bool:
+    """
+    Check that input number is int or not.
+
+    :param number: input number
+    """
+    if int(number) == number:
+        return True
+    return False
+
+
+def bpm_calc(program_data: Dict[str, Any]) -> float:
+    """
+    Calculate Breaths Per Minute (BPM).
+
+    :param program_data: program data
+    """
+    total_time_per_breath = sum(program_data["ratio"]) * program_data["unit"]
+    bpm = round(60 / total_time_per_breath, 2)
+    if is_int(bpm):
+        bpm = int(bpm)
+    return bpm
 
 
 def time_calc(program_data: Dict[str, Any]) -> float:
@@ -174,6 +198,7 @@ def program_description_print(program_name: str, level: str, program_data: Dict[
         sequence.append("{step}({ratio})".format(step=STEP_MAP[index], ratio=item))
     sequence = ", ".join(sequence)
     total_time = time_calc(program_data)
+    bpm = bpm_calc(program_data)
     line()
     print(
         PROGRAM_DESCRIPTION.format(
@@ -182,6 +207,7 @@ def program_description_print(program_name: str, level: str, program_data: Dict[
             cycles=str(cycle),
             unit=str(unit),
             total_time=time_convert(total_time),
+            bpm=bpm,
             sequence=sequence))
     line()
     time.sleep(1)
