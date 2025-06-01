@@ -7,7 +7,7 @@ import time
 import json
 from nafas.params import NAFAS_LINKS, NAFAS_DESCRIPTION, NAFAS_TIPS, NAFAS_CAUTIONS
 from nafas.params import STANDARD_MENU, STANDARD_MENU_ORDER, STEP_MAP
-from nafas.params import PROGRAMS, PROGRAM_DESCRIPTION, SOUND_MAP, STEP_TEMPLATE, CYCLE_TEMPLATE
+from nafas.params import PROGRAMS, PROGRAM_DETAILS, SOUND_MAP, STEP_TEMPLATE, CYCLE_TEMPLATE
 from nafas.params import SOUND_WARNING_MESSAGE, EXIT_MESSAGE, BAD_INPUT_MESSAGE, PROGRAM_END_MESSAGE
 from nafas.params import MINUTES_TEMPLATE, SECONDS_TEMPLATE, PROGRAM_TIME_TEMPLATE
 from nafas.params import MENU_TEMPLATE_1, MENU_TEMPLATE_2
@@ -201,7 +201,7 @@ def program_description_print(program_name: str, level: str, program_data: Dict[
     bpm = bpm_calc(program_data)
     line()
     print(
-        PROGRAM_DESCRIPTION.format(
+        PROGRAM_DETAILS.format(
             name=program_name,
             level=level,
             cycles=str(cycle),
