@@ -47,7 +47,7 @@ def bpm_calc(program_data: Dict[str, Any]) -> float:
 
     :param program_data: program data
     """
-    total_time_per_breath = sum(program_data["ratio"].values()) * program_data["unit"]
+    total_time_per_breath = sum(program_data["ratio"]) * program_data["unit"]
     bpm = round(60 / total_time_per_breath, 2)
     if is_int(bpm):
         bpm = int(bpm)
