@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Breaths Per Minute (BPM)
 ### Changed
 - `description_print` function renamed to `nafas_description_print`
+- `program_description_print` function renamed to `program_details_print`
 -  Python typing features added to all modules
 -  `Python 3.6` support dropped
 -  Test system modified
