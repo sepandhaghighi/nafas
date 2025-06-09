@@ -21,6 +21,7 @@ def main() -> None:
         parser.add_argument('--silent', help='silent mode', nargs="?", const=1)
         parser.add_argument('--skip-intro', help='skip intro', nargs="?", const=1)
         parser.add_argument('--config', help='path to the configuration file', type=str)
+        parser.add_argument('--speaker', help='speaker id', choices=SPEAKER_LIST, default=SPEAKER_LIST[0])
         args = parser.parse_args()
         silent_flag = args.silent
         if args.version:
@@ -49,7 +50,7 @@ def main() -> None:
                     program_name, level, program_data = get_program_data(filtered_data)
                 clear_screen()
                 program_details_print(program_name, level, program_data)
-                run(program_data, silent=silent_flag)
+                run(program_data, args.speaker, silent=silent_flag)
                 line()
                 survey_link = get_rendered_survey_link(program_name, level, program_data)
                 print(SURVEY_MESSAGE_1)
