@@ -7,9 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - `--speaker` argument
-- `us2` speaker audios
-- `indian1` speaker audios
-- `indian2` speaker audios
+- `us2` speaker audio files
+- `indian1` speaker audio files
+- `indian2` speaker audio files
 ## [1.2] - 2025-06-04
 ### Added
 - Coherent program
