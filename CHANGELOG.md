@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- `--speaker` argument
+- `us2` speaker audios
+- `indian1` speaker audios
+- `indian2` speaker audios
 ## [1.2] - 2025-06-04
 ### Added
 - Coherent program
