@@ -9,6 +9,7 @@ from nafas.functions import get_program_data, program_details_print, run, clear_
 from nafas.functions import load_config, get_rendered_survey_link, line
 from nafas.params import NAFAS_VERSION, EXIT_MESSAGE
 from nafas.params import CONFIG_LOAD_ERROR_MESSAGE, SURVEY_MESSAGE_1, SURVEY_MESSAGE_2
+from nafas.params import SPEAKER_LIST
 from art import tprint
 
 
