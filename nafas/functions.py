@@ -2,7 +2,7 @@
 """nafas functions."""
 
 from typing import Dict, List, Tuple
-from typing import Generator, Callable, Any, Union
+from typing import Generator, Callable, Any, Union, Optional
 import time
 import json
 from nafas.params import NAFAS_LINKS, NAFAS_DESCRIPTION, NAFAS_TIPS, NAFAS_CAUTIONS
@@ -328,14 +328,17 @@ def get_program_data(input_data: Dict[str, Any]) -> Tuple:
     return program_name, level, PROGRAMS[program_name][level]
 
 
-def get_sound_path(sound_name: str) -> str:
+def get_sound_path(sound_name: str, speaker_id: Optional[str] = None) -> str:
     """
     Return direct sound path.
 
     :param sound_name: .wav sound name
+    :param speaker_id: speaker id
     """
     cd, _ = os.path.split(__file__)
-    return os.path.join(cd, "sounds", sound_name)
+    if speaker_id is None:
+        return os.path.join(cd, "sounds", sound_name)
+    return os.path.join(cd, "sounds", speaker_id, sound_name)
 
 
 def graphic_counter(delay_time: float) -> None:
@@ -365,11 +368,12 @@ def play_sound(sound_path: str, enable: bool = True) -> None:
         _ = nava.play(sound_path, async_mode=True)
 
 
-def run(program_data: Dict[str, Any], silent: bool = False) -> None:
+def run(program_data: Dict[str, Any], speaker_id: str, silent: bool = False) -> None:
     """
     Run program.
 
     :param program_data: program data
+    :param speaker_id: speaker id
     :param silent: silent mode flag
     """
     sound_check_flag = False
@@ -380,11 +384,11 @@ def run(program_data: Dict[str, Any], silent: bool = False) -> None:
     unit = program_data["unit"]
     pre = program_data["pre"]
     print("Preparing ", end="", flush=True)
-    play_sound(get_sound_path(SOUND_MAP['Prepare']), enable=sound_check_flag)
+    play_sound(get_sound_path(SOUND_MAP['Prepare'], speaker_id), enable=sound_check_flag)
     graphic_counter(pre)
     line()
     time.sleep(1)
-    play_sound(get_sound_path(SOUND_MAP['Start']), enable=sound_check_flag)
+    play_sound(get_sound_path(SOUND_MAP['Start'], speaker_id), enable=sound_check_flag)
     print("Start", flush=True)
     time.sleep(1)
     line()
@@ -395,7 +399,7 @@ def run(program_data: Dict[str, Any], silent: bool = False) -> None:
         for index, item in enumerate(ratio):
             if item != 0:
                 item_name = STEP_MAP[index]
-                play_sound(get_sound_path(SOUND_MAP[item_name]), enable=sound_check_flag)
+                play_sound(get_sound_path(SOUND_MAP[item_name], speaker_id), enable=sound_check_flag)
                 print(
                     STEP_TEMPLATE.format(
                         step=item_name,
@@ -403,7 +407,7 @@ def run(program_data: Dict[str, Any], silent: bool = False) -> None:
                 graphic_counter(item * unit)
         time.sleep(1)
         line()
-    play_sound(get_sound_path(SOUND_MAP['End']), enable=sound_check_flag)
+    play_sound(get_sound_path(SOUND_MAP['End'], speaker_id), enable=sound_check_flag)
     print(PROGRAM_END_MESSAGE, flush=True)
     time.sleep(2)
 

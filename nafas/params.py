@@ -509,6 +509,10 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                          "Advanced": COHERENT_ADVANCED},
             }
 
+SPEAKER_LIST = [
+    "us1", "us2",
+    "in1", "in2",
+]
 
 SOUND_MAP = {
     "Silence": "silence.wav",
