@@ -512,6 +512,7 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
 SPEAKER_LIST = [
     "us1", "us2",
     "in1", "in2",
+    "ch1", "ch2",
 ]
 
 SOUND_MAP = {

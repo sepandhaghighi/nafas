@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `us2` speaker audio files
 - `in1` speaker audio files
 - `in2` speaker audio files
+- `ch1` speaker audio files
+- `ch2` speaker audio files
 ## [1.2] - 2025-06-04
 ### Added
 - Coherent program
