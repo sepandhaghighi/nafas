@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `in2` speaker audio files
 - `cn1` speaker audio files
 - `cn2` speaker audio files
+### Changed
+- `README.md` modified
 ## [1.2] - 2025-06-04
 ### Added
 - Coherent program
