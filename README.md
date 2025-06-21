@@ -124,7 +124,7 @@ You can specify the speaker using the `--speaker` flag:
 nafas --speaker us1
 ```
 
-Chose your speaker id from the following list:
+Choose your speaker id from the following list:
 | speaker id | description |
 |:----------:|:-----------:|
 | `us1` | Feminine voice with a US accent |
