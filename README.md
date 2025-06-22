@@ -115,18 +115,18 @@ nafas
 nafas --silent
 ```	
 
-### Speaker ID
+### Speaker
 
 ℹ️ Customize your experience by choosing from a set of speaker voices to guide you through the exercises.
-You can specify the speaker using the `--speaker` flag:
+You can specify the speaker using the `--speaker`:
 
 ```console
-nafas --speaker us1
+nafas --speaker=us1
 ```
 
-Choose your speaker id from the following list:
-| speaker id | description |
-|:----------:|:-----------:|
+Choose your speaker from the following list:
+| ID | Description |
+|:--:|:-----------:|
 | `us1` | Feminine voice with a US accent |
 | `us2` | Masculine voice with a US accent |
 | `in1` | Feminine voice with an Indian accent |
