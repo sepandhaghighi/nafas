@@ -115,6 +115,26 @@ nafas
 nafas --silent
 ```	
 
+### Speaker
+
+ℹ️ Customize your experience by choosing from a set of speaker voices to guide you through the exercises.
+You can specify the speaker using the `--speaker`:
+
+```console
+nafas --speaker=us1
+```
+
+Choose your speaker from the following list:
+| ID | Description |
+|:--:|:-----------:|
+| `us1` | Feminine voice with a US accent |
+| `us2` | Masculine voice with a US accent |
+| `in1` | Feminine voice with an Indian accent |
+| `in2` | Masculine voice with an Indian accent |
+| `cn1` | Feminine voice with a Chinese accent |
+| `cn2` | Masculine voice with a Chinese accent |
+
+
 ### Skip Intro
 
 ℹ️ This mode will skip the introduction
