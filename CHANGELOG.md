@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [1.3] - 2025-06-27
 ### Added
 - `--speaker` argument
 - `us2` speaker audio files
@@ -150,7 +151,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Anti-Appetite program 
 - Cigarette Replace program
 
-[Unreleased]: https://github.com/sepandhaghighi/nafas/compare/v1.2...dev
+[Unreleased]: https://github.com/sepandhaghighi/nafas/compare/v1.3...dev
+[1.3]: https://github.com/sepandhaghighi/nafas/compare/v1.2...v1.3
 [1.2]: https://github.com/sepandhaghighi/nafas/compare/v1.1...v1.2
 [1.1]: https://github.com/sepandhaghighi/nafas/compare/v1.0...v1.1
 [1.0]: https://github.com/sepandhaghighi/nafas/compare/v0.9...v1.0

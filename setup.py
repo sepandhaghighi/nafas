@@ -30,7 +30,7 @@ def read_description() -> str:
 setup(
     name='nafas',
     packages=['nafas'],
-    version='1.2',
+    version='1.3',
     description='Breathing gymnastics application',
     long_description=read_description(),
     long_description_content_type='text/markdown',
@@ -38,7 +38,7 @@ setup(
     author='Nafas Development Team',
     author_email='me@sepand.tech',
     url='https://github.com/sepandhaghighi/nafas',
-    download_url='https://github.com/sepandhaghighi/nafas/tarball/v1.2',
+    download_url='https://github.com/sepandhaghighi/nafas/tarball/v1.3',
     keywords="breath breathing meditation yoga pranayama",
     project_urls={
         'Source': 'https://github.com/sepandhaghighi/nafas',
