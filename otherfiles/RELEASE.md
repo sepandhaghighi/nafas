@@ -1,6 +1,6 @@
 # Nafas Release Instructions
 
-**Last Update: 2025-04-09**
+**Last Update: 2025-06-30**
 
 1. Create the `release` branch under `dev`
 2. Update all version tags
@@ -33,7 +33,7 @@
 	3. `git push origin master`
 	4. Wait for all CI pass
 7. Build EXE file
-	1. Run `build_exe.bat` (Use `Python 3.4.x`)
+	1. Run `build_exe.bat` (Use `Python >= 3.7`)
 8. Create a new release
 	1. Target branch: `master`
 	2. Tag: `vx.x` (Example: `v0.1`)
