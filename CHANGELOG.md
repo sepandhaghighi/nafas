@@ -5,11 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-### Changed
-- Build script updated
 ### Added
 - `ca1` speaker audio files
 - `ca2` speaker audio files
+### Changed
+- Build script updated
 ## [1.3] - 2025-06-27
 ### Added
 - `--speaker` argument
