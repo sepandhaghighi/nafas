@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Changed
 - Build script updated
+### Added
+- `ca1` speaker audio files
+- `ca2` speaker audio files
 ## [1.3] - 2025-06-27
 ### Added
 - `--speaker` argument
