@@ -133,6 +133,8 @@ Choose your speaker from the following list:
 | `in2` | Masculine voice with an Indian accent |
 | `cn1` | Feminine voice with a Chinese accent |
 | `cn2` | Masculine voice with a Chinese accent |
+| `ca1` | Feminine voice with a Canadian accent |
+| `ca2` | Masculine voice with a Canadian accent |
 
 
 ### Skip Intro
