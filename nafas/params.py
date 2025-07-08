@@ -514,6 +514,7 @@ SPEAKER_LIST = [
     "in1", "in2",
     "cn1", "cn2",
     "ca1", "ca2",
+    "au1", "au2",
 ]
 
 SOUND_MAP = {
