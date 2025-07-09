@@ -135,6 +135,8 @@ Choose your speaker from the following list:
 | `cn2` | Masculine voice with a Chinese accent |
 | `ca1` | Feminine voice with a Canadian accent |
 | `ca2` | Masculine voice with a Canadian accent |
+| `au1` | Feminine voice with an Australian accent |
+| `au2` | Masculine voice with an Australian accent |
 
 
 ### Skip Intro
