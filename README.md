@@ -137,6 +137,8 @@ Choose your speaker from the following list:
 | `ca2` | Masculine voice with a Canadian accent |
 | `au1` | Feminine voice with an Australian accent |
 | `au2` | Masculine voice with an Australian accent |
+| `uk1` | Feminine voice with a British accent |
+| `uk2` | Masculine voice with a British accent |
 
 
 ### Skip Intro
