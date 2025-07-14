@@ -8,7 +8,7 @@
 >>> from nafas.functions import *
 >>> clear_screen()
 
->>> line(10,"*")
+>>> print_line(10,"*")
 **********
 >>> nafas_description_print()
 <BLANKLINE>

@@ -6,7 +6,7 @@ import webbrowser
 import argparse
 from nafas.functions import nafas_description_print, get_input_standard, input_filter
 from nafas.functions import get_program_data, program_details_print, run, clear_screen
-from nafas.functions import load_config, get_rendered_survey_link, line
+from nafas.functions import load_config, get_rendered_survey_link, print_line
 from nafas.params import NAFAS_VERSION, EXIT_MESSAGE
 from nafas.params import CONFIG_LOAD_ERROR_MESSAGE, SURVEY_MESSAGE_1, SURVEY_MESSAGE_2
 from nafas.params import SPEAKER_LIST
@@ -21,7 +21,12 @@ def main() -> None:
         parser.add_argument('--silent', help='silent mode', nargs="?", const=1)
         parser.add_argument('--skip-intro', help='skip intro', nargs="?", const=1)
         parser.add_argument('--config', help='path to the configuration file', type=str)
-        parser.add_argument('--speaker', help='speaker id', choices=SPEAKER_LIST, default=SPEAKER_LIST[0], type=str.lower)
+        parser.add_argument(
+            '--speaker',
+            help='speaker id',
+            choices=SPEAKER_LIST,
+            default=SPEAKER_LIST[0],
+            type=str.lower)
         args = parser.parse_args()
         silent_flag = args.silent
         if args.version:
@@ -51,7 +56,7 @@ def main() -> None:
                 clear_screen()
                 program_details_print(program_name, level, program_data)
                 run(program_data, args.speaker, silent=silent_flag)
-                line()
+                print_line()
                 survey_link = get_rendered_survey_link(program_name, level, program_data)
                 print(SURVEY_MESSAGE_1)
                 print("Survey Link: {link}\n".format(link=survey_link))
