@@ -21,7 +21,12 @@ def main() -> None:
         parser.add_argument('--silent', help='silent mode', nargs="?", const=1)
         parser.add_argument('--skip-intro', help='skip intro', nargs="?", const=1)
         parser.add_argument('--config', help='path to the configuration file', type=str)
-        parser.add_argument('--speaker', help='speaker id', choices=SPEAKER_LIST, default=SPEAKER_LIST[0], type=str.lower)
+        parser.add_argument(
+            '--speaker',
+            help='speaker id',
+            choices=SPEAKER_LIST,
+            default=SPEAKER_LIST[0],
+            type=str.lower)
         args = parser.parse_args()
         silent_flag = args.silent
         if args.version:
