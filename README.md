@@ -24,7 +24,7 @@ Between these breaths, the programs incorporate deliberate pauses that allow use
 These cycles aim to enhance both physical and mental well-being.
 
 <div align="center">
-	<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/overview.png" width=300px>
+	<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/overview.png" width=300px alt="Nafas Programs' Cycle">
 	<p>Nafas Programs' Cycle</p>
 </div>
 
@@ -62,7 +62,7 @@ These cycles aim to enhance both physical and mental well-being.
 <table>
 	<tr> 
 		<td align="center">Code Quality</td>
-		<td align="center"><a href="https://www.codacy.com/manual/sepand-haghighi/nafas?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sepandhaghighi/nafas&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/b2be5ce052bc43a89713ac4aec6f8d11"/></a></td>
+		<td align="center"><a href="https://app.codacy.com/gh/sepandhaghighi/nafas/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade"><img src="https://app.codacy.com/project/badge/Grade/b2be5ce052bc43a89713ac4aec6f8d11"/></a></td>
 		<td align="center"><a href="https://www.codefactor.io/repository/github/sepandhaghighi/nafas"><img src="https://www.codefactor.io/repository/github/sepandhaghighi/nafas/badge" alt="CodeFactor" /></a></td>		
 	</tr>
 </table>
@@ -178,7 +178,7 @@ Config example:
 
 <div align="center">
 
-<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/help.gif">
+<img src="https://github.com/sepandhaghighi/nafas/raw/master/otherfiles/help.gif" alt="Screen Record">
 
 </div>
 
