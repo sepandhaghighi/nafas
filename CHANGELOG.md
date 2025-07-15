@@ -16,6 +16,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Build script updated
 - `README.md` modified
 - `line` function renamed to `print_line`
+- `bpm_calc` function renamed to `calculate_bpm`
+- `time_calc` function renamed to `calculate_time`
+- `time_average_calc` function renamed to `calculate_average_time`
+- `time_convert` function renamed to `convert_time`
 ## [1.3] - 2025-06-27
 ### Added
 - `--speaker` argument
