@@ -54,7 +54,7 @@ def calculate_bpm(program_data: Dict[str, Any]) -> float:
     return bpm
 
 
-def time_calc(program_data: Dict[str, Any]) -> float:
+def calculate_time(program_data: Dict[str, Any]) -> float:
     """
     Calculate and return the program time.
 
@@ -74,7 +74,7 @@ def time_average_calc(program_data: Dict[str, Any]) -> float:
     result = 0
     level_number = len(program_data)
     for program in program_data.values():
-        result += time_calc(program)
+        result += calculate_time(program)
     return result / level_number
 
 
@@ -197,7 +197,7 @@ def program_details_print(program_name: str, level: str, program_data: Dict[str,
     for index, item in enumerate(ratio):
         sequence.append("{step}({ratio})".format(step=STEP_MAP[index], ratio=item))
     sequence = ", ".join(sequence)
-    total_time = time_calc(program_data)
+    total_time = calculate_time(program_data)
     bpm = calculate_bpm(program_data)
     print_line()
     print(
