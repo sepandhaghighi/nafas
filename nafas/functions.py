@@ -41,7 +41,7 @@ def is_int(number: Union[int, float]) -> bool:
     return False
 
 
-def bpm_calc(program_data: Dict[str, Any]) -> float:
+def calculate_bpm(program_data: Dict[str, Any]) -> float:
     """
     Calculate Breaths Per Minute (BPM).
 
@@ -198,7 +198,7 @@ def program_details_print(program_name: str, level: str, program_data: Dict[str,
         sequence.append("{step}({ratio})".format(step=STEP_MAP[index], ratio=item))
     sequence = ", ".join(sequence)
     total_time = time_calc(program_data)
-    bpm = bpm_calc(program_data)
+    bpm = calculate_bpm(program_data)
     print_line()
     print(
         PROGRAM_DETAILS.format(
