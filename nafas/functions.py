@@ -78,7 +78,7 @@ def calculate_average_time(program_data: Dict[str, Any]) -> float:
     return result / level_number
 
 
-def time_convert(input_time: float, average: bool = False) -> str:
+def convert_time(input_time: float, average: bool = False) -> str:
     """
     Convert input time from sec to MM,SS format.
 
@@ -206,7 +206,7 @@ def program_details_print(program_name: str, level: str, program_data: Dict[str,
             level=level,
             cycles=str(cycle),
             unit=str(unit),
-            total_time=time_convert(total_time),
+            total_time=convert_time(total_time),
             bpm=bpm,
             sequence=sequence))
     print_line()
@@ -300,7 +300,7 @@ def get_input_standard(input_func: Callable = input) -> Dict[str, Any]:
                     PROGRAM_TIME_TEMPLATE.format(
                         index=i,
                         name=program_name,
-                        average_time=time_convert(
+                        average_time=convert_time(
                             program_average_time,
                             True)))
             else:
