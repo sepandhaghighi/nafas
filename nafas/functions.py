@@ -65,7 +65,7 @@ def calculate_time(program_data: Dict[str, Any]) -> float:
     return result
 
 
-def time_average_calc(program_data: Dict[str, Any]) -> float:
+def calculate_average_time(program_data: Dict[str, Any]) -> float:
     """
     Calculate and return average time of a program in all levels.
 
@@ -295,7 +295,7 @@ def get_input_standard(input_func: Callable = input) -> Dict[str, Any]:
         for i in sorted_list:
             if item == "program":
                 program_name = STANDARD_MENU[item][i]
-                program_average_time = time_average_calc(PROGRAMS[program_name])
+                program_average_time = calculate_average_time(PROGRAMS[program_name])
                 print(
                     PROGRAM_TIME_TEMPLATE.format(
                         index=i,
