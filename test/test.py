@@ -98,7 +98,7 @@ True
 True
 >>> def test_keyboard_interrupt(i):
 ...     raise KeyboardInterrupt
->>> input_data = get_input_standard(lambda x: "1")
+>>> input_data = get_standard_input(lambda x: "1")
 - Choose a program:
 <BLANKLINE>
 1- Clear Mind (~ 7 minutes)
@@ -123,7 +123,7 @@ True
 1- Beginner
 2- Medium
 3- Advanced
->>> get_input_standard(test_keyboard_interrupt)
+>>> get_standard_input(test_keyboard_interrupt)
 Traceback (most recent call last):
 ...
 SystemExit

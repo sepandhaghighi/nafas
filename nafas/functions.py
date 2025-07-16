@@ -281,7 +281,7 @@ def validate_config(config_data: Dict[str, Any]) -> bool:
     return all(result)
 
 
-def get_input_standard(input_func: Callable = input) -> Dict[str, Any]:
+def get_standard_input(input_func: Callable = input) -> Dict[str, Any]:
     """
     Get inputs from user.
 

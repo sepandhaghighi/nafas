@@ -4,7 +4,7 @@
 import sys
 import webbrowser
 import argparse
-from nafas.functions import print_nafas_description, get_input_standard, filter_input
+from nafas.functions import print_nafas_description, get_standard_input, filter_input
 from nafas.functions import get_program_data, print_program_details, run, clear_screen
 from nafas.functions import load_config, get_rendered_survey_link, print_line
 from nafas.params import NAFAS_VERSION, EXIT_MESSAGE
@@ -50,7 +50,7 @@ def main() -> None:
                         print(CONFIG_LOAD_ERROR_MESSAGE)
                         sys.exit()
                 else:
-                    input_data = get_input_standard()
+                    input_data = get_standard_input()
                     filtered_data = filter_input(input_data)
                     program_name, level, program_data = get_program_data(filtered_data)
                 clear_screen()
