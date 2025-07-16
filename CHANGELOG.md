@@ -20,6 +20,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `time_calc` function renamed to `calculate_time`
 - `time_average_calc` function renamed to `calculate_average_time`
 - `time_convert` function renamed to `convert_time`
+- `left_justify` function renamed to `justify_left`
+- `justify` function renamed to `justify_text`
+- `sound_check` function renamed to `check_sound`
+- `nafas_description_print` function renamed to `print_nafas_description`
+- `program_details_print` function renamed to `print_program_details`
+- `input_filter` function renamed to `filter_input`
+- `get_input_standard` function renamed to `get_standard_input`
+- `run` function renamed to `run_program`
 ## [1.3] - 2025-06-27
 ### Added
 - `--speaker` argument

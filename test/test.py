@@ -10,7 +10,7 @@
 
 >>> print_line(10,"*")
 **********
->>> nafas_description_print()
+>>> print_nafas_description()
 <BLANKLINE>
 Repository: https://github.com/sepandhaghighi/nafas
 Paper: https://arxiv.org/abs/2412.04667
@@ -70,35 +70,35 @@ False
 >>> result = load_config(os.path.join("test", "test_config3.json"))
 >>> result["status"]
 False
->>> print("\\n".join(justify(["123"], 2)))
+>>> print("\\n".join(justify_text(["123"], 2)))
 123
->>> print("\\n".join(justify(["123"], 1)))
+>>> print("\\n".join(justify_text(["123"], 1)))
 123
->>> print("\\n".join(justify(["123"], 0)))
+>>> print("\\n".join(justify_text(["123"], 0)))
 123
->>> print("\\n".join(justify("", 2)))
+>>> print("\\n".join(justify_text("", 2)))
 <BLANKLINE>
->>> print("\\n".join(justify([" 1", "2", "3"], 2)))
+>>> print("\\n".join(justify_text([" 1", "2", "3"], 2)))
 1
 2
 3
->>> print("\\n".join(justify([" 1", "2", "3"], 3)))
+>>> print("\\n".join(justify_text([" 1", "2", "3"], 3)))
 1
 2
 3
->>> input_data = input_filter({"program":1,"level":1})
+>>> input_data = filter_input({"program":1,"level":1})
 >>> input_data["program"] == 1
 True
 >>> input_data["level"] == 1
 True
->>> input_data = input_filter({"program":20,"level":5})
+>>> input_data = filter_input({"program":20,"level":5})
 >>> input_data["program"] == 1
 True
 >>> input_data["level"] == 1
 True
 >>> def test_keyboard_interrupt(i):
 ...     raise KeyboardInterrupt
->>> input_data = get_input_standard(lambda x: "1")
+>>> input_data = get_standard_input(lambda x: "1")
 - Choose a program:
 <BLANKLINE>
 1- Clear Mind (~ 7 minutes)
@@ -123,7 +123,7 @@ True
 1- Beginner
 2- Medium
 3- Advanced
->>> get_input_standard(test_keyboard_interrupt)
+>>> get_standard_input(test_keyboard_interrupt)
 Traceback (most recent call last):
 ...
 SystemExit
@@ -136,7 +136,7 @@ True
 True
 >>> program_data["unit"] == 3
 True
->>> program_details_print("Clear Mind","Beginner",{"ratio": [1, 0, 3, 0], "unit": 3, "pre": 3, "cycle": 35})
+>>> print_program_details("Clear Mind","Beginner",{"ratio": [1, 0, 3, 0], "unit": 3, "pre": 3, "cycle": 35})
 ######################################################################
 Program Details:
 <BLANKLINE>
@@ -155,7 +155,7 @@ Breaths per Minute (BPM) : 5
 Sequence                 : Inhale(1), Retain(0), Exhale(3), Sustain(0)
 <BLANKLINE>
 ######################################################################
->>> program_details_print("Custom","Beginner",{"ratio": [1, 1, 3, 2], "unit": 1, "pre": 3, "cycle": 35})
+>>> print_program_details("Custom","Beginner",{"ratio": [1, 1, 3, 2], "unit": 1, "pre": 3, "cycle": 35})
 ######################################################################
 Program Details:
 <BLANKLINE>
@@ -174,7 +174,7 @@ Breaths per Minute (BPM) : 8.57
 Sequence                 : Inhale(1), Retain(1), Exhale(3), Sustain(2)
 <BLANKLINE>
 ######################################################################
->>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3, 0]}, 'us1')
+>>> run_program({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3, 0]}, 'us1')
 Preparing . . .
 ######################################################################
 Start
@@ -192,7 +192,7 @@ Cycle: 2 (Remaining: 0)
 . . .
 ######################################################################
 Well done!
->>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3, 0]}, 'us2', silent=True)
+>>> run_program({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3, 0]}, 'us2', silent=True)
 Preparing . . .
 ######################################################################
 Start
@@ -210,7 +210,7 @@ Cycle: 2 (Remaining: 0)
 . . .
 ######################################################################
 Well done!
->>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'in1')
+>>> run_program({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'in1')
 Preparing . . . 
 ######################################################################
 Start
@@ -228,7 +228,7 @@ Cycle: 2 (Remaining: 0)
 . . . .
 ######################################################################
 Well done!
->>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'in2')
+>>> run_program({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'in2')
 Preparing . . . 
 ######################################################################
 Start
@@ -246,7 +246,7 @@ Cycle: 2 (Remaining: 0)
 . . . .
 ######################################################################
 Well done!
->>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'cn1')
+>>> run_program({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'cn1')
 Preparing . . . 
 ######################################################################
 Start
@@ -264,7 +264,7 @@ Cycle: 2 (Remaining: 0)
 . . . .
 ######################################################################
 Well done!
->>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'cn2')
+>>> run_program({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'cn2')
 Preparing . . . 
 ######################################################################
 Start
@@ -282,7 +282,7 @@ Cycle: 2 (Remaining: 0)
 . . . .
 ######################################################################
 Well done!
->>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'ca1')
+>>> run_program({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'ca1')
 Preparing . . . 
 ######################################################################
 Start
@@ -300,7 +300,7 @@ Cycle: 2 (Remaining: 0)
 . . . .
 ######################################################################
 Well done!
->>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'ca2')
+>>> run_program({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'ca2')
 Preparing . . . 
 ######################################################################
 Start
@@ -318,7 +318,7 @@ Cycle: 2 (Remaining: 0)
 . . . .
 ######################################################################
 Well done!
->>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'au1')
+>>> run_program({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'au1')
 Preparing . . . 
 ######################################################################
 Start
@@ -336,7 +336,7 @@ Cycle: 2 (Remaining: 0)
 . . . .
 ######################################################################
 Well done!
->>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'au2')
+>>> run_program({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'au2')
 Preparing . . .
 ######################################################################
 Start
@@ -354,7 +354,7 @@ Cycle: 2 (Remaining: 0)
 . . . .
 ######################################################################
 Well done!
->>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'uk1')
+>>> run_program({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'uk1')
 Preparing . . .
 ######################################################################
 Start
@@ -372,7 +372,7 @@ Cycle: 2 (Remaining: 0)
 . . . .
 ######################################################################
 Well done!
->>> run({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'uk2')
+>>> run_program({'cycle': 2, 'pre': 3, 'unit': 1, 'ratio': [1, 0, 3.3, 0]}, 'uk2')
 Preparing . . .
 ######################################################################
 Start
@@ -399,11 +399,11 @@ nava.errors.NavaBaseError: Sound file's path should be a string.
 ...     temp_path = os.path.join("nafas", "sounds", "temp.wav")
 ...     _ = shutil.move(wave_path, temp_path)
 ...     with warns(RuntimeWarning, match="Your device is not compatible with our underlying sound-playing library. You can refer to https://github.com/openscilab/nava."):
-...         sound_check_flag = sound_check()
+...         check_sound_flag = check_sound()
 ...     _ = shutil.move(temp_path, wave_path)
 ... except Exception:
 ...     pass
->>> sound_check_flag
+>>> check_sound_flag
 False
 >>> # testing get_rendered_survey_link for multiple cases
 >>> get_rendered_survey_link("X", "Medium", {"ratio": [1, 0, 4, 0], "unit": 3, "pre": 3, "cycle": 28})

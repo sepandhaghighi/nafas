@@ -4,8 +4,8 @@
 import sys
 import webbrowser
 import argparse
-from nafas.functions import nafas_description_print, get_input_standard, input_filter
-from nafas.functions import get_program_data, program_details_print, run, clear_screen
+from nafas.functions import print_nafas_description, get_standard_input, filter_input
+from nafas.functions import get_program_data, print_program_details, run_program, clear_screen
 from nafas.functions import load_config, get_rendered_survey_link, print_line
 from nafas.params import NAFAS_VERSION, EXIT_MESSAGE
 from nafas.params import CONFIG_LOAD_ERROR_MESSAGE, SURVEY_MESSAGE_1, SURVEY_MESSAGE_2
@@ -37,7 +37,7 @@ def main() -> None:
                 tprint("v" + str(NAFAS_VERSION))
                 if silent_flag:
                     tprint("Silent Mode")
-                nafas_description_print()
+                print_nafas_description()
                 _ = input("Press any key to continue.\n")
             EXIT_FLAG = False
             while not EXIT_FLAG:
@@ -50,12 +50,12 @@ def main() -> None:
                         print(CONFIG_LOAD_ERROR_MESSAGE)
                         sys.exit()
                 else:
-                    input_data = get_input_standard()
-                    filtered_data = input_filter(input_data)
+                    input_data = get_standard_input()
+                    filtered_data = filter_input(input_data)
                     program_name, level, program_data = get_program_data(filtered_data)
                 clear_screen()
-                program_details_print(program_name, level, program_data)
-                run(program_data, args.speaker, silent=silent_flag)
+                print_program_details(program_name, level, program_data)
+                run_program(program_data, args.speaker, silent=silent_flag)
                 print_line()
                 survey_link = get_rendered_survey_link(program_name, level, program_data)
                 print(SURVEY_MESSAGE_1)

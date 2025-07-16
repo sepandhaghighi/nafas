@@ -119,7 +119,7 @@ def get_rendered_survey_link(program_name: str, level: str, program_data: Dict[s
     return SURVEY_LINK_TEMPLATE.format(data=data, version=NAFAS_VERSION)
 
 
-def left_justify(words: List[str], width: int) -> str:
+def justify_left(words: List[str], width: int) -> str:
     """
     Left justify words.
 
@@ -129,7 +129,7 @@ def left_justify(words: List[str], width: int) -> str:
     return ' '.join(words).ljust(width)
 
 
-def justify(words: List[str], width: int) -> Generator[str, None, None]:
+def justify_text(words: List[str], width: int) -> Generator[str, None, None]:
     """
     Justify input words.
 
@@ -141,7 +141,7 @@ def justify(words: List[str], width: int) -> Generator[str, None, None]:
     for word in words:
         if line and col + len(word) > width:
             if len(line) == 1:
-                yield left_justify(line, width)
+                yield justify_left(line, width)
             else:
                 # After n + 1 spaces are placed between each pair of
                 # words, there are r spaces left over; these result in
@@ -157,10 +157,10 @@ def justify(words: List[str], width: int) -> Generator[str, None, None]:
         line.append(word)
         col += len(word) + 1
     if line:
-        yield left_justify(line, width)
+        yield justify_left(line, width)
 
 
-def sound_check() -> bool:
+def check_sound() -> bool:
     """Check sound playing device, return True if sound device is available."""
     sound_path = get_sound_path(SOUND_MAP['Silence'])
     try:
@@ -171,18 +171,18 @@ def sound_check() -> bool:
         return False
 
 
-def nafas_description_print() -> None:
+def print_nafas_description() -> None:
     """Print Nafas description."""
     print(NAFAS_LINKS)
     print_line()
-    print("\n".join(justify(NAFAS_DESCRIPTION.split(), 100)))
+    print("\n".join(justify_text(NAFAS_DESCRIPTION.split(), 100)))
     print_line()
     print(NAFAS_TIPS)
     print_line()
     print(NAFAS_CAUTIONS)
 
 
-def program_details_print(program_name: str, level: str, program_data: Dict[str, Any]) -> None:
+def print_program_details(program_name: str, level: str, program_data: Dict[str, Any]) -> None:
     """
     Print program details.
 
@@ -213,7 +213,7 @@ def program_details_print(program_name: str, level: str, program_data: Dict[str,
     time.sleep(1)
 
 
-def input_filter(input_data: Dict[str, Any]) -> Dict[str, Any]:
+def filter_input(input_data: Dict[str, Any]) -> Dict[str, Any]:
     """
     Filter input data.
 
@@ -281,7 +281,7 @@ def validate_config(config_data: Dict[str, Any]) -> bool:
     return all(result)
 
 
-def get_input_standard(input_func: Callable = input) -> Dict[str, Any]:
+def get_standard_input(input_func: Callable = input) -> Dict[str, Any]:
     """
     Get inputs from user.
 
@@ -368,7 +368,7 @@ def play_sound(sound_path: str, enable: bool = True) -> None:
         _ = nava.play(sound_path, async_mode=True)
 
 
-def run(program_data: Dict[str, Any], speaker_id: str, silent: bool = False) -> None:
+def run_program(program_data: Dict[str, Any], speaker_id: str, silent: bool = False) -> None:
     """
     Run program.
 
@@ -376,19 +376,19 @@ def run(program_data: Dict[str, Any], speaker_id: str, silent: bool = False) -> 
     :param speaker_id: speaker id
     :param silent: silent mode flag
     """
-    sound_check_flag = False
+    check_sound_flag = False
     if not silent:
-        sound_check_flag = sound_check()
+        check_sound_flag = check_sound()
     cycle = program_data["cycle"]
     ratio = program_data["ratio"]
     unit = program_data["unit"]
     pre = program_data["pre"]
     print("Preparing ", end="", flush=True)
-    play_sound(get_sound_path(SOUND_MAP['Prepare'], speaker_id), enable=sound_check_flag)
+    play_sound(get_sound_path(SOUND_MAP['Prepare'], speaker_id), enable=check_sound_flag)
     graphic_counter(pre)
     print_line()
     time.sleep(1)
-    play_sound(get_sound_path(SOUND_MAP['Start'], speaker_id), enable=sound_check_flag)
+    play_sound(get_sound_path(SOUND_MAP['Start'], speaker_id), enable=check_sound_flag)
     print("Start", flush=True)
     time.sleep(1)
     print_line()
@@ -399,7 +399,7 @@ def run(program_data: Dict[str, Any], speaker_id: str, silent: bool = False) -> 
         for index, item in enumerate(ratio):
             if item != 0:
                 item_name = STEP_MAP[index]
-                play_sound(get_sound_path(SOUND_MAP[item_name], speaker_id), enable=sound_check_flag)
+                play_sound(get_sound_path(SOUND_MAP[item_name], speaker_id), enable=check_sound_flag)
                 print(
                     STEP_TEMPLATE.format(
                         step=item_name,
@@ -407,7 +407,7 @@ def run(program_data: Dict[str, Any], speaker_id: str, silent: bool = False) -> 
                 graphic_counter(item * unit)
         time.sleep(1)
         print_line()
-    play_sound(get_sound_path(SOUND_MAP['End'], speaker_id), enable=sound_check_flag)
+    play_sound(get_sound_path(SOUND_MAP['End'], speaker_id), enable=check_sound_flag)
     print(PROGRAM_END_MESSAGE, flush=True)
     time.sleep(2)
 
