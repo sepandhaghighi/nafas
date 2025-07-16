@@ -129,7 +129,7 @@ def justify_left(words: List[str], width: int) -> str:
     return ' '.join(words).ljust(width)
 
 
-def justify(words: List[str], width: int) -> Generator[str, None, None]:
+def justify_text(words: List[str], width: int) -> Generator[str, None, None]:
     """
     Justify input words.
 
@@ -175,7 +175,7 @@ def nafas_description_print() -> None:
     """Print Nafas description."""
     print(NAFAS_LINKS)
     print_line()
-    print("\n".join(justify(NAFAS_DESCRIPTION.split(), 100)))
+    print("\n".join(justify_text(NAFAS_DESCRIPTION.split(), 100)))
     print_line()
     print(NAFAS_TIPS)
     print_line()

@@ -70,19 +70,19 @@ False
 >>> result = load_config(os.path.join("test", "test_config3.json"))
 >>> result["status"]
 False
->>> print("\\n".join(justify(["123"], 2)))
+>>> print("\\n".join(justify_text(["123"], 2)))
 123
->>> print("\\n".join(justify(["123"], 1)))
+>>> print("\\n".join(justify_text(["123"], 1)))
 123
->>> print("\\n".join(justify(["123"], 0)))
+>>> print("\\n".join(justify_text(["123"], 0)))
 123
->>> print("\\n".join(justify("", 2)))
+>>> print("\\n".join(justify_text("", 2)))
 <BLANKLINE>
->>> print("\\n".join(justify([" 1", "2", "3"], 2)))
+>>> print("\\n".join(justify_text([" 1", "2", "3"], 2)))
 1
 2
 3
->>> print("\\n".join(justify([" 1", "2", "3"], 3)))
+>>> print("\\n".join(justify_text([" 1", "2", "3"], 3)))
 1
 2
 3
