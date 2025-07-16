@@ -171,7 +171,7 @@ def check_sound() -> bool:
         return False
 
 
-def nafas_description_print() -> None:
+def print_nafas_description() -> None:
     """Print Nafas description."""
     print(NAFAS_LINKS)
     print_line()

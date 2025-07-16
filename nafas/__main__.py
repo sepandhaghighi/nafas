@@ -4,7 +4,7 @@
 import sys
 import webbrowser
 import argparse
-from nafas.functions import nafas_description_print, get_input_standard, input_filter
+from nafas.functions import print_nafas_description, get_input_standard, input_filter
 from nafas.functions import get_program_data, program_details_print, run, clear_screen
 from nafas.functions import load_config, get_rendered_survey_link, print_line
 from nafas.params import NAFAS_VERSION, EXIT_MESSAGE
@@ -37,7 +37,7 @@ def main() -> None:
                 tprint("v" + str(NAFAS_VERSION))
                 if silent_flag:
                     tprint("Silent Mode")
-                nafas_description_print()
+                print_nafas_description()
                 _ = input("Press any key to continue.\n")
             EXIT_FLAG = False
             while not EXIT_FLAG:

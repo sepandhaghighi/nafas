@@ -10,7 +10,7 @@
 
 >>> print_line(10,"*")
 **********
->>> nafas_description_print()
+>>> print_nafas_description()
 <BLANKLINE>
 Repository: https://github.com/sepandhaghighi/nafas
 Paper: https://arxiv.org/abs/2412.04667
