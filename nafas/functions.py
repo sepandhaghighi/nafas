@@ -160,7 +160,7 @@ def justify_text(words: List[str], width: int) -> Generator[str, None, None]:
         yield justify_left(line, width)
 
 
-def sound_check() -> bool:
+def check_sound() -> bool:
     """Check sound playing device, return True if sound device is available."""
     sound_path = get_sound_path(SOUND_MAP['Silence'])
     try:
@@ -376,19 +376,19 @@ def run(program_data: Dict[str, Any], speaker_id: str, silent: bool = False) -> 
     :param speaker_id: speaker id
     :param silent: silent mode flag
     """
-    sound_check_flag = False
+    check_sound_flag = False
     if not silent:
-        sound_check_flag = sound_check()
+        check_sound_flag = check_sound()
     cycle = program_data["cycle"]
     ratio = program_data["ratio"]
     unit = program_data["unit"]
     pre = program_data["pre"]
     print("Preparing ", end="", flush=True)
-    play_sound(get_sound_path(SOUND_MAP['Prepare'], speaker_id), enable=sound_check_flag)
+    play_sound(get_sound_path(SOUND_MAP['Prepare'], speaker_id), enable=check_sound_flag)
     graphic_counter(pre)
     print_line()
     time.sleep(1)
-    play_sound(get_sound_path(SOUND_MAP['Start'], speaker_id), enable=sound_check_flag)
+    play_sound(get_sound_path(SOUND_MAP['Start'], speaker_id), enable=check_sound_flag)
     print("Start", flush=True)
     time.sleep(1)
     print_line()
@@ -399,7 +399,7 @@ def run(program_data: Dict[str, Any], speaker_id: str, silent: bool = False) -> 
         for index, item in enumerate(ratio):
             if item != 0:
                 item_name = STEP_MAP[index]
-                play_sound(get_sound_path(SOUND_MAP[item_name], speaker_id), enable=sound_check_flag)
+                play_sound(get_sound_path(SOUND_MAP[item_name], speaker_id), enable=check_sound_flag)
                 print(
                     STEP_TEMPLATE.format(
                         step=item_name,
@@ -407,7 +407,7 @@ def run(program_data: Dict[str, Any], speaker_id: str, silent: bool = False) -> 
                 graphic_counter(item * unit)
         time.sleep(1)
         print_line()
-    play_sound(get_sound_path(SOUND_MAP['End'], speaker_id), enable=sound_check_flag)
+    play_sound(get_sound_path(SOUND_MAP['End'], speaker_id), enable=check_sound_flag)
     print(PROGRAM_END_MESSAGE, flush=True)
     time.sleep(2)
 
