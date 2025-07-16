@@ -119,7 +119,7 @@ def get_rendered_survey_link(program_name: str, level: str, program_data: Dict[s
     return SURVEY_LINK_TEMPLATE.format(data=data, version=NAFAS_VERSION)
 
 
-def left_justify(words: List[str], width: int) -> str:
+def justify_left(words: List[str], width: int) -> str:
     """
     Left justify words.
 
@@ -141,7 +141,7 @@ def justify(words: List[str], width: int) -> Generator[str, None, None]:
     for word in words:
         if line and col + len(word) > width:
             if len(line) == 1:
-                yield left_justify(line, width)
+                yield justify_left(line, width)
             else:
                 # After n + 1 spaces are placed between each pair of
                 # words, there are r spaces left over; these result in
@@ -157,7 +157,7 @@ def justify(words: List[str], width: int) -> Generator[str, None, None]:
         line.append(word)
         col += len(word) + 1
     if line:
-        yield left_justify(line, width)
+        yield justify_left(line, width)
 
 
 def sound_check() -> bool:
