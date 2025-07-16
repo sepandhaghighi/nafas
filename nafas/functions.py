@@ -368,7 +368,7 @@ def play_sound(sound_path: str, enable: bool = True) -> None:
         _ = nava.play(sound_path, async_mode=True)
 
 
-def run(program_data: Dict[str, Any], speaker_id: str, silent: bool = False) -> None:
+def run_program(program_data: Dict[str, Any], speaker_id: str, silent: bool = False) -> None:
     """
     Run program.
 

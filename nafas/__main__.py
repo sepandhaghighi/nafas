@@ -5,7 +5,7 @@ import sys
 import webbrowser
 import argparse
 from nafas.functions import print_nafas_description, get_standard_input, filter_input
-from nafas.functions import get_program_data, print_program_details, run, clear_screen
+from nafas.functions import get_program_data, print_program_details, run_program, clear_screen
 from nafas.functions import load_config, get_rendered_survey_link, print_line
 from nafas.params import NAFAS_VERSION, EXIT_MESSAGE
 from nafas.params import CONFIG_LOAD_ERROR_MESSAGE, SURVEY_MESSAGE_1, SURVEY_MESSAGE_2
@@ -55,7 +55,7 @@ def main() -> None:
                     program_name, level, program_data = get_program_data(filtered_data)
                 clear_screen()
                 print_program_details(program_name, level, program_data)
-                run(program_data, args.speaker, silent=silent_flag)
+                run_program(program_data, args.speaker, silent=silent_flag)
                 print_line()
                 survey_link = get_rendered_survey_link(program_name, level, program_data)
                 print(SURVEY_MESSAGE_1)
