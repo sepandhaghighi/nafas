@@ -213,7 +213,7 @@ def print_program_details(program_name: str, level: str, program_data: Dict[str,
     time.sleep(1)
 
 
-def input_filter(input_data: Dict[str, Any]) -> Dict[str, Any]:
+def filter_input(input_data: Dict[str, Any]) -> Dict[str, Any]:
     """
     Filter input data.
 
