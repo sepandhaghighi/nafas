@@ -136,7 +136,7 @@ True
 True
 >>> program_data["unit"] == 3
 True
->>> program_details_print("Clear Mind","Beginner",{"ratio": [1, 0, 3, 0], "unit": 3, "pre": 3, "cycle": 35})
+>>> print_program_details("Clear Mind","Beginner",{"ratio": [1, 0, 3, 0], "unit": 3, "pre": 3, "cycle": 35})
 ######################################################################
 Program Details:
 <BLANKLINE>
@@ -155,7 +155,7 @@ Breaths per Minute (BPM) : 5
 Sequence                 : Inhale(1), Retain(0), Exhale(3), Sustain(0)
 <BLANKLINE>
 ######################################################################
->>> program_details_print("Custom","Beginner",{"ratio": [1, 1, 3, 2], "unit": 1, "pre": 3, "cycle": 35})
+>>> print_program_details("Custom","Beginner",{"ratio": [1, 1, 3, 2], "unit": 1, "pre": 3, "cycle": 35})
 ######################################################################
 Program Details:
 <BLANKLINE>

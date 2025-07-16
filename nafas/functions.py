@@ -182,7 +182,7 @@ def print_nafas_description() -> None:
     print(NAFAS_CAUTIONS)
 
 
-def program_details_print(program_name: str, level: str, program_data: Dict[str, Any]) -> None:
+def print_program_details(program_name: str, level: str, program_data: Dict[str, Any]) -> None:
     """
     Print program details.
 
