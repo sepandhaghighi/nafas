@@ -41,7 +41,7 @@ def is_int(number: Union[int, float]) -> bool:
     return False
 
 
-def bpm_calc(program_data: Dict[str, Any]) -> float:
+def calculate_bpm(program_data: Dict[str, Any]) -> float:
     """
     Calculate Breaths Per Minute (BPM).
 
@@ -54,7 +54,7 @@ def bpm_calc(program_data: Dict[str, Any]) -> float:
     return bpm
 
 
-def time_calc(program_data: Dict[str, Any]) -> float:
+def calculate_time(program_data: Dict[str, Any]) -> float:
     """
     Calculate and return the program time.
 
@@ -65,7 +65,7 @@ def time_calc(program_data: Dict[str, Any]) -> float:
     return result
 
 
-def time_average_calc(program_data: Dict[str, Any]) -> float:
+def calculate_average_time(program_data: Dict[str, Any]) -> float:
     """
     Calculate and return average time of a program in all levels.
 
@@ -74,11 +74,11 @@ def time_average_calc(program_data: Dict[str, Any]) -> float:
     result = 0
     level_number = len(program_data)
     for program in program_data.values():
-        result += time_calc(program)
+        result += calculate_time(program)
     return result / level_number
 
 
-def time_convert(input_time: float, average: bool = False) -> str:
+def convert_time(input_time: float, average: bool = False) -> str:
     """
     Convert input time from sec to MM,SS format.
 
@@ -197,8 +197,8 @@ def program_details_print(program_name: str, level: str, program_data: Dict[str,
     for index, item in enumerate(ratio):
         sequence.append("{step}({ratio})".format(step=STEP_MAP[index], ratio=item))
     sequence = ", ".join(sequence)
-    total_time = time_calc(program_data)
-    bpm = bpm_calc(program_data)
+    total_time = calculate_time(program_data)
+    bpm = calculate_bpm(program_data)
     print_line()
     print(
         PROGRAM_DETAILS.format(
@@ -206,7 +206,7 @@ def program_details_print(program_name: str, level: str, program_data: Dict[str,
             level=level,
             cycles=str(cycle),
             unit=str(unit),
-            total_time=time_convert(total_time),
+            total_time=convert_time(total_time),
             bpm=bpm,
             sequence=sequence))
     print_line()
@@ -295,12 +295,12 @@ def get_input_standard(input_func: Callable = input) -> Dict[str, Any]:
         for i in sorted_list:
             if item == "program":
                 program_name = STANDARD_MENU[item][i]
-                program_average_time = time_average_calc(PROGRAMS[program_name])
+                program_average_time = calculate_average_time(PROGRAMS[program_name])
                 print(
                     PROGRAM_TIME_TEMPLATE.format(
                         index=i,
                         name=program_name,
-                        average_time=time_convert(
+                        average_time=convert_time(
                             program_average_time,
                             True)))
             else:
