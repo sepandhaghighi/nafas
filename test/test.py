@@ -70,7 +70,7 @@ False
 >>> result = load_config(os.path.join("test", "test_config3.json"))
 >>> result["status"]
 False
->>> result = init_config(1)
+>>> result = init_config(".")
 >>> result
 False
 >>> result = init_config("test_config4.json")
