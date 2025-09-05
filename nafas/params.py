@@ -541,3 +541,16 @@ CONFIG_VALIDATION_MAP = {
     "pre": (int, float),
     "cycle": int
 }
+
+CONFIG_EXAMPLE = {
+    "name": "unknown",
+    "unit": 1,
+    "pre": 3,
+    "cycle": 5,
+    "ratio": {
+        "inhale": 1,
+        "exhale": 1,
+        "retain": 1,
+        "sustain": 1
+    }
+}
