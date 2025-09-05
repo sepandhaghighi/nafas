@@ -8,7 +8,7 @@ from nafas.functions import print_nafas_description, get_standard_input, filter_
 from nafas.functions import get_program_data, print_program_details, run_program, clear_screen
 from nafas.functions import init_config, load_config, get_rendered_survey_link, print_line
 from nafas.params import NAFAS_VERSION, EXIT_MESSAGE
-from nafas.params import CONFIG_INIT_ERROR_MESSAGE, CONFIG_LOAD_ERROR_MESSAGE
+from nafas.params import CONFIG_INIT_SUCCESS_MESSAGE, CONFIG_INIT_ERROR_MESSAGE, CONFIG_LOAD_ERROR_MESSAGE
 from nafas.params import SURVEY_MESSAGE_1, SURVEY_MESSAGE_2
 from nafas.params import SPEAKER_LIST
 from art import tprint
@@ -42,13 +42,15 @@ def main() -> None:
                 print_nafas_description()
                 _ = input("Press any key to continue.\n")
             EXIT_FLAG = False
+            if args.init_config:
+                result = init_config(args.init_config)
+                if not result:
+                    print(CONFIG_INIT_ERROR_MESSAGE)
+                else:
+                    print(CONFIG_INIT_SUCCESS_MESSAGE)
+                sys.exit()
             while not EXIT_FLAG:
-                if args.init_config:
-                    result = init_config()
-                    if not result:
-                        print(CONFIG_INIT_ERROR_MESSAGE)
-                    sys.exit()
-                elif args.config:
+                if args.config:
                     result = load_config(args.config)
                     if result["status"]:
                         data = result["data"]
