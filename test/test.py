@@ -73,7 +73,7 @@ False
 >>> result = init_config("test_config4.json")
 >>> result
 True
->>> result = load_config("test_config4.json"))
+>>> result = load_config("test_config4.json")
 >>> result["status"]
 True
 >>> result["data"]["program_name"]
