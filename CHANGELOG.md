@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `--init-config` argument
 ### Changed
 - `README.md` modified
+- Test system modified
 ## [1.4] - 2025-07-29
 ### Added
 - `ca1` speaker audio files
