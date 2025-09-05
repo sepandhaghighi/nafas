@@ -6,9 +6,10 @@ import webbrowser
 import argparse
 from nafas.functions import print_nafas_description, get_standard_input, filter_input
 from nafas.functions import get_program_data, print_program_details, run_program, clear_screen
-from nafas.functions import load_config, get_rendered_survey_link, print_line
+from nafas.functions import init_config, load_config, get_rendered_survey_link, print_line
 from nafas.params import NAFAS_VERSION, EXIT_MESSAGE
-from nafas.params import CONFIG_LOAD_ERROR_MESSAGE, SURVEY_MESSAGE_1, SURVEY_MESSAGE_2
+from nafas.params import CONFIG_INIT_ERROR_MESSAGE, CONFIG_LOAD_ERROR_MESSAGE
+from nafas.params import SURVEY_MESSAGE_1, SURVEY_MESSAGE_2
 from nafas.params import SPEAKER_LIST
 from art import tprint
 
@@ -20,7 +21,8 @@ def main() -> None:
         parser.add_argument('--version', help='version', nargs="?", const=1)
         parser.add_argument('--silent', help='silent mode', nargs="?", const=1)
         parser.add_argument('--skip-intro', help='skip intro', nargs="?", const=1)
-        parser.add_argument('--config', help='path to the configuration file', type=str)
+        parser.add_argument('--init-config', help='generate a starter configuration file at the given path', type=str)
+        parser.add_argument('--config', help='load an existing configuration file from the given path', type=str)
         parser.add_argument(
             '--speaker',
             help='speaker id',
@@ -41,7 +43,12 @@ def main() -> None:
                 _ = input("Press any key to continue.\n")
             EXIT_FLAG = False
             while not EXIT_FLAG:
-                if args.config:
+                if args.init_config:
+                    result = init_config()
+                    if not result:
+                        print(CONFIG_INIT_ERROR_MESSAGE)
+                    sys.exit()
+                elif args.config:
                     result = load_config(args.config)
                     if result["status"]:
                         data = result["data"]

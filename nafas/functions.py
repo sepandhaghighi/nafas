@@ -263,7 +263,7 @@ def load_config(config_path: str) -> Dict[str, Any]:
 
 def init_config(config_path: str) -> bool:
     """
-    Initialize an empty configuration file.
+    Generate a starter configuration file
 
     :param config_path: config path
     """
