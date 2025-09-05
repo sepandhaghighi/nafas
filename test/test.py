@@ -70,6 +70,24 @@ False
 >>> result = load_config(os.path.join("test", "test_config3.json"))
 >>> result["status"]
 False
+>>> result = init_config("test_config4.json")
+>>> result
+True
+>>> result = load_config("test_config4.json"))
+>>> result["status"]
+True
+>>> result["data"]["program_name"]
+'unknown'
+>>> result["data"]["program_level"]
+'Custom'
+>>> result["data"]["program_data"]["cycle"]
+5
+>>> result["data"]["program_data"]["unit"]
+1
+>>> result["data"]["program_data"]["pre"]
+3
+>>> result["data"]["program_data"]["ratio"] == [1,1,1,1]
+True
 >>> print("\\n".join(justify_text(["123"], 2)))
 123
 >>> print("\\n".join(justify_text(["123"], 1)))
@@ -408,4 +426,5 @@ False
 >>> # testing get_rendered_survey_link for multiple cases
 >>> get_rendered_survey_link("X", "Medium", {"ratio": [1, 0, 4, 0], "unit": 3, "pre": 3, "cycle": 28})
 'https://opsclb.li/nafas/form?version=1.4&data=%7B"name":+"X",+"level":+"Medium",+"data":+%7B"ratio":++%5B1,+0,+4,+0%5D,+"unit":+3,+"pre":+3,+"cycle":+28%7D%7D'
+>>> os.remove("test_config4.json")
 """
