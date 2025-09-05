@@ -151,7 +151,17 @@ nafas --skip-intro
 
 ### Custom Config
 
-ℹ️ Users can load their custom configurations
+ℹ️ Users can either generate a starter configuration file or load their own custom configurations
+
+#### Generate a Starter Config
+
+ℹ️ This will create a base configuration file at the specified path
+
+```console
+nafas --init-config="new_program.json"
+```
+
+#### Load an Existing Config
 
 ```console
 nafas --config="program1.json"
