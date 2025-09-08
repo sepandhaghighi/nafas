@@ -39,6 +39,8 @@ EXIT_MESSAGE = "See you. Bye!"
 BAD_INPUT_MESSAGE = "[Error] Bad input!"
 
 CONFIG_LOAD_ERROR_MESSAGE = "[Error] Failed to load the configuration file!"
+CONFIG_GENERATE_ERROR_MESSAGE = "[Error] Failed to generate the configuration file!"
+CONFIG_GENERATE_SUCCESS_MESSAGE = "Configuration file generated successfully!"
 
 PROGRAM_END_MESSAGE = "Well done!"
 
@@ -540,4 +542,17 @@ CONFIG_VALIDATION_MAP = {
     "unit": (int, float),
     "pre": (int, float),
     "cycle": int
+}
+
+CONFIG_EXAMPLE = {
+    "name": "unknown",
+    "unit": 1,
+    "pre": 3,
+    "cycle": 5,
+    "ratio": {
+        "inhale": 1,
+        "exhale": 1,
+        "retain": 1,
+        "sustain": 1
+    }
 }

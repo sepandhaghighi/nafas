@@ -11,7 +11,7 @@ from nafas.params import PROGRAMS, PROGRAM_DETAILS, SOUND_MAP, STEP_TEMPLATE, CY
 from nafas.params import SOUND_WARNING_MESSAGE, EXIT_MESSAGE, BAD_INPUT_MESSAGE, PROGRAM_END_MESSAGE
 from nafas.params import MINUTES_TEMPLATE, SECONDS_TEMPLATE, PROGRAM_TIME_TEMPLATE
 from nafas.params import MENU_TEMPLATE_1, MENU_TEMPLATE_2
-from nafas.params import CONFIG_VALIDATION_MAP
+from nafas.params import CONFIG_VALIDATION_MAP, CONFIG_EXAMPLE
 from nafas.params import SURVEY_LINK_TEMPLATE, SURVEY_DATA_TEMPLATE
 from nafas.params import NAFAS_VERSION
 import nava
@@ -259,6 +259,20 @@ def load_config(config_path: str) -> Dict[str, Any]:
         }
     except Exception:
         return {"status": False, "data": dict()}
+
+
+def generate_config(config_path: str) -> bool:
+    """
+    Generate a starter configuration file.
+
+    :param config_path: config path
+    """
+    try:
+        with open(config_path, 'w') as config_file:
+            json.dump(CONFIG_EXAMPLE, config_file)
+        return True
+    except Exception:
+        return False
 
 
 def validate_config(config_data: Dict[str, Any]) -> bool:
