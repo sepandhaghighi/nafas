@@ -6,9 +6,9 @@ import webbrowser
 import argparse
 from nafas.functions import print_nafas_description, get_standard_input, filter_input
 from nafas.functions import get_program_data, print_program_details, run_program, clear_screen
-from nafas.functions import init_config, load_config, get_rendered_survey_link, print_line
+from nafas.functions import generate_config, load_config, get_rendered_survey_link, print_line
 from nafas.params import NAFAS_VERSION, EXIT_MESSAGE
-from nafas.params import CONFIG_INIT_SUCCESS_MESSAGE, CONFIG_INIT_ERROR_MESSAGE, CONFIG_LOAD_ERROR_MESSAGE
+from nafas.params import CONFIG_GENERATE_SUCCESS_MESSAGE, CONFIG_GENERATE_ERROR_MESSAGE, CONFIG_LOAD_ERROR_MESSAGE
 from nafas.params import SURVEY_MESSAGE_1, SURVEY_MESSAGE_2
 from nafas.params import SPEAKER_LIST
 from art import tprint
@@ -21,7 +21,7 @@ def main() -> None:
         parser.add_argument('--version', help='version', nargs="?", const=1)
         parser.add_argument('--silent', help='silent mode', nargs="?", const=1)
         parser.add_argument('--skip-intro', help='skip intro', nargs="?", const=1)
-        parser.add_argument('--init-config', help='generate a starter configuration file at the given path', type=str)
+        parser.add_argument('--generate-config', help='generate a starter configuration file at the given path', type=str)
         parser.add_argument('--config', help='load an existing configuration file from the given path', type=str)
         parser.add_argument(
             '--speaker',
@@ -42,12 +42,12 @@ def main() -> None:
                 print_nafas_description()
                 _ = input("Press any key to continue.\n")
             EXIT_FLAG = False
-            if args.init_config:
-                result = init_config(args.init_config)
+            if args.generate_config:
+                result = generate_config(args.generate_config)
                 if not result:
-                    print(CONFIG_INIT_ERROR_MESSAGE)
+                    print(CONFIG_GENERATE_ERROR_MESSAGE)
                 else:
-                    print(CONFIG_INIT_SUCCESS_MESSAGE)
+                    print(CONFIG_GENERATE_SUCCESS_MESSAGE)
                 sys.exit()
             while not EXIT_FLAG:
                 if args.config:

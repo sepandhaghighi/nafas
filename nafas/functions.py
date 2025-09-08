@@ -261,7 +261,7 @@ def load_config(config_path: str) -> Dict[str, Any]:
         return {"status": False, "data": dict()}
 
 
-def init_config(config_path: str) -> bool:
+def generate_config(config_path: str) -> bool:
     """
     Generate a starter configuration file.
 

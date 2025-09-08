@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Added
-- `--init-config` argument
+- `--generate-config` argument
 ### Changed
 - `README.md` modified
 - Test system modified

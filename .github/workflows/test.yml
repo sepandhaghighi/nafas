@@ -40,7 +40,7 @@ jobs:
     - name: First test
       run: |
         nafas --version
-        nafas --init-config="test.json"
+        nafas --generate-config="test.json"
     - name: Install dev-requirements
       run: |
         python otherfiles/requirements-splitter.py

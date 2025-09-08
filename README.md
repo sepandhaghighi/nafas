@@ -158,7 +158,7 @@ nafas --skip-intro
 ℹ️ This will create a base configuration file at the specified path
 
 ```console
-nafas --init-config="new_program.json"
+nafas --generate-config="new_program.json"
 ```
 
 #### Load an Existing Config
