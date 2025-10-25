@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `--generate-config` argument
 ### Changed
 - `README.md` modified
+- `Python 3.14` added to `test.yml`
 - Test system modified
 ## [1.4] - 2025-07-29
 ### Added
