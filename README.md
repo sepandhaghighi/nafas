@@ -150,7 +150,7 @@ nafas --skip-intro
 
 ### Color
 
-ℹ️ This mode will change the text color.
+ℹ️ This mode will change the text color
 
 ℹ️ Valid choices: [`black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`]
 
