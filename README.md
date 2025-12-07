@@ -148,6 +148,17 @@ Choose your speaker from the following list:
 nafas --skip-intro
 ```	
 
+### Color
+
+ℹ️ This mode will change the text color.
+
+ℹ️ Valid choices: [`black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`]
+
+ℹ️ The default color is `white`
+
+```console
+nafas --color="red"
+```
 
 ### Custom Config
 
