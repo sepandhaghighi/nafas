@@ -1,5 +1,6 @@
 art==6.5
 nava==0.7
+colorama==0.4.6
 pytest>=4.3.1
 pytest-cov>=2.6.1
 setuptools>=40.8.0
