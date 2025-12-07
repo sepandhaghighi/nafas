@@ -2,10 +2,18 @@
 """
 >>> import os
 >>> import doctest
+>>> import io
+>>> import contextlib
 >>> doctest.ELLIPSIS_MARKER = "ignore_this_message"
 >>> from pytest import warns
 >>> import shutil
 >>> from nafas.functions import *
+>>> set_color(None)
+>>> f = io.StringIO()
+>>> with contextlib.redirect_stdout(f):
+...     set_color("blue")
+>>> "\x1b[34m" in f.getvalue()
+True
 >>> clear_screen()
 
 >>> print_line(10,"*")
