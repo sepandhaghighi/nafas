@@ -15,6 +15,7 @@ from nafas.params import CONFIG_VALIDATION_MAP, CONFIG_EXAMPLE
 from nafas.params import SURVEY_LINK_TEMPLATE, SURVEY_DATA_TEMPLATE
 from nafas.params import NAFAS_VERSION
 import nava
+from colorama import Fore
 import os
 from warnings import warn
 import sys
@@ -353,6 +354,17 @@ def get_sound_path(sound_name: str, speaker_id: Optional[str] = None) -> str:
     if speaker_id is None:
         return os.path.join(cd, "sounds", sound_name)
     return os.path.join(cd, "sounds", speaker_id, sound_name)
+
+
+def set_color(color: str) -> None:
+    """
+    Set text color.
+
+    :param color: color name
+    """
+    if color:
+        color = color.strip().upper()
+        print(getattr(Fore, color, ""), end="")
 
 
 def graphic_counter(delay_time: float) -> None:

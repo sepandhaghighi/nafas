@@ -7,10 +7,11 @@ import argparse
 from nafas.functions import print_nafas_description, get_standard_input, filter_input
 from nafas.functions import get_program_data, print_program_details, run_program, clear_screen
 from nafas.functions import generate_config, load_config, get_rendered_survey_link, print_line
+from nafas.functions import set_color
 from nafas.params import NAFAS_VERSION, EXIT_MESSAGE
 from nafas.params import CONFIG_GENERATE_SUCCESS_MESSAGE, CONFIG_GENERATE_ERROR_MESSAGE, CONFIG_LOAD_ERROR_MESSAGE
 from nafas.params import SURVEY_MESSAGE_1, SURVEY_MESSAGE_2
-from nafas.params import SPEAKER_LIST
+from nafas.params import SPEAKER_LIST, COLORS_LIST
 from art import tprint
 
 
@@ -29,7 +30,9 @@ def main() -> None:
             choices=SPEAKER_LIST,
             default=SPEAKER_LIST[0],
             type=str.lower)
+        parser.add_argument('--color', help='text color', type=str.lower, choices=COLORS_LIST)
         args = parser.parse_args()
+        set_color(args.color)
         silent_flag = args.silent
         if args.version:
             print(NAFAS_VERSION)
