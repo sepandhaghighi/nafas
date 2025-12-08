@@ -31,6 +31,7 @@ def main() -> None:
             default=SPEAKER_LIST[0],
             type=str.lower)
         parser.add_argument('--color', help='text color', type=str.lower, choices=COLORS_LIST)
+        parser.add_argument('--bg-color', help='background color', type=str.lower, choices=COLORS_LIST)
         args = parser.parse_args()
         set_color(args.color)
         silent_flag = args.silent
