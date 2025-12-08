@@ -556,3 +556,5 @@ CONFIG_EXAMPLE = {
         "sustain": 1
     }
 }
+
+COLORS_LIST = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "white"]

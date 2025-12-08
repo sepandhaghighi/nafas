@@ -39,7 +39,7 @@ jobs:
         pip install .
     - name: First test
       run: |
-        nafas --version
+        nafas --version --color="red"
         nafas --generate-config="test.json"
     - name: Install dev-requirements
       run: |
