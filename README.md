@@ -160,6 +160,18 @@ nafas --skip-intro
 nafas --color="red"
 ```
 
+### Background Color
+
+ℹ️ This mode will change the background color
+
+ℹ️ Valid choices: [`black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`]
+
+ℹ️ The default background color is `black`
+
+```console
+nafas --color="red" --bg-color="blue"
+```
+
 ### Custom Config
 
 ℹ️ Users can either generate a starter configuration file or load their own custom configurations
