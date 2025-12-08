@@ -557,4 +557,4 @@ CONFIG_EXAMPLE = {
     }
 }
 
-COLORS_LIST = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "white"]
+COLOR_LIST = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "white"]
