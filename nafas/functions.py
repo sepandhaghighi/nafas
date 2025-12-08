@@ -15,7 +15,7 @@ from nafas.params import CONFIG_VALIDATION_MAP, CONFIG_EXAMPLE
 from nafas.params import SURVEY_LINK_TEMPLATE, SURVEY_DATA_TEMPLATE
 from nafas.params import NAFAS_VERSION
 import nava
-from colorama import Fore
+from colorama import Fore, Back
 import os
 from warnings import warn
 import sys
@@ -365,6 +365,17 @@ def set_color(color: str) -> None:
     if color:
         color = color.strip().upper()
         print(getattr(Fore, color, ""), end="")
+
+
+def set_bg_color(bg_color: str) -> None:
+    """
+    Set background color.
+
+    :param bg_color: background color name
+    """
+    if bg_color:
+        bg_color = bg_color.strip().upper()
+        print(getattr(Back, bg_color, ""), end="")
 
 
 def graphic_counter(delay_time: float) -> None:
