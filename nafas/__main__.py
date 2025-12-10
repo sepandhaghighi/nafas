@@ -39,6 +39,7 @@ def main() -> None:
         if args.version:
             print(NAFAS_VERSION)
         else:
+            clear_screen()
             if not args.skip_intro:
                 tprint("Nafas")
                 tprint("v" + str(NAFAS_VERSION))
