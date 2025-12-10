@@ -116,8 +116,13 @@ nafas --silent
 
 ### Speaker
 
-ℹ️ Customize your experience by choosing from a set of speaker voices to guide you through the exercises.
-You can specify the speaker using the `--speaker`:
+⚠️ This mode may not be supported on all systems
+
+ℹ️ Customize your experience by choosing from a set of speaker voices to guide you through the exercises
+
+ℹ️ The default speaker is `us1`
+
+ℹ️ You can specify the speaker using the `--speaker`:
 
 ```console
 nafas --speaker=us1
@@ -150,6 +155,8 @@ nafas --skip-intro
 
 ### Color
 
+⚠️ This mode may not be supported on all systems
+
 ℹ️ This mode will change the text color
 
 ℹ️ Valid choices: [`black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`]
@@ -161,6 +168,8 @@ nafas --color="red"
 ```
 
 ### Background Color
+
+⚠️ This mode may not be supported on all systems
 
 ℹ️ This mode will change the background color
 
