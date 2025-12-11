@@ -558,3 +558,5 @@ CONFIG_EXAMPLE = {
 }
 
 COLOR_LIST = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "white"]
+
+INTENSITY_LIST = ["normal", "bright", "dim"]
