@@ -15,7 +15,7 @@ from nafas.params import CONFIG_VALIDATION_MAP, CONFIG_EXAMPLE
 from nafas.params import SURVEY_LINK_TEMPLATE, SURVEY_DATA_TEMPLATE
 from nafas.params import NAFAS_VERSION
 import nava
-from colorama import Fore, Back
+from colorama import Fore, Back, Style
 import os
 from warnings import warn
 import sys
@@ -376,6 +376,17 @@ def set_bg_color(bg_color: str) -> None:
     if bg_color:
         bg_color = bg_color.strip().upper()
         print(getattr(Back, bg_color, ""))
+
+
+def set_intensity(intensity: str) -> None:
+    """
+    Set text intensity.
+
+    :param intensity: intensity name
+    """
+    if intensity:
+        intensity = intensity.strip().upper()
+        print(getattr(Style, intensity, ""), end="")
 
 
 def graphic_counter(delay_time: float) -> None:
