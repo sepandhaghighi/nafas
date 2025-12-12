@@ -19,6 +19,11 @@ True
 ...     set_bg_color("yellow")
 >>> "\x1b[43m" in f.getvalue()
 True
+>>> set_intensity(None)
+>>> with contextlib.redirect_stdout(f):
+...     set_intensity("dim")
+>>> "\x1b[2m" in f.getvalue()
+True
 >>> clear_screen()
 
 >>> print_line(10,"*")

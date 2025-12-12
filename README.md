@@ -181,6 +181,20 @@ nafas --color="red"
 nafas --color="red" --bg-color="blue"
 ```
 
+### Intensity
+
+⚠️ This mode may not be supported on all systems
+
+ℹ️ This mode will change the text intensity
+
+ℹ️ Valid choices: [`normal`, `bright`, `dim`]
+
+ℹ️ The default intensity is `normal`
+
+```console
+nafas --color="red" --intensity="bright"
+```
+
 ### Custom Config
 
 ℹ️ Users can either generate a starter configuration file or load their own custom configurations
