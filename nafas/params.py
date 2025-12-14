@@ -557,6 +557,23 @@ CONFIG_EXAMPLE = {
     }
 }
 
-COLOR_LIST = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "white"]
+COLOR_LIST = [
+    "black",
+    "red", 
+    "green", 
+    "yellow",
+    "blue",
+    "magenta",
+    "cyan",
+    "white",
+    "lightblack",
+    "lightred",
+    "lightgreen",
+    "lightyellow",
+    "lightblue",
+    "lightmagenta",
+    "lightcyan",
+    "lightwhite",
+    ]
 
 INTENSITY_LIST = ["normal", "bright", "dim"]
