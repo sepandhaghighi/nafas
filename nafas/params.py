@@ -559,8 +559,8 @@ CONFIG_EXAMPLE = {
 
 COLOR_LIST = [
     "black",
-    "red", 
-    "green", 
+    "red",
+    "green",
     "yellow",
     "blue",
     "magenta",
