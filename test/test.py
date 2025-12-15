@@ -14,10 +14,18 @@
 ...     set_color("blue")
 >>> "\x1b[34m" in f.getvalue()
 True
+>>> with contextlib.redirect_stdout(f):
+...     set_color("lightblue")
+>>> "\x1b[94m" in f.getvalue()
+True
 >>> set_bg_color(None)
 >>> with contextlib.redirect_stdout(f):
 ...     set_bg_color("yellow")
 >>> "\x1b[43m" in f.getvalue()
+True
+>>> with contextlib.redirect_stdout(f):
+...     set_bg_color("lightyellow")
+>>> "\x1b[103m" in f.getvalue()
 True
 >>> set_intensity(None)
 >>> with contextlib.redirect_stdout(f):
