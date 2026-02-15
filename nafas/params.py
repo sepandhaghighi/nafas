@@ -150,6 +150,12 @@ HARMONY_MEDIUM = {"ratio": [1, 4, 2, 1], "unit": 3, "pre": 3, "cycle": 18}
 
 HARMONY_ADVANCED = {"ratio": [1, 5, 2, 1], "unit": 3, "pre": 3, "cycle": 16}
 
+FIRE_BREATH_BEGINNER = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 10}
+
+FIRE_BREATH_MEDIUM = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 20}
+
+FIRE_BREATH_ADVANCED = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 30}
+
 RELAX2_BEGINNER = {
     "ratio": [
         4,
