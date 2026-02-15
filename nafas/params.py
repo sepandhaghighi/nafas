@@ -515,6 +515,9 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Coherent": {"Beginner": COHERENT_BEGINNER,
                          "Medium": COHERENT_MEDIUM,
                          "Advanced": COHERENT_ADVANCED},
+            "Fire Breath": {"Beginner": FIRE_BREATH_BEGINNER,
+                         "Medium": FIRE_BREATH_MEDIUM,
+                         "Advanced": FIRE_BREATH_ADVANCED},
             }
 
 SPEAKER_LIST = [
