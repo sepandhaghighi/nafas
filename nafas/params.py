@@ -98,7 +98,8 @@ STANDARD_MENU = {
         14: "Balancing",
         15: "Energizing",
         16: "Box",
-        17: "Coherent"},
+        17: "Coherent",
+        18: "Fire Breath"},
     "level": {
         1: "Beginner",
         2: "Medium",
