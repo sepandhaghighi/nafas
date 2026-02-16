@@ -98,7 +98,8 @@ STANDARD_MENU = {
         14: "Balancing",
         15: "Energizing",
         16: "Box",
-        17: "Coherent"},
+        17: "Coherent",
+        18: "Fire Breath"},
     "level": {
         1: "Beginner",
         2: "Medium",
@@ -149,6 +150,12 @@ HARMONY_BEGINNER = {"ratio": [1, 3, 2, 1], "unit": 3, "pre": 3, "cycle": 20}
 HARMONY_MEDIUM = {"ratio": [1, 4, 2, 1], "unit": 3, "pre": 3, "cycle": 18}
 
 HARMONY_ADVANCED = {"ratio": [1, 5, 2, 1], "unit": 3, "pre": 3, "cycle": 16}
+
+FIRE_BREATH_BEGINNER = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 10}
+
+FIRE_BREATH_MEDIUM = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 20}
+
+FIRE_BREATH_ADVANCED = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 30}
 
 RELAX2_BEGINNER = {
     "ratio": [
@@ -509,6 +516,9 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Coherent": {"Beginner": COHERENT_BEGINNER,
                          "Medium": COHERENT_MEDIUM,
                          "Advanced": COHERENT_ADVANCED},
+            "Fire Breath": {"Beginner": FIRE_BREATH_BEGINNER,
+                         "Medium": FIRE_BREATH_MEDIUM,
+                         "Advanced": FIRE_BREATH_ADVANCED},
             }
 
 SPEAKER_LIST = [

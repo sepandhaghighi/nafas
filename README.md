@@ -288,6 +288,8 @@ You can also join our discord server
 
 <blockquote>17- <a href="https://www.youtube.com/watch?v=dPkpW5lqL3E">Coherent Breathing Timer - 6 Breaths Per Minute | 5 Seconds in / 5 Seconds Out | With Bells</a> </blockquote>
 
+<blockquote>18- <a href="https://play.google.com/store/apps/details?id=pranayama.yoga.breathingexercises&hl=en">Pranayama : Breathing Exercise</a></blockquote>
+
 ## Cite
 
 If you use **Nafas** in your research, we would appreciate citations to the following paper:

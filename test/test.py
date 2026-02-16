@@ -165,6 +165,7 @@ True
 15- Energizing (~ 2 minutes)
 16- Box (~ 2 minutes)
 17- Coherent (~ 8 minutes)
+18- Fire Breath (~ 7 minutes)
 - Choose a level:
 <BLANKLINE>
 1- Beginner

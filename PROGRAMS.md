@@ -1,6 +1,6 @@
 # Nafas Breathing Programs
 
-**Last Update: 2025-05-26**
+**Last Update: 2026-02-15**
 
 | **Program**         | **Description**                                                                                                                 | **Level**         | **Ratios**<br>**(I:R:E:S)**            | **Unit**<br>**(Seconds)** | **Cycles**      |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------|-----------------------|--------------------------|----------------|
@@ -21,6 +21,7 @@
 | Energizing           | Breathing program to recharge energy levels and improve alertness. Ideal for users or professionals needing a quick boost of focus and energy. | B<br>M<br>A | 6:0:4:0<br>6:4:6:1<br>6:6:6:1 | 1<br>1<br>1   | 6<br>8<br>10   | 
 | Box                  | A breathing technique involving equal counts of inhaling, retaining, exhaling, and sustaining to enhance focus and calm. | B<br>M<br>A | 4:4:4:4<br>4:4:4:4<br>4:4:4:4 | 1<br>1<br>1   | 4<br>8<br>15   | 
 | Coherent             | Breathing program for optimizing heart rate variability (HRV). It triggers the ideal breath rate for relaxation and emotional regulation. Useful for daily stress management or biofeedback training. | B<br>M<br>A | 5:0:5:0<br>5:0:5:0<br>5:0:5:0 | 1<br>1<br>1 | 30<br>50<br>70 |
+| Fire Breath          | Agnisar Pranayama, or Fire Breath, is a powerful yoga breathing technique, Agni means fire, and Sara stands for movement; Agnisara Kriya is the process of cleansing or purifying the organs of the abdomen, by the heat (fire) generated during the practice of this breathing technique. | B<br>M<br>A | 3:0:5:12<br>3:0:5:12<br>3:0:5:12 | 1<br>1<br>1 | 10<br>20<br>30 |
 
 **Notes**:
 - *I: Inhale, R: Retain, E: Exhale, S: Sustain, B: Beginner, M: Medium, A: Advanced*
