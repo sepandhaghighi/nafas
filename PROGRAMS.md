@@ -1,6 +1,6 @@
 # Nafas Breathing Programs
 
-**Last Update: 2026-02-15**
+**Last Update: 2026-02-16**
 
 | **Program**         | **Description**                                                                                                                 | **Level**         | **Ratios**<br>**(I:R:E:S)**            | **Unit**<br>**(Seconds)** | **Cycles**      |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------|-----------------------|--------------------------|----------------|
@@ -22,6 +22,7 @@
 | Box                  | A breathing technique involving equal counts of inhaling, retaining, exhaling, and sustaining to enhance focus and calm. | B<br>M<br>A | 4:4:4:4<br>4:4:4:4<br>4:4:4:4 | 1<br>1<br>1   | 4<br>8<br>15   | 
 | Coherent             | Breathing program for optimizing heart rate variability (HRV). It triggers the ideal breath rate for relaxation and emotional regulation. Useful for daily stress management or biofeedback training. | B<br>M<br>A | 5:0:5:0<br>5:0:5:0<br>5:0:5:0 | 1<br>1<br>1 | 30<br>50<br>70 |
 | Fire Breath          | Agnisar Pranayama, or Fire Breath, is a powerful yoga breathing technique, Agni means fire, and Sara stands for movement; Agnisara Kriya is the process of cleansing or purifying the organs of the abdomen, by the heat (fire) generated during the practice of this breathing technique. | B<br>M<br>A | 3:0:5:12<br>3:0:5:12<br>3:0:5:12 | 1<br>1<br>1 | 10<br>20<br>30 |
+| Breath Retention     | Kevala Kumbhaka, or Breath Retention, is an advanced yogic practice involving holding the breath after exhalation. This technique promotes deep inner stillness, enhances concentration, and balances the nervous system, making it a powerful tool for achieving mental clarity and heightened awareness. | B<br>M<br>A | 2:0:2:12<br>2:0:2:12<br>2:0:2:12 | 1<br>1<br>1 | 5<br>10<br>15 |
 
 **Notes**:
 - *I: Inhale, R: Retain, E: Exhale, S: Sustain, B: Beginner, M: Medium, A: Advanced*
