@@ -22,7 +22,10 @@ def main() -> None:
         parser.add_argument('--version', help='version', nargs="?", const=1)
         parser.add_argument('--silent', help='silent mode', nargs="?", const=1)
         parser.add_argument('--skip-intro', help='skip intro', nargs="?", const=1)
-        parser.add_argument('--generate-config', help='generate a starter configuration file at the given path', type=str)
+        parser.add_argument(
+            '--generate-config',
+            help='generate a starter configuration file at the given path',
+            type=str)
         parser.add_argument('--config', help='load an existing configuration file from the given path', type=str)
         parser.add_argument(
             '--speaker',

@@ -524,11 +524,11 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                          "Medium": COHERENT_MEDIUM,
                          "Advanced": COHERENT_ADVANCED},
             "Fire Breath": {"Beginner": FIRE_BREATH_BEGINNER,
-                         "Medium": FIRE_BREATH_MEDIUM,
-                         "Advanced": FIRE_BREATH_ADVANCED},
+                            "Medium": FIRE_BREATH_MEDIUM,
+                            "Advanced": FIRE_BREATH_ADVANCED},
             "Breath Retention": {"Beginner": BREATH_RETENTION_BEGINNER,
-                         "Medium": BREATH_RETENTION_MEDIUM,
-                         "Advanced": BREATH_RETENTION_ADVANCED},
+                                 "Medium": BREATH_RETENTION_MEDIUM,
+                                 "Advanced": BREATH_RETENTION_ADVANCED},
             }
 
 SPEAKER_LIST = [
@@ -594,6 +594,6 @@ COLOR_LIST = [
     "lightmagenta",
     "lightcyan",
     "lightwhite",
-    ]
+]
 
 INTENSITY_LIST = ["normal", "bright", "dim"]
