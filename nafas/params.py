@@ -99,7 +99,8 @@ STANDARD_MENU = {
         15: "Energizing",
         16: "Box",
         17: "Coherent",
-        18: "Fire Breath"},
+        18: "Fire Breath",
+        19: "Breath Retention"},
     "level": {
         1: "Beginner",
         2: "Medium",
@@ -156,6 +157,12 @@ FIRE_BREATH_BEGINNER = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 10
 FIRE_BREATH_MEDIUM = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 20}
 
 FIRE_BREATH_ADVANCED = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 30}
+
+BREATH_RETENTION_BEGINNER = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 5}
+
+BREATH_RETENTION_MEDIUM = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 10}
+
+BREATH_RETENTION_ADVANCED = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 15}
 
 RELAX2_BEGINNER = {
     "ratio": [
@@ -517,8 +524,11 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                          "Medium": COHERENT_MEDIUM,
                          "Advanced": COHERENT_ADVANCED},
             "Fire Breath": {"Beginner": FIRE_BREATH_BEGINNER,
-                         "Medium": FIRE_BREATH_MEDIUM,
-                         "Advanced": FIRE_BREATH_ADVANCED},
+                            "Medium": FIRE_BREATH_MEDIUM,
+                            "Advanced": FIRE_BREATH_ADVANCED},
+            "Breath Retention": {"Beginner": BREATH_RETENTION_BEGINNER,
+                                 "Medium": BREATH_RETENTION_MEDIUM,
+                                 "Advanced": BREATH_RETENTION_ADVANCED},
             }
 
 SPEAKER_LIST = [
@@ -584,6 +594,6 @@ COLOR_LIST = [
     "lightmagenta",
     "lightcyan",
     "lightwhite",
-    ]
+]
 
 INTENSITY_LIST = ["normal", "bright", "dim"]
