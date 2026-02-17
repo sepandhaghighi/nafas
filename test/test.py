@@ -138,7 +138,7 @@ True
 True
 >>> input_data["level"] == 1
 True
->>> input_data = filter_input({"program":20,"level":5})
+>>> input_data = filter_input({"program":200,"level":5})
 >>> input_data["program"] == 1
 True
 >>> input_data["level"] == 1
