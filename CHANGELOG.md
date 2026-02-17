@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Fire Breath program
 - Breath Retention program
+- Swooning Breath program
 - `--generate-config` argument
 - `--color` argument
 - `--bg-color` argument
