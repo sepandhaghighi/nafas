@@ -538,8 +538,8 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
                                  "Medium": BREATH_RETENTION_MEDIUM,
                                  "Advanced": BREATH_RETENTION_ADVANCED},
             "Swooning Breath": {"Beginner": SWOONING_BREATH_BEGINNER,
-                                 "Medium": SWOONING_BREATH_MEDIUM,
-                                 "Advanced": SWOONING_BREATH_ADVANCED},
+                                "Medium": SWOONING_BREATH_MEDIUM,
+                                "Advanced": SWOONING_BREATH_ADVANCED},
             }
 
 SPEAKER_LIST = [
