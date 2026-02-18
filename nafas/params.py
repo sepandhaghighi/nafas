@@ -165,11 +165,11 @@ BREATH_RETENTION_MEDIUM = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle":
 
 BREATH_RETENTION_ADVANCED = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 15}
 
-SWOONING_BREATH_BEGINNER = {"ratio": [5, 0, 10, 7], "unit": 1, "pre": 3, "cycle": 7}
+SWOONING_BREATH_BEGINNER = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 7}
 
-SWOONING_BREATH_MEDIUM = {"ratio": [5, 0, 10, 7], "unit": 1, "pre": 3, "cycle": 12}
+SWOONING_BREATH_MEDIUM = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 12}
 
-SWOONING_BREATH_ADVANCED = {"ratio": [5, 0, 10, 7], "unit": 1, "pre": 3, "cycle": 21}
+SWOONING_BREATH_ADVANCED = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 21}
 
 
 RELAX2_BEGINNER = {
