@@ -167,7 +167,7 @@ True
 17- Coherent (~ 8 minutes)
 18- Fire (~ 7 minutes)
 19- Retention (~ 3 minutes)
-20- Swooning Breath (~ 5 minutes)
+20- Swooning (~ 5 minutes)
 - Choose a level:
 <BLANKLINE>
 1- Beginner
