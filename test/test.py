@@ -166,7 +166,7 @@ True
 16- Box (~ 2 minutes)
 17- Coherent (~ 8 minutes)
 18- Fire (~ 7 minutes)
-19- Breath Retention (~ 3 minutes)
+19- Retention (~ 3 minutes)
 20- Swooning Breath (~ 5 minutes)
 - Choose a level:
 <BLANKLINE>

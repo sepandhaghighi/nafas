@@ -100,7 +100,7 @@ STANDARD_MENU = {
         16: "Box",
         17: "Coherent",
         18: "Fire",
-        19: "Breath Retention",
+        19: "Retention",
         20: "Swooning Breath"},
     "level": {
         1: "Beginner",
@@ -159,11 +159,11 @@ FIRE_MEDIUM = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 20}
 
 FIRE_ADVANCED = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 30}
 
-BREATH_RETENTION_BEGINNER = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 5}
+RETENTION_BEGINNER = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 5}
 
-BREATH_RETENTION_MEDIUM = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 10}
+RETENTION_MEDIUM = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 10}
 
-BREATH_RETENTION_ADVANCED = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 15}
+RETENTION_ADVANCED = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 15}
 
 SWOONING_BREATH_BEGINNER = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 7}
 
@@ -534,9 +534,9 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Fire": {"Beginner": FIRE_BEGINNER,
                             "Medium": FIRE_MEDIUM,
                             "Advanced": FIRE_ADVANCED},
-            "Breath Retention": {"Beginner": BREATH_RETENTION_BEGINNER,
-                                 "Medium": BREATH_RETENTION_MEDIUM,
-                                 "Advanced": BREATH_RETENTION_ADVANCED},
+            "Retention": {"Beginner": RETENTION_BEGINNER,
+                                 "Medium": RETENTION_MEDIUM,
+                                 "Advanced": RETENTION_ADVANCED},
             "Swooning Breath": {"Beginner": SWOONING_BREATH_BEGINNER,
                                 "Medium": SWOONING_BREATH_MEDIUM,
                                 "Advanced": SWOONING_BREATH_ADVANCED},

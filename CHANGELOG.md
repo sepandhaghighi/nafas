@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - Fire program
-- Breath Retention program
+- Retention program
 - Swooning Breath program
 - `--generate-config` argument
 - `--color` argument
