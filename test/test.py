@@ -138,7 +138,7 @@ True
 True
 >>> input_data["level"] == 1
 True
->>> input_data = filter_input({"program":20,"level":5})
+>>> input_data = filter_input({"program":200,"level":5})
 >>> input_data["program"] == 1
 True
 >>> input_data["level"] == 1
@@ -167,6 +167,7 @@ True
 17- Coherent (~ 8 minutes)
 18- Fire Breath (~ 7 minutes)
 19- Breath Retention (~ 3 minutes)
+20- Swooning Breath (~ 5 minutes)
 - Choose a level:
 <BLANKLINE>
 1- Beginner

@@ -100,7 +100,8 @@ STANDARD_MENU = {
         16: "Box",
         17: "Coherent",
         18: "Fire Breath",
-        19: "Breath Retention"},
+        19: "Breath Retention",
+        20: "Swooning Breath"},
     "level": {
         1: "Beginner",
         2: "Medium",
@@ -163,6 +164,13 @@ BREATH_RETENTION_BEGINNER = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle
 BREATH_RETENTION_MEDIUM = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 10}
 
 BREATH_RETENTION_ADVANCED = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 15}
+
+SWOONING_BREATH_BEGINNER = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 7}
+
+SWOONING_BREATH_MEDIUM = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 12}
+
+SWOONING_BREATH_ADVANCED = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 21}
+
 
 RELAX2_BEGINNER = {
     "ratio": [
@@ -529,6 +537,9 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Breath Retention": {"Beginner": BREATH_RETENTION_BEGINNER,
                                  "Medium": BREATH_RETENTION_MEDIUM,
                                  "Advanced": BREATH_RETENTION_ADVANCED},
+            "Swooning Breath": {"Beginner": SWOONING_BREATH_BEGINNER,
+                                "Medium": SWOONING_BREATH_MEDIUM,
+                                "Advanced": SWOONING_BREATH_ADVANCED},
             }
 
 SPEAKER_LIST = [
