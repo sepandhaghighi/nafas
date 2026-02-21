@@ -99,9 +99,9 @@ STANDARD_MENU = {
         15: "Energizing",
         16: "Box",
         17: "Coherent",
-        18: "Fire Breath",
-        19: "Breath Retention",
-        20: "Swooning Breath"},
+        18: "Fire",
+        19: "Retention",
+        20: "Swooning"},
     "level": {
         1: "Beginner",
         2: "Medium",
@@ -153,23 +153,23 @@ HARMONY_MEDIUM = {"ratio": [1, 4, 2, 1], "unit": 3, "pre": 3, "cycle": 18}
 
 HARMONY_ADVANCED = {"ratio": [1, 5, 2, 1], "unit": 3, "pre": 3, "cycle": 16}
 
-FIRE_BREATH_BEGINNER = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 10}
+FIRE_BEGINNER = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 10}
 
-FIRE_BREATH_MEDIUM = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 20}
+FIRE_MEDIUM = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 20}
 
-FIRE_BREATH_ADVANCED = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 30}
+FIRE_ADVANCED = {"ratio": [3, 0, 5, 12], "unit": 1, "pre": 3, "cycle": 30}
 
-BREATH_RETENTION_BEGINNER = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 5}
+RETENTION_BEGINNER = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 5}
 
-BREATH_RETENTION_MEDIUM = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 10}
+RETENTION_MEDIUM = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 10}
 
-BREATH_RETENTION_ADVANCED = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 15}
+RETENTION_ADVANCED = {"ratio": [2, 0, 2, 12], "unit": 1, "pre": 3, "cycle": 15}
 
-SWOONING_BREATH_BEGINNER = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 7}
+SWOONING_BEGINNER = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 7}
 
-SWOONING_BREATH_MEDIUM = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 12}
+SWOONING_MEDIUM = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 12}
 
-SWOONING_BREATH_ADVANCED = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 21}
+SWOONING_ADVANCED = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 21}
 
 
 RELAX2_BEGINNER = {
@@ -531,15 +531,15 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Coherent": {"Beginner": COHERENT_BEGINNER,
                          "Medium": COHERENT_MEDIUM,
                          "Advanced": COHERENT_ADVANCED},
-            "Fire Breath": {"Beginner": FIRE_BREATH_BEGINNER,
-                            "Medium": FIRE_BREATH_MEDIUM,
-                            "Advanced": FIRE_BREATH_ADVANCED},
-            "Breath Retention": {"Beginner": BREATH_RETENTION_BEGINNER,
-                                 "Medium": BREATH_RETENTION_MEDIUM,
-                                 "Advanced": BREATH_RETENTION_ADVANCED},
-            "Swooning Breath": {"Beginner": SWOONING_BREATH_BEGINNER,
-                                "Medium": SWOONING_BREATH_MEDIUM,
-                                "Advanced": SWOONING_BREATH_ADVANCED},
+            "Fire": {"Beginner": FIRE_BEGINNER,
+                     "Medium": FIRE_MEDIUM,
+                     "Advanced": FIRE_ADVANCED},
+            "Retention": {"Beginner": RETENTION_BEGINNER,
+                          "Medium": RETENTION_MEDIUM,
+                          "Advanced": RETENTION_ADVANCED},
+            "Swooning": {"Beginner": SWOONING_BEGINNER,
+                         "Medium": SWOONING_MEDIUM,
+                         "Advanced": SWOONING_ADVANCED},
             }
 
 SPEAKER_LIST = [
