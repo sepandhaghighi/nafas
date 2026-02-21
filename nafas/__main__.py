@@ -41,7 +41,7 @@ def parse_args() -> argparse.Namespace:
 
 def run(args: argparse.Namespace) -> None:
     """
-    Run nafas.
+    Run nafas CLI.
 
     :param args: arguments
     """

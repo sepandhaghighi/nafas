@@ -39,8 +39,8 @@ jobs:
         pip install .
     - name: First test
       run: |
-        nafas --version --color="red"
-        nafas --generate-config="test.json"
+        nafas --version --color="red" --bg-color="blue" --intensity="bright"
+        nafas --generate-config="test.json" --skip-intro
     - name: Install dev-requirements
       run: |
         python otherfiles/requirements-splitter.py
