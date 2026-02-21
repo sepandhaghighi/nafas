@@ -15,28 +15,33 @@ from nafas.params import SPEAKER_LIST, COLOR_LIST, INTENSITY_LIST
 from art import tprint
 
 
+def _parse_args() -> argparse.Namespace:
+    """Parse arguments."""
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--version', help='version', nargs="?", const=1)
+    parser.add_argument('--silent', help='silent mode', nargs="?", const=1)
+    parser.add_argument('--skip-intro', help='skip intro', nargs="?", const=1)
+    parser.add_argument(
+        '--generate-config',
+        help='generate a starter configuration file at the given path',
+        type=str)
+    parser.add_argument('--config', help='load an existing configuration file from the given path', type=str)
+    parser.add_argument(
+        '--speaker',
+        help='speaker id',
+        choices=SPEAKER_LIST,
+        default=SPEAKER_LIST[0],
+        type=str.lower)
+    parser.add_argument('--color', help='text color', type=str.lower, choices=COLOR_LIST)
+    parser.add_argument('--bg-color', help='background color', type=str.lower, choices=COLOR_LIST)
+    parser.add_argument('--intensity', help='text intensity', type=str.lower, choices=INTENSITY_LIST)
+    args = parser.parse_args()
+    return args
+
+
 def main() -> None:
     """CLI main function."""
-    try:
-        parser = argparse.ArgumentParser()
-        parser.add_argument('--version', help='version', nargs="?", const=1)
-        parser.add_argument('--silent', help='silent mode', nargs="?", const=1)
-        parser.add_argument('--skip-intro', help='skip intro', nargs="?", const=1)
-        parser.add_argument(
-            '--generate-config',
-            help='generate a starter configuration file at the given path',
-            type=str)
-        parser.add_argument('--config', help='load an existing configuration file from the given path', type=str)
-        parser.add_argument(
-            '--speaker',
-            help='speaker id',
-            choices=SPEAKER_LIST,
-            default=SPEAKER_LIST[0],
-            type=str.lower)
-        parser.add_argument('--color', help='text color', type=str.lower, choices=COLOR_LIST)
-        parser.add_argument('--bg-color', help='background color', type=str.lower, choices=COLOR_LIST)
-        parser.add_argument('--intensity', help='text intensity', type=str.lower, choices=INTENSITY_LIST)
-        args = parser.parse_args()
+    try:     
         set_color(args.color)
         set_bg_color(args.bg_color)
         set_intensity(args.intensity)
