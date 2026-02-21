@@ -98,6 +98,7 @@ def run(args: argparse.Namespace) -> None:
             else:
                 clear_screen()
 
+
 def main() -> None:
     """CLI main function."""
     try:
