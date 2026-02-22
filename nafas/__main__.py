@@ -67,8 +67,8 @@ def run(args: argparse.Namespace) -> None:
                 tprint("Silent Mode")
             print_nafas_description()
             _ = input("Press any key to continue.\n")
-        EXIT_FLAG = False    
-        while not EXIT_FLAG:
+        exit_flag = False    
+        while not exit_flag:
             if args.config:
                 result = load_config(args.config)
                 if result["status"]:
@@ -93,7 +93,7 @@ def run(args: argparse.Namespace) -> None:
             INPUTINDEX = str(
                 input("Press [R] to restart or any other key to exit."))
             if INPUTINDEX.upper() != "R":
-                EXIT_FLAG = True
+                exit_flag = True
                 print(EXIT_MESSAGE)
             else:
                 clear_screen()
