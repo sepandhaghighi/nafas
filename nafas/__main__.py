@@ -67,7 +67,7 @@ def run(args: argparse.Namespace) -> None:
                 tprint("Silent Mode")
             print_nafas_description()
             _ = input("Press any key to continue.\n")
-        exit_flag = False    
+        exit_flag = False
         while not exit_flag:
             if args.config:
                 result = load_config(args.config)
