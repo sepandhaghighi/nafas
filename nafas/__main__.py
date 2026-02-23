@@ -51,6 +51,13 @@ def run(args: argparse.Namespace) -> None:
     silent_flag = args.silent
     if args.version:
         print(NAFAS_VERSION)
+    elif args.generate_config:
+            result = generate_config(args.generate_config)
+            if not result:
+                print(CONFIG_GENERATE_ERROR_MESSAGE)
+            else:
+                print(CONFIG_GENERATE_SUCCESS_MESSAGE)
+            sys.exit()
     else:
         clear_screen()
         if not args.skip_intro:
@@ -60,15 +67,8 @@ def run(args: argparse.Namespace) -> None:
                 tprint("Silent Mode")
             print_nafas_description()
             _ = input("Press any key to continue.\n")
-        EXIT_FLAG = False
-        if args.generate_config:
-            result = generate_config(args.generate_config)
-            if not result:
-                print(CONFIG_GENERATE_ERROR_MESSAGE)
-            else:
-                print(CONFIG_GENERATE_SUCCESS_MESSAGE)
-            sys.exit()
-        while not EXIT_FLAG:
+        exit_flag = False
+        while not exit_flag:
             if args.config:
                 result = load_config(args.config)
                 if result["status"]:
@@ -93,7 +93,7 @@ def run(args: argparse.Namespace) -> None:
             INPUTINDEX = str(
                 input("Press [R] to restart or any other key to exit."))
             if INPUTINDEX.upper() != "R":
-                EXIT_FLAG = True
+                exit_flag = True
                 print(EXIT_MESSAGE)
             else:
                 clear_screen()

@@ -40,7 +40,7 @@ jobs:
     - name: First test
       run: |
         nafas --version --color="red" --bg-color="blue" --intensity="bright"
-        nafas --generate-config="test.json" --skip-intro
+        nafas --generate-config="test.json"
     - name: Install dev-requirements
       run: |
         python otherfiles/requirements-splitter.py
