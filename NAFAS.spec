@@ -2,7 +2,7 @@
 
 block_cipher = None
 
-nafas_version = "1.4"
+nafas_version = "1.5"
 
 a = Analysis(['nafas/__main__.py'],
              pathex=['nafas'],

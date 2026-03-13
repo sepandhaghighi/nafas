@@ -71,21 +71,21 @@ These cycles aim to enhance both physical and mental well-being.
 ## Installation		
 
 ### Source Code
-- Download [Version 1.4](https://github.com/sepandhaghighi/nafas/archive/v1.4.zip) or [Latest Source](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
+- Download [Version 1.5](https://github.com/sepandhaghighi/nafas/archive/v1.5.zip) or [Latest Source](https://github.com/sepandhaghighi/nafas/archive/dev.zip)
 - `pip install .`				
 
 ### PyPI
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install nafas==1.4`						
+- `pip install nafas==1.5`						
 	
 
 ### Exe Version
 
 ⚠️ Only Windows
 
-- Download [Exe-Version 1.4](https://github.com/sepandhaghighi/nafas/releases/download/v1.4/NAFAS-1.4.exe)
-- Run `NAFAS-1.4.exe`
+- Download [Exe-Version 1.5](https://github.com/sepandhaghighi/nafas/releases/download/v1.5/NAFAS-1.5.exe)
+- Run `NAFAS-1.5.exe`
 
 
 ## Usage	
