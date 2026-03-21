@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """nafas parameters."""
 
-NAFAS_VERSION = "1.4"
+NAFAS_VERSION = "1.5"
 
 NAFAS_DESCRIPTION = """
 Breathing gymnastics is a system of breathing exercises that focuses on the treatment of various diseases and general health promotion.
