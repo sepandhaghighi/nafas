@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [1.5] - 2026-03-23
+## [1.5] - 2026-03-30
 ### Added
 - Fire program
 - Retention program
