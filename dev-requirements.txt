@@ -2,7 +2,7 @@ art==6.5
 nava==0.8
 colorama==0.4.6
 pytest>=4.3.1
-pytest-cov>=2.6.1
+pytest-cov>=7.1.0
 setuptools>=40.8.0
 vulture>=1.0
 bandit>=1.5.1
