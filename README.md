@@ -77,20 +77,12 @@ These cycles aim to enhance both physical and mental well-being.
 ### PyPI
 
 - Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
-- `pip install nafas==1.5`						
-	
-
-### Exe Version
-
-⚠️ Only Windows
-
-- Download [Exe-Version 1.5](https://github.com/sepandhaghighi/nafas/releases/download/v1.5/NAFAS-1.5.exe)
-- Run `NAFAS-1.5.exe`
+- `pip install nafas==1.5`
 
 
 ## Usage	
 
-ℹ️ You can use `nafas`, `python -m nafas` or `NAFAS.exe` to run this program
+ℹ️ You can use `nafas`, `python -m nafas` to run this program
 
 ℹ️ Checkout the available programs in [PROGRAMS.md](https://github.com/sepandhaghighi/nafas/blob/master/PROGRAMS.md)
 
