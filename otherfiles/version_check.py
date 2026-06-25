@@ -17,8 +17,8 @@ SETUP_ITEMS = [
     'https://github.com/sepandhaghighi/nafas/tarball/v{0}']
 README_ITEMS = [
     "[Version {0}](https://github.com/sepandhaghighi/nafas/archive/v{0}.zip)",
-    #"[Exe-Version {0}](https://github.com/sepandhaghighi/nafas/releases/download/v{0}/NAFAS-{0}.exe)",
-    #"Run `NAFAS-{0}.exe`",
+    # "[Exe-Version {0}](https://github.com/sepandhaghighi/nafas/releases/download/v{0}/NAFAS-{0}.exe)",
+    # "Run `NAFAS-{0}.exe`",
     "pip install nafas=={0}"]
 CHANGELOG_ITEMS = [
     "## [{0}]",
