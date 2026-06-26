@@ -52,12 +52,12 @@ def run(args: argparse.Namespace) -> None:
     if args.version:
         print(NAFAS_VERSION)
     elif args.generate_config:
-            result = generate_config(args.generate_config)
-            if not result:
-                print(CONFIG_GENERATE_ERROR_MESSAGE)
-            else:
-                print(CONFIG_GENERATE_SUCCESS_MESSAGE)
-            sys.exit()
+        result = generate_config(args.generate_config)
+        if not result:
+            print(CONFIG_GENERATE_ERROR_MESSAGE)
+        else:
+            print(CONFIG_GENERATE_SUCCESS_MESSAGE)
+        sys.exit()
     else:
         clear_screen()
         if not args.skip_intro:
