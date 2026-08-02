@@ -8,6 +8,7 @@ from nafas.functions import print_nafas_description, get_standard_input, filter_
 from nafas.functions import get_program_data, print_program_details, run_program, clear_screen
 from nafas.functions import generate_config, load_config, get_rendered_survey_link, print_line
 from nafas.functions import set_color, set_bg_color, set_intensity
+from nafas.functions import unpack_program_data
 from nafas.params import NAFAS_VERSION, EXIT_MESSAGE
 from nafas.params import CONFIG_GENERATE_SUCCESS_MESSAGE, CONFIG_GENERATE_ERROR_MESSAGE, CONFIG_LOAD_ERROR_MESSAGE
 from nafas.params import SURVEY_MESSAGE_1, SURVEY_MESSAGE_2
@@ -72,20 +73,19 @@ def run(args: argparse.Namespace) -> None:
             if args.config:
                 result = load_config(args.config)
                 if result["status"]:
-                    data = result["data"]
-                    program_name, level, program_data = data["program_name"], data["program_level"], data["program_data"]
+                    program_name, program_level, program_data = unpack_program_data(result["data"])
                 else:
                     print(CONFIG_LOAD_ERROR_MESSAGE)
                     sys.exit()
             else:
                 input_data = get_standard_input()
                 filtered_data = filter_input(input_data)
-                program_name, level, program_data = get_program_data(filtered_data)
+                program_name, program_level, program_data = get_program_data(filtered_data)
             clear_screen()
-            print_program_details(program_name, level, program_data)
+            print_program_details(program_name, program_level, program_data)
             run_program(program_data, args.speaker, silent=silent_flag)
             print_line()
-            survey_link = get_rendered_survey_link(program_name, level, program_data)
+            survey_link = get_rendered_survey_link(program_name, program_level, program_data)
             print(SURVEY_MESSAGE_1)
             print("Survey Link: {link}\n".format(link=survey_link))
             if input(SURVEY_MESSAGE_2).lower() == "y":
