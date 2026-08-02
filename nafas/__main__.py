@@ -8,7 +8,7 @@ from nafas.functions import print_nafas_description, get_standard_input, filter_
 from nafas.functions import get_program_data, print_program_details, run_program, clear_screen
 from nafas.functions import generate_config, load_config, get_rendered_survey_link, print_line
 from nafas.functions import set_color, set_bg_color, set_intensity
-from nafas.functions import extract_program_data
+from nafas.functions import unpack_program_data
 from nafas.params import NAFAS_VERSION, EXIT_MESSAGE
 from nafas.params import CONFIG_GENERATE_SUCCESS_MESSAGE, CONFIG_GENERATE_ERROR_MESSAGE, CONFIG_LOAD_ERROR_MESSAGE
 from nafas.params import SURVEY_MESSAGE_1, SURVEY_MESSAGE_2
@@ -73,7 +73,7 @@ def run(args: argparse.Namespace) -> None:
             if args.config:
                 result = load_config(args.config)
                 if result["status"]:
-                    program_name, program_level, program_data = extract_program_data(result["data"])
+                    program_name, program_level, program_data = unpack_program_data(result["data"])
                 else:
                     print(CONFIG_LOAD_ERROR_MESSAGE)
                     sys.exit()

@@ -332,9 +332,9 @@ def get_standard_input(input_func: Callable = input) -> Dict[str, Any]:
     return input_data
 
 
-def extract_program_data(data: Dict[str, Any]) -> Tuple[str, str, Dict[str, Any]]:
+def unpack_program_data(data: Dict[str, Any]) -> Tuple[str, str, Dict[str, Any]]:
     """
-    Extract program information.
+    Unpack program information.
 
     :param data: program data dictionary
     """
