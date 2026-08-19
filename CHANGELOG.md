@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Dependencies structure modified
 - Test system modified
+- CLI functions modified
 - `run` function modified
 ## [1.5] - 2026-05-04
 ### Added
