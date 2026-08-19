@@ -77,7 +77,7 @@ def run(args: argparse.Namespace) -> None:
                 print(CONFIG_LOAD_ERROR_MESSAGE)
                 sys.exit()
         while not exit_flag:
-            else:
+            if not args.config:
                 input_data = get_standard_input()
                 filtered_data = filter_input(input_data)
                 program_name, program_level, program_data = get_program_data(filtered_data)
