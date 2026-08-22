@@ -69,15 +69,15 @@ def run(args: argparse.Namespace) -> None:
             print_nafas_description()
             _ = input("Press any key to continue.\n")
         exit_flag = False
-        while not exit_flag:
-            if args.config:
-                result = load_config(args.config)
-                if result["status"]:
-                    program_name, program_level, program_data = unpack_program_data(result["data"])
-                else:
-                    print(CONFIG_LOAD_ERROR_MESSAGE)
-                    sys.exit()
+        if args.config:
+            result = load_config(args.config)
+            if result["status"]:
+                program_name, program_level, program_data = unpack_program_data(result["data"])
             else:
+                print(CONFIG_LOAD_ERROR_MESSAGE)
+                sys.exit()
+        while not exit_flag:
+            if not args.config:
                 input_data = get_standard_input()
                 filtered_data = filter_input(input_data)
                 program_name, program_level, program_data = get_program_data(filtered_data)
