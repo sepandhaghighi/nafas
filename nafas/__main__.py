@@ -19,9 +19,9 @@ from art import tprint
 def parse_args() -> argparse.Namespace:
     """Parse arguments."""
     parser = argparse.ArgumentParser()
-    parser.add_argument('--version', help='version', nargs="?", const=1)
-    parser.add_argument('--silent', help='silent mode', nargs="?", const=1)
-    parser.add_argument('--skip-intro', help='skip intro', nargs="?", const=1)
+    parser.add_argument('--version', help='version', action='store_true')
+    parser.add_argument('--silent', help='silent mode', action='store_true')
+    parser.add_argument('--skip-intro', help='skip intro', action='store_true')
     parser.add_argument(
         '--generate-config',
         help='generate a starter configuration file at the given path',
