@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - CLI arguments modified
 - CLI functions modified
 - `run` function modified
+- `Python 3.15` added to `test.yml`
 ## [1.5] - 2026-05-04
 ### Added
 - Fire program
