@@ -459,4 +459,53 @@ False
 >>> get_rendered_survey_link("X", "Medium", {"ratio": [1, 0, 4, 0], "unit": 3, "pre": 3, "cycle": 28})
 'https://opsclb.li/nafas/form?version=1.5&data=%7B"name":+"X",+"level":+"Medium",+"data":+%7B"ratio":++%5B1,+0,+4,+0%5D,+"unit":+3,+"pre":+3,+"cycle":+28%7D%7D'
 >>> os.remove("test_config4.json")
+
+Custom configurations must reject invalid numeric values before a program starts.
+
+>>> from copy import deepcopy
+>>> import json
+>>> import tempfile
+>>> from nafas.params import CONFIG_EXAMPLE
+>>> invalid_configs = []
+>>> for key in ("cycle", "unit", "pre"):
+...     config = deepcopy(CONFIG_EXAMPLE)
+...     config[key] = -1
+...     invalid_configs.append(config)
+>>> for key in ("inhale", "retain", "exhale", "sustain"):
+...     config = deepcopy(CONFIG_EXAMPLE)
+...     config["ratio"][key] = -0.5
+...     invalid_configs.append(config)
+>>> [validate_config(config) for config in invalid_configs]
+[False, False, False, False, False, False, False]
+>>> config = deepcopy(CONFIG_EXAMPLE)
+>>> config["unit"] = 0
+>>> invalid_configs.append(config)
+>>> validate_config(config)
+False
+>>> config = deepcopy(CONFIG_EXAMPLE)
+>>> config["ratio"] = dict.fromkeys(config["ratio"], 0)
+>>> invalid_configs.append(config)
+>>> validate_config(config)
+False
+>>> results = []
+>>> with tempfile.TemporaryDirectory() as directory:
+...     path = os.path.join(directory, "config.json")
+...     for config in invalid_configs:
+...         with open(path, "w") as config_file:
+...             json.dump(config, config_file)
+...         results.append(load_config(path)["status"])
+>>> results
+[False, False, False, False, False, False, False, False, False]
+>>> config = deepcopy(CONFIG_EXAMPLE)
+>>> config.update(unit=0.5, pre=0, cycle=0)
+>>> config["ratio"].update(retain=0, sustain=0, inhale=0.5)
+>>> validate_config(config)
+True
+>>> config["cycle"] = 1.5
+>>> validate_config(config)
+False
+>>> config["cycle"] = 1
+>>> config["unit"] = "1"
+>>> validate_config(config)
+False
 """
