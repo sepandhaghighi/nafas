@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Changed
+- Reject negative custom configuration values and zero-duration breathing cycles
 - Dependencies structure modified
 - Test system modified
 - CLI arguments modified
