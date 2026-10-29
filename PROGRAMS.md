@@ -1,6 +1,6 @@
 # Nafas Breathing Programs
 
-**Last Update: 2026-02-19**
+**Last Update: 2026-10-23**
 
 | **Program**         | **Description**                                                                                                                 | **Level**         | **Ratios**<br>**(I:R:E:S)**            | **Unit**<br>**(Seconds)** | **Cycles**      |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------|-----------------------|--------------------------|----------------|
@@ -24,6 +24,9 @@
 | Fire          | Agnisar Pranayama, or Fire Breath, is a powerful yoga breathing technique, Agni means fire, and Sara stands for movement; Agnisara Kriya is the process of cleansing or purifying the organs of the abdomen, by the heat (fire) generated during the practice of this breathing technique. | B<br>M<br>A | 3:0:5:12<br>3:0:5:12<br>3:0:5:12 | 1<br>1<br>1 | 10<br>20<br>30 |
 | Retention     | Kevala Kumbhaka, or Breath Retention, is an advanced yogic practice involving holding the breath after exhalation. This technique promotes deep inner stillness, enhances concentration, and balances the nervous system, making it a powerful tool for achieving mental clarity and heightened awareness. | B<br>M<br>A | 2:0:2:12<br>2:0:2:12<br>2:0:2:12 | 1<br>1<br>1 | 5<br>10<br>15 |
 | Swooning      | It is a calming yogic breathing technique that promotes relaxation and heightened consciousness. By extending breath retention and focusing inward, it helps to quiet the mind, reduce stress, and promote mental stillness. | B<br>M<br>A | 5:10:7:0<br>5:10:7:0<br>5:10:7:0 | 1<br>1<br>1 | 7<br>12<br>21 |
+| Bee Breath | Five-second inhalation followed by a ten-second exhalation, without retention or sustain phases. | B<br>M<br>A | 5:0:10:0<br>5:0:10:0<br>5:0:10:0 | 1<br>1<br>1 | 4<br>10<br>20 |
+| Skull Shining Breath | Alternating one-second inhalations and exhalations, without retention or sustain phases. | B<br>M<br>A | 1:0:1:0<br>1:0:1:0<br>1:0:1:0 | 1<br>1<br>1 | 10<br>50<br>200 |
+| Floating Breath | Eight-second inhalation, thirty-second retention, and ten-second exhalation, without a sustain phase. | B<br>M<br>A | 8:30:10:0<br>8:30:10:0<br>8:30:10:0 | 1<br>1<br>1 | 2<br>5<br>10 |
 
 **Notes**:
 - *I: Inhale, R: Retain, E: Exhale, S: Sustain, B: Beginner, M: Medium, A: Advanced*

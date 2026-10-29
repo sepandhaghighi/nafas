@@ -101,7 +101,10 @@ STANDARD_MENU = {
         17: "Coherent",
         18: "Fire",
         19: "Retention",
-        20: "Swooning"},
+        20: "Swooning",
+        21: "Bee Breath",
+        22: "Skull Shining Breath",
+        23: "Floating Breath"},
     "level": {
         1: "Beginner",
         2: "Medium",
@@ -170,6 +173,25 @@ SWOONING_BEGINNER = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 7}
 SWOONING_MEDIUM = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 12}
 
 SWOONING_ADVANCED = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 21}
+
+
+BEE_BREATH_BEGINNER = {"ratio": [5, 0, 10, 0], "unit": 1, "pre": 3, "cycle": 4}
+
+BEE_BREATH_MEDIUM = {"ratio": [5, 0, 10, 0], "unit": 1, "pre": 3, "cycle": 10}
+
+BEE_BREATH_ADVANCED = {"ratio": [5, 0, 10, 0], "unit": 1, "pre": 3, "cycle": 20}
+
+SKULL_SHINING_BEGINNER = {"ratio": [1, 0, 1, 0], "unit": 1, "pre": 3, "cycle": 10}
+
+SKULL_SHINING_MEDIUM = {"ratio": [1, 0, 1, 0], "unit": 1, "pre": 3, "cycle": 50}
+
+SKULL_SHINING_ADVANCED = {"ratio": [1, 0, 1, 0], "unit": 1, "pre": 3, "cycle": 200}
+
+FLOATING_BREATH_BEGINNER = {"ratio": [8, 30, 10, 0], "unit": 1, "pre": 3, "cycle": 2}
+
+FLOATING_BREATH_MEDIUM = {"ratio": [8, 30, 10, 0], "unit": 1, "pre": 3, "cycle": 5}
+
+FLOATING_BREATH_ADVANCED = {"ratio": [8, 30, 10, 0], "unit": 1, "pre": 3, "cycle": 10}
 
 
 RELAX2_BEGINNER = {
@@ -540,6 +562,15 @@ PROGRAMS = {"Clear Mind": {"Beginner": CLEAR_MIND_BEGINNER,
             "Swooning": {"Beginner": SWOONING_BEGINNER,
                          "Medium": SWOONING_MEDIUM,
                          "Advanced": SWOONING_ADVANCED},
+            "Bee Breath": {"Beginner": BEE_BREATH_BEGINNER,
+                           "Medium": BEE_BREATH_MEDIUM,
+                           "Advanced": BEE_BREATH_ADVANCED},
+            "Skull Shining Breath": {"Beginner": SKULL_SHINING_BEGINNER,
+                                     "Medium": SKULL_SHINING_MEDIUM,
+                                     "Advanced": SKULL_SHINING_ADVANCED},
+            "Floating Breath": {"Beginner": FLOATING_BREATH_BEGINNER,
+                                "Medium": FLOATING_BREATH_MEDIUM,
+                                "Advanced": FLOATING_BREATH_ADVANCED},
             }
 
 SPEAKER_LIST = [
