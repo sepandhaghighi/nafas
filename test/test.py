@@ -168,6 +168,9 @@ True
 18- Fire (~ 7 minutes)
 19- Retention (~ 3 minutes)
 20- Swooning (~ 5 minutes)
+21- Bee Breath (~ 3 minutes)
+22- Skull Shining Breath (~ 3 minutes)
+23- Floating Breath (~ 5 minutes)
 - Choose a level:
 <BLANKLINE>
 1- Beginner
