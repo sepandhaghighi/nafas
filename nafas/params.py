@@ -175,15 +175,15 @@ SWOONING_MEDIUM = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 12}
 SWOONING_ADVANCED = {"ratio": [5, 10, 7, 0], "unit": 1, "pre": 3, "cycle": 21}
 
 
-BEE_BREATH_BEGINNER = {"ratio": [5, 0, 10, 0], "unit": 1, "pre": 3, "cycle": 4}
+BEE_BREATH_BEGINNER = {"ratio": [5, 0, 10, 0], "unit": 1, "pre": 3, "cycle": 5}
 
 BEE_BREATH_MEDIUM = {"ratio": [5, 0, 10, 0], "unit": 1, "pre": 3, "cycle": 10}
 
-BEE_BREATH_ADVANCED = {"ratio": [5, 0, 10, 0], "unit": 1, "pre": 3, "cycle": 20}
+BEE_BREATH_ADVANCED = {"ratio": [5, 0, 10, 0], "unit": 1, "pre": 3, "cycle": 21}
 
-SKULL_SHINING_BEGINNER = {"ratio": [1, 0, 1, 0], "unit": 1, "pre": 3, "cycle": 10}
+SKULL_SHINING_BEGINNER = {"ratio": [1, 0, 1, 0], "unit": 1, "pre": 3, "cycle": 30}
 
-SKULL_SHINING_MEDIUM = {"ratio": [1, 0, 1, 0], "unit": 1, "pre": 3, "cycle": 50}
+SKULL_SHINING_MEDIUM = {"ratio": [1, 0, 1, 0], "unit": 1, "pre": 3, "cycle": 60}
 
 SKULL_SHINING_ADVANCED = {"ratio": [1, 0, 1, 0], "unit": 1, "pre": 3, "cycle": 200}
 
