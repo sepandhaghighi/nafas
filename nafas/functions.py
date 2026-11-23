@@ -293,7 +293,16 @@ def validate_config(config_data: Dict[str, Any]) -> bool:
                 result.append(isinstance(config_data[item1][item2], CONFIG_VALIDATION_MAP[item1][item2]))
         else:
             result.append(isinstance(config_data[item1], CONFIG_VALIDATION_MAP[item1]))
-    return all(result)
+    if not all(result):
+        return False
+    ratios = [config_data["ratio"][item] for item in CONFIG_VALIDATION_MAP["ratio"]]
+    return (
+        config_data["cycle"] >= 0 and
+        config_data["unit"] > 0 and
+        config_data["pre"] >= 0 and
+        all(ratio >= 0 for ratio in ratios) and
+        sum(ratios) > 0
+    )
 
 
 def get_standard_input(input_func: Callable = input) -> Dict[str, Any]:
