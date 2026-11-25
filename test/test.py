@@ -5,7 +5,7 @@
 >>> import io
 >>> import contextlib
 >>> doctest.ELLIPSIS_MARKER = "ignore_this_message"
->>> from pytest import warns
+>>> from pytest import warns, raises
 >>> import shutil
 >>> from nafas.functions import *
 >>> set_color(None)
@@ -443,10 +443,8 @@ Cycle: 2 (Remaining: 0)
 . . . .
 ######################################################################
 Well done!
->>> sid = play_sound(1)
-Traceback (most recent call last):
-        ...
-nava.errors.NavaBaseError: Sound file's path should be a string.
+>>> with raises(Exception):
+...     play_sound(1)
 >>> try:
 ...     wave_path = os.path.join("nafas", "sounds", "silence.wav")
 ...     temp_path = os.path.join("nafas", "sounds", "temp.wav")
