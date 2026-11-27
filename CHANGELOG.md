@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Skull Shining Breath program
 - Floating Breath program
 ### Changed
+- Fix `convert_time` formatting for durations of an hour or more, rounded 60-second carry, and sub-minute averages
 - Reject negative custom configuration values and zero-duration breathing cycles
 - Dependencies structure modified
 - Test system modified
