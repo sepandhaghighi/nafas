@@ -509,4 +509,23 @@ False
 >>> config["unit"] = "1"
 >>> validate_config(config)
 False
+
+Duration formatting preserves durations at or above one hour, carries rounded seconds, and keeps zero minutes in average mode.
+
+>>> convert_time(3600)
+'60 minutes, 00 seconds'
+>>> convert_time(3665)
+'61 minutes, 05 seconds'
+>>> convert_time(90061)
+'1501 minutes, 01 seconds'
+>>> convert_time(59.6)
+'01 minutes, 00 seconds'
+>>> convert_time(3600, average=True)
+'60 minutes'
+>>> convert_time(20, average=True)
+'0 minutes'
+>>> convert_time(0, average=True)
+'0 minutes'
+>>> convert_time(30, average=True)
+'1 minutes'
 """

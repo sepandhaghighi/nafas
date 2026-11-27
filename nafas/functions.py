@@ -87,18 +87,19 @@ def convert_time(input_time: float, average: bool = False) -> str:
     :param average: average flag
     """
     sec = float(input_time)
-    _days, sec = divmod(sec, 24 * 3600)
-    _hours, sec = divmod(sec, 3600)
-    minutes, sec = divmod(sec, 60)
-    result = ", ".join([
-        MINUTES_TEMPLATE.format(minutes=minutes),
-        SECONDS_TEMPLATE.format(seconds=sec),
-    ])
     if average:
-        if sec >= 30:
+        minutes, rem_sec = divmod(sec, 60)
+        if rem_sec >= 30:
             minutes += 1
         result = MINUTES_TEMPLATE.format(minutes=minutes).lstrip("0")
-    return result
+        if result.startswith(" "):
+            result = "0" + result
+        return result
+    minutes, rem_sec = divmod(round(sec), 60)
+    return ", ".join([
+        MINUTES_TEMPLATE.format(minutes=minutes),
+        SECONDS_TEMPLATE.format(seconds=rem_sec),
+    ])
 
 
 def get_rendered_survey_link(program_name: str, level: str, program_data: Dict[str, Any]) -> str:
