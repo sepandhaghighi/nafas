@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Reject negative custom configuration values and zero-duration breathing cycles
 - Dependencies structure modified
 - Test system modified
+- Build system modified
 - CLI arguments modified
 - CLI functions modified
 - `run` function modified
